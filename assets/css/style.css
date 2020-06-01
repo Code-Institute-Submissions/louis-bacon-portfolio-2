@@ -1,0 +1,17 @@
+
+.navbar {
+    background-color: #000000;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav li {
+    padding: 0 3em;
+    min-width: 20%;
+}
+
+.navbar-nav li a {
+    color: #ffffff;
+}
