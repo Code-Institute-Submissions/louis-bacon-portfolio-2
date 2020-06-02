@@ -15,3 +15,22 @@
 .navbar-nav li a {
     color: #ffffff;
 }
+
+.gallery-container {
+    margin: 0;
+    min-height: 240px;
+}
+
+.gallery-image {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.name,
+.title {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

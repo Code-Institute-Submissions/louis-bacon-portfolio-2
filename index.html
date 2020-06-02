@@ -35,28 +35,24 @@
               About
             </a>
           </li>
-          <li
-            class="nav-item-dropdown"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <a href="#" class="nav-item nav-link dropdown-toggle mr-md-2">
-              Shop
-            </a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">
-                Web Services
-              </a>
-              <a href="#" class="dropdown-item">
-                Tutoring
-              </a>
-              <a href="#" class="dropdown-item">
-                Fitness Coaching
-              </a>
-              <a href="#" class="dropdown-item">
-                Merchandise
-              </a>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Shop
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Web Services</a>
+                <a class="dropdown-item" href="#">Tutoring</a>
+                <a class="dropdown-item" href="#">Fitness Coaching</a>
+                <a class="dropdown-item" href="#">Merchandise</a>
+              </div>
             </div>
           </li>
           <li class="nav-item">
@@ -73,34 +69,51 @@
       </div>
     </header>
 
-    <div class="container gallery-container">
+    <div class="container-fluid gallery-container">
       <section>
         <!-- pics gallery -->
+        <div class="row">
+          <div class="col-sm gallery-image">
+            <img src="/assets/images/lb17-logo.png" alt="LB17 Logo" />
+          </div>
+          <div class="col-sm gallery-image">
+            <img src="/assets/images/lb17-logo.png" alt="LB17 Logo" />
+          </div>
+          <div class="col-sm gallery-image">
+            <img src="/assets/images/lb17-logo.png" alt="LB17 Logo" />
+          </div>
+        </div>
       </section>
     </div>
 
     <div class="container about-me-container">
-        <section>
-            <!-- info about me-->
-        </section>
+      <section>
+        <!-- info about me-->
+        <div class="row">
+            <div class="col">
+                <h1 class="name uppercase">Louis Bacon</h1>
+                <h2 class="title uppercase">Web Developer &#124; Fitness Coach &#124; German Tutor</h2>
+            </div>
+        </div>
+      </section>
     </div>
 
     <div class="container quotes-container">
-        <section>
-            <!-- a few quotes from ppl/clients-->
-        </section>
+      <section>
+        <!-- a few quotes from ppl/clients-->
+      </section>
     </div>
 
     <div class="container mailing-list-container">
-        <section>
-            <!-- email input text to join mailing list-->
-        </section>
+      <section>
+        <!-- email input text to join mailing list-->
+      </section>
     </div>
 
     <div class="container merch-container">
-        <section>
-            <!-- pics of some of my products-->
-        </section>
+      <section>
+        <!-- pics of some of my products-->
+      </section>
     </div>
 
     <footer>
