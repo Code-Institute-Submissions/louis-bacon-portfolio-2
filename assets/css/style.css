@@ -26,6 +26,10 @@
     padding-top: 15px;
 }
 
+.about-me-container h2 {
+    text-align: center;
+}
+
 .name,
 .title {
     text-align: center;
@@ -33,4 +37,21 @@
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.merch-container {
+    min-height: 240px;
+}
+
+.gallery-item {
+    width: 25%;
+    display: inline-block;
+}
+
+/*--- footer ---*/
+
+.payment-info,
+.social-media {
+    background-color: aquamarine;
+    margin-bottom: 0;
 }
