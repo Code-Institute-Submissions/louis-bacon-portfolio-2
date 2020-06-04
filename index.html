@@ -22,61 +22,120 @@
   </head>
 
   <body>
-    <header class="navbar navbar-expand-sm bd-navbar">
-      <div class="navbar-nav-scroll">
-        <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-sm d-block-d-sm-none">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
+            <a class="nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              About
-            </a>
+            <a class="nav-link" href="#"
+              >About <span class="sr-only">(current)</span></a
+            >
           </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Shop
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Web Services</a>
-                <a class="dropdown-item" href="#">Tutoring</a>
-                <a class="dropdown-item" href="#">Fitness Coaching</a>
-                <a class="dropdown-item" href="#">Merchandise</a>
-              </div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Shop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Services</a>
+              <a class="dropdown-item" href="#">Tutoring</a>
+              <a class="dropdown-item" href="#">Fitness Coaching</a>
+              <a class="dropdown-item" href="#">Merchandise</a>
             </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              Contact
-            </a>
+            <a class="nav-link" href="#"
+              >CV <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              CV
-            </a>
+            <a class="nav-link" href="#"
+              >Contact <span class="sr-only">(current)</span></a
+            >
           </li>
         </ul>
       </div>
-      <div class="checkout">
-        <ul class="navbar-nav ml-md-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-shopping-cart"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    </nav>
+    <div class="d-none d-md-block">
+      <header class="navbar navbar-expand-sm bd-navbar">
+        <div class="navbar-nav-scroll">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Shop
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Web Services</a>
+                  <a class="dropdown-item" href="#">Tutoring</a>
+                  <a class="dropdown-item" href="#">Fitness Coaching</a>
+                  <a class="dropdown-item" href="#">Merchandise</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                CV
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="checkout">
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
 
     <div class="container-fluid gallery-container">
       <section>
@@ -133,7 +192,7 @@
         <!-- a few quotes from ppl/clients-->
         <div class="row quotes">
           <div class="col">
-            <h2 class="nice-things">Nice things people have said about me</h2>
+            <h2 class="nice-things">Nice things people have said</h2>
             <div class="row">
               <div class="col-sm">
                 <blockquote>
@@ -188,7 +247,7 @@
                     placeholder="Your e-mail address"
                     required
                   />
-                  <button type="submit" class="btn subscribe btn-secondary">
+                  <button type="submit" class="btn subscribe btn-success">
                     Subscribe&#33;
                   </button>
                 </form>
@@ -217,9 +276,9 @@
               src="/assets/images/lb17-for-women.png"
               alt="LB17 Logo White Tee"
             />
-            <div class="row">
-              <div class="col">LB17 White Tee</div>
-              <div class="col">&#163;25.00</div>
+            <div class="row featured-merch">
+              <div class="col store-item-name">LB17 White Tee</div>
+              <div class="col store-item-price">&#163;25.00</div>
             </div>
           </div>
           <div class="col-sm store-item">
@@ -227,9 +286,9 @@
               src="/assets/images/brick-by-brick.png"
               alt="Brick By Brick White Tee"
             />
-            <div class="row">
-              <div class="col">Brick-by-brick Tee</div>
-              <div class="col">&#163;25.00</div>
+            <div class="row featured-merch">
+              <div class="col store-item-name">Brick-by-brick Tee</div>
+              <div class="col store-item-price">&#163;25.00</div>
             </div>
           </div>
           <div class="col-sm store-item">
@@ -237,19 +296,19 @@
               src="/assets/images/bet-on-yourself.png"
               alt="Bet On Yourself Black Tee"
             />
-            <div class="row">
-              <div class="col">BOY Black Tee</div>
-              <div class="col">&#163;30.00</div>
+            <div class="row featured-merch">
+              <div class="col store-item-name">BOY Black Tee</div>
+              <div class="col store-item-price">&#163;30.00</div>
             </div>
           </div>
-          <div class="col-sm store-item">
+          <div class="col-sm store-item featured-merch">
             <img
               src="/assets/images/Born2Excel.png"
               alt="Born2Excel Black Tee"
             />
-            <div class="row">
-              <div class="col">Born2Excel Black Tee</div>
-              <div class="col">&#163;25.00</div>
+            <div class="row featured-merch">
+              <div class="col store-item-name">Born2Excel Black Tee</div>
+              <div class="col store-item-price">&#163;25.00</div>
             </div>
           </div>
         </div>
