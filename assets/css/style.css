@@ -6,6 +6,10 @@ body {
 
 /*--- padding/margin/text ---*/
 
+.divider {
+    padding-left: 15px;
+    padding-right: 15px;
+
 .carousel-container {
     margin-top: 0.8rem;
 }
@@ -89,10 +93,14 @@ body {
 .stuff-i-sell {
     padding-bottom: 15px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .stuff-i-sell-subheading {
     padding-bottom: 15px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .featured-merch {
@@ -100,13 +108,15 @@ body {
 }
 
 .store-item-name {
-    padding-top: 15px;
+    padding-top: 0;
+    padding-bottom: 15px;
     font-size: 18px;
     font-weight: 400;
 }
 
 .store-item-price {
-    padding-top: 15px;
+    padding-top: 0;
+    padding-bottom: 15px;
     padding-right: 25px;
     text-align: right;
     font-size: 1.5rem;
@@ -224,6 +234,10 @@ body {
 
 /*--- merch ---*/
 
+.story-gallery {
+    text-align: center;
+} /*--- for mobile device, check to see if working ---*/
+
 .store-item {
     display: inline-block;    
 }
@@ -268,5 +282,31 @@ body {
     .subscribe {
         width: auto;
         margin-top: 0;
+    }
+}
+
+@media (min-width:376px) {
+    .stuff-i-sell,
+    .stuff-i-sell-subheading {
+        text-align: justify;
+    }
+
+    .stuff-i-sell-subheading {
+        font-size: x-large;
+        font-weight: 400;
+    }
+}
+
+@media (min-width:376px) {
+    .store-gallery {
+        text-align: inherit;
+    }
+}
+
+@media (min-width:376px) {
+    .store-item-name,
+    .store-item-price {
+        padding-top: 15px;
+        padding-bottom: 0;
     }
 }
