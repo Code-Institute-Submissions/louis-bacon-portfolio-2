@@ -21,7 +21,7 @@ body {
 
 .title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: xx-large;
     font-weight: 300;
     padding-bottom: 15px;
 }
@@ -117,7 +117,8 @@ body {
 
 .navbar {
     background-color: #000000;
-    padding-bottom: 0;
+    padding-bottom: 5px;
+    margin-bottom: 0.8rem;
 }
 
 .navbar-nav {
@@ -138,6 +139,10 @@ body {
 }
 
 .navbar-nav li a {
+    color: #ffffff;
+}
+
+.navbar button i {
     color: #ffffff;
 }
 
@@ -213,7 +218,8 @@ body {
 
 .subscribe {
     font-size: 1.5rem;
-    width: auto;
+    margin-top: 10px;
+    width: 100%;
 }
 
 /*--- merch ---*/
@@ -248,4 +254,19 @@ body {
     text-align: center;
     font-weight: 200;
     color: hotpink;
+}
+
+/*--- media queries ---*/
+
+@media (min-width:376px) {
+    .navbar {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width:376px) { 
+    .subscribe {
+        width: auto;
+        margin-top: 0;
+    }
 }
