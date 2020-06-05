@@ -6,6 +6,10 @@ body {
 
 /*--- padding/margin/text ---*/
 
+.carousel-container {
+    margin-top: 0.8rem;
+}
+
 .name {
     text-align: center;
     font-size: 3rem;
@@ -120,6 +124,14 @@ body {
     flex-direction: row;
 }
 
+.collapse .navbar-nav {
+    display: none;
+}
+
+.show .navbar-nav {
+    display: block;
+}
+
 .navbar-nav li {
     padding: 0 3em;
     min-width: 20%;
@@ -188,8 +200,12 @@ body {
     min-height: 200px;
 }
 
+.center-form form {
+    width: 100%;
+}
+
 .form-control {
-    min-width: 85%;
+    min-width: 75%;
     padding-left: 2px;
     padding-right: 2px;
     height: 3em;
@@ -197,6 +213,7 @@ body {
 
 .subscribe {
     font-size: 1.5rem;
+    width: auto;
 }
 
 /*--- merch ---*/
