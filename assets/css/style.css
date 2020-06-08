@@ -12,6 +12,10 @@ body {
 
 /*--- padding/margin/text ---*/
 
+a:hover {
+    text-decoration: none;
+}
+
 .divider {
     padding-left: 15px;
     padding-right: 15px;
@@ -211,6 +215,11 @@ body {
     border-color: #000000;
  }
 
+ .btn-secondary:focus,
+ .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0;
+ }
+
  .dropdown-item {
      color: #fff;
  }
@@ -236,7 +245,7 @@ body {
 /*--- top gallery ---*/
 
 .gallery-container {
-    margin: 0;
+    margin: 0.8rem 0 0 0;
     min-height: 240px;
 }
 
@@ -284,40 +293,56 @@ body {
 
 /*--- merch ---*/
 
-.story-gallery {
+.store-gallery {
     text-align: center;
 } /*--- for mobile device, check to see if working ---*/
 
 .store-item {
-    display: inline-block;    
+    display: inline-block; 
+    width: 25%;   
 }
 
 .store-gallery .store-item img {
     height: 270px;
-    width: 270px;
+    width: auto;
 }
 
 /*--- footer ---*/
 
-.payment-info,
-.social-media {
-    background-color: aquamarine;
+footer {
+    background-color: seagreen;
+}
+
+.info-media-wrapper {
     margin-bottom: 0;
 }
 
 .payment-info {
+    padding-top: 2px;
     padding-left: 15px;
 }
 
 .social-media {
     text-align: right;
+    padding-top: 2px;
     padding-right: 15px;
+}
+
+.list-inline-item {
+    padding-right: 10px;
+    font-size: 1.2em;
+    color: slategray;
+}
+
+.social-media-link {
+    color: #fff;
 }
 
 .copyright-notice {
     text-align: center;
+    font-size: 0.8rem;
     font-weight: 200;
-    color: hotpink;
+    color: #fff;
 }
 
 /*--- media queries ---*/
@@ -329,7 +354,7 @@ body {
     }
 
     .subscribe {
-        width: auto;
+        font-size: 1.3rem;
         margin-top: 0;
     }
 
