@@ -292,9 +292,12 @@ a:hover {
 
 /*--- merch ---*/
 
-.store-gallery {
+.mobile-store {
     text-align: center;
-} /*--- for mobile device, check to see if working ---*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0.8rem;
+}
 
 .store-item {
     display: inline-block; 
@@ -318,15 +321,23 @@ footer {
 
 .payment-info-container {
     padding-top: 2px;
-    padding-left: 15px;
     width: 50%;
 }
 
 .social-media-container {
     text-align: right;
     padding-top: 2px;
-    padding-right: 15px;
     width: 50%;
+}
+
+.payment-info {
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.social-media {
+    padding-right: 15px;
+    padding-top: 2px;
 }
 
 .list-inline-item {
