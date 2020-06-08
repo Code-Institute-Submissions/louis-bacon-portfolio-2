@@ -287,7 +287,6 @@ a:hover {
 
 .subscribe {
     font-size: 1.5rem;
-    margin-top: 10px;
     width: 100%;
 }
 
@@ -317,15 +316,17 @@ footer {
     margin-bottom: 0;
 }
 
-.payment-info {
+.payment-info-container {
     padding-top: 2px;
     padding-left: 15px;
+    width: 50%;
 }
 
-.social-media {
+.social-media-container {
     text-align: right;
     padding-top: 2px;
     padding-right: 15px;
+    width: 50%;
 }
 
 .list-inline-item {
