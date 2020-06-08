@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-sm d-block-d-sm-none">
+    <nav class="navbar navbar-expand-sm d-block d-sm-none">
       <button
         class="navbar-toggler"
         type="button"
@@ -34,6 +34,12 @@
       >
         <i class="fas fa-bars"></i>
       </button>
+
+      <div class="mobile-cart">
+        <a href="#">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -47,7 +53,7 @@
               >About <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown dropright">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -59,7 +65,7 @@
             >
               Shop
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu dropright" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Web Services</a>
               <a class="dropdown-item" href="#">Tutoring</a>
               <a class="dropdown-item" href="#">Fitness Coaching</a>
@@ -80,7 +86,7 @@
       </div>
     </nav>
 
-    <div class="d-none d-md-block">
+    <div class="d-none d-md-block menu-container">
       <header class="navbar navbar-expand-sm bd-navbar">
         <div class="navbar-nav-scroll">
           <ul class="navbar-nav">
