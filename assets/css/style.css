@@ -135,6 +135,11 @@ a:hover {
     font-weight: 600;
 }
 
+.gallery2-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 /*--- header ---*/
 
 .menu-container {
@@ -310,6 +315,24 @@ a:hover {
     width: auto;
 }
 
+/*--- about me page ---*/
+
+/*--- images gallery ---*/
+
+.images-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.gallery-first-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.img-item {
+    border-radius: 10px;
+}
+
 /*--- footer ---*/
 
 footer {
@@ -396,6 +419,7 @@ footer {
     .subscribe {
         font-size: 1.3rem;
         margin-top: 0;
+        width: auto;
     }
 
     .stuff-i-sell,
