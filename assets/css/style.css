@@ -1,7 +1,8 @@
 /*--- colours ---*/
 
 body {
-    background-color: #fafafa;
+    /*---background-color: #fafafa;---*/
+    background-image: url("../images/site-background.png");
 }
 
 .btn-secondary:hover,
@@ -314,6 +315,33 @@ a:hover {
 footer {
     background-color: seagreen;
 }
+
+.bttt-button {
+    background-color: #fafafa;
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.back-to-top {
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.back-to-top-link {
+    color: #fff;
+}
+
+.back-to-top-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*-- taken from W3 Schools --*/
 
 .info-media-wrapper {
     margin-bottom: 0;
