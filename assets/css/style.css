@@ -333,6 +333,14 @@ a:hover {
     border-radius: 10px;
 }
 
+/*--- shop page ---*/
+
+.tshirt-item {
+    min-height: 260px;
+    text-align: center;
+    overflow: hidden;
+}
+
 /*--- footer ---*/
 
 footer {
