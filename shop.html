@@ -370,7 +370,7 @@
                     <h4>&#35;NoMediocre Black Tee</h4>
                   </div>
                   <div class="price-container">
-                    <h4 class="item-price">>&#163;25.00</h4>
+                    <h4 class="item-price">&#163;25.00</h4>
                   </div>
                 </div>
               </li>
@@ -471,8 +471,104 @@
 				</div> -->
         </section>
       </div>
+      <div class="divider">
+        <hr class="block-divider block-divider-short">
+      </div>
       <div class="container-fluid tutoring-container">
-        <section></section>
+        <section>
+            <h2 class="tutoring-heading">Tutoring Services</h2>
+            <h6 class="tutoring-subheading">Fill out the form below to book your lesson!</h6>
+            <div class="lesson-signup-form">
+                <form method="post" class="signup">
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-2 col-form-label">First Name:</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lname" class="col-sm-2 col-form-label">Last Name:</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">E-mail address:</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Your email address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="birthday" class="col-sm-2 col-form-label">Date of birth*:</label>
+                        
+                        <div class="dob-dropdown">
+                        <select id="birthday" class="dob-select col-sm-1">
+                        <option selected>DD</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>...</option>
+                        </select>
+                        <select id="birthday" class="dob-select col-sm-1">
+                        <option selected>MM</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        </select>
+                        <select id="birthday" class="dob-select col-sm-1">
+                        <option selected>YYYY</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        </select>
+                        
+                        </div>
+                        <small class="form-text text-muted dob-small">*if a parent seeking lessons for your child, please enter your child’s DOB</small>
+                    </div>
+                    <div class="form-group row">
+                        <label for="subject" class="col-sm col-form-label">I / my child would like lessons in:</label>
+                        <div class="col-sm">
+                            <input type="checkbox" id="mathsenglish" value="mathsenglish">
+                            <label for="mathsenglish">Maths / English</label>
+                            <input type="checkbox" id="german" value="german">
+                            <label for="german">German</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="competency" class="col-sm col-form-label">Competency level:</label>
+                        <div class="col-sm-10 tutoring-options">
+                            <input type="radio" id="beginner" value="beginner" >
+                            <label for="beginner" class="form-control">Beginner</label>
+                            <input type="radio" id="intermediate" value="intermediate" >
+                            <label for="intermediate" class="form-control">Intermediate</label>
+                            <input type="radio" id="advanced" value="advanced" >
+                            <label for="advanced" class="form-control">Advanced</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="competency" class="col-sm col-form-label">Lesson length:</label>
+                        <div class="col-sm-10 tutoring-options">
+                            <input type="radio" id="1hr" value="1hr" >
+                            <label for="1hr" class="form-control">1 hour (&#163;25.00)</label>
+                            <input type="radio" id="1hr30" value="1hr30" >
+                            <label for="1hr30" class="form-control">1.5 hours (&#163;35.00)</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="subject" class="col-sm col-form-label">I would also like a FREE initial 30-minute assessment:</label>
+                        <div class="col-sm">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
       </div>
       <div class="container-fluid coaching-container">
         <section></section>
