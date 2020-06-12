@@ -140,6 +140,11 @@ a:hover {
     padding-bottom: 15px;
 }
 
+.store-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /*--- header ---*/
 
 .menu-container {
