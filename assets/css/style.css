@@ -145,6 +145,21 @@ a:hover {
     padding-right: 15px;
 }
 
+.item-price-container {
+    padding-top: 15px;
+}
+
+.item-name {
+    font-size: 18px;
+    text-align: left;
+}
+
+.item-price {
+    text-align: right;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
 /*--- header ---*/
 
 .menu-container {
