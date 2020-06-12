@@ -340,10 +340,24 @@ a:hover {
 
 /*--- shop page ---*/
 
+.tshirts-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tshirt-items {
+        padding-top: 10px;
+    width: 100%;
+    list-style: none;
+}
+
 .tshirt-item {
     min-height: 260px;
     text-align: center;
-    overflow: hidden;
+    float: none;
+    width: 25%;
+    margin-right: 0;
+    padding: 10px;
 }
 
 /*--- footer ---*/
