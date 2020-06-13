@@ -200,6 +200,10 @@ a:hover {
     padding-bottom: 7px;
 }
 
+.book-now {
+    font-weight: 500;
+}
+
 /*--- header ---*/
 
 .menu-container {
