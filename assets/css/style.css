@@ -187,7 +187,7 @@ a:hover {
 }
 
 .dob-dropdown {
-    margin-left: -5px;
+    margin-left: 10px;
 }
 
 .dob-small {
@@ -202,6 +202,11 @@ a:hover {
 
 .book-now {
     font-weight: 500;
+}
+
+.competency-level-option,
+.lesson-length-option {
+    padding-right: 7px;
 }
 
 /*--- header ---*/
