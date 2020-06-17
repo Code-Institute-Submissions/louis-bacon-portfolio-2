@@ -426,6 +426,15 @@ a:hover {
     padding: 10px;
 }
 
+.tshirt-item-mobile,
+.book-item-mobile {
+    min-height: 260px;
+    text-align: center;
+    float: none;
+    width: 100%;
+    padding: 10px;
+}
+
 /*--- tutoring ---*/
 
 .dob-select {
@@ -544,4 +553,14 @@ footer {
         padding-bottom: 0;
     }
 
+}
+
+@media screen and (max-width: 376px) {
+    .dob-select {
+        height: auto;
+        width: auto;
+        background-color: silver;
+        margin: 0 5px;
+        padding: 0;
+    }
 }
