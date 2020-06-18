@@ -11,6 +11,10 @@ body {
     border-color: #000000;
 }
 
+.cv-download button a {
+    color: #ffffff;
+}
+
 /*--- padding/margin/text ---*/
 
 a:hover {
@@ -176,7 +180,7 @@ a:hover {
 }
 
 .tutoring-subheading {
-        font-size: 20px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 0.1em;
 }
@@ -207,6 +211,42 @@ a:hover {
 .competency-level-option,
 .lesson-length-option {
     padding-right: 7px;
+}
+
+.cv-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.work-history-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.cv-wrapper {
+    margin-top: 1.2rem;
+}
+
+.timeline-container-exp {
+    padding-left: 15px;
+}
+
+.timeline-item {
+    padding: 0 0 10px 10px;
+}
+
+.timeline-container-edu {
+    padding-right: 15px;
+}
+
+.cv-dates {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.cv-download {
+    text-align: center;
+    margin-top: 1.2rem;
 }
 
 /*--- header ---*/
@@ -441,6 +481,18 @@ a:hover {
     margin: 0 5px;
     padding: 0;
     height: 100%;
+}
+
+/*--- cv ---*/
+
+.experience-container,
+.education-container {
+    line-height: 1.6;
+}
+
+.cv-main-heading {
+    text-align: center;
+    font-size: 2.4em;
 }
 
 /*--- footer ---*/
