@@ -15,6 +15,15 @@ body {
     color: #ffffff;
 }
 
+.btn-link {
+    color: #000000;
+}
+
+.btn-link:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
 /*--- padding/margin/text ---*/
 
 a:hover {
@@ -247,6 +256,16 @@ a:hover {
 .cv-download {
     text-align: center;
     margin-top: 1.2rem;
+}
+
+.card-header {
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+.cv-main-heading-mobile {
+    text-align: left;
+    padding-left: 5px;
 }
 
 /*--- header ---*/
@@ -485,6 +504,23 @@ a:hover {
 
 /*--- cv ---*/
 
+.mobile-work-history {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.mobile-cv-section {
+    background-color: transparent;
+    border: 1px transparent;
+    padding-left: 10px;
+}
+
+.cv-mobile-expand {
+    float: right;
+}
+
+
+
 .experience-container,
 .education-container {
     line-height: 1.6;
@@ -613,5 +649,12 @@ footer {
         background-color: silver;
         margin: 0 5px;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .cv-main-heading {
+        text-align: left;
+        font-size: 2.4em;
     }
 }
