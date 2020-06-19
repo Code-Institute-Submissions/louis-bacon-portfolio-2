@@ -5,6 +5,11 @@ body {
     background-image: url("../images/site-background.png");
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .btn-secondary:hover,
 .btn-secondary:active {
     background-color: #000000;
@@ -425,6 +430,16 @@ a:hover {
 }
 
 /*--- merch ---*/
+
+.inline-shop-link {
+    color: #000000;
+    font-weight: bold;
+}
+
+.inline-shop-link:hover {
+    color: #000000;
+    font-weight: bold;
+}
 
 .mobile-store {
     text-align: center;
