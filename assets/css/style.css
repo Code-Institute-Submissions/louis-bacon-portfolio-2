@@ -284,6 +284,11 @@ a:hover {
     font-size: 1.2rem;
 }
 
+.contact-form {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /*--- header ---*/
 
 .menu-container {
@@ -545,8 +550,6 @@ a:hover {
     float: right;
 }
 
-
-
 .experience-container,
 .education-container {
     line-height: 1.6;
@@ -555,6 +558,12 @@ a:hover {
 .cv-main-heading {
     text-align: center;
     font-size: 2.4em;
+}
+
+/*--- contact ---*/
+
+.contact {
+    width: 70%;
 }
 
 /*--- footer ---*/
