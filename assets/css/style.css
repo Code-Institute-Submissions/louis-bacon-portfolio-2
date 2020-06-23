@@ -286,8 +286,7 @@ a:hover {
 }
 
 .contact-form {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 25px 10px 15px 10px;
 }
 
 /*--- header ---*/
@@ -591,9 +590,9 @@ a:hover {
 
 /*--- contact ---*/
 
-.contact {
+/*---.contact {
     width: 70%;
-}
+} ---*/
 
 .submit-button {
     text-align: center;
