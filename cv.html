@@ -221,33 +221,20 @@
         </div>
 
         <div class="cv-wrapper row">
-          <div class="d-block d-sm-none mobile-work-history">
+          <div class="d-block d-sm-none accordion mobile-work-history" id="accordionWorkHistory">
             <div class="card mobile-cv-section">
               <div class="card-header" id="headingOne">
                 <h1 class="uppercase cv-main-heading-mobile">
                   Experience
                   <div class="d-inline cv-mobile-expand">
-                    <button
-                      class="btn btn-link btn-inline collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="false"
-                      aria-controls="collapseOne"
-                    >
+                    <button class="btn btn-link btn-inline collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                       <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                   </div>
                 </h1>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse"
-                aria-labelledby="headingOne"
-                data-parent="#accordionExample"
-                style=""
-              >
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionWorkHistory" style="">
                 <div class="card-body">
                   <div class="timeline-container-exp">
                     <div class="timeline-item">
@@ -297,33 +284,19 @@
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
             <div class="card mobile-cv-section">
               <div class="card-header" id="headingTwo">
                 <h1 class="uppercase cv-main-heading-mobile">
                   Education
                   <div class="d-inline cv-mobile-expand">
-                    <button
-                      class="btn btn-link btn-inline collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
+                    <button class="btn btn-link btn-inline collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                   </div>
                 </h1>
               </div>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#accordionExample"
-                style=""
-              >
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionWorkHistory" style="">
                 <div class="card-body">
                   <div class="timeline-container-edu">
                     <div class="timeline-item">
@@ -365,6 +338,95 @@
             </div>
           </div>
           <div class="d-none d-md-block experience-container col-sm">
+            <h1 class="uppercase cv-main-heading">Experience</h1>
+            <div class="timeline-container-exp">
+              <div class="timeline-item">
+                <h6 class="cv-dates">Future</h6>
+                <ul>
+                  <li>Full Stack Web Developer</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">2009 – present</h6>
+
+                <ul>
+                  <li>Footballer — Semi-professional</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">Jan 2020 – present</h6>
+                <ul>
+                  <li>Founder — LB17</li>
+                  <li>Tutor — Freelance</li>
+                  <li>Author — Freelance</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">Apr 2018 – Dec 2019</h6>
+                <ul>
+                  <li>Lead Editor — LexisNexis UK</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">Mar 2015 – Apr 2018</h6>
+                <ul>
+                  <li>Writer / Editor — Chambers</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">Oct 2014 – Mar 2015</h6>
+                <ul>
+                  <li>Fraud Investigator — Amazon UK</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">Aug 2013 – Jun 2014</h6>
+                <ul>
+                  <li>Customer Service Executive — Infosys B.P.O.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block education-container col-sm">
+            <h1 class="uppercase cv-main-heading">Education</h1>
+            <div class="timeline-container-edu">
+              <div class="timeline-item">
+                <h6 class="cv-dates">Current</h6>
+                <ul>
+                  <li>
+                    Code Institute — Full Stack Web Developer
+                    Certification
+                  </li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">2009 – 2013</h6>
+
+                <ul>
+                  <li>
+                    University of Warwick — French and German Studies
+                    (2:1)
+                  </li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h6 class="cv-dates">2002 – 2009</h6>
+                <ul>
+                  <li>
+                    City of London School — A-Levels
+                    <ul>
+                      <li>French (A)</li>
+                      <li>Geography (A)</li>
+                      <li>German (A)</li>
+                      <li>Latin (A)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block experience-container col-sm">
             <h1 class="uppercase cv-main-heading">Experience</h1>
             <div class="timeline-container-exp">
               <div class="timeline-item">
@@ -458,7 +520,7 @@
             <a href="#" target="_blank"> Download Print Version</a>
           </button>
         </div>
-      </section>
+        </section>
     </div>
 
     <div class="divider">

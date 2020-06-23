@@ -494,6 +494,33 @@ a:hover {
 
 /*--- shop page ---*/
 
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
+
+.carousel-control-prev i {
+    color: red;
+    opacity: .7;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.carousel-control-next i {
+    color: red;
+    opacity: .7;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
 /*--- t-shirts ---*/
 
 .tshirts-container {
@@ -507,7 +534,8 @@ a:hover {
     list-style: none;
 }
 
-.tshirt-item {
+.tshirt-item,
+.book-item {
     min-height: 260px;
     text-align: center;
     float: none;
@@ -720,5 +748,15 @@ footer {
 
     .submit-request {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .carousel-control-prev {
+        left: 0;
+    }
+    
+    .carousel-control-next {
+        right: 0;
     }
 }
