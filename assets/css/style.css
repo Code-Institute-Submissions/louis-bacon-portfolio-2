@@ -662,7 +662,7 @@ footer {
 
 /*--- media queries ---*/
 
-@media (min-width:376px) {
+@media screen and (min-width:376px) {
     .navbar {
         padding-bottom: 0;
         background-color: #000000;
