@@ -612,6 +612,12 @@ a:hover {
     color: #fff;
 }
 
+/*--- merch page ---*/
+
+.merch-item {
+    display: inline-block;
+}
+
 /*--- return to top button ---*/
 
 .returntotop-container {
