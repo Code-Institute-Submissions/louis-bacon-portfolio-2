@@ -110,9 +110,11 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="merch.html">Merchandise</a>
-            <a class="dropdown-item" href="tutoring.html">Tutoring</a>
-            <a class="dropdown-item" href="fitness.html">Fitness</a>
-            <a class="dropdown-item" href="web-services.html">Web Services</a>
+                  <a class="dropdown-item" href="tutoring.html">Tutoring</a>
+                  <a class="dropdown-item" href="fitness.html">Fitness</a>
+                  <a class="dropdown-item" href="web-services.html"
+                    >Web Services</a
+                  >
                 </div>
               </div>
             </li>
@@ -213,11 +215,11 @@
     </div>
 
     <div class="store-container">
-      <div class="container-fluid coaching-container">
+      <div class="container-fluid books-container">
         <section>
           <h2 class="books-heading">Books &#47; Guides</h2>
           <div class="bookstore-container">
-            <ul class="d-block d-sm-none list-inline tshirt-items">
+            <ul class="d-block d-sm-none list-inline book-items">
               <li class="book-item-mobile d-inline-block">
                 <a href="#">
                   <img
@@ -256,11 +258,7 @@
                   </div>
                 </div>
               </li>
-              <li
-                class="book-item-mobile d-inline-block"
-                aria-posinset="3"
-                aria-hidden="false"
-              >
+              <li class="book-item-mobile d-inline-block">
                 <a href="#">
                   <img
                     src="../assets/images/gym-basics-cover.png"
@@ -281,16 +279,8 @@
               </li>
             </ul>
 
-            <ul
-              class="d-none d-md-block list-inline tshirt-items carousel slide"
-              data-ride="carousel"
-              id="carouselBooksControls"
-            >
-              <li
-                class="carousel-item book-item d-inline-block"
-                aria-posinset="1"
-                aria-hidden="false"
-              >
+            <ul class="d-none d-md-block list-inline book-items">
+              <li class="book-item d-inline-block">
                 <a href="#">
                   <img
                     src="../assets/images/gym-basics-cover.png"
@@ -307,11 +297,8 @@
                   </div>
                 </div>
               </li>
-              <li
-                class="carousel-item book-item d-inline-block"
-                aria-posinset="2"
-                aria-hidden="false"
-              >
+
+              <li class="book-item d-inline-block">
                 <a href="#">
                   <img
                     src="../assets/images/lockdown-fitness-cover.png"
@@ -321,18 +308,16 @@
                 </a>
                 <div class="item-price-container">
                   <div class="item-container">
-                    <h4 class="item-name">Lockdown Fitness</h4>
+                    <h4 class="item-name">
+                      Lockdown Fitness
+                    </h4>
                   </div>
                   <div class="price-container">
                     <h4 class="item-price">£14.99</h4>
                   </div>
                 </div>
               </li>
-              <li
-                class="carousel-item book-item d-inline-block"
-                aria-posinset="3"
-                aria-hidden="false"
-              >
+              <li class="book-item d-inline-block">
                 <a href="#">
                   <img
                     src="../assets/images/gym-basics-cover.png"
@@ -350,26 +335,212 @@
                 </div>
               </li>
             </ul>
+            <div class="coming-soon-banner">
+              <div
+                class="alert alert-warning alert-dismissible fade show"
+                role="alert"
+              >
+                <strong>More items coming soon!</strong
+                ><button
+                  type="button"
+                  class="close"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </div>
       <div class="divider">
-              <hr class="block-divider block-divider-short" />
+        <hr class="block-divider block-divider-short" />
       </div>
 
       <div class="coaching-container container-fluid">
         <section>
-            <h2>Fitness coaching</h2>
-            <h4>I also provide coaching sessions. Please fill out the form below to enquire.</h4>
-            <div class="coaching-form">
-                <form method="post">
+          <h2 class="coaching-heading">Fitness coaching</h2>
+          <h4 class="coaching-subheading">
+            I also provide coaching sessions. Please fill out the form below to
+            enquire.
+          </h4>
+          <div class="coaching-form">
+            <form method="post" class="signup">
+              <div class="form-group row">
+                <label for="fname" class="col-sm-2 col-form-label">First Name:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="lname" class="col-sm-2 col-form-label">Last Name:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">E-mail address:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Your email address">
+                </div>
+              </div>
+<div class="form-group row">
+                <label for="phone" class="col-sm-2 col-form-label">Phone number:</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" placeholder="Your telephone number">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="birthday-dd birthday-mm birthday-yyyy" class="col-sm-2 col-form-label">Date of birth:</label>
+
+                <div class="dob-dropdown">
+                  <select id="birthday-dd" class="dob-select col-sm-2">
+                    <option selected="">DD</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>...</option>
+                  </select>
+                  <select id="birthday-mm" class="dob-select col-sm-2">
+                    <option selected="">MM</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                  </select>
+                  <select id="birthday-yyyy" class="dob-select col-sm-3">
+                    <option selected="">YYYY</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                  </select>
+                </div>
                 
-                <input type="text"><input type="submit" value="Submit">
-                
-                </form>
-            </div>
+              </div>
+              
+              <div class="form-group row">
+                <label for="details" class="col-sm col-form-label">Details:</label>
+                <div class="col-sm-10 details-box">
+                <textarea rows="3" name="details" id="details" class="form-control" placeholder="Please provide a brief description of your goals in this box..."></textarea>
+              </div>
+              </div>
+              
+              
+              <button type="submit" class="btn btn-success book-now">
+                Book Now!
+              </button>
+            </form>
+          </div>
         </section>
       </div>
+
+    <div class="returntotop-container">
+      <a href="#top" class="returntotop">
+        Return to top ^
+      </a>
     </div>
+
+    <footer>
+      <div class="info-media-wrapper">
+        <div class="row">
+          <div class="payment-info-container col-sm">
+            <!-- payment info-->
+            <ul class="list-inline payment-info">
+              <li class="list-inline-item">
+                <i class="fa fa-cc-visa"></i>
+                <span class="sr-only">Visa</span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fa fa-cc-mastercard"></i>
+                <span class="sr-only">Mastercard</span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fa fa-cc-amex"></i>
+                <span class="sr-only">American Express</span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fa fa-bitcoin"></i>
+                <span class="sr-only">Bitcoin</span>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media-container col-sm">
+            <!-- social media links-->
+            <ul class="list-inline social-media">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/louis.bacon.5"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.twitter.com/LouisBacon17"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/lbacon17"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/louis-bacon-1130a87a/"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-notice">
+        <!-- copyright notice -->
+        <span class="copyright">&#169; Louis Bacon 2020</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/3d693d5731.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

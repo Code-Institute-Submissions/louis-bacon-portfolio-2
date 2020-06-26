@@ -295,6 +295,44 @@ a:hover {
     margin: 0.8rem 0;
 }
 
+.books-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.coaching-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.books-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.bookstore-container {
+    text-align: center;
+}
+
+.coaching-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.coaching-subheading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.coaching-form {
+    padding: 0px 10px;
+}
+
+.details-box {
+    padding-bottom: 10px;
+}
+
 /*--- header ---*/
 
 .menu-container {
@@ -533,8 +571,9 @@ a:hover {
     white-space: nowrap;
 }
 
-.tshirt-items {
-        padding-top: 10px;
+.tshirt-items,
+.book-items {
+    padding-top: 10px;
     width: 100%;
     list-style: none;
 }
@@ -630,6 +669,14 @@ a:hover {
     border: none;
     border-radius: 50%;
     background-color: #000000;
+}
+
+/*--- fitness page ---*/
+
+.coming-soon-banner {
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: .8;
 }
 
 /*--- return to top button ---*/
@@ -758,6 +805,17 @@ footer {
 
 }
 
+@media screen and (min-width: 415px) {
+    .coming-soon-banner {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .dob-dropdown {
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 415px) {
     .dob-select {
         height: auto;
@@ -792,5 +850,11 @@ footer {
     
     .carousel-control-next {
         right: 0;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .returntotop-container {
+        .padding-top: 15px;
     }
 }
