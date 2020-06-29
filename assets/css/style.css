@@ -65,6 +65,10 @@ a:hover {
     text-transform: uppercase;
 }
 
+.headline-link {
+    text-decoration: underline;
+}
+
 .about-me-main {
     padding: 15px;
 }
