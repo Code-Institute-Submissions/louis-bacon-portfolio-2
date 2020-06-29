@@ -351,11 +351,11 @@ a:hover {
 
 /*--- .navbar button {
     border-color: #ffffff;
-} ---*/
+}
 
 .navbar button i {
     color: #ffffff;
-}
+} ---*/
 
 .btn-secondary:focus {
     color: #fff;
