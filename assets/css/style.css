@@ -690,6 +690,20 @@ a:hover {
     opacity: .8;
 }
 
+/*--- web services page ---*/
+
+.under-construction-left {
+    text-align: left;
+}
+
+.under-construction-right {
+    text-align: right;
+}
+
+.under-construction {
+    height: 10rem;
+}
+
 /*--- return to top button ---*/
 
 .returntotop-container {
