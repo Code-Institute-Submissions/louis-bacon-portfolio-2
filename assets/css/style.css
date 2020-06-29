@@ -349,12 +349,19 @@ a:hover {
     padding-bottom: 5px;
 }
 
-.navbar button {
+/*--- .navbar button {
     border-color: #ffffff;
-}
+} ---*/
 
 .navbar button i {
     color: #ffffff;
+}
+
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
 }
 
 .mobile-cart {
