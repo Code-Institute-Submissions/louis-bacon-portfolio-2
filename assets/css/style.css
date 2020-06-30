@@ -337,6 +337,12 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.under-construction-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0.8rem;
+}
+
 /*--- header ---*/
 
 .menu-container {
@@ -702,6 +708,13 @@ a:hover {
 
 .under-construction {
     height: 10rem;
+}
+
+.announcement-container {
+    padding: 0;
+    background-image: url('../assets/images/coming-soon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /*--- return to top button ---*/
