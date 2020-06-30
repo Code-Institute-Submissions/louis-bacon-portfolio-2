@@ -109,10 +109,12 @@
                   <a href="shop.html">Shop</a>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                 <a class="dropdown-item" href="merch.html">Merchandise</a>
-            <a class="dropdown-item" href="tutoring.html">Tutoring</a>
-            <a class="dropdown-item" href="fitness.html">Fitness</a>
-            <a class="dropdown-item" href="web-services.html">Web Services</a>
+                  <a class="dropdown-item" href="merch.html">Merchandise</a>
+                  <a class="dropdown-item" href="tutoring.html">Tutoring</a>
+                  <a class="dropdown-item" href="fitness.html">Fitness</a>
+                  <a class="dropdown-item" href="web-services.html"
+                    >Web Services</a
+                  >
                 </div>
               </div>
             </li>
@@ -208,7 +210,9 @@
               <a href="fitness.html" class="headline-link">Fitness Coach</a>
               <span class="d-none d-md-inline">&#124;</span>
               <br class="d-block d-sm-none" />
-              <a href="web-services.html" class="headline-link">Web Developer</a>
+              <a href="web-services.html" class="headline-link"
+                >Web Developer</a
+              >
             </h2>
           </div>
         </div>
@@ -221,23 +225,59 @@
     <div class="store-container">
       <div class="container-fluid web-services-container">
         <section>
-          <h2 class="books-heading">Web Services</h2>
-                <!--- soon qualifying as Full Stack Web Developer, will offer services then 
+          <h2 class="web-services-heading">Web Services</h2>
+          <!--- soon qualifying as Full Stack Web Developer, will offer services then 
                 put 'coming soon' on web services page for now --->
+          <div class="d-none d-md-block">
             <div class="row under-construction-container">
-                <div class="col-sm under-construction-left">
-                    <img src="../assets/images/construction-emoji.png" alt="Under Construction" class="under-construction">
-                </div>
-                <div class="col-sm-8 announcement-container">
-    
-                </div>
-                <div class="col-sm under-construction-right">
-                    <img src="../assets/images/construction-emoji.png" alt="Under Construction" class="under-construction">            
-                </div>
+              <div class="col-sm under-construction-left">
+                <img
+                  src="../assets/images/construction-emoji.png"
+                  alt="Under Construction"
+                  class="under-construction"
+                />
+              </div>
+              <div class="col-sm-8 announcement-container">
+                <img
+                  src="../assets/images/coming-soon.png"
+                  alt="coming soon"
+                  class="coming-soon"
+                />
+              </div>
+              <div class="col-sm under-construction-right">
+                <img
+                  src="../assets/images/construction-emoji.png"
+                  alt="Under Construction"
+                  class="under-construction"
+                />
+              </div>
             </div>
-            <div class="row">
-                I will soon be qualifying as a Full Stack Web Developer and offering a range of services. Keep your eyes open for future announcements&#33;
+          </div>
+
+          <div class="d-block d-sm-none under-construction-container">
+            <div class="under-construction-mobile">
+              <img
+                src="../assets/images/construction-emoji.png"
+                alt="Under Construction"
+                class="under-construction"
+              />
             </div>
+            <div class="coming-soon-mobile">
+              <img
+                src="../assets/images/coming-soon.png"
+                alt="coming soon"
+                class="coming-soon"
+              />
+            </div>
+          </div>
+          <div class="alert alert-warning fsd-alert" role="alert">
+            <p class="mb-0">
+              I will soon be qualifying as a Full Stack Web Developer and
+              offering a range of services.
+            </p>
+            <br class="d-block d-sm-none" />
+            <p class="mb-0">Keep your eyes open for future announcements!</p>
+          </div>
         </section>
       </div>
     </div>
@@ -349,6 +389,5 @@
       src="https://kit.fontawesome.com/3d693d5731.js"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>

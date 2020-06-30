@@ -343,6 +343,11 @@ a:hover {
     margin-bottom: 0.8rem;
 }
 
+.web-services-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
 /*--- header ---*/
 
 .menu-container {
@@ -712,9 +717,24 @@ a:hover {
 
 .announcement-container {
     padding: 0;
-    background-image: url('../assets/images/coming-soon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.coming-soon {
+    width: 100%;
+}
+
+.under-construction-mobile,
+.coming-soon-mobile {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.fsd-alert {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 /*--- return to top button ---*/
@@ -894,5 +914,12 @@ footer {
 @media screen and (max-width: 415px) {
     .returntotop-container {
         .padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .list-inline-item {
+        padding-right: 0;
+        font-size: 1em;
     }
 }
