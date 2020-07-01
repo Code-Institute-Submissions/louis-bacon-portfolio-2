@@ -92,6 +92,16 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.quotes-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1.2rem;
+}
+
+.quote-text {
+    font-style: italic;
+}
+
 .mailing-list-container {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -480,13 +490,15 @@ a:hover {
 
 .quote-item {
     padding: 5px 15px 10px 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
     background-color: #fff;
     border-radius: 50%;
     border: 10px solid #000;
     color: #000;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .quote-item blockquote i {
@@ -868,6 +880,14 @@ footer {
         padding-bottom: 0;
     }
 
+}
+
+@media screen and (max-width: 415px) {
+    .quote-item {
+        padding: 0;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
 }
 
 @media screen and (min-width: 415px) {
