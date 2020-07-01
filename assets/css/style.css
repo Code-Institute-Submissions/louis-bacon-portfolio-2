@@ -92,10 +92,6 @@ a:hover {
     padding-bottom: 10px;
 }
 
-.quote-item {
-    padding: 5px 15px 10px 15px;
-}
-
 .mailing-list-container {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -482,8 +478,19 @@ a:hover {
 
 /*--- quotes ---*/
 
+.quote-item {
+    padding: 5px 15px 10px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 10px solid #000;
+    color: #000;
+    text-align: center;
+}
+
 .quote-item blockquote i {
-    font-size: 4rem;
+    font-size: 3rem;
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
