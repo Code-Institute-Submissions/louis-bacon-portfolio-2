@@ -1,8 +1,10 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome lbacon17,
+Hello, 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Welcome to my self-titled portfolio website. This is a hub for me to advertise the many products and services that I offer as a business and a person.
+
+This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the <a href="https://codeinstitute.net" target="_blank">Code Institute</a>. I aim to give users an immediate insight into what I do and ensure that they can intuitively find out what I provide, what they need from me and how to get it. My varying skillsets do not necessarily fit together naturally, so a great deal of effort has gone into simplifying my offering.
 
 ## Gitpod Reminders
 
