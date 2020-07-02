@@ -514,6 +514,10 @@ a:hover {
     align-items: center;
 }
 
+.quote-item blockquote {
+    margin: 0.8rem;
+}
+
 .quote-item blockquote i {
     font-size: 3rem;
     display: block;
