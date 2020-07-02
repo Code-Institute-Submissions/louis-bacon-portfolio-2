@@ -1,8 +1,9 @@
 /*--- colours ---*/
 
 body {
-    /*---background-color: #fafafa;---*/
     background-image: url("../images/site-background.png");
+    background-color: #ddecec;
+    /*-- decide between one of the two --*/
 }
 
 a {
