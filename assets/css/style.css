@@ -105,6 +105,8 @@ a:hover {
 
 .quote-text {
     font-style: italic;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
 }
 
 .mailing-list-container {
@@ -386,6 +388,14 @@ a:hover {
 .navbar button i {
     color: #ffffff;
 } ---*/
+
+.navbar-toggler {
+    border: 2px solid #fff;
+}
+
+.navbar-toggler i {
+    color: #fff;
+}
 
 .btn-secondary:focus {
     color: #fff;
