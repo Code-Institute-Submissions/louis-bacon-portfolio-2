@@ -1,6 +1,6 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Hello, 
+Hello,
 
 Welcome to my self-titled portfolio website. This is a hub for me to advertise the many products and services that I offer as a business and a person.
 
@@ -9,11 +9,13 @@ This website constitutes my First Milestone Project for the Full Stack Developer
 ## Technologies Used
 
 The project uses the follwing coding languages:
+
 - HTML
 - CSS
 - JavaScript
 
 The following frameworks/libraries were also used:
+
 - Bootstrap
 - jQuery
 - Font Awesome
@@ -21,11 +23,17 @@ The following frameworks/libraries were also used:
 ## Credits
 
 The following features on the site are based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> documentation:
-> The Carousel used for the hero image at the top of the mobile page and for item scrolling on the T-shirts page
-> Sign-up and contact forms, as well as the e-mail subscription bar
-> Buttons
+
+<ul>
+<li>The Carousel used for the hero image at the top of the mobile page and for item scrolling on the T-shirts page</li>
+<li>Sign-up and contact forms, as well as the e-mail subscription bar</li>
+<li>Buttons</li>
+</ul>
 
 All icons used on the site were taken from <a href="https://fontawesome.com/start/" target="_blank">Font Awesome</a>.
+
+The 'return to top' button feature at the bottom right of the page uses code based on recommendations from 
+<a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>.
 
 ## UX
 
@@ -39,19 +47,30 @@ All icons used on the site were taken from <a href="https://fontawesome.com/star
 
 ## Issues
 
+Certain issues were encountered in the building phase of the project. These are:
+<ul>
+<li>Dropdown menu initially showing as row on mobile device before converting to col
+</li>
+<li>Items in the carousel on the Shop page initially appearing too low when coming onto the screen on a mobile device before moving up
+</li>
+<li>Carousel items on the Shop page not scrollable on a desktop device</li>
+</ul>
+
+We discovered the first issue arose because the .navbar-nav class had a style rule of flex direction: row. Removing this rule resolved the issue.
+ 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
 `python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: *Open Browser*.
+Another blue button should appear to click: _Open Browser_.
 
 To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: *Open Browser*.
+Another blue button should appear to click: _Open Browser_.
 
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
@@ -73,6 +92,6 @@ Some images from <a href="https://google.com/images" target="_blank">Google Imag
 
 Other images are logos, designs and mockups from my t-shirts website, <a href="https://lb17tees.com" target="_blank">LB17 Tees</a>.
 
---------
+---
 
 Happy coding!

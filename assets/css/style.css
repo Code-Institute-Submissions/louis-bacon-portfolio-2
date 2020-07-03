@@ -431,9 +431,9 @@ a:hover {
     margin-top: 0.5rem;
 }
 
-.navbar-nav {
+/*---.navbar-nav {
     flex-direction: row;
-}
+}--*/
 
 .collapse .navbar-nav {
     display: none;
