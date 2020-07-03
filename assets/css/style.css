@@ -179,7 +179,7 @@ a:hover {
     font-weight: 600;
 }
 
-.gallery2-container {
+.gallery-container {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -503,7 +503,7 @@ a:hover {
 
 /*--- top gallery ---*/
 
-.gallery-container {
+.hero-image-container {
     margin: 0.8rem 0 0 0;
     /*---min-height: 240px;---*/
 }
