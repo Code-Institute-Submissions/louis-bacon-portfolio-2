@@ -889,12 +889,14 @@ footer {
 
 /*--- media queries ---*/
 
-@media screen and (min-width:415px) {
+@media screen and (min-width: 576px) {
     .navbar {
         padding-bottom: 0;
         background-color: #000000;
     }
+}
 
+@media screen and (min-width:415px) {
     .subscribe {
         font-size: 1.3rem;
         margin-top: 0;
