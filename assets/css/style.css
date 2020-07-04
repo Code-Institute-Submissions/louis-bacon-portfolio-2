@@ -70,10 +70,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.about-me-main {
-    padding: 15px;
-}
-
 .about-me {
     font-weight: 500;
     padding-bottom: 10px;
@@ -84,12 +80,7 @@ a:hover {
 }
 
 .quotes-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.quotes {
-    padding: 15px;
+    padding: 15px 25px;
 }
 
 .nice-things {
@@ -97,9 +88,8 @@ a:hover {
     padding-bottom: 10px;
 }
 
-.quotes-wrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.quotes {
+    padding: 15px;
     margin-top: 1.2rem;
 }
 
@@ -501,22 +491,33 @@ a:hover {
     margin-top: 0.8rem;
 } ---*/
 
-/*--- top gallery ---*/
+/*--- hero image ---*/
 
 .hero-image-container {
     margin: 0.8rem 0 0 0;
     /*---min-height: 240px;---*/
 }
 
-.gallery-image {
+.hero-image {
     padding-bottom: 15px;
     padding-top: 15px;
     text-align: center;
 }
 
-.gallery-image img {
+.hero-image img {
     height: 50%;
     width: 50%;
+}
+
+/*--- about me info ---*/
+
+.about-me-container {
+    text-align: center;
+}
+
+.about-me-main {
+    padding: 15px;
+    display: inline-block;
 }
 
 /*--- quotes ---*/
@@ -526,8 +527,7 @@ a:hover {
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     background-color: #fff;
-    border-radius: 50%;
-    border: 10px solid #000;
+    border: 1px solid #000;
     color: #000;
     text-align: center;
     display: flex;
@@ -894,6 +894,12 @@ footer {
     .navbar {
         padding-bottom: 0;
         background-color: #000000;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-main {
+        width: 75%
     }
 }
 
