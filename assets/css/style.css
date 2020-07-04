@@ -551,8 +551,9 @@ a:hover {
     min-height: 200px;
 }
 
-.center-form form {
+.email {
     width: 100%;
+    text-align: center;
 }
 
 .form-control {
