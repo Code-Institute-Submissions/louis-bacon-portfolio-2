@@ -111,7 +111,7 @@ a:hover {
 
 .free-daily-emails {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     padding-bottom: 15px;
     margin-bottom: 0;
@@ -119,7 +119,7 @@ a:hover {
 
 .free-daily-emails-subheading {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 200;
     padding-bottom: 15px;
 }
@@ -1100,5 +1100,25 @@ footer {
 @media screen and (min-width: 947px) {
     .price {
         font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .free-daily-emails {
+        font-size: 3.2rem;
+    }
+
+    .free-daily-emails-subheading {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .free-daily-emails {
+        font-size: 4rem;
+    }
+
+    .free-daily-emails-subheading {
+        font-size: 1.8rem;
     }
 }
