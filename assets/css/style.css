@@ -1090,3 +1090,15 @@ footer {
         font-size: 26px;
     }
 }
+
+@media screen and (min-width: 918px) {
+    .shop-item {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 947px) {
+    .price {
+        font-weight: 600;
+    }
+}
