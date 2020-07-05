@@ -170,8 +170,7 @@ a:hover {
 }
 
 .gallery-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 25px;
 }
 
 .store-container {
@@ -616,11 +615,6 @@ a:hover {
 /*--- images gallery ---*/
 
 .images-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.gallery-first-row {
     padding: 15px;
 }
 
@@ -944,8 +938,6 @@ footer {
 @media screen and (min-width: 415px) {
     .img-item {
         display: inline;
-        padding-left: 0px;
-        padding-right: 0px;
     }
 }
 
