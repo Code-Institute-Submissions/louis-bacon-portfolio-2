@@ -66,8 +66,8 @@
               class="dropdown-menu dropright"
               aria-labelledby="navbarDropdown"
             >
-                            <a class="dropdown-item" href="shop.html">All Items</a>
-<a class="dropdown-item" href="merch.html">Merchandise</a>
+              <a class="dropdown-item" href="shop.html">All Items</a>
+              <a class="dropdown-item" href="merch.html">Merchandise</a>
               <a class="dropdown-item" href="tutoring.html">Tutoring</a>
               <a class="dropdown-item" href="fitness.html">Fitness</a>
               <a class="dropdown-item" href="web-services.html">Web Services</a>
@@ -110,11 +110,13 @@
                   <a href="shop.html">Shop</a>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="shop.html">All Items</a>
-<a class="dropdown-item" href="merch.html">Merchandise</a>
-            <a class="dropdown-item" href="tutoring.html">Tutoring</a>
-            <a class="dropdown-item" href="fitness.html">Fitness</a>
-            <a class="dropdown-item" href="web-services.html">Web Services</a>
+                  <a class="dropdown-item" href="shop.html">All Items</a>
+                  <a class="dropdown-item" href="merch.html">Merchandise</a>
+                  <a class="dropdown-item" href="tutoring.html">Tutoring</a>
+                  <a class="dropdown-item" href="fitness.html">Fitness</a>
+                  <a class="dropdown-item" href="web-services.html"
+                    >Web Services</a
+                  >
                 </div>
               </div>
             </li>
@@ -143,19 +145,22 @@
     </div>
 
     <div class="container-fluid hero-image-container">
-    <!-- hero image-->
-        <div class="hero-image">
-            <img src="./assets/images/lb17-shopify-header.png" alt="LB17 Brand Logo">
-        </div>
+      <!-- hero image-->
+      <div class="hero-image">
+        <img
+          src="./assets/images/lb17-shopify-header.png"
+          alt="LB17 Brand Logo"
+        />
+      </div>
     </div>
 
     <div class="container-fluid about-me-container">
-        <!-- info about me-->
-        <div class="row">
-          <div class="col">
-            <h1 class="name uppercase">Louis Bacon</h1>
-            <h2 class="title uppercase">
-             <a href="merch.html" class="headline-link">Clothing brand</a>
+      <!-- info about me-->
+      <div class="row">
+        <div class="col">
+          <h1 class="name uppercase">Louis Bacon</h1>
+          <h2 class="title uppercase">
+            <a href="merch.html" class="headline-link">Clothing brand</a>
             <span class="d-none d-sm-inline">&#124;</span>
             <br class="d-block d-sm-none /" />
             <a href="tutoring.html" class="headline-link">Tutor</a>
@@ -165,9 +170,9 @@
             <span class="d-none d-sm-inline">&#124;</span>
             <br class="d-block d-sm-none" />
             <a href="web-services.html" class="headline-link">Web Developer</a>
-            </h2>
-          </div>
+          </h2>
         </div>
+      </div>
     </div>
     <div class="divider">
       <hr class="block-divider block-divider-short" />
@@ -175,17 +180,18 @@
 
     <div class="store-container">
       <div class="container-fluid tutoring-container">
-          <h2 class="tutoring-heading">Tutoring Services</h2>
-          <h6 class="tutoring-subheading">
-            Fill out the form below to book your lesson!
-          </h6>
-          <div class="lesson-signup-form">
+        <h2 class="tutoring-heading">Tutoring Services</h2>
+        <h6 class="tutoring-subheading">
+          Fill out the form below to book your lesson!
+        </h6>
+        <div class="row contact-form">
+          <div class="col lesson-signup-form">
             <form method="post" class="signup">
               <div class="form-group row">
-                <label for="fname" class="col-sm-2 col-form-label"
+                <label for="fname" class="col-sm-3 col-form-label"
                   >First Name:</label
                 >
-                <div class="col-sm-10">
+                <div class="col-sm">
                   <input
                     type="text"
                     class="form-control"
@@ -194,10 +200,10 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="lname" class="col-sm-2 col-form-label"
+                <label for="lname" class="col-sm-3 col-form-label"
                   >Last Name:</label
                 >
-                <div class="col-sm-10">
+                <div class="col-sm">
                   <input
                     type="text"
                     class="form-control"
@@ -206,10 +212,10 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="email" class="col-sm-2 col-form-label"
+                <label for="email" class="col-sm-3 col-form-label"
                   >E-mail address:</label
                 >
-                <div class="col-sm-10">
+                <div class="col-sm">
                   <input
                     type="text"
                     class="form-control"
@@ -221,12 +227,12 @@
               <div class="form-group row">
                 <label
                   for="birthday-dd birthday-mm birthday-yyyy"
-                  class="col-sm-2 col-form-label"
+                  class="col-sm-3 col-form-label"
                   >Date of birth*:</label
                 >
 
-                <div class="dob-dropdown">
-                  <select id="birthday-dd" class="dob-select col-sm-2">
+                <div class="dob-dropdown col-sm">
+                  <select id="birthday-dd" class="dob-select">
                     <option selected>DD</option>
                     <option>01</option>
                     <option>02</option>
@@ -235,7 +241,7 @@
                     <option>05</option>
                     <option>...</option>
                   </select>
-                  <select id="birthday-mm" class="dob-select col-sm-2">
+                  <select id="birthday-mm" class="dob-select">
                     <option selected>MM</option>
                     <option>Jan</option>
                     <option>Feb</option>
@@ -243,7 +249,7 @@
                     <option>Apr</option>
                     <option>May</option>
                   </select>
-                  <select id="birthday-yyyy" class="dob-select col-sm-3">
+                  <select id="birthday-yyyy" class="dob-select">
                     <option selected>YYYY</option>
                     <option>2020</option>
                     <option>2019</option>
@@ -251,15 +257,18 @@
                     <option>2017</option>
                     <option>2016</option>
                   </select>
+                  <small class="form-text text-muted dob-small"
+                    >*if a parent seeking lessons for your child, please enter
+                    your child’s DOB</small
+                  >
                 </div>
-                <small class="form-text text-muted dob-small"
-                  >*if a parent seeking lessons for your child, please enter
-                  your child’s DOB</small
-                >
               </div>
+
               <div class="form-group row">
-                <label for="subject" class="col-sm-4 col-form-label"
-                  >I / my child would like lessons in:</label
+                <label for="subject" class="col-sm-3 col-form-label"
+                  ><span class="d-none d-md-inline"
+                    >I / my child would like lessons in</span
+                  ><span class="d-inline d-md-none">Subject</span>:</label
                 >
                 <div class="col-sm tutoring-options">
                   <input
@@ -273,10 +282,11 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="competency" class="col-sm col-form-label"
-                  >Competency level:</label
+                <label for="competency" class="col-sm-3 col-form-label"
+                  ><span class="d-none d-sm-inline">Competency level</span
+                  ><span class="d-inline d-sm-none">Level</span>:</label
                 >
-                <div class="col-sm-10 tutoring-options">
+                <div class="col-sm tutoring-options">
                   <input
                     type="radio"
                     id="beginner"
@@ -309,10 +319,10 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="competency" class="col-sm col-form-label"
+                <label for="competency" class="col-sm-3 col-form-label"
                   >Lesson length:</label
                 >
-                <div class="col-sm-10 tutoring-options">
+                <div class="col-sm tutoring-options">
                   <input
                     type="radio"
                     id="1hr"
@@ -342,11 +352,17 @@
                   <input type="checkbox" />
                 </div>
               </div>
-              <button type="submit" class="btn btn-success book-now">
-                Book Now!
-              </button>
+              <div class="row submit-button">
+                <div class="d-none d-md-inline col-sm-3"></div>
+                <div class="col-sm">
+                  <button type="submit" class="btn btn-success submit-request">
+                    Book Now!
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
+        </div>
       </div>
     </div>
 

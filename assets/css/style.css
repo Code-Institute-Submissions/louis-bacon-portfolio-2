@@ -208,8 +208,9 @@ a:hover {
 }
 
 .tutoring-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 25px;
+    text-align: center;
+    width: 70%;
 }
 
 .tutoring-heading {
@@ -223,14 +224,14 @@ a:hover {
     letter-spacing: 0.1em;
 }
 
-.signup {
+/*---.signup {
     padding-top: 15px;
     padding-right: 30px;
-}
+}---*/
 
-.dob-dropdown {
+/*---.dob-dropdown {
     margin-left: 10px;
-}
+}---*/
 
 .dob-small {
     padding-left: 15px;
@@ -252,8 +253,8 @@ a:hover {
 }
 
 .cv-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 25px;
+    text-align: center;
 }
 
 .work-history-heading {
@@ -689,9 +690,7 @@ a:hover {
 
 .dob-select {
     background-color: silver;
-    margin: 0 5px;
-    padding: 0;
-    height: 100%;
+    padding: 5px;
 }
 
 /*--- cv ---*/
@@ -714,11 +713,13 @@ a:hover {
 .experience-container,
 .education-container {
     line-height: 1.6;
+    text-align: left;
 }
 
 .cv-main-heading {
-    text-align: center;
+    text-align: left;
     font-size: 2.4em;
+    padding-bottom: 15px;
 }
 
 /*--- contact ---*/
@@ -955,10 +956,6 @@ footer {
     .coming-soon-banner {
         width: 70%;
         margin-left: 15%;
-    }
-
-    .dob-dropdown {
-        width: 40%;
     }
 }
 
