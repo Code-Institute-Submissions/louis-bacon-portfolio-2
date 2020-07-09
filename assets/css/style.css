@@ -243,9 +243,9 @@ a:hover {
     padding-bottom: 7px;
 }
 
-.book-now {
+/*---.book-now {
     font-weight: 500;
-}
+}---*/
 
 .competency-level-option,
 .lesson-length-option {
@@ -319,22 +319,19 @@ a:hover {
 }
 
 .books-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 25px;
+    text-align: center;
 }
 
 .coaching-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 25px;
+    text-align: center;
+    width: 70%;
 }
 
 .books-heading {
     padding-bottom: 15px;
     margin-bottom: 0;
-}
-
-.bookstore-container {
-    text-align: center;
 }
 
 .coaching-heading {
@@ -346,10 +343,6 @@ a:hover {
     font-size: 1.2rem;
     font-weight: 400;
     padding-bottom: 15px;
-}
-
-.coaching-form {
-    padding: 0px 10px;
 }
 
 .details-box {
