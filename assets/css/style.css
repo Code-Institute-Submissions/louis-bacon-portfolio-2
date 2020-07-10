@@ -1004,6 +1004,12 @@ footer {
     }
 }
 
+@media screen and (min-width: 576px) {
+    .form-control {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .nav-item {
         padding: 0 2em;
