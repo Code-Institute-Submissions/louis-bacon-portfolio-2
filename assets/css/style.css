@@ -766,6 +766,11 @@ a:hover {
 
 /*--- web services page ---*/
 
+.web-services-container {
+    padding: 15px 25px;
+    text-align: center;
+}
+
 .under-construction-left {
     text-align: left;
     width: 20%
@@ -1012,11 +1017,6 @@ footer {
     .subscribe {
         font-size: 1.3rem;
         margin-top: 0;
-        width: auto;
-    }
-
-    .under-construction-left,
-    .under-construction-right {
         width: auto;
     }
 }
