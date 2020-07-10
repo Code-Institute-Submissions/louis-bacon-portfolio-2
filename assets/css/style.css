@@ -361,7 +361,7 @@ a:hover {
 /*--- header ---*/
 
 .menu-container {
-    background-color: #000000;
+    /*--background-color: #000000;--*/
     padding-bottom: 5px;
     /*---margin-bottom: 0.8rem;---*/
 }
@@ -369,7 +369,7 @@ a:hover {
 .navbar {
     background-color: #000000;
     padding-bottom: 5px;
-}
+} 
 
 /*--- .navbar button {
     border-color: #ffffff;
@@ -426,6 +426,7 @@ a:hover {
 
 .nav-item {
     padding: 0 1em;
+    /*---display: block;---*/
     min-width: 20%;
 }
 
@@ -556,6 +557,7 @@ a:hover {
     padding-left: 2px;
     padding-right: 2px;
     height: 3em;
+    width: 100%
 }
 
 .subscribe {
@@ -898,12 +900,12 @@ footer {
 
 /*--- media queries ---*/
 
-@media screen and (min-width: 576px) {
+/*--- @media screen and (min-width: 576px) {
     .navbar {
         padding-bottom: 0;
         background-color: #000000;
     }
-}
+} ---*/
 
 @media screen and (min-width: 768px) {
     .about-me-main {
@@ -1002,7 +1004,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .nav-item {
         padding: 0 2em;
     }
@@ -1011,6 +1013,7 @@ footer {
         padding-left: 2px;
         padding-right: 2px;
         height: 3em;
+        width: 70%;
     }
 
     .subscribe {
