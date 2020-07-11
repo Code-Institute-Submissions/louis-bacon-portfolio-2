@@ -1,9 +1,7 @@
 /*--- colours ---*/
 
 body {
-    background-image: url("../images/site-background.png");
-    /*--- background-color: #ddecec; ---*/
-    /*-- decide between one of the two --*/
+    background-image: url("./images/site-background.png");
 }
 
 a {
@@ -188,10 +186,6 @@ a:hover {
     padding: 10px 5px;
 }
 
-/*---.item-container {
-    padding-left: 5px;
-}---*/
-
 .item-name {
     font-size: 14px;
 }
@@ -222,15 +216,6 @@ a:hover {
     letter-spacing: 0.1em;
 }
 
-/*---.signup {
-    padding-top: 15px;
-    padding-right: 30px;
-}---*/
-
-/*---.dob-dropdown {
-    margin-left: 10px;
-}---*/
-
 .dob-small {
     padding-left: 15px;
     padding-top: 5px;
@@ -240,10 +225,6 @@ a:hover {
     padding-top: 7px;
     padding-bottom: 7px;
 }
-
-/*---.book-now {
-    font-weight: 500;
-}---*/
 
 .competency-level-option,
 .lesson-length-option {
@@ -292,11 +273,6 @@ a:hover {
     padding-left: 2px;
     padding-right: 5px;
 }
-
-/*--- .cv-main-heading-mobile {
-    text-align: left;
-    padding-left: 5px;
-}--*/
 
 .contact-us-heading {
     padding-bottom: 15px;
@@ -362,23 +338,13 @@ a:hover {
 /*--- header ---*/
 
 .menu-container {
-    /*--background-color: #000000;--*/
     padding-bottom: 5px;
-    /*---margin-bottom: 0.8rem;---*/
 }
 
 .navbar {
     background-color: #000000;
     padding-bottom: 5px;
 } 
-
-/*--- .navbar button {
-    border-color: #ffffff;
-}
-
-.navbar button i {
-    color: #ffffff;
-} ---*/
 
 .navbar-toggler {
     border: 2px solid #fff;
@@ -395,27 +361,9 @@ a:hover {
     box-shadow: none;
 }
 
-.mobile-cart {
-    display: inline-block;
-    text-align: right;
-    width: 80%;
-}
-
-.mobile-cart a {
-    color: #ffffff;
-}
-
-.mobile-cart a:active {
-    color: #ffffff;
-}
-
 .navbar-collapse {
     margin-top: 0.5rem;
 }
-
-/*---.navbar-nav {
-    flex-direction: row;
-}--*/
 
 .collapse .navbar-nav {
     display: none;
@@ -427,7 +375,6 @@ a:hover {
 
 .nav-item {
     padding: 0 1em;
-    /*---display: block;---*/
     min-width: 20%;
 }
 
@@ -471,30 +418,16 @@ a:hover {
     color: #fff;
  }
 
-/*-.checkout {
-    width: 100%;
-    text-align: right;
-}-*/
-
 .navbar-checkout {
     padding: 0;
     margin: 0;
     text-align: right;
 }
 
-/*-.checkout ul li {
-    width: 100%;
-}-*/
-
-/*--- .nav-item a i {
-    margin-top: 0.8rem;
-} ---*/
-
 /*--- hero image ---*/
 
 .hero-image-container {
     margin: 0.8rem 0 0 0;
-    /*---min-height: 240px;---*/
 }
 
 .hero-image {
@@ -722,10 +655,6 @@ a:hover {
 
 /*--- contact ---*/
 
-/*---.contact {
-    width: 70%;
-} ---*/
-
 .contact-container {
     width: 70%;
     text-align: center;
@@ -828,33 +757,6 @@ footer {
     padding-top: 5px;
 }
 
-/*--- .bttt-button {
-    background-color: #fafafa;
-    text-align: right;
-    padding-right: 15px;
-    padding-bottom: 10px;
-}
-
-.back-to-top {
-    border: none;
-    background-color: red;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 10px;
-}
-
-.back-to-top-link {
-    color: #fff;
-}
-
-.back-to-top-link:hover {
-    color: #fff;
-    text-decoration: none; 
-} ---*/
-
-/*-- taken from W3 Schools --*/
-
 .info-media-wrapper {
     margin-bottom: 0;
 }
@@ -900,13 +802,6 @@ footer {
 
 /*--- media queries ---*/
 
-/*--- @media screen and (min-width: 576px) {
-    .navbar {
-        padding-bottom: 0;
-        background-color: #000000;
-    }
-} ---*/
-
 @media screen and (min-width: 768px) {
     .about-me-main {
         width: 75%
@@ -946,7 +841,6 @@ footer {
 @media screen and (max-width: 768px) {
     .quote-item {
         padding: 0;
-        /*---margin-top: 0.8rem;---*/
         margin-bottom: 0.8rem;
     }
 }
@@ -968,12 +862,6 @@ footer {
     }
 }
 
-/*---@media screen and (max-width: 415px) {
-    .contact {
-        width: 100%;
-    }
-} ---*/
-
 @media screen and (max-width: 415px) {
     .carousel-control-prev {
         left: 0;
@@ -986,7 +874,7 @@ footer {
 
 @media screen and (max-width: 415px) {
     .returntotop-container {
-        .padding-top: 15px;
+        padding-top: 15px;
     }
 }
 
