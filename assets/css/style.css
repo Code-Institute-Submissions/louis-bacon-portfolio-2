@@ -253,6 +253,7 @@ a:hover {
 .cv-container {
     padding: 15px 25px;
     text-align: center;
+    width: 80%;
 }
 
 .work-history-heading {
@@ -292,10 +293,10 @@ a:hover {
     padding-right: 5px;
 }
 
-.cv-main-heading-mobile {
+/*--- .cv-main-heading-mobile {
     text-align: left;
     padding-left: 5px;
-}
+}--*/
 
 .contact-us-heading {
     padding-bottom: 15px;
@@ -707,16 +708,16 @@ a:hover {
     float: right;
 }
 
-.experience-container,
-.education-container {
+.experience-timeline,
+.education-timeline {
     line-height: 1.6;
     text-align: left;
 }
 
 .cv-main-heading {
-    text-align: left;
+    text-align: center;
     font-size: 2.4em;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 /*--- contact ---*/
@@ -964,13 +965,6 @@ footer {
         background-color: silver;
         margin: 0 5px;
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 415px) {
-    .cv-main-heading {
-        text-align: left;
-        font-size: 2.4em;
     }
 }
 
