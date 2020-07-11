@@ -776,7 +776,7 @@ a:hover {
 }
 
 .under-construction-left {
-    text-align: left;
+    text-align: center;
     width: 20%
 }
 
@@ -785,11 +785,7 @@ a:hover {
     width: 20%
 }
 
-.under-construction {
-    height: 10rem;
-}
-
-.announcement-container {
+.announcement {
     padding: 0;
 }
 
@@ -807,7 +803,7 @@ a:hover {
 .fsd-alert {
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
     text-align: center;
 }
 
@@ -1123,4 +1119,16 @@ footer {
     .submit-request {
         width: 30%;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .under-construction-left {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .under-construction {
+        height: 10rem;
+    } 
 }
