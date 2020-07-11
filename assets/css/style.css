@@ -557,7 +557,10 @@ a:hover {
     padding-left: 2px;
     padding-right: 2px;
     height: 3em;
-    width: 100%
+}
+
+.email-input {
+    width: 70%;
 }
 
 .subscribe {
@@ -1004,12 +1007,6 @@ footer {
     }
 }
 
-@media screen and (min-width: 576px) {
-    .form-control {
-        width: 100%;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .nav-item {
         padding: 0 2em;
@@ -1019,6 +1016,9 @@ footer {
         padding-left: 2px;
         padding-right: 2px;
         height: 3em;
+    }
+
+    .email-input {
         width: 70%;
     }
 
