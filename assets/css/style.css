@@ -560,7 +560,7 @@ a:hover {
 }
 
 .email-input {
-    width: 70%;
+    width: 100%;
 }
 
 .subscribe {
@@ -1007,6 +1007,12 @@ footer {
     }
 }
 
+@media screen and (min-width: 576px) {
+    .email-input {
+        width: 100%!important;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .nav-item {
         padding: 0 2em;
@@ -1019,7 +1025,7 @@ footer {
     }
 
     .email-input {
-        width: 70%;
+        width: 70%!important;
     }
 
     .subscribe {
