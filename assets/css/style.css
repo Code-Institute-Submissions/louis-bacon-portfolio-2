@@ -1,7 +1,7 @@
 /*--- colours ---*/
 
 body {
-    background-image: url("./images/site-background.png");
+    background-image: url("../images/site-background.png");
 }
 
 a {
@@ -411,6 +411,12 @@ a:hover {
 
  .dropdown-item {
      color: #fff;
+ }
+
+ .dropdown-item.active, .dropdown-item:active {
+     color: #000;
+     text-decoration: none;
+     background-color: #fff;
  }
 
  .dropdown-menu a:hover {
