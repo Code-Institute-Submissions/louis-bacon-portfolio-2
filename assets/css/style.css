@@ -30,6 +30,68 @@ a, a:hover {
     color: #fff;
 }
 
+.navbar-collapse {
+    margin-top: 0.5rem;
+}
+
+.collapse .navbar-nav {
+    display: none;
+}
+
+.show .navbar-nav {
+    display: block;
+}
+
+.nav-item {
+    padding: 0 1em;
+    min-width: 20%;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+ .btn-secondary:focus,
+ .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0;
+ }
+
+.dropdown-menu {
+    background-color: #000000;
+    margin-top: 0.8rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown-item  {
+     color: #fff;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+     color: #000;
+     text-decoration: none;
+     background-color: #fff;
+}
+
+.menu-container {
+    padding-bottom: 5px;
+}
+
+
 /*--- footer ---*/
 
 /*--- home page ---*/
@@ -366,13 +428,6 @@ a, a:hover {
 
 /*--- header ---*/
 
-.menu-container {
-    padding-bottom: 5px;
-}
-
-
-
-
 .btn-secondary:focus {
     color: #fff;
     background-color: #000000;
@@ -380,35 +435,8 @@ a, a:hover {
     box-shadow: none;
 }
 
-.navbar-collapse {
-    margin-top: 0.5rem;
-}
 
-.collapse .navbar-nav {
-    display: none;
-}
 
-.show .navbar-nav {
-    display: block;
-}
-
-.nav-item {
-    padding: 0 1em;
-    min-width: 20%;
-}
-
-.nav-link {
-    color: #ffffff;
-}
-
-.nav-link:hover {
-    color: #ffffff;
-}
-
-.dropdown-menu {
-    background-color: #000000;
-    margin-top: 0.8rem;
-}
 
 .btn-secondary {
     background-color :#000000;
@@ -417,31 +445,9 @@ a, a:hover {
     padding-right: 2px;
 }
 
- .show>.btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: #000000;
-    border-color: #000000;
- }
 
- .btn-secondary:focus,
- .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0;
- }
 
- .dropdown-item {
-     color: #fff;
- }
-
- .dropdown-item.active, .dropdown-item:active {
-     color: #000;
-     text-decoration: none;
-     background-color: #fff;
- }
-
- .dropdown-menu a:hover {
-    background-color: #000;
-    color: #fff;
- }
+ 
 
 .navbar-checkout {
     padding: 0;
