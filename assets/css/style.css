@@ -783,8 +783,8 @@ footer {
 }
 
 .list-inline-item {
-    padding-right: 10px;
-    font-size: 1.2em;
+    padding-right: 0px;
+    font-size: 1em;
     color: #fff;
 }
 
@@ -878,10 +878,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (min-width: 576px) {
     .list-inline-item {
-        padding-right: 0;
-        font-size: 1em;
+        padding-right: 10px;
+        font-size: 1.2em;
     }
 }
 
