@@ -331,7 +331,117 @@ a, a:hover {
 
 /*--- SHOP ---*/
 
+.store-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*--- t-shirts ---*/
+
+.tshirts-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+/*--- tutoring ---*/
+
+.tutoring-container {
+    padding: 15px 25px;
+    text-align: center;
+    width: 70%;
+}
+
+.tutoring-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.tutoring-subheading {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.contact-form {
+    padding: 25px 0;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-control {
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 3em;
+}
+
+.dob-select {
+    background-color: silver;
+    padding: 5px;
+}
+
+.dob-small {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.tutoring-options {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.competency-level-option,
+.lesson-length-option {
+    padding-right: 7px;
+}
+
+.submit-button {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.submit-request {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/*--- fitness ---*/
+
+.fitness-container {
+    padding: 15px 25px;
+    text-align: center;
+    width: 70%;
+}
+
+.books-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+/*--- web services ---*/
+
+.web-services-container {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.web-services-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.fsd-alert {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
 /*--- MERCH ---*/
+
+
 
 /*--- TUTORING ---*/
 
@@ -406,52 +516,20 @@ a, a:hover {
 
 
 
-.store-container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.tshirts-heading {
-    padding-bottom: 15px;
-    margin-bottom: 0;
-}
+
 
 .price-container {
     padding-right: 10px;
 }
 
 
-.tutoring-container {
-    padding: 15px 25px;
-    text-align: center;
-    width: 70%;
-}
 
-.tutoring-heading {
-    padding-bottom: 15px;
-    margin-bottom: 0;
-}
 
-.tutoring-subheading {
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-}
 
-.dob-small {
-    padding-left: 15px;
-    padding-top: 5px;
-}
 
-.tutoring-options {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
 
-.competency-level-option,
-.lesson-length-option {
-    padding-right: 7px;
-}
+
 
 .cv-container {
     padding: 15px 25px;
@@ -507,9 +585,7 @@ a, a:hover {
     font-size: 1.2rem;
 }
 
-.contact-form {
-    padding: 25px 0;
-}
+
 
 .add-to-cart {
     margin: 0.8rem 0;
@@ -520,16 +596,7 @@ a, a:hover {
     text-align: center;
 }
 
-.coaching-container {
-    padding: 15px 25px;
-    text-align: center;
-    width: 70%;
-}
 
-.books-heading {
-    padding-bottom: 15px;
-    margin-bottom: 0;
-}
 
 .coaching-heading {
     padding-bottom: 15px;
@@ -550,11 +617,6 @@ a, a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-bottom: 0.8rem;
-}
-
-.web-services-heading {
-    padding-bottom: 15px;
-    margin-bottom: 0;
 }
 
 /*--- header ---*/
@@ -599,11 +661,7 @@ a, a:hover {
 
 
 
-.form-control {
-    padding-left: 2px;
-    padding-right: 2px;
-    height: 3em;
-}
+
 
 
 
@@ -698,11 +756,6 @@ a, a:hover {
 
 /*--- tutoring ---*/
 
-.dob-select {
-    background-color: silver;
-    padding: 5px;
-}
-
 /*--- cv ---*/
 
 .mobile-work-history {
@@ -740,20 +793,9 @@ a, a:hover {
     padding: 15px 25px;
 }
 
-.form-group {
-    margin-bottom: 1rem;
-    text-align: left;
-}
 
-.submit-button {
-    text-align: center;
-    padding-top: 15px;
-}
 
-.submit-request {
-    width: 100%;
-    font-size: 1.2rem;
-}
+
 
 /*--- merch page ---*/
 
@@ -777,10 +819,7 @@ a, a:hover {
 
 /*--- web services page ---*/
 
-.web-services-container {
-    padding: 15px 25px;
-    text-align: center;
-}
+
 
 .under-construction-left {
     text-align: center;
@@ -807,12 +846,7 @@ a, a:hover {
     text-align: center;
 }
 
-.fsd-alert {
-    font-size: 18px;
-    font-weight: 300;
-    margin: 1.5rem 0;
-    text-align: center;
-}
+
 
 /*--- return to top button ---*/
 
