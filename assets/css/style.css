@@ -77,6 +77,26 @@ a, a:hover {
     box-shadow: 0 0 0 0;
 }
 
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background-color :#000000;
+    border-color: #000000;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+    background-color: #000000;
+    border-color: #000000;
+}
+
 .dropdown-menu {
     background-color: #000000;
     margin-top: 0.8rem;
@@ -441,162 +461,17 @@ a, a:hover {
 
 /*--- MERCH ---*/
 
+.tshirts-subheading {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5px 15% 15px;
+}
 
-
-/*--- TUTORING ---*/
+.brand-site-link {
+    font-weight: 500;
+}
 
 /*--- FITNESS ---*/
-
-/*--- WEB SERVICES ---*/
-
-/*--- CV ---*/
-
-/*--- CONTACT ---*/
-
-/*--- footer ---*/
-
-/*--- media queries ---*/
-
-.btn-secondary:hover,
-.btn-secondary:active {
-    background-color: #000000;
-    border-color: #000000;
-}
-
-.cv-download button a {
-    color: #ffffff;
-}
-
-.btn-link {
-    color: #000000;
-}
-
-.btn-link:hover {
-    color: #000000;
-    text-decoration: none;
-}
-
-/*--- padding/margin/text ---*/
-
-
-
-
-
-
-
-.merch-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-.store-gallery {
-    padding: 15px;
-}
-
-.featured-merch {
-    padding-top: 15px;
-}
-
-.store-item-name {
-    padding-top: 0;
-    padding-bottom: 15px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.store-item-price {
-    padding-top: 0;
-    padding-bottom: 15px;
-    padding-right: 25px;
-    text-align: right;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-
-
-
-
-
-.price-container {
-    padding-right: 10px;
-}
-
-
-
-
-
-
-
-
-
-.cv-container {
-    padding: 15px 25px;
-    text-align: center;
-    width: 80%;
-}
-
-.work-history-heading {
-    padding-bottom: 15px;
-    margin-bottom: 0;
-}
-
-.cv-wrapper {
-    margin-top: 1.2rem;
-}
-
-.timeline-container-exp {
-    padding-left: 15px;
-}
-
-.timeline-item {
-    padding: 0 0 10px 10px;
-}
-
-.timeline-container-edu {
-    padding-right: 15px;
-}
-
-.cv-dates {
-    font-size: 0.8rem;
-    font-weight: lighter;
-}
-
-.cv-download {
-    text-align: center;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-}
-
-.card-header {
-    padding-left: 2px;
-    padding-right: 5px;
-}
-
-.contact-us-heading {
-    padding-bottom: 15px;
-    margin-bottom: 0;
-}
-
-.contact-us-subheading {
-    font-weight: 300;
-    padding-bottom: 15px;
-    font-size: 1.2rem;
-}
-
-
-
-.add-to-cart {
-    margin: 0.8rem 0;
-}
-
-.books-container {
-    padding: 15px 25px;
-    text-align: center;
-}
-
-
 
 .coaching-heading {
     padding-bottom: 15px;
@@ -609,168 +484,38 @@ a, a:hover {
     padding-bottom: 15px;
 }
 
-.details-box {
-    padding-bottom: 10px;
+/*--- WEB SERVICES ---*/
+
+
+.under-construction-left {
+    text-align: center;
+    width: 20%
 }
 
-.under-construction-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 0.8rem;
-}
-
-/*--- header ---*/
-
-.btn-secondary:focus {
-    color: #fff;
-    background-color: #000000;
-    border-color: #000000;
-    box-shadow: none;
-}
-
-
-
-
-.btn-secondary {
-    background-color :#000000;
-    border-color: #000000;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-
-
- 
-
-.navbar-checkout {
+.announcement {
     padding: 0;
-    margin: 0;
+}
+
+.coming-soon {
+    width: 100%;
+}
+
+.under-construction-right {
     text-align: right;
+    width: 20%
 }
 
-/*--- hero image ---*/
+/*--- CV ---*/
 
-
-/*--- quotes ---*/
-
-
-
-/*--- mailing list ---*/
-
-
-
-
-
-
-
-
-
-
-/*--- merch ---*/
-
-
-.mobile-store {
+.cv-container {
+    padding: 15px 25px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0.8rem;
+    width: 80%;
 }
 
-.store-item {
-    display: inline-block; 
-    width: 25%;
-    padding: 0;
-    margin: 5px;  
-}
-
-.shop-item {
-    text-align: left;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.price {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.store-gallery .store-item img {
-    width: 100%;
-}
-
-/*--- about me page ---*/
-
-/*--- images gallery ---*/
-
-/*--- shop page ---*/
-
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 1;
-}
-
-.carousel-control-prev {
-    left: -5%;
-}
-
-.carousel-control-next {
-    right: -5%;
-}
-
-.carousel-control-prev i {
-    color: red;
-    opacity: .7;
-    font-size: 3rem;
-    margin-bottom: 4rem;
-}
-
-.carousel-control-next i {
-    color: red;
-    opacity: .7;
-    font-size: 3rem;
-    margin-bottom: 4rem;
-}
-
-/*--- t-shirts ---*/
-
-.tshirts-container {
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.tshirt-items,
-.book-items {
-    padding-top: 10px;
-    width: 100%;
-    list-style: none;
-}
-
-.tshirt-item-mobile,
-.book-item-mobile {
-    min-height: 260px;
-    text-align: center;
-    float: none;
-    width: 100%;
-    padding: 10px;
-}
-
-/*--- tutoring ---*/
-
-/*--- cv ---*/
-
-.mobile-work-history {
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.mobile-cv-section {
-    background-color: transparent;
-    border: 1px transparent;
-    padding-left: 10px;
-}
-
-.cv-mobile-expand {
-    float: right;
+.work-history-heading {
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .experience-timeline,
@@ -785,7 +530,32 @@ a, a:hover {
     padding: 15px;
 }
 
-/*--- contact ---*/
+.cv-main-heading {
+    text-align: center;
+    font-size: 2.4em;
+    padding: 15px;
+}
+
+.timeline-item {
+    padding: 0 0 10px 10px;
+}
+
+.cv-dates {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.cv-download {
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.cv-download button a {
+    color: #ffffff;
+}
+
+/*--- CONTACT ---*/
 
 .contact-container {
     width: 70%;
@@ -793,63 +563,16 @@ a, a:hover {
     padding: 15px 25px;
 }
 
-
-
-
-
-/*--- merch page ---*/
-
-
-
-.btn-addtocart {
-    font-size: 1.5em;
-    letter-spacing: .05em;
-    border: none;
-    border-radius: 50%;
-    background-color: #000000;
-}
-
-/*--- fitness page ---*/
-
-.coming-soon-banner {
-    padding-left: 15px;
-    padding-right: 15px;
-    opacity: .8;
-}
-
-/*--- web services page ---*/
-
-
-
-.under-construction-left {
-    text-align: center;
-    width: 20%
-}
-
-.under-construction-right {
-    text-align: right;
-    width: 20%
-}
-
-.announcement {
-    padding: 0;
-}
-
-.coming-soon {
-    width: 100%;
-}
-
-.under-construction-mobile,
-.coming-soon-mobile {
-    padding-top: 15px;
+.contact-us-heading {
     padding-bottom: 15px;
-    text-align: center;
+    margin-bottom: 0;
 }
 
-
-
-/*--- return to top button ---*/
-
+.contact-us-subheading {
+    font-weight: 300;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+}
 
 /*--- footer ---*/
 
@@ -867,19 +590,8 @@ footer {
     width: 50%;
 }
 
-.social-media-container {
-    text-align: right;
-    padding-top: 2px;
-    width: 50%;
-}
-
 .payment-info {
     padding-left: 15px;
-    padding-top: 2px;
-}
-
-.social-media {
-    padding-right: 15px;
     padding-top: 2px;
 }
 
@@ -887,6 +599,17 @@ footer {
     padding-right: 0px;
     font-size: 1em;
     color: #fff;
+}
+
+.social-media-container {
+    text-align: right;
+    padding-top: 2px;
+    width: 50%;
+}
+
+.social-media {
+    padding-right: 15px;
+    padding-top: 2px;
 }
 
 .social-media-link {
