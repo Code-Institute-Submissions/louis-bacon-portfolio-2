@@ -14,6 +14,17 @@ a, a:hover {
     padding-right: 15px;
 }
 
+.returntotop-container {
+    padding-bottom: 10px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #444444;
+}
+
+.returntotop {
+    padding: 15px;
+}
+
 /*--- header ---*/
 
 .navbar {
@@ -55,17 +66,16 @@ a, a:hover {
     color: #ffffff;
 }
 
-
 .show>.btn-secondary.dropdown-toggle {
     color: #fff;
     background-color: #000000;
     border-color: #000000;
 }
 
- .btn-secondary:focus,
- .show>.btn-secondary.dropdown-toggle:focus {
+.btn-secondary:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0;
- }
+}
 
 .dropdown-menu {
     background-color: #000000;
@@ -91,49 +101,28 @@ a, a:hover {
     padding-bottom: 5px;
 }
 
+/*--- hero image ---*/
 
-/*--- footer ---*/
-
-/*--- home page ---*/
-
-/*--- about page ---*/
-
-/*--- shop ---*/
-
-/*--- merch ---*/
-
-/*--- tutoring ---*/
-
-/*--- fitness ---*/
-
-/*--- web services ---*/
-
-/*--- cv ---*/
-
-/*--- contact ---*/
-
-/*--- media queries ---*/
-
-.btn-secondary:hover,
-.btn-secondary:active {
-    background-color: #000000;
-    border-color: #000000;
+.hero-image-container {
+    margin: 0.8rem 0 0 0;
 }
 
-.cv-download button a {
-    color: #ffffff;
+.hero-image {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
 }
 
-.btn-link {
-    color: #000000;
+.hero-image img {
+    height: 50%;
+    width: 50%;
 }
 
-.btn-link:hover {
-    color: #000000;
-    text-decoration: none;
-}
+/*--- about me ---*/
 
-/*--- padding/margin/text ---*/
+.about-me-container {
+    text-align: center;
+}
 
 .name {
     text-align: center;
@@ -159,6 +148,17 @@ a, a:hover {
     text-decoration: underline;
 }
 
+
+.headline-link {
+    text-decoration: underline;
+}
+
+.about-me-main {
+    padding: 15px;
+    display: inline-block;
+}
+
+
 .about-me {
     font-weight: 500;
     padding-bottom: 10px;
@@ -167,6 +167,10 @@ a, a:hover {
 .about-me-link {
     text-decoration: underline;
 }
+
+/*--- HOMEPAGE ---*/
+
+/*--- quotes ---*/
 
 .quotes-container {
     padding: 15px 25px;
@@ -183,43 +187,39 @@ a, a:hover {
     margin-top: 1.2rem;
 }
 
+.quote-item {
+    padding: 5px 15px 10px 15px;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.quote-item blockquote {
+    margin: 0.8rem;
+}
+
+.quote-item blockquote i {
+    font-size: 2rem;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .quote-text {
     font-style: italic;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
 }
 
-.mailing-list-container {
-    padding: 15px 25px;
-}
-
-.mailing-list-subscribe {
-    padding: 15px;
-}
-
-.free-daily-emails {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-    padding-bottom: 15px;
-    margin-bottom: 0;
-}
-
-.free-daily-emails-subheading {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 200;
-    padding-bottom: 15px;
-}
+/*--- stuff I sell ---*/
 
 .merch-container {
     padding: 15px 25px;
     text-align: center;
-}
-
-.merch-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .stuff-i-sell {
@@ -234,6 +234,151 @@ a, a:hover {
     font-weight: 300;
     font-size: 16px;
 }
+
+.inline-shop-link {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.inline-shop-link:hover {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tshirt-item,
+.book-item {
+    width: 100%;
+    padding: 10px;
+}
+
+.merch-item {
+    display: inline-block;
+}
+
+.item-price-container {
+    padding: 10px 5px;
+}
+
+.item-name {
+    font-size: 14px;
+}
+
+.item-price {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*--- mailing list ---*/
+
+.mailing-list-container {
+    padding: 15px 25px;
+}
+
+.mailing-list-subscribe {
+    padding: 15px;
+}
+
+.free-emails {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.free-emails-subheading {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding-bottom: 15px;
+}
+
+.email-form {
+    min-height: 200px;
+}
+
+.email {
+    width: 100%;
+    text-align: center;
+}
+
+.email-input {
+    width: 100%;
+}
+
+.subscribe {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+/*--- ABOUT ---*/
+
+.gallery-container {
+    padding: 15px 25px;
+}
+
+.images-wrapper {
+    padding: 15px;
+}
+
+.img-item {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*--- SHOP ---*/
+
+/*--- MERCH ---*/
+
+/*--- TUTORING ---*/
+
+/*--- FITNESS ---*/
+
+/*--- WEB SERVICES ---*/
+
+/*--- CV ---*/
+
+/*--- CONTACT ---*/
+
+/*--- footer ---*/
+
+/*--- media queries ---*/
+
+.btn-secondary:hover,
+.btn-secondary:active {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.cv-download button a {
+    color: #ffffff;
+}
+
+.btn-link {
+    color: #000000;
+}
+
+.btn-link:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*--- padding/margin/text ---*/
+
+
+
+
+
+
+
+.merch-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 .store-gallery {
     padding: 15px;
@@ -259,9 +404,7 @@ a, a:hover {
     font-weight: 600;
 }
 
-.gallery-container {
-    padding: 15px 25px;
-}
+
 
 .store-container {
     padding-left: 15px;
@@ -273,22 +416,10 @@ a, a:hover {
     margin-bottom: 0;
 }
 
-.item-price-container {
-    padding: 10px 5px;
-}
-
-.item-name {
-    font-size: 14px;
-}
-
 .price-container {
     padding-right: 10px;
 }
 
-.item-price {
-    font-weight: 500;
-    font-size: 18px;
-}
 
 .tutoring-container {
     padding: 15px 25px;
@@ -457,66 +588,16 @@ a, a:hover {
 
 /*--- hero image ---*/
 
-.hero-image-container {
-    margin: 0.8rem 0 0 0;
-}
-
-.hero-image {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    text-align: center;
-}
-
-.hero-image img {
-    height: 50%;
-    width: 50%;
-}
-
-/*--- about me info ---*/
-
-.about-me-container {
-    text-align: center;
-}
-
-.about-me-main {
-    padding: 15px;
-    display: inline-block;
-}
 
 /*--- quotes ---*/
 
-.quote-item {
-    padding: 5px 15px 10px 15px;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
 
-.quote-item blockquote {
-    margin: 0.8rem;
-}
-
-.quote-item blockquote i {
-    font-size: 2rem;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 /*--- mailing list ---*/
 
-.email-form {
-    min-height: 200px;
-}
 
-.email {
-    width: 100%;
-    text-align: center;
-}
+
+
 
 .form-control {
     padding-left: 2px;
@@ -524,28 +605,11 @@ a, a:hover {
     height: 3em;
 }
 
-.email-input {
-    width: 100%;
-}
 
-.subscribe {
-    font-size: 1.5rem;
-    width: 100%;
-}
+
 
 /*--- merch ---*/
 
-.inline-shop-link {
-    color: #000000;
-    font-weight: 500;
-    text-decoration: underline;
-}
-
-.inline-shop-link:hover {
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .mobile-store {
     text-align: center;
@@ -579,16 +643,6 @@ a, a:hover {
 /*--- about me page ---*/
 
 /*--- images gallery ---*/
-
-.images-wrapper {
-    padding: 15px;
-}
-
-.img-item {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 /*--- shop page ---*/
 
@@ -631,12 +685,6 @@ a, a:hover {
     padding-top: 10px;
     width: 100%;
     list-style: none;
-}
-
-.tshirt-item,
-.book-item {
-    width: 100%;
-    padding: 10px;
 }
 
 .tshirt-item-mobile,
@@ -709,9 +757,7 @@ a, a:hover {
 
 /*--- merch page ---*/
 
-.merch-item {
-    display: inline-block;
-}
+
 
 .btn-addtocart {
     font-size: 1.5em;
@@ -770,16 +816,6 @@ a, a:hover {
 
 /*--- return to top button ---*/
 
-.returntotop-container {
-    padding-bottom: 10px;
-    text-align: right;
-    font-size: 0.8rem;
-    color: #444444;
-}
-
-.returntotop {
-    padding: 15px;
-}
 
 /*--- footer ---*/
 
