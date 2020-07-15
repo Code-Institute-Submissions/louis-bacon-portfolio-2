@@ -683,11 +683,13 @@ footer {
   .about-me-main {
     width: 70%;
   }
-}
 
-@media screen and (min-width: 768px) {
   .submit-request {
     width: 50%;
+  }
+
+  .under-construction-left {
+    text-align: left;
   }
 }
 
@@ -695,15 +697,7 @@ footer {
   .submit-request {
     width: 30%;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .under-construction-left {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 992px) {
   .under-construction {
     height: 10rem;
   }
