@@ -37,6 +37,10 @@ a:hover {
   border: 2px solid #fff;
 }
 
+.navbar-toggler:focus {
+    outline: none;
+}
+
 .navbar-toggler i {
   color: #fff;
 }
