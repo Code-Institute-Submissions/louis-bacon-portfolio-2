@@ -1,10 +1,144 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<img src="./assets/images/project-screenshot.png" alt="Screenshot of the top of my portfolio website" style="margin: 0;">
+
+## Louis Bacon Portfolio
 
 Hello,
 
-Welcome to my self-titled portfolio website. This is a hub for me to advertise the many products and services that I offer as a business and a person.
+Welcome to my self-titled portfolio website. 
 
-This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the <a href="https://codeinstitute.net" target="_blank">Code Institute</a>. I aim to give users an immediate insight into what I do and ensure that they can intuitively find out what I provide, what they need from me and how to get it. My varying skillsets do not necessarily fit together naturally, so a great deal of effort has gone into simplifying my offering.
+This website is a hub for me to promote the various products and services that I offer, both as a business and an individual.
+
+I own a clothing brand, provide tuition, write books and guides on fitness and will soon design websites.
+
+The user is immediately aware of this and can intuitively click through the different services to find out more about them.
+
+My website gives an insight into my business and skills, and ensures the user can quickly and painlessly obtain what they need from me.
+
+I have a varied and complex skillset, so a great deal of effort has been made to simplify this.
+
+This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the <a href="https://codeinstitute.net" target="_blank">Code Institute</a>. 
+
+## UX / design
+
+Simple layout and colour scheme. Dark text on a lighter background, contrasted by a navbar with a dark background and light text.
+
+The menu clearly sets out the different areas of the website making them easy to find.
+
+Immediately below my name are clickable links to the different services I offer, taking the user directly to the respective page.
+
+In text areas, the width is limited on larger screens so that the user does not have to read all the way across. No paragraph is more than a few lines long and there is adequate spacing between lines so that information is easily digestible to the reader.
+
+Additionally, font sizes have been carefully chosen to reflect the importance of the text. A larger font with heavier lettering immediately strikes the user so that they know where to read first and immediately understand what a page or section is about.
+
+<strong>Pages</strong>
+
+Home
+
+<ul>
+<li>
+    My brand logo at the very top of the page. This is the website's hero image.
+</li>
+<li>
+    My name followed immediately by the different services that I provide, each service being a clickable link taking the user to the respective part of the site.
+</li>
+<li>
+    General information about me and what I do, with an invitation to join my mailing list. This takes the user to the final section of the homepage where they can enter their e-mail address and click the susbcribe button to receive regular e-mails from me.
+</li>
+<li>
+    Quotes from past and present clients and associates. Each quote is presented in a separate box with a white background to distinguish it from the site background. The size of the quote icons in relation to the text makes it abundantly clear to the user that this is a quote.
+    The third quote disappears on a medium-sized screen as there is not enough screen real estate to incorporate all three in a horizontal format without making the layout look awkward. On small screen sizes and below, quotes are in a vertical layout as they appear more user-friendly in this way. The third quote re-appears on an extra-small screen.
+</li>
+<li>
+    A brief preview of my clothing business with the price of each item clearly shown. Each image is a clickable link that will take the user to the merchandise page (<a href="merch.html">merch.html</a>) where they can look at all my clothing products. It was not practical to incorporate my other services into this section where they are acquired via a sign-up form, but the user has already been made aware of their existence at the top of the site.
+</li>
+<li>
+    Another invitation to join my mailing list by inputting the user's e-mail address and a subscribe button. The input field and button fit nicely together on one line on medium and large screens, and the width of each is adjusted accordingly. This looks clunky on small and extra-small screens, so the code is adjusted to have each on a separate line at equal width, making it a seamless experience for the user. The large, bold heading also immediately catches the users attention, making them more likely to join a mailing list and become a customer.
+</li>
+</ul>
+
+About
+
+<ul>
+    <li>
+        My background
+    </li>
+    <li>
+        img gallery
+    </li>
+    <li>
+        mailing list invite
+    </li>
+</ul>
+
+Shop
+
+<ul>
+    <li>
+        Dropdown menu
+    </li>
+    <li>
+        T-shirts
+    </li>
+    <li>
+        Tutoring
+    </li>
+    <li>
+        Web services
+    </li>
+</ul>
+
+Merch
+
+<ul>
+    <li>
+        All tees, code same as Shop
+    </li>
+</ul>
+
+Tutoring
+
+<ul>
+    <li>
+        Same info as Shop
+    </li>
+</ul>
+
+Fitness
+
+<ul>
+    <li>
+        Same info as Shop
+    </li>
+    <li>
+        Coaching form
+    </li>
+</ul>
+
+Web Services
+
+<ul>
+    <li>
+        Coming soon banner, simple announcement
+    </li>
+</ul>
+
+CV
+
+<ul>
+    <li>
+        exp and edu 
+    </li>
+</ul>
+
+contact
+
+<ul>
+    <li>
+        Simple contact form
+    </li>
+</ul>
+
+<strong>User Stories</strong>
 
 ## Technologies Used
 
@@ -32,7 +166,7 @@ The following features on the site are based on <a href="https://getbootstrap.co
 
 All icons used on the site were taken from <a href="https://fontawesome.com/start/" target="_blank">Font Awesome</a>.
 
-The 'return to top' button feature at the bottom right of the page uses code based on recommendations from 
+The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
 <a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>.
 
 ## UX
@@ -48,6 +182,7 @@ The 'return to top' button feature at the bottom right of the page uses code bas
 ## Issues
 
 Certain issues were encountered in the building phase of the project. These are:
+
 <ul>
 <li>Dropdown menu initially showing as row on mobile device before converting to col
 </li>
@@ -57,7 +192,7 @@ Certain issues were encountered in the building phase of the project. These are:
 </ul>
 
 We discovered the first issue arose because the .navbar-nav class had a style rule of flex direction: row. Removing this rule resolved the issue.
- 
+
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
 `python3 -m http.server`
