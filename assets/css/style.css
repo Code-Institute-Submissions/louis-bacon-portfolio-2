@@ -174,6 +174,7 @@ a:hover {
 }
 
 .about-me-main {
+  width: 80%;
   padding: 15px;
   display: inline-block;
 }
@@ -207,9 +208,8 @@ a:hover {
 }
 
 .quote-item {
-  padding: 5px 15px 10px 15px;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+  padding: 0;
+  margin-bottom: 0.8rem;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -222,7 +222,7 @@ a:hover {
 }
 
 .quote-item blockquote i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -653,30 +653,22 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) 
-
-@media screen and (min-width: 768px) {
-  .about-me-main {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .quote-item {
-    padding: 0;
-    margin-bottom: 0.8rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .nav-item {
     padding: 0 2em;
   }
 
-  .form-control {
-    padding-left: 2px;
-    padding-right: 2px;
-    height: 3em;
+  .quote-item {
+    padding: 5px 15px 10px;
+    margin: 0 0.8rem;
+  }
+
+  .free-emails {
+    font-size: 3.5rem;
+  }
+
+  .free-emails-subheading {
+    font-size: 1.5rem;
   }
 
   .email-input {
@@ -685,26 +677,15 @@ footer {
 
   .subscribe {
     font-size: 1.3rem;
-    margin-top: 0;
     width: auto;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .quote-item blockquote i {
-    font-size: 3rem;
+  .about-me-main {
+    width: 70%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .free-emails {
-    font-size: 4rem;
-  }
-
-  .free-emails-subheading {
-    font-size: 1.8rem;
-  }
-
   .submit-request {
     width: 50%;
   }
