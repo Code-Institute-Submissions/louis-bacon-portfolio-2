@@ -88,7 +88,10 @@ Shop
         A form for the user to fill out their details when signing up for tutoring lessons. All fields are required so that the user does not submit an incomplete form, and easy to fill out. The screen width of the section is set so that the user never has to read too far across the page, as are the relative widths of the labels and input text fields. On extra-small screens, the label and input fields are on separate lines so that the user can easily locate the input field and fill in the necessary details. The width of the submit button is adjusted so as to fit the entire space on small screen sizes and below, making it easier for the user to locate. The same is true for the date of birth option - although the day, month and year fields fit on the same line on all screen sizes, on extra small devices such as the iPhone 5, where the screen is just 320px wide, they do not. Therefore line breaks have been set to appear at this width, so that the day, month, and year fields are on separate lines. This creates a more seamless user experience.
     </li>
     <li>
-        Web services
+        My two fitness books laid out side-by-side, centre-aligned. As with the t-shirts, there is one image per row on an extra small screen, and the name and price appear below the image with the same font size and weighting.
+    </li>
+    <li>
+        An alert box stating that I will offer web services in the future. The two sentences are on separate lines so that the text remains in the centre of the screen and the user does not have to read too far across. On extra-small screens, as the first sentence spans multiple lines, a line-break has been inserted between the two sentences to make the text easier to read.
     </li>
 </ul>
 
@@ -96,15 +99,17 @@ Merch
 
 <ul>
     <li>
-        All tees, code same as Shop
+        All t-shirts displayed in the same layout as the shop page using the same code
     </li>
+    <li>
+        Brief description of my t-shirt business below the title in lighter text with an invitation to visit my brand's website <a href="https://lb17tees.com" target="_blank">LB17 Tees</a>
 </ul>
 
 Tutoring
 
 <ul>
     <li>
-        Same info as Shop
+        The same form as on the shop page using the same code
     </li>
 </ul>
 
@@ -112,10 +117,10 @@ Fitness
 
 <ul>
     <li>
-        Same info as Shop
+        The same images showing the fitness books as on the shop page, using the same code
     </li>
     <li>
-        Coaching form
+        Information that I also provide coaching sessions with a contact form below for the user to easily fill out. The code and classes used, including media queries at different breakpoints, are exactly the same as that which was used for the tutoring form. The only difference is a details box at the end where the text area has the same classes as the input fields to keep consistency
     </li>
 </ul>
 
@@ -123,7 +128,10 @@ Web Services
 
 <ul>
     <li>
-        Coming soon banner, simple announcement
+        A coming soon logo with under construction emojis either side. The UC emojis are increased in height on extra-large screen sizes so that they are not dwarfed by the middle image. All images decrease at the same rate so that they remain on one line as screen size is decreased except for small screens, where the right-hand side emoji disappears and the left-hand emoji sits on top of the logo and is centred rather than aligned left. This creates a more symmetrical display that is easier on the user's eye.
+    </li>
+    <li>
+        The same alert box as on the home page, with the same code and spacing rules in place.
     </li>
 </ul>
 
@@ -131,19 +139,42 @@ CV
 
 <ul>
     <li>
-        exp and edu 
+        A Work History section title with Experience and Education in larger headings either side. This immediately informs the user of the information on the page and they can decide whether to look at my education or experience first. That these are in larger font than the work history heading does not cause any confusion to the user it is self-explanatory on a CV page that education and experience columns will be detailing my work history. 
+    </li>
+    <li>
+        My professional experience in the left-hand column, with roles and employers in bullet points and dates in small text above. This clearly differentiates the actual work from the dates to the user.
+    </li>
+    <li>
+        The education column on the right using exactly the same layout to ensure consistency
+    </li>
+    <li>
+        A button to download a PDF of my CV. The link opens in a new window when clicked, so that the user can easily return to my page without losing the CV.
     </li>
 </ul>
 
-contact
+Contact
 
 <ul>
     <li>
-        Simple contact form
+        A couple of lines briefly explaining to the user why contacting me would be necessary or desirable. There is also another invitation to subscribe to my mailing list in case they have questions about news, which will take the user back to the about me page. Initially the mailing list section was replicated below the contact form, but was removed as it did not look pleasing on the eye.
+    </li>
+    <li>
+        A simple contact form using the same layout and rules as the other contact forms. The input fields and button adjust at the same breakpoints and are subject to the same media queries.
     </li>
 </ul>
 
 <strong>User Stories</strong>
+
+## Features
+
+
+
+<strong>Features left to implement</strong>
+
+Add to cart button
+Return to top button using JavaScript
+Carousel using JavaScript to browse store items
+A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom
 
 ## Technologies Used
 
@@ -174,7 +205,6 @@ All icons used on the site were taken from <a href="https://fontawesome.com/star
 The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
 <a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>.
 
-## UX
 
 ## Styling
 
