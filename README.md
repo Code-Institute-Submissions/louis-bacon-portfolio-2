@@ -54,19 +54,22 @@ Home
 <li>
     Another invitation to join my mailing list by inputting the user's e-mail address and a subscribe button. The input field and button fit nicely together on one line on medium and large screens, and the width of each is adjusted accordingly. This looks clunky on small and extra-small screens, so the code is adjusted to have each on a separate line at equal width, making it a seamless experience for the user. The large, bold heading also immediately catches the users attention, making them more likely to join a mailing list and become a customer.
 </li>
+<li>
+    Each section is separated by a thin horizontal line, using the "divider" class. The spacing between the end of one section and the start of the following is carefully chosen: it is not so close that the text is all on top of each other and makes it a painful experience for the user to read, but not so far away that the user has to guess that more content follows this section.
+</li>
 </ul>
 
 About
 
 <ul>
     <li>
-        My background
+        More detailed information about me, my background and my story. The story mentions all the areas in which I do business, and each contains a link to its respective page that the user can intuitively navigate to.
     </li>
     <li>
-        img gallery
+        A small collection of pictures representing some of my work. On the left and right are two t-shirts designed by myself, in the middle is a picture of me at a previous football team (I talk about my experience in the game on this page). The images are not too large so as not to make the user unaware of the presence of more content below, but large enough to catch the user's eye.
     </li>
     <li>
-        mailing list invite
+        Another invitation to join my mailing list. The layout is entirely consistent with that of the homepage.
     </li>
 </ul>
 
