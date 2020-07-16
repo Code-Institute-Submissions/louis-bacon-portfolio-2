@@ -79,13 +79,13 @@ Shop
 
 <ul>
     <li>
-        Dropdown menu
+        The Shop link in the navbar has a dropdown menu button where the user can easily see different parts of the shop. The 'All Items' option shows the entirety of the options below. When the user selects the dropdown menu, the page they are on is highlighted by a white background with contrasting text.
     </li>
     <li>
-        T-shirts
+        A gallery of all the t-shirts I have designed with their name and price below the image. To keep the layout simple, there are four images per row with clear spacing between them. The item price is in slightly larger, bolder text so it is immediately clear to the user how much the item costs. On extra smalls screens, there is only one image per row and the t-shirts are set out vertically. This makes it easier for the user to navigate in this screen size.
     </li>
     <li>
-        Tutoring
+        A form for the user to fill out their details when signing up for tutoring lessons. All fields are required so that the user does not submit an incomplete form, and easy to fill out. The screen width of the section is set so that the user never has to read too far across the page, as are the relative widths of the labels and input text fields. On extra-small screens, the label and input fields are on separate lines so that the user can easily locate the input field and fill in the necessary details. The width of the submit button is adjusted so as to fit the entire space on small screen sizes and below, making it easier for the user to locate. The same is true for the date of birth option - although the day, month and year fields fit on the same line on all screen sizes, on extra small devices such as the iPhone 5, where the screen is just 320px wide, they do not. Therefore line breaks have been set to appear at this width, so that the day, month, and year fields are on separate lines. This creates a more seamless user experience.
     </li>
     <li>
         Web services
