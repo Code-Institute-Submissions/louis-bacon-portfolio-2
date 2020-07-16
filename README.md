@@ -20,9 +20,11 @@ This website constitutes my First Milestone Project for the Full Stack Developer
 
 ## UX / design
 
-Simple layout and colour scheme. Dark text on a lighter background, contrasted by a navbar with a dark background and light text.
+Simple layout and colour scheme. Dark text on a lighter background, contrasted by a navbar with a dark background and light text. The sea green footer adds some subtle and muted colour to the page without being a shock to the user's eyes.
 
 The menu clearly sets out the different areas of the website making them easy to find.
+
+The footer contains forms of payment on the left side and social media links on the right side. Both are made clear with large enough icons in white (which is very readable against the background colour) and adequate spacing. A copyright notice is placed at the bottom in the centre.
 
 Immediately below my name are clickable links to the different services I offer, taking the user directly to the respective page.
 
