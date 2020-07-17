@@ -769,38 +769,37 @@ The following frameworks/libraries were also used:
 The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. I took screenshots of each page using the Full Page Screen Capture extension.
 <br>
 <br>
+See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
+<br>
+<br>
 <img src="./assets/testing/screen-capture-homepage-galaxy-s5.png" 
-alt ="A screen capture of the home page on a Galaxy S5 using Developer Tools" 
-/>
-<ul>
-    <li>
-        <button><a href="../assets/testing/screen-capture-home-page-moto-g4.pdf" target="_blank">Home</a></button>
-    </li>
-    <li>
-        <button><a href="../assets/testing/screen-capture-about-moto-g4.pdf" target="_blank">About</a></button>
-    </li>
-    <li>
-        <button><a href="../assets/testing/screen-capture-shop-moto-g4.pdf" target="_blank">Shop (All Items)</a></button>
-    </li>
-    <li>
-        <button><a href="./assets/testing/screen-capture-merch-moto-g4.pdf" target="_blank">Merchandise</a></button>
-    </li>
-    <li>
-        <a href="./assets/testing/screen-capture-tutoring-moto-g4.pdf" target="_blank">Tutoring</a>
-    </li>
-    <li>
-        <a href="./assets/testing/screen-capture-fitness-moto-g4.pdf" target="_blank">Fitness</a>
-    </li>
-    <li>
-        <a href="./assets/testing/screen-capture-web-services-moto-g4.pdf" target="_blank">Web Services</a>
-    </li>
-    <li>
-        <a href="./assets/testing/screen-capture-cv-moto-g4.pdf" target="_blank">CV</a>
-    </li>
-    <li>
-        <a href="./assets/testing/screen-capture-contact-moto-g4.pdf" target="_blank">Contact</a>
-    </li>
-</ul>
+alt ="A screen capture of the home page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-about-galaxy-s5.png"
+alt="A screen capture of the about page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-shop-galaxy-s5.png"
+alt="A screen capture of the shop (all items) page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-merch-galaxy-s5.png"
+alt="A screen capture of the merchandise page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-tutoring-galaxy-s5.png"
+alt="A screen capture of the tutoring page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-fitness-galaxy-s5.png"
+alt="A screen capture of the fitness page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-web-services-galaxy-s5.png"
+alt="A screen capture of the web services page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-cv-galaxy-s5.png"
+alt="A screen capture of the cv page on a Galaxy S5 using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-contact-galaxy-s5.png"
+alt="A screen capture of the contact page on a Galaxy S5 using Developer Tools" />
+
+
 Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
 <br>
 <br>
