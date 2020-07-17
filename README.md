@@ -771,16 +771,16 @@ The website was tested in Brave Browser using the both Developer Tools and the V
 <br>
 <ul>
     <li>
-        <a href="../assets/testing/screen-capture-home-moto-g4.pdf" target="_blank">Home</a>
+        <button><a href="../assets/testing/screen-capture-home-page-moto-g4.pdf" target="_blank">Home</a></button>
     </li>
     <li>
-        <a href="./assets/testing/screen-capture-about-moto-g4.pdf" target="_blank">About</a>
+        <button><a href="../assets/testing/screen-capture-about-moto-g4.pdf" target="_blank">About</a></button>
     </li>
     <li>
-        <a href="./assets/testing/screen-capture-shop-moto-g4.pdf" target="_blank">Shop (All Items)</a>
+        <button><a href="../assets/testing/screen-capture-shop-moto-g4.pdf" target="_blank">Shop (All Items)</a></button>
     </li>
     <li>
-        <a href="./assets/testing/screen-capture-merch-moto-g4.pdf" target="_blank">Merchandise</a>
+        <button><a href="./assets/testing/screen-capture-merch-moto-g4.pdf" target="_blank">Merchandise</a></button>
     </li>
     <li>
         <a href="./assets/testing/screen-capture-tutoring-moto-g4.pdf" target="_blank">Tutoring</a>
