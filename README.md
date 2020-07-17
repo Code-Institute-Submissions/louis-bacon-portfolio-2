@@ -818,7 +818,7 @@ The width of the input text fields throughout the site adjusts at different scre
 All forms were tested to ensure that submission is not possible without filling out all the required fields. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
 <br>
 <br>
-<img src="./assets/testing/email-subscribe-empty-screenshot.png" 
+<img src="./assets/testing/email-empty-screenshot.png" 
 alt="A screenshot of me trying to subscribe to my mailing list without an e-mail address" 
 />
 
