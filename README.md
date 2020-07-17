@@ -859,6 +859,18 @@ alt ="A screenshot of me being prompted to select an option from two possible ch
 <br>
 All external links navigate to their intended destination and open in a new browser tab. I have added the files 'internal-links-test.mov' and 'external-links-test.mov' to the /assets/testing directory to demonstrate this.
 
+<strong>Issues</strong>
+
+The following issues were encountered during the testing phase:
+
+<ul>
+<li>Dropdown mobile menu initially opened as row before moving to a vertical layout. I discovered this happened because the .navbar-nav class had a rule of 'flex-direction: row'. Removing the style rule resolved the issue.
+</li>
+<li>The border of the hamburger menu displayed a blue ring when selected. To resolve the issue, I added a rule of 'outline: none' to the pseudo class .navbar-toggler:focus
+</li>
+<li>In the mailing list section, the input text field misaligned with the submit button at certain screen sizes, meaning they were not the same width when on different lines or the input field was too narrow when on the same line. This was due to the 'width: auto' rule in the .form-control class. After many unsuccessful attempts to fix the issue, I finally managed to resolve it by giving the element a new .email-input class and using the '!important' property to set the width at various screen sizes.</li>
+</ul>
+
 ## Deployment
 
 
@@ -871,80 +883,29 @@ A number of classes and elements such as the contact forms and buttons are based
 All icons used on the site (hamburger menu, quote symbols, payment info and social media links) were taken from <a href="https://fontawesome.com/start/" target="_blank">Font Awesome</a>.
 
 The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
-<a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>. The specific instructions can be found <a href="https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only" target="_blank">here</a>.
+<a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>. The specific instructions can be found <a href="https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only" target="_blank">here</a>. 
 
 <strong>Media</strong>
 
+Most the images are taken from my own camera roll. The hero image is my clothing brand logo and can be found on my brand <a href="https://lb17tees.com" target="_blank">website</a> along with the t-shirt designs and mockups. I have also had the fitness book covers professionally designed and these are my own images. They are free to re-use.
+<br>
+<br>
+The images on the web services page are taken from <a href="https://google.com/images" target="_blank">Google Images</a>. The coming soon image initially had a white background, and I used an <a href="https://onlinepngtools.com/create-transparent-png" target="_blank">online PNG tool</a> to convert this to a transparent background and blend in with the site.
 
 <strong>Acknowledgements</strong>
 
-The following features on the site are based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> documentation:
+I took inspiration for layout and styling from the following websites:
 
 <ul>
-<li>The Carousel used for the hero image at the top of the mobile page and for item scrolling on the T-shirts page</li>
-<li>Sign-up and contact forms, as well as the e-mail subscription bar</li>
-<li>Buttons</li>
+    <li>
+        <a href="https://www.awwwards.com/websites/portfolio/" target="_blank">Awwwards.com (examples of memorable portfolio website designs)</a>
+    <li>
+        <a href="https://www.shopify.com" target="_blank">Shopify (which also hosts my clothing website)</a>
+    </li>
+    <li>
+        <a href="https://teamzuby.com" target="_blank">Team Zuby</a>
+    </li>
+    <li>
+        <a href="https://www.jamessmithacademy.com/" target="_blank">James Smith Academy</a>
+    </li>
 </ul>
-
-All icons used on the site were taken from <a href="https://fontawesome.com/start/" target="_blank">Font Awesome</a>.
-
-The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
-<a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>.
-
-## Styling
-
-## Pages
-
-## Deployment
-
-## Issues
-
-Certain issues were encountered in the building phase of the project. These are:
-
-<ul>
-<li>Dropdown menu initially showing as row on mobile device before converting to col
-</li>
-<li>Items in the carousel on the Shop page initially appearing too low when coming onto the screen on a mobile device before moving up
-</li>
-<li>Carousel items on the Shop page not scrollable on a desktop device</li>
-</ul>
-
-We discovered the first issue arose because the .navbar-nav class had a style rule of flex direction: row. Removing this rule resolved the issue.
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-## Images
-
-Some images from <a href="https://google.com/images" target="_blank">Google Images</a>.
-
-Other images are logos, designs and mockups from my t-shirts website, <a href="https://lb17tees.com" target="_blank">LB17 Tees</a>.
-
----
-
-Happy coding!
