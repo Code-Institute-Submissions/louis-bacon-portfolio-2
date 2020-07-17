@@ -1,4 +1,4 @@
-<img src="./assets/images/project-screenshot.png" alt="Screenshot of the top of my portfolio website" style="margin: 0;">
+<img src="./assets/testing/project-screenshot.png" alt="Screenshot of the top of my portfolio website" style="margin: 0;">
 
 ## Louis Bacon Portfolio
 
@@ -766,7 +766,23 @@ The following frameworks/libraries were also used:
 
 ## Testing
 
-
+The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
+<br>
+<br>
+I used Developer Tools to test the website layout pixel by pixel as well as on all popular mobile and tablet devices, and the design was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
+<br>
+<br>
+<img src="./assets/testing/screenshot-mobile-navbar-1.png" alt="A screenshot of the main menu as it would appear on a mobile device" style="margin:0">
+<br>
+<br>
+<img src="./assets/testing/screenshot-mobile-navbar-2.png" alt="A screenshot of the main menu with the additional dropdown menu opened, as it would appear on a mobile device" style="margin:0">
+<br>
+<br>
+Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were detected.
+The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button.
+<video controls>
+    <source src="./assets/testing/screen-recording-home.mp4" type="video/mp4">
+</video>
 
 ## Credits
 
