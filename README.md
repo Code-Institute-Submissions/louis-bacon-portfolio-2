@@ -811,6 +811,12 @@ I used Developer Tools to test the website layout pixel by pixel as well as on a
 <img src="./assets/testing/screenshot-mobile-navbar-2.png" alt="A screenshot of the main menu with the additional dropdown menu opened, as it would appear on a mobile device" style="margin:0">
 <br>
 <br>
+The dropdown menu also works well on tablet and desktop devices, opening just below the main navbar with a deliberate but small amount of margin between the edges of each element. This gives a slightly more elegant feel. The dropdown hangs down over the hero image but does not obscure any text. See the screenshot below.
+<br>
+<br>
+<img src="./assets/testing/screenshot-dropdown-menu.png" alt="A screenshot of the dropdown menu as it appears on tablet and desktop devices" />
+<br>
+<br>
 Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were detected.
 The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button. This can be seen viewing the screen recording files in the ../assets/testing/ directory.
 <br>
@@ -851,9 +857,26 @@ alt ="A screenshot of me being prompted to select an option from two possible ch
 />
 <br>
 <br>
-All external links navigate to their intended destination and open in a new browser tab..
+All external links navigate to their intended destination and open in a new browser tab. I have added the files 'internal-links-test.mov' and 'external-links-test.mov' to the /assets/testing directory to demonstrate this.
+
+## Deployment
+
 
 ## Credits
+
+<strong>Content</strong>
+
+A number of classes and elements such as the contact forms and buttons are based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> documentation and design. For layout simplicity, I have followed the container > row > col formula.
+
+All icons used on the site (hamburger menu, quote symbols, payment info and social media links) were taken from <a href="https://fontawesome.com/start/" target="_blank">Font Awesome</a>.
+
+The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
+<a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>. The specific instructions can be found <a href="https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only" target="_blank">here</a>.
+
+<strong>Media</strong>
+
+
+<strong>Acknowledgements</strong>
 
 The following features on the site are based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> documentation:
 
