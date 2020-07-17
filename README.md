@@ -815,12 +815,43 @@ Using the Viewport Resizer, I clicked the animate button to test the screen at d
 The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button. This can be seen viewing the screen recording files in the ../assets/testing/ directory.
 <br>
 <br>
-All forms were tested to ensure that submission is not possible without filling out all the required fields. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
+All form elements were tested to ensure that submission is not possible without filling out all the required fields due to the 'required' attribute. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
 <br>
 <br>
-<img src="./assets/testing/email-empty-screenshot.png" 
+<img src="./assets/testing/email-empty-input-screenshot.png" 
 alt="A screenshot of me trying to subscribe to my mailing list without an e-mail address" 
 />
+
+Here are some screenshots of me attempting to submit incomplete contact forms, either with an empty input field or unselected option. The code is duplicated for each contact form on the website, so the result would be the same on any page.
+<br>
+<br>
+<img 
+src="./assets/testing/contact-form-empty-fname.png" 
+alt ="A screenshot of me being prompted to fill in the first name field" 
+/>
+<img 
+src="./assets/testing/contact-form-empty-lname.png" 
+alt ="A screenshot of me being prompted to fill in the last name field" 
+/>
+<img 
+src="./assets/testing/contact-form-empty-email.png" 
+alt ="A screenshot of me being prompted to fill in the e-mail address field" 
+/>
+<img 
+src="./assets/testing/contact-form-empty-phone.png" 
+alt ="A screenshot of me being prompted to fill in the phone number field" 
+/>
+<img 
+src="./assets/testing/contact-form-unselected-option.png" 
+alt ="A screenshot of me being prompted to select an option from three possible choices" 
+/>
+<img 
+src="./assets/testing/contact-form-unselected-option-2.png" 
+alt ="A screenshot of me being prompted to select an option from two possible choices" 
+/>
+<br>
+<br>
+All external links navigate to their intended destination and open in a new browser tab..
 
 ## Credits
 
