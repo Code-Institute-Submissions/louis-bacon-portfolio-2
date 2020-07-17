@@ -4,7 +4,7 @@
 
 Hello,
 
-Welcome to my self-titled portfolio website. 
+Welcome to my self-titled portfolio website.
 
 This website is a hub for me to promote the various products and services that I offer, both as a business and an individual.
 
@@ -16,7 +16,7 @@ My website gives an insight into my business and skills, and ensures the user ca
 
 I have a varied and complex skillset, so a great deal of effort has been made to simplify this.
 
-This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the <a href="https://codeinstitute.net" target="_blank">Code Institute</a>. 
+This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the <a href="https://codeinstitute.net" target="_blank">Code Institute</a>.
 
 ## UX / design
 
@@ -190,7 +190,87 @@ The aim of the website is to let existing and prospective clients and business p
 
 ## Features
 
+<strong>Existing features</strong>
 
+1. A return to the top button at the bottom of each page using only HTML and CSS. At the very top of each page, just after the opening body tag, I have included the following code:
+
+            ``` 
+            <a name="top"> </a>
+            ```
+
+The return to top text is wrapped in another anchor element with the code looking like this:
+
+            ```
+            <a href="#top" class="returntotop"> Return to top &#94; </a>
+            ```
+  
+The href attribute value takes the user back directly to the top of the page due to the matching name attribute of the first anchor tag. It is then styled to sit in the bottom right corner of the page using the following CSS:
+  
+            ```
+            .returntotop-container {
+            padding-bottom: 10px;
+            text-align: right;
+            font-size: 0.8rem;
+            color: #444444;
+            }
+
+            .returntotop {
+                padding: 15px;
+            }
+            ```
+
+
+2.  The ability to subscribe to a mailing list by simply entering an e-mail address and hitting a subscribe button. The code looks like this:
+
+            ```
+            <div class="row email-form">
+                <div class="col form-inline center-form">
+                    <form class="email" action="emails" method="post">
+                        <input
+                        type="text"
+                        name="email"
+                        id="emailaddress"
+                        class="form-control email-input"
+                        placeholder="Your e-mail address"
+                        required
+                        />
+                        <button type="submit" class="btn subscribe btn-success">
+                            Subscribe&#33;
+                        </button>
+                    </form>
+                </div>
+            </div>
+            ```
+
+Its width adjusts at various breakpoints so that the input field and subscribe button either stay on one line or exist on separate lines at equal width. The following CSS rules are used:
+
+            ```
+            .form-control {
+                padding-left: 2px;
+                padding-right: 2px;
+                height: 3em;
+            }
+
+            .email-input {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 576px) {
+                .email-input {
+                    width: 100%!important;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                .email-input {
+                    width: 70%!important;
+                }
+            }
+            ```
+
+The !important property is used in these media queries to override the auto width set by the .form-control class, which does not allow for consistency between the input and button elements.
+
+3. Services underneath my name as links that navigate to the relevant page. These are separated by '|' characters that disappear on xs screens and are replaced by line breaks, so that each link appears on a different line. The code looks as follows:
 
 <strong>Features left to implement</strong>
 
@@ -227,7 +307,6 @@ All icons used on the site were taken from <a href="https://fontawesome.com/star
 
 The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
 <a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>.
-
 
 ## Styling
 
