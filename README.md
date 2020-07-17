@@ -759,9 +759,14 @@ The project uses the follwing coding languages:
 
 The following frameworks/libraries were also used:
 
-- Bootstrap
-- jQuery
-- Font Awesome
+- <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> &#8212; for simple layout frameworks and built-in classes such as .container-fluid
+- <a href="https://jquery.com/" target="_blank">jQuery</a> &#8212; to simplify DOM manipulation and traversal
+- <a href="https://fontawesome.com" target="_blank">Font Awesome</a> &#8212; to enable the display of icons for quotes, payment info and social media links 
+- <a href="https://www.jsdelivr.com/" target="_blank">jsDelivr</a> &#8212; for easy open-sourcing
+
+## Testing
+
+
 
 ## Credits
 
@@ -781,8 +786,6 @@ The 'return to top' button feature at the bottom right of the page uses code bas
 ## Styling
 
 ## Pages
-
-## Testing
 
 ## Deployment
 
