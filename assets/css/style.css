@@ -173,10 +173,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.headline-link {
-  text-decoration: underline;
-}
-
 .about-me-main {
   width: 80%;
   padding: 15px;
@@ -344,11 +340,6 @@ a:hover {
 
 .images-wrapper {
   padding: 15px;
-}
-
-.img-item {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /*--- SHOP ---*/

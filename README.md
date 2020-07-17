@@ -272,12 +272,482 @@ The !important property is used in these media queries to override the auto widt
 
 3. Services underneath my name as links that navigate to the relevant page. These are separated by '|' characters that disappear on xs screens and are replaced by line breaks, so that each link appears on a different line. The code looks as follows:
 
+            ```
+            <h2 class="title uppercase">
+                <a href="merch.html" class="headline-link">Clothing brand</a>
+                <span class="d-none d-sm-inline">&#124;</span>
+                <br class="d-block d-sm-none /" />
+                <a href="tutoring.html" class="headline-link">Tutor</a>
+                <span class="d-none d-sm-inline">&#124;</span>
+                <br class="d-block d-sm-none" />
+                <a href="fitness.html" class="headline-link">Fitness Coach</a>
+                <span class="d-none d-sm-inline">&#124;</span>
+                <br class="d-block d-sm-none" />
+                <a href="web-services.html" class="headline-link">Web Developer</a>
+            </h2>
+            ```
+
+The vertical lines are wrapped in a `<span>` element using the .d-none and .d-sm-inline classes so that they only appear on small screens and above. Conversely, the `<br>` element uses the .d-block and .d-sm-none classes, meaning it serves as a line break on xs screens but is inactive once the screen is of sm size or above.
+<br />
+<br />
+The anchors themselves use a class named .headline-link to make it clear to the user that they are clickable links. They are underlined using the following CSS rule:
+
+            ```
+            .headline-link {
+                text-decoration: underline;
+            }
+            ```
+
+To give the user a more elegant feel, the underline decoration disappeared when the cursor is hovered over these links. This is a simple override that fits in with all links on the site behaving this way, for which the following CSS rules are used:
+
+            ```
+            a,
+            a:hover {
+                color: inherit;
+                text-decoration: none;
+            }
+            ```
+
+All links inherit the font colour of their parent element, this being black for the main body, and white for the header, footer and buttons.
+
+4. Quote boxes displaying testimonies from clients or other contacts. These are in a borderless box with a white background to create a subtle contrast from the rest of the page. All text is centered, with the quote itself italicised and sandwiched between larger quote icons taken from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>. <br><br>
+To optimise UX, the last quote only appears on xs and lg (and above) screens. This necessitates the use of the classes .d-inline .d-sm-none and .d-lg-inline-flex. The inline-flex class is used for large screens rather than just inline as this vertically centres the text, a display that makes reading a more natural experience for the user where the quote boxes are all of equal height. The col-md class is used for the boxes so that they are aligned vertically on small and xs screens. This ensures the quotes remain easily readable.<br><br>
+Here is the code in full:
+
+            ```
+            <div class="row quotes">
+                <div class="col-md quote-item">
+                    <blockquote>
+                        <i class="fa fa-quote-left"></i>
+                        <p class="mb-0 quote-text">
+                            I can say that without a shadow of a doubt Louis is one of the
+                            most knowledgeable and intellectual people I have had the pleasure
+                            to meet and he has an excellent way with people.
+                        </p>
+                        <i class="fa fa-quote-right"></i>
+                        <p>&#8212; Francis M.</p>
+                    </blockquote>
+                </div>
+                <div class="col-md quote-item">
+                    <blockquote>
+                        <i class="fa fa-quote-left"></i>
+                        <p class="mb-0 quote-text">
+                            It's been great having Louis around these last few months. My son
+                            really enjoys his Zoom session with him and I hope he can continue
+                            as long as he is able.
+                        </p>
+                        <i class="fa fa-quote-right"></i>
+                        <p>&#8212; Jane S.</p>
+                    </blockquote>
+                </div>
+                <div class="col-md quote-item d-inline d-sm-none d-lg-inline-flex">
+                    <blockquote>
+                        <i class="fa fa-quote-left"></i>
+                        <p class="mb-0 quote-text">
+                            Louis&#8217; T&#45;shirts look absolutely fire&#33; I&#39;d recommend them
+                            to anyone.
+                        </p>
+                        <i class="fa fa-quote-right"></i>
+                        <p>&#8212; Ben H.</p>
+                    </blockquote>
+                </div>
+            </div>
+            ```
+
+The following CSS rules were also used for styling:
+
+            ```
+            .quote-item {
+                padding: 0;
+                margin-bottom: 0.8rem;
+                background-color: #fff;
+                color: #000;
+                text-align: center;
+                display: flex;
+                align-items: center;
+            }
+
+            .quote-item blockquote {
+                margin: 0.8rem;
+            }
+
+            .quote-item blockquote i {
+                font-size: 1.5rem;
+                display: block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .quote-text {
+                font-style: italic;
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+            }
+            ```
+
+5. Galleries on the About, Shop, Merchandise and Fitness pages. The gallery on the About page brings life to my story and puts a face to my name. This gives the user comfort to know that they are dealing with a real person, and breaks up the page so that the user is not presented with so many blocks of text in one go. The images on this page display vertically on xs screens as they would otherwise be too small to see clearly. On sm and above sizes they are horizontally laid out using the .col-sm class. Displaying them vertically on any other screen size than xs would take up excessive screen real estate.
+<br>
+<br>
+Here is the code used:
+
+            ```
+            <div class="gallery-container">
+                <div class="row images-wrapper no-gutters">
+                    <div class="col-sm img-item">
+                        <img
+                        src="./assets/images/lb17-black-tee-woman-cropped.png"
+                        alt="A woman modelling the LB17 black tee, one of my signature designs"
+                        class="w-100"
+                    />
+                    </div>
+                    <div class="col-sm img-item">
+                        <img
+                        src="./assets/images/club-photo-cropped.png"
+                        alt="Me posing for a club photo at an old team"
+                        class="w-100"
+                        />
+                    </div>
+                    <div class="col-sm img-item">
+                        <img
+                        src="./assets/images/48.png"
+                        alt="A man modelling the LB17 white tee, one of my signature designs"
+                        class="w-100"
+                        />
+                    </div>
+                </div>
+            </div>
+            ```
+
+The .no-gutters class gives a greater gallery feel by removing any spacing between the images on all screen layouts. The images themselves use the .w-100 class to automatically resize and fit the width of their parent column div.
+
+6. Contact forms are consistent with their layout across the site and exist on the Shop, Tutoring, Fitness and Contact pages. Certain elements are introduced or removed to fit the user's needs. Each contact form is in a parent container of a fixed width of 70% so that it does not occupy too much of the screen and increase the difficulty of reading it. All input elements have required attributes so an incomplete form cannot be submitted. All forms contain fname, lname and email fields, and are housed by a `<div>` element using the .contact-form class. Here is an example:
+
+            ```
+            <form method="post" class="contact">
+                <div class="form-group row">
+                    <label for="fname" class="col-sm-3 col-form-label">
+                        First Name&#58;
+                    </label>
+                    <div class="col-sm">
+                        <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                        required
+                        />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-3 col-form-label">
+                        Last Name&#58;
+                    </label>
+                    <div class="col-sm">
+                        <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                        required
+                        />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label">
+                        E-mail address&#58;
+                    </label>
+                    <div class="col-sm">
+                        <input
+                        type="text"
+                        name="email"
+                        class="form-control"
+                        placeholder="Your email address"
+                        required
+                        />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-sm-3 col-form-label">
+                        Message&#58;
+                    </label>
+                    <div class="col-sm">
+                        <textarea
+                        rows="5"
+                        name="projectsummary"
+                        id="projectsummary"
+                        class="form-control"
+                        placeholder="Type your message here"
+                        required
+                        >
+                        </textarea>
+                    </div>
+                </div>
+                <div class="submit-button row">
+                    <div class="d-none d-sm-inline col-sm-3"></div>
+                    <div class="col-sm">
+                        <button type="submit" class="btn btn-success submit-request">
+                            Submit&#33;
+                        </button>
+                    </div>
+                </div>
+            </form>
+            ```
+
+When it comes to the submit button, an empty `<div>` acts as a separate column on sm and above screens so that the button is not misaligned with the form. The button should be centred in relation to the input fields above rather than the entire form, which looks uncomfortable for the user. On xs screens, the button is on a separate line taking up the full width, so there is no need for an empty element, hence the .d-none class.
+<br>
+<br>
+The tutoring form also incorporates a dropdown menu to enable to user to select their date of birth, and radio and checkbox buttons to select various criteria to fit their needs.
+
+            ```
+            <div class="form-group row">
+                <label
+                  for="birthday-dd birthday-mm birthday-yyyy"
+                  class="col-sm-3 col-form-label"
+                  >
+                    Date of birth&#42;&#58;
+                </label>
+                <div class="dob-dropdown col-sm">
+                  <select id="birthday-dd" class="dob-select" required>
+                    <option selected>DD</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>&#8230;</option>
+                  </select>
+                  <select id="birthday-mm" class="dob-select" required>
+                    <option selected>MM</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                  </select>
+                  <select id="birthday-yyyy" class="dob-select" required>
+                    <option selected>YYYY</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                  </select>
+                  <small class="form-text text-muted dob-small">
+                    &#42;if a parent seeking lessons for your child, please
+                    enter your child&#8217;s DOB
+                  </small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="subject" class="col-sm-3 col-form-label">
+                    <span class="d-none d-md-inline">
+                        I &#47; my child would like lessons in
+                    </span>
+                    <span class="d-inline d-md-none">
+                        Subject
+                    </span>
+                    &#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input
+                    type="checkbox"
+                    id="mathsenglish"
+                    value="mathsenglish"
+                  />
+                  <label for="mathsenglish">Maths &#47; English</label>
+                  <input type="checkbox" id="german" value="german" />
+                  <label for="german">German</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="competency" class="col-sm-3 col-form-label">
+                    <span class="d-none d-sm-inline">
+                        Competency level
+                    </span>
+                    <span class="d-inline d-sm-none">
+                        Level
+                    </span>
+                    &#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input
+                    type="radio"
+                    id="beginner"
+                    name="competencyOptions"
+                    value="option1"
+                    required
+                  />
+                  <label for="beginner" class="competency-level-option">
+                    Beginner
+                  </label>
+                  <br class="d-block d-sm-none" />
+                  <input
+                    type="radio"
+                    id="intermediate"
+                    name="competencyOptions"
+                    value="option2"
+                    required
+                  />
+                  <label for="intermediate" class="competency-level-option">
+                    Intermediate
+                  </label>
+                  <br class="d-block d-sm-none" />
+                  <input
+                    type="radio"
+                    id="advanced"
+                    name="competencyOptions"
+                    value="option3"
+                    required
+                  />
+                  <label for="advanced" class="competency-level-option">
+                    Advanced
+                  </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="competency" class="col-sm-3 col-form-label">
+                    Lesson length&#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input
+                    type="radio"
+                    id="1hr"
+                    name="lessonLengthOptions"
+                    value="option1"
+                    required
+                  />
+                  <label for="1hr" class="lesson-length-option">
+                    1 hour &#40;&#163;25.00&#41;
+                  </label>
+                  <br class="d-block d-sm-none" />
+                  <input
+                    type="radio"
+                    id="1hr30"
+                    name="lessonLengthOptions"
+                    value="option2"
+                    required
+                  />
+                  <label for="1hr30" class="lesson-length-option">
+                    1.5 hours &#40;&#163;35.00&#41;
+                  </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="subject" class="col-sm col-form-label">
+                    I would also like a FREE initial 30&#45;minute
+                    assessment&#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input type="checkbox" />
+                </div>
+            </div>
+            ```
+
+In some of the `<label>` elements, there were issuses with the text spilling over onto additional lines and breaking the alignment with the input fields. To get around this, there is alternative shorter text for smaller screen sizes, with each version wrapped in a `<span>` element using either the .d-none .d-sm-inline classes or the .d-inline .d-sm-none classes.
+<br>
+<br>
+Here are the style rules in full for the contact forms:
+
+            ```
+            .contact-form {
+                padding: 25px 0;
+            }
+
+            .form-group {
+                margin-bottom: 1rem;
+                text-align: left;
+            }
+
+            .form-control {
+                padding-left: 2px;
+                padding-right: 2px;
+                height: 3em;
+            }
+
+            .dob-select {
+                background-color: silver;
+                padding: 5px;
+                display: block;
+            }
+
+            .dob-small {
+                padding-left: 15px;
+                padding-top: 5px;
+            }
+
+            .tutoring-options {
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+
+            .competency-level-option,
+            .lesson-length-option {
+                padding-right: 7px;
+            }
+
+            .submit-button {
+                text-align: center;
+                padding-top: 15px;
+            }
+
+            .submit-request {
+                width: 100%;
+                font-size: 1.2rem;
+            }
+            ```
+
+7. Downloadable CV to view my work experience in more detail. The download button has a dark background to differentiate it from submit buttons on contact forms, and sits in the centre of the screen directly below my CV on the CV page. There is a child anchor element using the target="_blank" attribute so that the CV opens in a new tab.
+
+            ```
+            <div class="cv-download">
+                <button class="btn btn-dark btn-lg">
+                    <a href="./assets/images/louis-cv.pdf" target="_blank">
+                        Download Print Version
+                    </a>
+                </button>
+            </div>
+            ```
+
+/
+
+            ```
+            .cv-download {
+                text-align: center;
+                margin-top: 1.2rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .cv-download button a {
+                color: #ffffff;
+            }
+            ```
+
+8. Hamburger menu on xs screens giving a collapsible and expandable navbar. This ensures that the nav links are not squashed together on xs screens and hard for the user to separate. A click of the hamburger button will expand the main menu with each link on a separate line. The arrow on the shop option now points to the right, with the dropdown expanding at an indent so that it is clear the menu items under 'Shop' are not part of the main menu. One issue encountered in previewing the website was that the hamburger menu had a blue ring just inside its white border after being clicked. To stop this from happening I used the following CSS:
+
+            ```
+            .navbar-toggler:focus {
+                outline: none;
+            }
+            ```
+
+The hamburger icon itself was taken from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>.
+
 <strong>Features left to implement</strong>
 
-Add to cart button
-Return to top button using JavaScript
-Carousel using JavaScript to browse store items
-A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom
+I plan to implement the following features at a later stage of the project using <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>:
+
+<ul>
+    <li>
+        An add-to-cart button below the items in the shop. This would be combined with a checkout page and a cart icon in the top right corner. A '1' would appear when an item was added to a cart as on most online retail websites.
+    </li>
+    <li>
+        A more elegant return to top button in the form of an arrow that would appear whenver the user scrolled away from the top of the page, and would simply scroll back up
+    </li>
+    <li>
+        The addition of more items to the 'Shop' page that can be browsed using a carousel feature with left and right arrows. There is a framework in <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to help implement this
+    </li>
+    <li>
+        A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom
+    </li>
+</ul>
 
 ## Technologies Used
 
