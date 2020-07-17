@@ -812,17 +812,15 @@ I used Developer Tools to test the website layout pixel by pixel as well as on a
 <br>
 <br>
 Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were detected.
-The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button.
-<br><br>
-<video height="240" width="320" controls>
-    <source src="./assets/testing/screen-recording-home.mp4" type="video/mp4">
-    A recording of the homepage in Viewport Resizer
-</video>
-
-<video width="320" height="240" controls>
-    <source src="./assets/testing/screen-recording-about.mp4" type="video/mp4">
-    A recording of the about page in Viewport Resizer
-</video>
+The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button. This can be seen viewing the screen recording files in the ../assets/testing/ directory.
+<br>
+<br>
+All forms were tested to ensure that submission is not possible without filling out all the required fields. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
+<br>
+<br>
+<img src="./assets/testing/email-subscribe-empty-screenshot.png" 
+alt="A screenshot of me trying to subscribe to my mailing list without an e-mail address" 
+/>
 
 ## Credits
 
