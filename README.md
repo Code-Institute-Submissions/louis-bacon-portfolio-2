@@ -766,7 +766,39 @@ The following frameworks/libraries were also used:
 
 ## Testing
 
-The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
+The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. I took screenshots of each page using the Full Page Screen Capture extension.
+<br>
+<br>
+<ul>
+    <li>
+        <a href="../assets/testing/screen-capture-home-moto-g4.pdf" target="_blank">Home</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-about-moto-g4.pdf" target="_blank">About</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-shop-moto-g4.pdf" target="_blank">Shop (All Items)</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-merch-moto-g4.pdf" target="_blank">Merchandise</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-tutoring-moto-g4.pdf" target="_blank">Tutoring</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-fitness-moto-g4.pdf" target="_blank">Fitness</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-web-services-moto-g4.pdf" target="_blank">Web Services</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-cv-moto-g4.pdf" target="_blank">CV</a>
+    </li>
+    <li>
+        <a href="./assets/testing/screen-capture-contact-moto-g4.pdf" target="_blank">Contact</a>
+    </li>
+</ul>
+Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
 <br>
 <br>
 I used Developer Tools to test the website layout pixel by pixel as well as on all popular mobile and tablet devices, and the design was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
@@ -780,8 +812,10 @@ I used Developer Tools to test the website layout pixel by pixel as well as on a
 <br>
 Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were detected.
 The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button.
-<video controls>
+<br><br>
+<video height="240" width="320" controls>
     <source src="./assets/testing/screen-recording-home.mp4" type="video/mp4">
+A recording of the homepage in Viewport Resizer
 </video>
 
 ## Credits
