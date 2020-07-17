@@ -799,7 +799,6 @@ alt="A screen capture of the cv page on a Galaxy S5 using Developer Tools" />
 <img src="./assets/testing/screen-capture-contact-galaxy-s5.png"
 alt="A screen capture of the contact page on a Galaxy S5 using Developer Tools" />
 
-
 Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
 <br>
 <br>
@@ -817,7 +816,12 @@ The width of the input text fields throughout the site adjusts at different scre
 <br><br>
 <video height="240" width="320" controls>
     <source src="./assets/testing/screen-recording-home.mp4" type="video/mp4">
-A recording of the homepage in Viewport Resizer
+    A recording of the homepage in Viewport Resizer
+</video>
+
+<video width="320" height="240" controls>
+    <source src="./assets/testing/screen-recording-about.mp4" type="video/mp4">
+    A recording of the about page in Viewport Resizer
 </video>
 
 ## Credits
