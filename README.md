@@ -44,7 +44,7 @@ Home
     My name followed immediately by the different services that I provide, each service being a clickable link taking the user to the respective part of the site.
 </li>
 <li>
-    General information about me and what I do, with an invitation to join my mailing list. This takes the user to the final section of the homepage where they can enter their e-mail address and click the susbcribe button to receive regular e-mails from me.
+    General information about me and what I do, with an invitation to join my mailing list. This takes the user to the final section of the homepage where they can enter their e-mail address and click the susbcribe button to receive regular e-mails from me. The heading was changed from 'About Me' to 'Nice to meet you' as the user would potentially assume the same information was written on the 'about' page with the former title, when in reality the 'about' page describes my story in more depth.
 </li>
 <li>
     Quotes from past and present clients and associates. Each quote is presented in a separate box with a white background to distinguish it from the site background. The size of the quote icons in relation to the text makes it abundantly clear to the user that this is a quote.
@@ -164,6 +164,29 @@ Contact
 </ul>
 
 <strong>User Stories</strong>
+
+The aim of the website is to let existing and prospective clients and business partners see what I offer and encourage them to work with me or buy my services.
+
+<ul>
+    <li>
+        As a student or a parent of a student needing tuition, I want to find out what subjects Louis teaches and his rates. I do this by clicking on the 'tutor' link under his name or opening the 'shop' dropdown menu and selecting 'tuition'. I can then see what subjects he teaches and what his rates are, and book lessons by filling out a simple form.
+    </li>
+    <li>
+        As somebody looking to buy clothes, I click on the 'clothing brand' link or open 'merchandise' under the 'shop' dropdown menu. I can see what products Louis designs and sells, how much they cost and be taken through to his t-shirts website. I would also like to be able to buy directly from this site, which is a planned feature.
+    </li>
+    <li>
+        As somebody looking for advice on fitness, I click on 'fitness coach' or 'fitness' under the 'shop' dropdown menu. I can see the books that Louis has written on the subject and book a coaching session if I wish. I am informed that rates are negotiable and know from the information given that Louis will get back to me. I also have the opportunity to explain my goals and my situation in a bit more detail so that Louis knows what he is working with.
+    </li>
+    <li>
+        I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I head to the contact page by clicking on the 'contact' link on the main menu. I simply fill out the contact form with my details and some information about the project and await Louis' response.
+    </li>
+    <li>
+        I think I'd like to work with Louis on something, but I want to read about his prior experience to check that it's something he's done before. I head to his CV page via the main menu and I can see his work experience. It looks good, but I want to look into it in a bit more detail. I can see there's a download button at the bottom for his full CV, so I click it and a PDF opens. Sure enough, Louis has exactly what I'm looking for, so I'll contact him. Thankfully the CV opened in a new tab, so I don't have to hit the back button and wait for the page to re-load. I go back to Louis' site and navigate from the CV page to the Contact page, fill out the contact form in a few easy steps and await Louis' response.
+    </li>
+    <li>
+        I like Louis' introduction on his homepage, but I want to find out a bit more about him. I click the 'about' link and can read about his story in more detail. If I want to hire him for something or just get in touch, the main menu bar will tell me where to go next.
+    </li>
+</ul>
 
 ## Features
 
