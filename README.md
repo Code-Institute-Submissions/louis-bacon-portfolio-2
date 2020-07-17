@@ -769,6 +769,7 @@ The following frameworks/libraries were also used:
 The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. I took screenshots of each page using the Full Page Screen Capture extension.
 <br>
 <br>
+<img src="screen-capture-homepage-galaxy-s5.png" alt ="A screen capture of the home page on a Galaxy S5 using Developer Tools" />
 <ul>
     <li>
         <button><a href="../assets/testing/screen-capture-home-page-moto-g4.pdf" target="_blank">Home</a></button>
