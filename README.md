@@ -105,6 +105,10 @@ Merch
     </li>
     <li>
         Brief description of my t-shirt business below the title in lighter text with an invitation to visit my brand's website <a href="https://lb17tees.com" target="_blank">LB17 Tees</a>
+    </li>
+    <li>
+        The image of each item contains a link that will take the user to the same item on my brand's website, where it is purchaseable.
+    </li>
 </ul>
 
 Tutoring
