@@ -126,6 +126,8 @@ Fitness
         The same images showing the fitness books as on the shop page, using the same code
     </li>
     <li>
+        Each image contains a link to <a href="http://gumroad.com/" target="_blank">Gumroad</a>, where my books are listed for sale and the user can purchase if they so wish
+    <li>
         Information that I also provide coaching sessions with a contact form below for the user to easily fill out. The code and classes used, including media queries at different breakpoints, are exactly the same as that which was used for the tutoring form. The only difference is a details box at the end where the text area has the same classes as the input fields to keep consistency
     </li>
 </ul>
@@ -137,7 +139,7 @@ Web Services
         A coming soon logo with under construction emojis either side. The UC emojis are increased in height on extra-large screen sizes so that they are not dwarfed by the middle image. All images decrease at the same rate so that they remain on one line as screen size is decreased except for small screens, where the right-hand side emoji disappears and the left-hand emoji sits on top of the logo and is centred rather than aligned left. This creates a more symmetrical display that is easier on the user's eye.
     </li>
     <li>
-        The same alert box as on the home page, with the same code and spacing rules in place.
+        The same alert box as on the main shop page, with the same code and spacing rules in place.
     </li>
 </ul>
 
@@ -145,7 +147,7 @@ CV
 
 <ul>
     <li>
-        A Work History section title with Experience and Education in larger headings either side. This immediately informs the user of the information on the page and they can decide whether to look at my education or experience first. That these are in larger font than the work history heading does not cause any confusion to the user it is self-explanatory on a CV page that education and experience columns will be detailing my work history. 
+        A Work History section title with Experience and Education in larger headings either side. This immediately informs the user of the information on the page and they can decide whether to look at my education or experience first. That these are in larger font than the work history heading does not cause any confusion to the user as it is self-explanatory on a CV page that education and experience columns will be detailing my work history. 
     </li>
     <li>
         My professional experience in the left-hand column, with roles and employers in bullet points and dates in small text above. This clearly differentiates the actual work from the dates to the user.
@@ -162,7 +164,13 @@ Contact
 
 <ul>
     <li>
-        A couple of lines briefly explaining to the user why contacting me would be necessary or desirable. There is also another invitation to subscribe to my mailing list in case they have questions about news, which will take the user back to the about me page. Initially the mailing list section was replicated below the contact form, but was removed as it did not look pleasing on the eye.
+        A couple of lines briefly explaining to the user why contacting me would be necessary or desirable. 
+    </li>
+    <li>
+        Another invitation to subscribe to my mailing list in case they have questions about news. The link takes the user to the mailing list section of the home page, which starts with an anchor element with an attribute value of name="mailing-list". I have therefore added '#mailing-list' onto the end of the homepage URL in the href attribute to take the user directly to this section and save time having to scroll all the way to the bottom of the page.
+    </li>
+    <li>
+         Initially the mailing list section was replicated below the contact form, but was removed as it did not look pleasing on the eye.
     </li>
     <li>
         A simple contact form using the same layout and rules as the other contact forms. The input fields and button adjust at the same breakpoints and are subject to the same media queries.
@@ -181,7 +189,10 @@ The aim of the website is to let existing and prospective clients and business p
         As somebody looking to buy clothes, I click on the 'clothing brand' link or open 'merchandise' under the 'shop' dropdown menu. I can see what products Louis designs and sells, how much they cost and be taken through to his t-shirts website. I would also like to be able to buy directly from this site, which is a planned feature.
     </li>
     <li>
-        As somebody looking for advice on fitness, I click on 'fitness coach' or 'fitness' under the 'shop' dropdown menu. I can see the books that Louis has written on the subject and book a coaching session if I wish. I am informed that rates are negotiable and know from the information given that Louis will get back to me. I also have the opportunity to explain my goals and my situation in a bit more detail so that Louis knows what he is working with.
+        As somebody looking for advice on fitness, I click on 'fitness coach' or 'fitness' under the 'shop' dropdown menu. I can see the books that Louis has written on the subject. I want to buy one, so I click on the image that takes me through to an external site hosting the product where I can make my purchase. I would also like to be able to buy one directly through Louis' own website, which is another planned feature.
+    </li>
+    <li>
+        I can also book a coaching session if I wish. I am informed that rates are negotiable and know from the information given that Louis will get back to me. I also have the opportunity to explain my goals and my situation in a bit more detail so that Louis has as much information as he needs before working with me.
     </li>
     <li>
         I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I head to the contact page by clicking on the 'contact' link on the main menu. I simply fill out the contact form with my details and some information about the project and await Louis' response.
@@ -294,8 +305,7 @@ The !important property is used in these media queries to override the auto widt
             ```
 
 The vertical lines are wrapped in a `<span>` element using the .d-none and .d-sm-inline classes so that they only appear on small screens and above. Conversely, the `<br>` element uses the .d-block and .d-sm-none classes, meaning it serves as a line break on xs screens but is inactive once the screen is of sm size or above.
-<br />
-<br />
+
 The anchors themselves use a class named .headline-link to make it clear to the user that they are clickable links. They are underlined using the following CSS rule:
 
             ```
@@ -392,9 +402,8 @@ The following CSS rules were also used for styling:
             ```
 
 5. Galleries on the About, Shop, Merchandise and Fitness pages. The gallery on the About page brings life to my story and puts a face to my name. This gives the user comfort to know that they are dealing with a real person, and breaks up the page so that the user is not presented with so many blocks of text in one go. The images on this page display vertically on xs screens as they would otherwise be too small to see clearly. On sm and above sizes they are horizontally laid out using the .col-sm class. Displaying them vertically on any other screen size than xs would take up excessive screen real estate.
-<br>
-<br>
-Here is the code used:
+
+Here is the code used for the gallery on the About page:
 
             ```
             <div class="gallery-container">
@@ -425,6 +434,8 @@ Here is the code used:
             ```
 
 The .no-gutters class gives a greater gallery feel by removing any spacing between the images on all screen layouts. The images themselves use the .w-100 class to automatically resize and fit the width of their parent column div.
+
+The same code is used for the galleries on other pages, except that the no-gutters class is not applied, as I want space to appear between images when advertising products.
 
 6. Contact forms are consistent with their layout across the site and exist on the Shop, Tutoring, Fitness and Contact pages. Certain elements are introduced or removed to fit the user's needs. Each contact form is in a parent container of a fixed width of 70% so that it does not occupy too much of the screen and increase the difficulty of reading it. All input elements have required attributes so an incomplete form cannot be submitted. All forms contain fname, lname and email fields, and are housed by a `<div>` element using the .contact-form class. Here is an example:
 
@@ -498,8 +509,7 @@ The .no-gutters class gives a greater gallery feel by removing any spacing betwe
             ```
 
 When it comes to the submit button, an empty `<div>` acts as a separate column on sm and above screens so that the button is not misaligned with the form. The button should be centred in relation to the input fields above rather than the entire form, which looks uncomfortable for the user. On xs screens, the button is on a separate line taking up the full width, so there is no need for an empty element, hence the .d-none class.
-<br>
-<br>
+
 The tutoring form also incorporates a dropdown menu to enable to user to select their date of birth, and radio and checkbox buttons to select various criteria to fit their needs.
 
             ```
@@ -512,7 +522,7 @@ The tutoring form also incorporates a dropdown menu to enable to user to select 
                 </label>
                 <div class="dob-dropdown col-sm">
                   <select id="birthday-dd" class="dob-select" required>
-                    <option selected>DD</option>
+                    <option selected disabled>DD</option>
                     <option>01</option>
                     <option>02</option>
                     <option>03</option>
@@ -521,7 +531,7 @@ The tutoring form also incorporates a dropdown menu to enable to user to select 
                     <option>&#8230;</option>
                   </select>
                   <select id="birthday-mm" class="dob-select" required>
-                    <option selected>MM</option>
+                    <option selected disabled>MM</option>
                     <option>Jan</option>
                     <option>Feb</option>
                     <option>Mar</option>
@@ -529,7 +539,7 @@ The tutoring form also incorporates a dropdown menu to enable to user to select 
                     <option>May</option>
                   </select>
                   <select id="birthday-yyyy" class="dob-select" required>
-                    <option selected>YYYY</option>
+                    <option selected disabled>YYYY</option>
                     <option>2020</option>
                     <option>2019</option>
                     <option>2018</option>
@@ -745,7 +755,7 @@ I plan to implement the following features at a later stage of the project using
         An add-to-cart button below the items in the shop. This would be combined with a checkout page and a cart icon in the top right corner. A '1' would appear when an item was added to a cart as on most online retail websites.
     </li>
     <li>
-        A more elegant return to top button in the form of an arrow that would appear whenver the user scrolled away from the top of the page, and would simply scroll back up
+        A more elegant return to top button in the form of an upward-facing arrow that would appear whenver the user scrolled away from the top of the page, and would simply scroll back up
     </li>
     <li>
         The addition of more items to the 'Shop' page that can be browsed using a carousel feature with left and right arrows. There is a framework in <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to help implement this
@@ -773,11 +783,9 @@ The following frameworks/libraries were also used:
 ## Testing
 
 The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. I took screenshots of each page using the Full Page Screen Capture extension.
-<br>
-<br>
+
 See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
-<br>
-<br>
+
 <img src="./assets/testing/screen-capture-homepage-galaxy-s5.png" 
 alt ="A screen capture of the home page on a Galaxy S5 using Developer Tools" />
 
@@ -806,37 +814,28 @@ alt="A screen capture of the cv page on a Galaxy S5 using Developer Tools" />
 alt="A screen capture of the contact page on a Galaxy S5 using Developer Tools" />
 
 Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
-<br>
-<br>
+
 I used Developer Tools to test the website layout pixel by pixel as well as on all popular mobile and tablet devices, and the design was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
-<br>
-<br>
+
 <img src="./assets/testing/screenshot-mobile-navbar-1.png" alt="A screenshot of the main menu as it would appear on a mobile device" style="margin:0">
-<br>
-<br>
+
 <img src="./assets/testing/screenshot-mobile-navbar-2.png" alt="A screenshot of the main menu with the additional dropdown menu opened, as it would appear on a mobile device" style="margin:0">
-<br>
-<br>
+
 The dropdown menu also works well on tablet and desktop devices, opening just below the main navbar with a deliberate but small amount of margin between the edges of each element. This gives a slightly more elegant feel. The dropdown hangs down over the hero image but does not obscure any text. See the screenshot below.
-<br>
-<br>
+
 <img src="./assets/testing/screenshot-dropdown-menu.png" alt="A screenshot of the dropdown menu as it appears on tablet and desktop devices" />
-<br>
-<br>
+
 Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were detected.
 The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button. This can be seen viewing the screen recording files in the ../assets/testing/ directory.
-<br>
-<br>
+
 All form elements were tested to ensure that submission is not possible without filling out all the required fields due to the 'required' attribute. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
-<br>
-<br>
+
 <img src="./assets/testing/email-empty-input-screenshot.png" 
 alt="A screenshot of me trying to subscribe to my mailing list without an e-mail address" 
 />
 
 Here are some screenshots of me attempting to submit incomplete contact forms, either with an empty input field or unselected option. The code is duplicated for each contact form on the website, so the result would be the same on any page.
-<br>
-<br>
+
 <img 
 src="./assets/testing/contact-form-empty-fname.png" 
 alt ="A screenshot of me being prompted to fill in the first name field" 
@@ -861,8 +860,7 @@ alt ="A screenshot of me being prompted to select an option from three possible 
 src="./assets/testing/contact-form-unselected-option-2.png" 
 alt ="A screenshot of me being prompted to select an option from two possible choices" 
 />
-<br>
-<br>
+
 All external links navigate to their intended destination and open in a new browser tab. I have added the files 'internal-links-test.mov' and 'external-links-test.mov' to the /assets/testing directory to demonstrate this.
 
 <strong>Issues</strong>
