@@ -886,6 +886,24 @@ The following issues were encountered during the testing phase:
 
 ## Deployment
 
+My website was deployed using GitHub Pages from the repository's master branch.
+
+The website uses the GitHub domain. The full address is <a href="https://lbacon17.github.io/louis-bacon-portfolio" target="_blank">https://lbacon17.github.io/louis-bacon-portfolio</a>. It is not served from any external domain.
+
+The live site was tested on the following Browsers:
+
+<ul>
+    <li>Brave Browser</li>
+    <li>Google Chrome</li>
+    <li>Mozilla Firefox</li>
+    <li>Safari</li>
+</ul>
+
+No problems were detected on any of them. Here are two screenshots below - the first is the site in Firefox on my laptop, the second in Safari on my iPhone 7:
+
+<img src="./assets/testing/live-site-screenshot-firefox.png" alt="A screenshot of the deployed website in Mozilla Firefox" />
+
+<img src="./assets/testing/live-site-screenshot-iphone7.png" alt="A screenshot of the deployed website in Safari on an iPhone 7" />
 
 ## Credits
 
