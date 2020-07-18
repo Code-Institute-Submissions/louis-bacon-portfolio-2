@@ -11,7 +11,7 @@ a:hover {
 }
 
 .content {
-    margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .divider {
@@ -42,7 +42,7 @@ a:hover {
 }
 
 .navbar-toggler:focus {
-    outline: none;
+  outline: none;
 }
 
 .navbar-toggler i {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .dropdown-toggle:active {
-    outline: none;
+  outline: none;
 }
 
 .btn-secondary:focus {
@@ -236,7 +236,7 @@ a:hover {
   margin-right: 0.2rem;
 }
 
-/*--- stuff I sell ---*/
+/*--- stuff i sell ---*/
 
 .merch-container {
   padding: 15px 25px;
