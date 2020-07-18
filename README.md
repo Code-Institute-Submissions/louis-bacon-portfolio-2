@@ -22,6 +22,8 @@ This website constitutes my First Milestone Project for the Full Stack Developer
 
 Simple layout and colour scheme. Dark text on a lighter background, contrasted by a navbar with a dark background and light text. The sea green footer adds some subtle and muted colour to the page without being a shock to the user's eyes.
 
+The outermost div wrapping the main body content together outside of the header and footer uses the .text-center class as all body text is centred throughout the website. This saves time and effort creating an individual text-align rule for each new section.
+
 The menu clearly sets out the different areas of the website making them easy to find.
 
 The footer contains forms of payment on the left side and social media links on the right side. Both are made clear with large enough icons in white (which is very readable against the background colour) and adequate spacing. A copyright notice is placed at the bottom in the centre.
