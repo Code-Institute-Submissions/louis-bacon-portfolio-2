@@ -83,7 +83,10 @@ a:hover {
 .btn-secondary:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0;
-  outline: none;
+}
+
+.dropdown-toggle:active {
+    outline: none;
 }
 
 .btn-secondary:focus {
