@@ -135,7 +135,6 @@ a:hover {
 .hero-image {
   padding-bottom: 15px;
   padding-top: 15px;
-  text-align: center;
 }
 
 .hero-image img {
@@ -146,11 +145,10 @@ a:hover {
 /*--- about me ---*/
 
 .about-me-container {
-  text-align: center;
+  margin-top: 0.5rem;
 }
 
 .name {
-  text-align: center;
   font-size: 3rem;
   font-weight: 500;
   padding-top: 15px;
@@ -159,7 +157,6 @@ a:hover {
 }
 
 .title {
-  text-align: center;
   font-size: xx-large;
   font-weight: 300;
   padding-bottom: 15px;
@@ -197,9 +194,7 @@ a:hover {
 }
 
 .nice-things {
-  font-weight: 400;
   padding-bottom: 10px;
-  text-align: center;
 }
 
 .quotes {
@@ -212,7 +207,6 @@ a:hover {
   margin-bottom: 0.8rem;
   background-color: #fff;
   color: #000;
-  text-align: center;
   display: flex;
   align-items: center;
 }
@@ -238,18 +232,15 @@ a:hover {
 
 .merch-container {
   padding: 15px 25px;
-  text-align: center;
 }
 
 .stuff-i-sell {
   padding-bottom: 15px;
   margin-bottom: 0;
-  text-align: center;
 }
 
 .stuff-i-sell-subheading {
   padding-bottom: 15px;
-  text-align: center;
   font-weight: 300;
   font-size: 16px;
 }
@@ -300,7 +291,6 @@ a:hover {
 }
 
 .free-emails {
-  text-align: center;
   font-size: 3rem;
   font-weight: 400;
   padding-bottom: 15px;
@@ -308,8 +298,7 @@ a:hover {
 }
 
 .free-emails-subheading {
-  text-align: center;
-  font-size: 1;
+  font-size: 1rem;
   font-weight: 200;
   padding-bottom: 15px;
 }
@@ -320,7 +309,6 @@ a:hover {
 
 .email {
   width: 100%;
-  text-align: center;
 }
 
 .email-input {
@@ -360,7 +348,6 @@ a:hover {
 
 .tutoring-container {
   padding: 15px 25px;
-  text-align: center;
   width: 70%;
 }
 
@@ -411,7 +398,6 @@ a:hover {
 }
 
 .submit-button {
-  text-align: center;
   padding-top: 15px;
 }
 
@@ -424,7 +410,6 @@ a:hover {
 
 .fitness-container {
   padding: 15px 25px;
-  text-align: center;
   width: 70%;
 }
 
@@ -437,7 +422,6 @@ a:hover {
 
 .web-services-container {
   padding: 15px 25px;
-  text-align: center;
 }
 
 .web-services-heading {
@@ -449,7 +433,6 @@ a:hover {
   font-size: 18px;
   font-weight: 300;
   margin: 1.5rem 0;
-  text-align: center;
 }
 
 /*--- MERCH ---*/
@@ -479,11 +462,6 @@ a:hover {
 
 /*--- WEB SERVICES ---*/
 
-.under-construction-left {
-  text-align: center;
-  width: 20%;
-}
-
 .announcement {
   padding: 0;
 }
@@ -494,14 +472,12 @@ a:hover {
 
 .under-construction-right {
   text-align: right;
-  width: 20%;
 }
 
 /*--- CV ---*/
 
 .cv-container {
   padding: 15px 25px;
-  text-align: center;
   width: 80%;
 }
 
@@ -517,13 +493,11 @@ a:hover {
 }
 
 .cv-main-heading {
-  text-align: center;
   font-size: 2.4em;
   padding: 15px;
 }
 
 .cv-main-heading {
-  text-align: center;
   font-size: 2.4em;
   padding: 15px;
 }
@@ -538,7 +512,6 @@ a:hover {
 }
 
 .cv-download {
-  text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -551,7 +524,6 @@ a:hover {
 
 .contact-container {
   width: 70%;
-  text-align: center;
   padding: 15px 25px;
 }
 
