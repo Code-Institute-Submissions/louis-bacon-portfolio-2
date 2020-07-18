@@ -813,6 +813,14 @@ alt="A screen capture of the cv page on a Galaxy S5 using Developer Tools" />
 <img src="./assets/testing/screen-capture-contact-galaxy-s5.png"
 alt="A screen capture of the contact page on a Galaxy S5 using Developer Tools" />
 
+Here are a couple of screenshots of the layout on an iPad (768px width):
+
+<img src="./assets/testing/screen-capture-home-ipad.png"
+alt="A screen capture of the home page on an iPad using Developer Tools" />
+
+<img src="./assets/testing/screen-capture-shop-ipad.png"
+alt="A screen capture of the shop page on an iPad using Developer Tools" />
+
 Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
 
 I used Developer Tools to test the website layout pixel by pixel as well as on all popular mobile and tablet devices, and the design was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
@@ -826,7 +834,8 @@ The dropdown menu also works well on tablet and desktop devices, opening just be
 <img src="./assets/testing/screenshot-dropdown-menu.png" alt="A screenshot of the dropdown menu as it appears on tablet and desktop devices" />
 
 Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were detected.
-The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button. This can be seen viewing the screen recording files in the ../assets/testing/ directory.
+
+The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in relation to any adjacent label text or submit button.
 
 All form elements were tested to ensure that submission is not possible without filling out all the required fields due to the 'required' attribute. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
 
@@ -861,7 +870,7 @@ src="./assets/testing/contact-form-unselected-option-2.png"
 alt ="A screenshot of me being prompted to select an option from two possible choices" 
 />
 
-All external links navigate to their intended destination and open in a new browser tab. I have added the files 'internal-links-test.mov' and 'external-links-test.mov' to the /assets/testing directory to demonstrate this.
+All external links navigate to their intended destination and open in a new browser tab.
 
 <strong>Issues</strong>
 
