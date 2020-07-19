@@ -1,4 +1,4 @@
-<img src="./assets/testing/project-screenshot.png" alt="Screenshot of the top of my portfolio website" style="margin: 0;">
+<img src="./libraries/testing/project-screenshot.png" alt="Screenshot of the top of my portfolio website" style="margin: 0;">
 
 ## Louis Bacon Portfolio
 
@@ -932,49 +932,49 @@ page using the Full Page Screen Capture extension.
 
 See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
 
-<img src="./assets/testing/screen-capture-homepage-galaxy-s5.png" 
+<img src="./libraries/testing/screen-capture-homepage-galaxy-s5.png" 
 alt ="A screen capture of the home page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-about-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-about-galaxy-s5.png"
 alt="A screen capture of the about page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-shop-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-shop-galaxy-s5.png"
 alt="A screen capture of the shop (all items) page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-merch-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-merch-galaxy-s5.png"
 alt="A screen capture of the merchandise page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-tutoring-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-tutoring-galaxy-s5.png"
 alt="A screen capture of the tutoring page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-fitness-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-fitness-galaxy-s5.png"
 alt="A screen capture of the fitness page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-web-services-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-web-services-galaxy-s5.png"
 alt="A screen capture of the web services page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-cv-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-cv-galaxy-s5.png"
 alt="A screen capture of the cv page on a Galaxy S5 using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-contact-galaxy-s5.png"
+<img src="./libraries/testing/screen-capture-contact-galaxy-s5.png"
 alt="A screen capture of the contact page on a Galaxy S5 using Developer Tools" 
 />
 
 Here are a couple of screenshots of the layout on an iPad (768px width):
 
-<img src="./assets/testing/screen-capture-home-ipad.png"
+<img src="./libraries/testing/screen-capture-home-ipad.png"
 alt="A screen capture of the home page on an iPad using Developer Tools" 
 />
 
-<img src="./assets/testing/screen-capture-shop-ipad.png"
+<img src="./libraries/testing/screen-capture-shop-ipad.png"
 alt="A screen capture of the shop page on an iPad using Developer Tools" 
 />
 
@@ -984,11 +984,11 @@ I used Developer Tools to test the website layout pixel by pixel as well as on a
 was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then 
 opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
 
-<img src="./assets/testing/screenshot-mobile-navbar-1.png" 
+<img src="./libraries/testing/screenshot-mobile-navbar-1.png" 
 alt="A screenshot of the main menu as it would appear on a mobile device" 
 />
 
-<img src="./assets/testing/screenshot-mobile-navbar-2.png" 
+<img src="./libraries/testing/screenshot-mobile-navbar-2.png" 
 alt="A screenshot of the main menu with the additional dropdown menu opened, as it would appear on a mobile device" 
 />
 
@@ -996,7 +996,7 @@ The dropdown menu also works well on tablet and desktop devices, opening just be
 of margin between the edges of each element. This gives a slightly more elegant feel. The dropdown hangs down over the hero image but 
 does not obscure any text. See the screenshot below.
 
-<img src="./assets/testing/screenshot-dropdown-menu.png" 
+<img src="./libraries/testing/screenshot-dropdown-menu.png" 
 alt="A screenshot of the dropdown menu as it appears on tablet and desktop devices" 
 />
 
@@ -1009,7 +1009,7 @@ relation to any adjacent label text or submit button.
 All form elements were tested to ensure that submission is not possible without filling out all the required fields due to the 'required' 
 attribute. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
 
-<img src="./assets/testing/email-empty-input-screenshot.png" 
+<img src="./libraries/testing/email-empty-input-screenshot.png" 
 alt="A screenshot of me trying to subscribe to my mailing list without an e-mail address" 
 />
 
@@ -1017,27 +1017,27 @@ Here are some screenshots of me attempting to submit incomplete contact forms, e
 The code is duplicated for each contact form on the website, so the result would be the same on any page.
 
 <img 
-src="./assets/testing/contact-form-empty-fname.png" 
+src="./libraries/testing/contact-form-empty-fname.png" 
 alt ="A screenshot of me being prompted to fill in the first name field" 
 />
 <img 
-src="./assets/testing/contact-form-empty-lname.png" 
+src="./libraries/testing/contact-form-empty-lname.png" 
 alt ="A screenshot of me being prompted to fill in the last name field" 
 />
 <img 
-src="./assets/testing/contact-form-empty-email.png" 
+src="./libraries/testing/contact-form-empty-email.png" 
 alt ="A screenshot of me being prompted to fill in the e-mail address field" 
 />
 <img 
-src="./assets/testing/contact-form-empty-phone.png" 
+src="./libraries/testing/contact-form-empty-phone.png" 
 alt ="A screenshot of me being prompted to fill in the phone number field" 
 />
 <img 
-src="./assets/testing/contact-form-unselected-option.png" 
+src="./libraries/testing/contact-form-unselected-option.png" 
 alt ="A screenshot of me being prompted to select an option from three possible choices" 
 />
 <img 
-src="./assets/testing/contact-form-unselected-option-2.png" 
+src="./libraries/testing/contact-form-unselected-option-2.png" 
 alt ="A screenshot of me being prompted to select an option from two possible choices" 
 />
 
@@ -1089,9 +1089,9 @@ The live site was tested on the following Browsers:
 No problems were detected on any of them. Here are two screenshots below - the first is the site in Firefox on my laptop, the second 
 in Safari on my iPhone 7:
 
-<img src="./assets/testing/live-site-screenshot-firefox.png" alt="A screenshot of the deployed website in Mozilla Firefox" />
+<img src="./libraries/testing/live-site-screenshot-firefox.png" alt="A screenshot of the deployed website in Mozilla Firefox" />
 
-<img src="./assets/testing/live-site-screenshot-iphone7.png" alt="A screenshot of the deployed website in Safari on an iPhone 7" />
+<img src="./libraries/testing/live-site-screenshot-iphone7.png" alt="A screenshot of the deployed website in Safari on an iPhone 7" />
 
 ## Credits
 
@@ -1140,6 +1140,40 @@ I took inspiration for layout and styling from the following websites:
     </li>
 </ul>
 
+## Additional resources
+
+I designed a number of wireframes using Balsamiq. These can be seen in the louis-bacon-portfolio-website.bmpr file in the libraries
+directory.
+
+These wireframes were designed either before the project or in the project's early building stages, hence the designs do not entirely 
+resemble the finished product. There is however a clear concept that has been followed and subsequently optimised.
+
+In the event that the file does not load, here are some screenshots of the wireframes below:
+
+<img src="./libraries/wireframes/homepage-wireframe-screenshot.png" 
+alt="A screenshot of a wireframe for the site's home page"
+/>
+
+<img src="./libraries/wireframes/homepage-mobile-wireframe-screenshot.png" 
+alt="A screenshot of a wireframe for the site's home page on a mobile device"
+/>
+
+<img src="./libraries/wireframes/shop-page-wireframe-screenshot.png" 
+alt="A screenshot of a wireframe for the site's main shop page"
+/>
+
+<img src="./libraries/wireframes/shop-page-wireframe-screenshot-2.png" 
+alt="Another screenshot of a wireframe for the site's main shop page"
+/>
+
+<img src="./libraries/wireframes/cv-page-wireframe-screenshot.png" 
+alt="A screenshot of a wireframe for the site's CV page"
+/>
+
+<img src="./libraries/wireframes/cv-page-mobile-wireframe-screenshot.png" 
+alt="A screenshot of a wireframe for the site's CV page on a mobile device"
+/>
+
 Thank you for reading.
 
-I hope you enjoy my portfolio website.
+I hope you enjoy my browsing portfolio website.
