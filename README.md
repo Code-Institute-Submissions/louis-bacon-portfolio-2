@@ -1,4 +1,4 @@
-<img src="./libraries/testing/project-screenshot.png" alt="Screenshot of the top of my portfolio website" style="margin: 0;">
+![Screenshot of the top of my portfolio website](./libraries/testing/project-screenshot.png)
 
 ## Louis Bacon Portfolio
 
@@ -17,7 +17,7 @@ My website gives an insight into my business and skills, and ensures the user ca
 I have a varied and complex skillset, so a great deal of effort has been made to simplify this.
 
 This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the 
-<a href="https://codeinstitute.net" target="_blank">Code Institute</a>.
+[Code Institute](https://codeinstitute.net).
 
 ## UX / design
 
@@ -41,264 +41,189 @@ than a few lines long and there is adequate spacing between lines so that inform
 Additionally, font sizes have been carefully chosen to reflect the importance of the text. A larger font with heavier lettering 
 immediately strikes the user so that they know where to read first and immediately understand what a page or section is about.
 
-<strong>Pages</strong>
+**Pages**
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/index.html" target="_blank">Home</a>
+[Home](https://lbacon17.github.io/louis-bacon-portfolio/index.html)
 
-<ul>
-<li>
-    My brand logo at the very top of the page. This is the website's hero image.
-</li>
-<li>
-    My name followed immediately by the different services that I provide, each service being a clickable link taking the user to the 
-    respective part of the site.
-</li>
-<li>
-    General information about me and what I do, with an invitation to join my mailing list. This takes the user to the final section 
-    of the homepage where they can enter their e-mail address and click the susbcribe button to receive regular e-mails from me. The 
-    heading was changed from 'About Me' to 'Nice to meet you' as the user would potentially assume the same information was written on 
-    the <a href="https://lbacon17.github.io/louis-bacon-portfolio/about.html" target="_blank">about</a> page with the former title, 
-    when in reality the about page describes my story in more depth.
-</li>
-<li>
-    Quotes from past and present clients and associates. Each quote is presented in a separate box with a white background to 
-    distinguish it from the site background. The size of the quote icons in relation to the text makes it abundantly clear to the user 
-    that this is a quote. The third quote disappears on a medium-sized screen as there is not enough screen real estate to incorporate 
-    all three in a horizontal format without making the layout look awkward. On small screen sizes and below, quotes are in a vertical 
-    layout as they appear more user-friendly in this way. The third quote re-appears on an extra-small screen.
-</li>
-<li>
-    A brief preview of my clothing business with the price of each item clearly shown. Each image is a clickable link that will take 
-    the user to the <a href="https://lbacon17.github.io/louis-bacon-portfolio/merch.html" target="_blank">merchandise</a> page where 
-    they can look at all my clothing products. It was not practical to incorporate my other services into this section where they are 
-    acquired via a sign-up form, but the user has already been made aware of their existence at the top of the site.
-</li>
-<li>
-    Another invitation to join my mailing list by inputting the user's e-mail address and a subscribe button. The input field and 
-    button fit nicely together on one line on medium and large screens, and the width of each is adjusted accordingly. This looks 
-    clunky on small and extra-small screens, so the code is adjusted to have each on a separate line at equal width, making it a 
-    seamless experience for the user. The large, bold heading also immediately catches the users attention, making them more likely to 
-    join a mailing list and become a customer.
-</li>
-<li>
-    Each section is separated by a thin horizontal line, using the "divider" class. The spacing between the end of one section and the start 
-    of the following is carefully chosen: it is not so close that the text is all on top of each other and makes it a painful 
-    experience for the user to read, but not so far away that the user has to guess that more content follows this section.
-</li>
-</ul>
+* My brand logo at the very top of the page. This is the website's hero image.
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/about.html" target="_blank">About</a>
+* My name followed immediately by the different services that I provide, each service being a clickable link taking the user to the 
+respective part of the site.
 
-<ul>
-    <li>
-        More detailed information about me, my background and my story. The story mentions all the areas in which I do business, and 
-        each contains a link to its respective page that the user can intuitively navigate to.
-    </li>
-    <li>
-        A small collection of pictures representing some of my work. On the left and right are two t-shirts designed by myself, in the 
-        middle is a picture of me at a previous football team (I talk about my experience in the game on this page). The images are not 
-        too large so as not to make the user unaware of the presence of more content below, but large enough to catch the user's eye.
-    </li>
-    <li>
-        Another invitation to join my mailing list. The layout is entirely consistent with that of the 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/index.html" target="_blank">homepage</a>.
-    </li>
-</ul>
+* General information about me and what I do, with an invitation to join my mailing list. This takes the user to the final section 
+of the homepage where they can enter their e-mail address and click the susbcribe button to receive regular e-mails from me. The 
+heading was changed from 'About Me' to 'Nice to meet you' as the user would potentially assume the same information was written on the 
+[about](https://lbacon17.github.io/louis-bacon-portfolio/about.html) page with the former title, when in reality the about page 
+describes my story in more depth.
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/shop.html" target="_blank">Shop</a>
+* Quotes from past and present clients and associates. Each quote is presented in a separate box with a white background to 
+distinguish it from the site background. The size of the quote icons in relation to the text makes it abundantly clear to the user 
+that this is a quote. The third quote disappears on a medium-sized screen as there is not enough screen real estate to incorporate 
+all three in a horizontal format without making the layout look awkward. On small screen sizes and below, quotes are in a vertical 
+layout as they appear more user-friendly in this way. The third quote re-appears on an extra-small screen.
 
-<ul>
-    <li>
-        The Shop link in the navbar has a dropdown menu button where the user can easily see different parts of the shop. The 'All 
-        Items' option shows the entirety of the options below. When the user selects the dropdown menu, the page they are on is 
-        highlighted by a white background with contrasting text.
-    </li>
-    <li>
-        A gallery of all the t-shirts I have designed with their name and price below the image. To keep the layout simple, there are 
-        four images per row with clear spacing between them. The item price is in slightly larger, bolder text so it is immediately clear 
-        to the user how much the item costs. On extra smalls screens, there is only one image per row and the t-shirts are set out 
-        vertically. This makes it easier for the user to navigate in this screen size.
-    </li>
-    <li>
-        A form for the user to fill out their details when signing up for tutoring lessons. All fields are required so that the user 
-        does not submit an incomplete form, and easy to fill out. The screen width of the section is set so that the user never has 
-        to read too far across the page, as are the relative widths of the labels and input text fields. On extra-small screens, the 
-        label and input fields are on separate lines so that the user can easily locate the input field and fill in the necessary 
-        details. The width of the submit button is adjusted so as to fit the entire space on small screen sizes and below, making it 
-        easier for the user to locate. The same is true for the date of birth option - although the day, month and year fields fit on 
-        the same line on all screen sizes, on extra small devices such as the iPhone 5, where the screen is just 320px wide, they do 
-        not. Therefore line breaks have been set to appear at this width, so that the day, month, and year fields are on separate lines. 
-        This creates a more seamless user experience.
-    </li>
-    <li>
-        My two fitness books laid out side-by-side, centre-aligned. As with the t-shirts, there is one image per row on an extra small 
-        screen, and the name and price appear below the image with the same font size and weighting.
-    </li>
-    <li>
-        An alert box stating that I will offer web services in the future. The two sentences are on separate lines so that the text 
-        remains in the centre of the screen and the user does not have to read too far across. On extra-small screens, as the first 
-        sentence spans multiple lines, a line-break has been inserted between the two sentences to make the text easier to read.
-    </li>
-</ul>
+* A brief preview of my clothing business with the price of each item clearly shown. Each image is a clickable link that will take 
+the user to the [merchandise](https://lbacon17.github.io/louis-bacon-portfolio/merch.html) page where they can look at all my clothing 
+products. It was not practical to incorporate my other services into this section where they are acquired via a sign-up form, but the 
+user has already been made aware of their existence at the top of the site.
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/merch.html" target="_blank">Merch</a>
+* Another invitation to join my mailing list by inputting the user's e-mail address and a subscribe button. The input field and 
+button fit nicely together on one line on medium and large screens, and the width of each is adjusted accordingly. This looks 
+clunky on small and extra-small screens, so the code is adjusted to have each on a separate line at equal width, making it a 
+seamless experience for the user. The large, bold heading also immediately catches the users attention, making them more likely to 
+join a mailing list and become a customer.
 
-<ul>
-    <li>
-        All t-shirts displayed in the same layout as the 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/shop.html" target="_blank">shop</a> page using the same code
-    </li>
-    <li>
-        Brief description of my t-shirt business below the title in lighter text with an invitation to visit my brand's website 
-        <a href="https://lb17tees.com" target="_blank">LB17 Tees</a>
-    </li>
-    <li>
-        The image of each item contains a link that will take the user to the same item on my brand's website, where it is purchaseable.
-    </li>
-</ul>
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html" target="_blank">Tutoring</a>
+* Each section is separated by a thin horizontal line, using the "divider" class. The spacing between the end of one section and the 
+start of the following is carefully chosen: it is not so close that the text is all on top of each other and makes it a painful 
+experience for the user to read, but not so far away that the user has to guess that more content follows this section.
 
-<ul>
-    <li>
-        The same form as on the shop page using the same code
-    </li>
-</ul>
+[About](https://lbacon17.github.io/louis-bacon-portfolio/about.html)
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/fitness.html" target="_blank">Fitness</a>
+* More detailed information about me, my background and my story. The story mentions all the areas in which I do business, and each 
+contains a link to its respective page that the user can intuitively navigate to.
 
-<ul>
-    <li>
-        The same images showing the fitness books as on the shop page, using the same code
-    </li>
-    <li>
-        Each image contains a link to <a href="http://gumroad.com/" target="_blank">Gumroad</a>, where my books are listed for sale and 
-        the user can purchase if they so wish
-    <li>
-        Information that I also provide coaching sessions with a contact form below for the user to easily fill out. The code and 
-        classes used, including media queries at different breakpoints, are exactly the same as that which was used for the tutoring 
-        form. The only difference is a details box at the end where the text area has the same classes as the input fields to keep 
-        consistency
-    </li>
-</ul>
+* A small collection of pictures representing some of my work. On the left and right are two t-shirts designed by myself, in the middle 
+is a picture of me at a previous football team (I talk about my experience in the game on this page). The images are not too large so 
+as not to make the user unaware of the presence of more content below, but large enough to catch the user's eye.
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/web-services.html" target="_blank">Web Services</a>
+* Another invitation to join my mailing list. The layout is entirely consistent with that of the 
+[homepage](https://lbacon17.github.io/louis-bacon-portfolio/index.html)
 
-<ul>
-    <li>
-        A coming soon logo with under construction emojis either side. The UC emojis are increased in height on extra-large screen 
-        sizes so that they are not dwarfed by the middle image. All images decrease at the same rate so that they remain on one line 
-        as screen size is decreased except for small screens, where the right-hand side emoji disappears and the left-hand emoji sits 
-        on top of the logo and is centred rather than aligned left. This creates a more symmetrical display that is easier on the 
-        user's eye.
-    </li>
-    <li>
-        The same alert box as on the main shop page, with the same code and spacing rules in place.
-    </li>
-</ul>
+[Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html)
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/cv.html" target="_blank">CV</a>
+* The Shop link in the navbar has a dropdown menu button where the user can easily see different parts of the shop. The 'All Items' 
+option shows the entirety of the options below. When the user selects the dropdown menu, the page they are on is highlighted by a 
+white background with contrasting text.
 
-<ul>
-    <li>
-        A Work History section title with Experience and Education in larger headings either side. This immediately informs the user 
-        of the information on the page and they can decide whether to look at my education or experience first. That these are in 
-        larger font than the work history heading does not cause any confusion to the user as it is self-explanatory on a CV page that 
-        education and experience columns will be detailing my work history. 
-    </li>
-    <li>
-        My professional experience in the left-hand column, with roles and employers in bullet points and dates in small text above. 
-        This clearly differentiates the actual work from the dates to the user.
-    </li>
-    <li>
-        The education column on the right using exactly the same layout to ensure consistency
-    </li>
-    <li>
-        A button to download a PDF of my CV. The link opens in a new window when clicked, so that the user can easily return to my page 
-        without losing the CV.
-    </li>
-</ul>
+* A gallery of all the t-shirts I have designed with their name and price below the image. To keep the layout simple, there are four 
+images per row with clear spacing between them. The item price is in slightly larger, bolder text so it is immediately clear to the 
+user how much the item costs. On extra smalls screens, there is only one image per row and the t-shirts are set out vertically. This 
+makes it easier for the user to navigate in this screen size.
 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/contact.html" target="_blank">Contact</a>
+* A form for the user to fill out their details when signing up for tutoring lessons. All fields are required so that the user does 
+not submit an incomplete form, and easy to fill out. The screen width of the section is set so that the user never has to read too 
+far across the page, as are the relative widths of the labels and input text fields. On extra-small screens, the label and input 
+fields are on separate lines so that the user can easily locate the input field and fill in the necessary details. The width of the 
+submit button is adjusted so as to fit the entire space on small screen sizes and below, making it easier for the user to locate. The 
+same is true for the date of birth option - although the day, month and year fields fit on the same line on all screen sizes, on extra 
+small devices such as the iPhone 5, where the screen is just 320px wide, they do not. Therefore line breaks have been set to appear at 
+this width, so that the day, month, and year fields are on separate lines. This creates a more seamless user experience.
 
-<ul>
-    <li>
-        A couple of lines briefly explaining to the user why contacting me would be necessary or desirable. 
-    </li>
-    <li>
-        Another invitation to subscribe to my mailing list in case they have questions about news. The link takes the user to the 
-        mailing list section of the <a href="https://lbacon17.github.io/louis-bacon-portfolio/index.html" target="_blank">homepage</a>, 
-        which starts with an anchor element with an attribute value of name="mailing-list". I have therefore added '#mailing-list' onto 
-        the end of the homepage URL in the href attribute to take the user directly to this section and save time having to scroll all 
-        the way to the bottom of the page.
-    </li>
-    <li>
-        Initially the mailing list section was replicated below the contact form, but was removed as it did not look pleasing on the 
-        eye.
-    </li>
-    <li>
-        A simple contact form using the same layout and rules as the other contact forms. The input fields and button adjust at the 
-        same breakpoints and are subject to the same media queries.
-    </li>
-</ul>
+* My two fitness books laid out side-by-side, centre-aligned. As with the t-shirts, there is one image per row on an extra small screen, 
+and the name and price appear below the image with the same font size and weighting.
 
-<strong>User Stories</strong>
+* An alert box stating that I will offer web services in the future. The two sentences are on separate lines so that the text remains 
+in the centre of the screen and the user does not have to read too far across. On extra-small screens, as the first sentence spans 
+multiple lines, a line-break has been inserted between the two sentences to make the text easier to read.
+
+[Merch](https://lbacon17.github.io/louis-bacon-portfolio/merch.html)
+
+* All t-shirts displayed in the same layout as the [shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html) page using 
+the same code
+
+* Brief description of my t-shirt business below the title in lighter text with an invitation to visit my brand's website 
+[LB17 Tees](https://lb17tees.com)
+
+* The image of each item contains a link that will take the user to the same item on my brand's website, where it is purchaseable. 
+
+[Tutoring](https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html)
+
+* The same form as on the shop page using the same code
+
+[Fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html)
+
+* The same images showing the fitness books as on the shop page, using the same code
+
+* Each image contains a link to [Gumroad](http://gumroad.com/), where my books are listed for sale and the user can purchase if they so 
+wish
+
+* Information that I also provide coaching sessions with a contact form below for the user to easily fill out. The code and classes 
+used, including media queries at different breakpoints, are exactly the same as that which was used for the tutoring form. The only 
+difference is a details box at the end where the text area has the same classes as the input fields to keep consistency
+
+[Web Services](https://lbacon17.github.io/louis-bacon-portfolio/web-services.html)
+
+* A coming soon logo with under construction emojis either side. The UC emojis are increased in height on extra-large screen sizes so 
+that they are not dwarfed by the middle image. All images decrease at the same rate so that they remain on one line as screen size is 
+decreased except for small screens, where the right-hand side emoji disappears and the left-hand emoji sits on top of the logo and is 
+centred rather than aligned left. This creates a more symmetrical display that is easier on the user's eye.
+
+* The same alert box as on the main shop page, with the same code and spacing rules in place.
+
+[CV](https://lbacon17.github.io/louis-bacon-portfolio/cv.html)
+
+* A Work History section title with Experience and Education in larger headings either side. This immediately informs the user of the 
+information on the page and they can decide whether to look at my education or experience first. That these are in larger font than 
+the work history heading does not cause any confusion to the user as it is self-explanatory on a CV page that education and experience 
+columns will be detailing my work history. 
+
+* My professional experience in the left-hand column, with roles and employers in bullet points and dates in small text above. This 
+clearly differentiates the actual work from the dates to the user. 
+
+* The education column on the right using exactly the same layout to ensure consistency
+
+* A button to download a PDF of my CV. The link opens in a new window when clicked, so that the user can easily return to my page 
+without losing the CV.
+
+[Contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html)
+
+* A couple of lines briefly explaining to the user why contacting me would be necessary or desirable. 
+        
+* Another invitation to subscribe to my mailing list in case they have questions about news. The link takes the user to the mailing list 
+section of the [homepage](https://lbacon17.github.io/louis-bacon-portfolio/index.html), which starts with an anchor element with an 
+attribute value of name="mailing-list". I have therefore added '#mailing-list' onto the end of the homepage URL in the href attribute 
+to take the user directly to this section and save time having to scroll all the way to the bottom of the page.
+
+* Initially the mailing list section was replicated below the contact form, but was removed as it did not look pleasing on the eye.
+
+* A simple contact form using the same layout and rules as the other contact forms. The input fields and button adjust at the same 
+breakpoints and are subject to the same media queries.
+
+**User Stories**
 
 The aim of the website is to let existing and prospective clients and business partners see what I offer and encourage them to work 
 with me or buy my services.
 
-<ul>
-    <li>
-        As a student or a parent of a student needing tuition, I want to find out what subjects Louis teaches and his rates. I do this 
-        by clicking on the 'tutor' link under his name or opening the 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/shop.html" target="_blank">shop</a> dropdown menu and selecting 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html" target="_blank">tutoring</a>. I can then see what 
-        subjects he teaches and what his rates are, and book lessons by filling out a simple form.
-    </li>
-    <li>
-        As somebody looking to buy clothes, I click on the 'clothing brand' link or open 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/merch.html" target="_blank">merchandise</a> under the 'shop' 
-        dropdown menu. I can see what products Louis designs and sells, how much they cost and be taken through to his t-shirts 
-        website. I would also like to be able to buy directly from this site, which is a planned feature.
-    </li>
-    <li>
-        As somebody looking for advice on fitness, I click on 'fitness coach' or 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/fitness.html" target="_blank">fitness</a> under the 'shop' dropdown 
-        menu. I can see the books that Louis has written on the subject. I want to buy one, so I click on the image that takes me 
-        through to an external site hosting the product where I can make my purchase. I would also like to be able to buy one directly 
-        through Louis' own website, which is another planned feature.
-    </li>
-    <li>
-        I can also book a coaching session if I wish. I am informed that rates are negotiable and know from the information given that 
-        Louis will get back to me. I also have the opportunity to explain my goals and my situation in a bit more detail so that Louis 
-        has as much information as he needs before working with me.
-    </li>
-    <li>
-        I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I head to the 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/contact.html" target="_blank">contact</a> page by clicking on the 
-        'contact' link on the main menu. I simply fill out the contact form with my details and some information about the project and 
-        await Louis' response.
-    </li>
-    <li>
-        I think I'd like to work with Louis on something, but I want to read about his prior experience to check that it's something 
-        he's done before. I head to his <a href="https://lbacon17.github.io/louis-bacon-portfolio/cv.html" target="_blank">CV</a> 
-        page via the main menu and I can see his work experience. It looks good, but I want to look into it in a bit more detail. I 
-        can see there's a download button at the bottom for his full CV, so I click it and a PDF opens. Sure enough, Louis has exactly 
-        what I'm looking for, so I'll contact him. Thankfully the CV opened in a new tab, so I don't have to hit the back button and 
-        wait for the page to re-load. I go back to Louis' site and navigate from the CV page to the 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/contact.html" target="_blank">Contact</a> page, fill out the contact 
-        form in a few easy steps and await Louis' response.
-    </li>
-    <li>
-        I like Louis' introduction on his homepage, but I want to find out a bit more about him. I click the 
-        <a href="https://lbacon17.github.io/louis-bacon-portfolio/about.html" target="_blank">about</a> link and can read his story in 
-        more detail. If I want to hire him for something or just get in touch, the main menu bar will tell me where to go next.
-    </li>
-</ul>
+* As a student or a parent of a student needing tuition, I want to find out what subjects Louis teaches and his rates. I do this 
+by clicking on the 'tutor' link under his name or opening the [shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html) 
+dropdown menu and selecting [tutoring](https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html). I can then see what subjects he 
+teaches and what his rates are, and book lessons by filling out a simple form.
 
+* As somebody looking to buy clothes, I click on the 'clothing brand' link or open 
+[merchandise](https://lbacon17.github.io/louis-bacon-portfolio/merch.html) under the 'shop' dropdown menu. I can see what products 
+Louis designs and sells, how much they cost and be taken through to his t-shirts website. I would also like to be able to buy directly 
+from this site, which is a planned feature.
+
+* As somebody looking for advice on fitness, I click on 'fitness coach' or 
+[fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html) under the 'shop' dropdown menu. I can see the books that Louis 
+has written on the subject. I want to buy one, so I click on the image that takes me through to an external site hosting the product 
+where I can make my purchase. I would also like to be able to buy one directly through Louis' own website, which is another planned 
+feature.
+
+* I can also book a coaching session if I wish. I am informed that rates are negotiable and know from the information given that Louis 
+will get back to me. I also have the opportunity to explain my goals and my situation in a bit more detail so that Louis has as much 
+information as he needs before working with me.
+
+* I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I head to the 
+[contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html) page by clicking on the 'contact' link on the main menu. 
+I simply fill out the contact form with my details and some information about the project and await Louis' response.
+
+* I think I'd like to work with Louis on something, but I want to read about his prior experience to check that it's something he's 
+done before. I head to his [CV](https://lbacon17.github.io/louis-bacon-portfolio/cv.html) page via the main menu and I can see his work 
+experience. It looks good, but I want to look into it in a bit more detail. I can see there's a download button at the bottom for his 
+full CV, so I click it and a PDF opens. Sure enough, Louis has exactly what I'm looking for, so I'll contact him. Thankfully the CV 
+opened in a new tab, so I don't have to hit the back button and wait for the page to re-load. I go back to Louis' site and navigate 
+from the CV page to the [contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html) page, fill out the contact form in a 
+few easy steps and await Louis' response.
+
+* I like Louis' introduction on his homepage, but I want to find out a bit more about him. I click the 
+[about](https://lbacon17.github.io/louis-bacon-portfolio/about.html) link and can read his story in more detail. If I want to hire him 
+for something or just get in touch, the main menu bar will tell me where to go next.        
+        
 ## Features
 
-<strong>Existing features</strong>
+**Existing features**
 
 1. A return to the top button at the bottom of each page using only HTML and CSS. At the very top of each page, just after the opening 
 body tag, I have included the following code:
@@ -430,7 +355,7 @@ buttons.
 
 4. Quote boxes displaying testimonies from clients or other contacts. These are in a borderless box with a white background to create a 
 subtle contrast from the rest of the page. All text is centered, with the quote itself italicised and sandwiched between larger quote 
-icons taken from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>.
+icons taken from [Font Awesome](https://fontawesome.com).
 
 To optimise UX, the last quote only appears on xs and lg (and above) screens. This necessitates the use of the classes .d-inline 
 .d-sm-none and .d-lg-inline-flex. The inline-flex class is used for large screens rather than just inline as this vertically centres 
@@ -510,14 +435,13 @@ The following CSS rules were also used for styling:
             }
             ```
 
-5. Galleries on the <a href="https://lbacon17.github.io/louis-bacon-portfolio/about.html" target="_blank">About</a>, 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/shop.html" target="_blank">Shop</a>, 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/merch.html" target="_blank">Merchandise</a> and 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/fitness.html" target="_blank">Fitness</a> pages. The gallery on the About 
-page brings life to my story and puts a face to my name. This gives the user comfort to know that they are dealing with a real person, 
-and breaks up the page so that the user is not presented with so many blocks of text in one go. The images on this page display 
-vertically on xs screens as they would otherwise be too small to see clearly. On sm and above sizes they are horizontally laid out 
-using the .col-sm class. Displaying them vertically on any other screen size than xs would take up excessive screen real estate.
+5. Galleries on the [About](https://lbacon17.github.io/louis-bacon-portfolio/about.html), 
+[Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html), [Merch](https://lbacon17.github.io/louis-bacon-portfolio/merch.html) 
+and [Fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html) pages. The gallery on the About page brings life to my 
+story and puts a face to my name. This gives the user comfort to know that they are dealing with a real person, and breaks up the page 
+so that the user is not presented with so many blocks of text in one go. The images on this page display vertically on xs screens as 
+they would otherwise be too small to see clearly. On sm and above sizes they are horizontally laid out using the .col-sm class. 
+Displaying them vertically on any larger screen size than xs would take up excessive screen real estate.
 
 Here is the code used for the gallery on the About page:
 
@@ -556,14 +480,13 @@ The same code is used for the galleries on other pages, except that the no-gutte
 between images when advertising products.
 
 6. Contact forms are consistent with their layout across the site and exist on the 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/shop.html" target="_blank">Shop</a>, 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html" target="_blank">Tutoring</a>, 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/fitness.html" target="_blank">Fitness</a> and 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/contact.html" target="_blank">Contact</a> pages. Certain elements are 
-introduced or removed to fit the user's needs. Each contact form is in a parent container of a fixed width of 70% so that it does not 
-occupy too much of the screen and increase the difficulty of reading it. All input elements have required attributes so an incomplete 
-form cannot be submitted. All forms contain fname, lname and email fields, and are housed by a `<div>` element using the .contact-form 
-class. Here is an example:
+[Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html), 
+[Tutoring](https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html), 
+[Fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html) and 
+[Contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html) pages. Certain elements are introduced or removed to fit the 
+user's needs. Each contact form is in a parent container of a fixed width of 70% so that it does not occupy too much of the screen 
+and increase the difficulty of reading it. All input elements have required attributes so an incomplete form cannot be submitted. All 
+forms contain fname, lname and email fields, and are housed by a `<div>` element using the .contact-form class. Here is an example:
 
             ```
             <form method="post" class="contact">
@@ -843,8 +766,8 @@ Here are the style rules in full for the contact forms:
 
 7. Downloadable CV to view my work experience in more detail. The download button has a dark background to differentiate it from submit 
 buttons on contact forms, and sits in the centre of the screen directly below my CV on the 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio/cv.html" target="_blank">CV</a> page. There is a child anchor element 
-using the target="_blank" attribute so that the CV opens in a new tab.
+[CV](https://lbacon17.github.io/louis-bacon-portfolio/cv.html) page. There is a child anchor element using the target="_blank" 
+attribute so that the CV opens in a new tab.
 
             ```
             <div class="cv-download">
@@ -882,48 +805,42 @@ just inside its white border after being clicked. To stop this from happening I 
             }
             ```
 
-The hamburger icon itself was taken from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>.
+The hamburger icon itself was taken from [Font Awesome](https://fontawesome.com).
 
-<strong>Features left to implement</strong>
+**Features left to implement**
 
 I plan to implement the following features at a later stage of the project using 
-<a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>:
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript):
 
-<ul>
-    <li>
-        An add-to-cart button below the items in the shop. This would be combined with a checkout page and a cart icon in the top right 
-        corner. A '1' would appear when an item was added to a cart as on most online retail websites.
-    </li>
-    <li>
-        A more elegant return to top button in the form of an upward-facing arrow that would appear whenver the user scrolled away from 
-        the top of the page, and would simply scroll back up
-    </li>
-    <li>
-        The addition of more items to the <a href="https://lbacon17.github.io/louis-bacon-portfolio/shop.html" target="_blank">Shop</a> 
-        page that can be browsed using a carousel feature with left and right arrows. There is a framework in 
-        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to help implement this
-    </li>
-    <li>
-        A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom
-    </li>
-</ul>
+
+* An add-to-cart button below the items in the shop. This would be combined with a checkout page and a cart icon in the top right 
+corner. A '1' would appear when an item was added to a cart as on most online retail websites.
+
+* A more elegant return to top button in the form of an upward-facing arrow that would appear whenver the user scrolled away from the 
+top of the page, and would simply scroll back up
+
+* The addition of more items to the [Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html) page that can be browsed 
+using a carousel feature with left and right arrows. There is a framework in [Bootstrap](https://getbootstrap.com) to help implement 
+this
+
+* A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom
 
 ## Technologies Used
 
 The project uses the follwing coding languages:
 
-- HTML
-- CSS
-- JavaScript
+* HTML
+* CSS
+* JavaScript
 
 The following frameworks/libraries were also used:
 
-- <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> &#8212; for simple layout frameworks and built-in classes such as 
+* [Bootstrap](https://getbootstrap.com) &#8212; for simple layout frameworks and built-in classes such as 
     .container-fluid
-- <a href="https://jquery.com/" target="_blank">jQuery</a> &#8212; to simplify DOM manipulation and traversal
-- <a href="https://fontawesome.com" target="_blank">Font Awesome</a> &#8212; to enable the display of icons for quotes, payment info 
+* [jQuery](https://jquery.com) &#8212; to simplify DOM manipulation and traversal
+* [Font Awesome](https://fontawesome.com) &#8212; to enable the display of icons for quotes, payment info 
     and social media links 
-- <a href="https://www.jsdelivr.com/" target="_blank">jsDelivr</a> &#8212; for easy open-sourcing
+* [jsDelivr](https://jsdelivr.com) &#8212; for easy open-sourcing
 
 ## Testing
 
@@ -932,51 +849,30 @@ page using the Full Page Screen Capture extension.
 
 See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
 
-<img src="./libraries/testing/screen-capture-homepage-galaxy-s5.png" 
-alt ="A screen capture of the home page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the home page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-homepage-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-about-galaxy-s5.png"
-alt="A screen capture of the about page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the about page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-about-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-shop-galaxy-s5.png"
-alt="A screen capture of the shop (all items) page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the shop (all items) page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-shop-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-merch-galaxy-s5.png"
-alt="A screen capture of the merchandise page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the merchandise page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-merch-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-tutoring-galaxy-s5.png"
-alt="A screen capture of the tutoring page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the tutoring page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-tutoring-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-fitness-galaxy-s5.png"
-alt="A screen capture of the fitness page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the fitness page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-fitness-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-web-services-galaxy-s5.png"
-alt="A screen capture of the web services page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the web services page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-web-services-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-cv-galaxy-s5.png"
-alt="A screen capture of the cv page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the CV page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-cv-galaxy-s5.png)
 
-<img src="./libraries/testing/screen-capture-contact-galaxy-s5.png"
-alt="A screen capture of the contact page on a Galaxy S5 using Developer Tools" 
-/>
+![A screen capture of the contact page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-contact-galaxy-s5.png)
 
 Here are a couple of screenshots of the layout on an iPad (768px width):
 
-<img src="./libraries/testing/screen-capture-home-ipad.png"
-alt="A screen capture of the home page on an iPad using Developer Tools" 
-/>
+![A screen capture of the home page on an iPad using Developer Tools](./libraries/testing/screen-capture-home-ipad.png)
 
-<img src="./libraries/testing/screen-capture-shop-ipad.png"
-alt="A screen capture of the shop page on an iPad using Developer Tools" 
-/>
+![A screen capture of the shop page on an iPad using Developer Tools](./libraries/testing/screen-capture-shop-ipad.png)
+
 
 Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
 
@@ -984,21 +880,16 @@ I used Developer Tools to test the website layout pixel by pixel as well as on a
 was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then 
 opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
 
-<img src="./libraries/testing/screenshot-mobile-navbar-1.png" 
-alt="A screenshot of the main menu as it would appear on a mobile device" 
-/>
+![A screenshot of the main menu as it would appear on a mobile device](./libraries/testing/screenshot-mobile-navbar-1.png)
 
-<img src="./libraries/testing/screenshot-mobile-navbar-2.png" 
-alt="A screenshot of the main menu with the additional dropdown menu opened, as it would appear on a mobile device" 
-/>
+![A screenshot of the main menu with the dropdown open as it would appear on a mobile device](./libraries/testing/screenshot-mobile-navbar-2.png)
+
 
 The dropdown menu also works well on tablet and desktop devices, opening just below the main navbar with a deliberate but small amount 
 of margin between the edges of each element. This gives a slightly more elegant feel. The dropdown hangs down over the hero image but 
 does not obscure any text. See the screenshot below.
 
-<img src="./libraries/testing/screenshot-dropdown-menu.png" 
-alt="A screenshot of the dropdown menu as it appears on tablet and desktop devices" 
-/>
+![A screenshot of the dropdown menu as it appears on tablet and desktop devices](./libraries/testing/screenshot-dropdown-menu.png)
 
 Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were 
 detected.
@@ -1009,136 +900,103 @@ relation to any adjacent label text or submit button.
 All form elements were tested to ensure that submission is not possible without filling out all the required fields due to the 'required' 
 attribute. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
 
-<img src="./libraries/testing/email-empty-input-screenshot.png" 
-alt="A screenshot of me trying to subscribe to my mailing list without an e-mail address" 
-/>
+![A screenshot of me trying to subscribe to my mailing list without an e-mail address](./libraries/testing/email-empty-input-screenshot.png)
 
 Here are some screenshots of me attempting to submit incomplete contact forms, either with an empty input field or unselected option. 
 The code is duplicated for each contact form on the website, so the result would be the same on any page.
 
-<img 
-src="./libraries/testing/contact-form-empty-fname.png" 
-alt ="A screenshot of me being prompted to fill in the first name field" 
-/>
-<img 
-src="./libraries/testing/contact-form-empty-lname.png" 
-alt ="A screenshot of me being prompted to fill in the last name field" 
-/>
-<img 
-src="./libraries/testing/contact-form-empty-email.png" 
-alt ="A screenshot of me being prompted to fill in the e-mail address field" 
-/>
-<img 
-src="./libraries/testing/contact-form-empty-phone.png" 
-alt ="A screenshot of me being prompted to fill in the phone number field" 
-/>
-<img 
-src="./libraries/testing/contact-form-unselected-option.png" 
-alt ="A screenshot of me being prompted to select an option from three possible choices" 
-/>
-<img 
-src="./libraries/testing/contact-form-unselected-option-2.png" 
-alt ="A screenshot of me being prompted to select an option from two possible choices" 
-/>
+![A screenshot of me being prompted to fill in the first name field](./libraries/testing/contact-form-empty-fname.png)
+
+![A screenshot of me being prompted to fill in the last name field](./libraries/testing/contact-form-empty-lname.png)
+
+![A screenshot of me being prompted to fill in the e-mail address field](./libraries/testing/contact-form-empty-email.png)
+
+![A screenshot of me being prompted to fill in the phone number field](./libraries/testing/contact-form-empty-phone.png)
+
+![A screenshot of me being prompted to select an option from three choices](./libraries/testing/contact-form-unselected-option.png)
+
+![A screenshot of me being prompted to select an option from two choices](./libraries/testing/contact-form-unselected-option-2.png)
 
 All external links navigate to their intended destination and open in a new browser tab.
 
-<strong>Issues</strong>
+**Issues**
 
 The following issues were encountered during the testing phase:
 
-<ul>
-<li>
-    Dropdown mobile menu initially opened as row before moving to a vertical layout. I discovered this happened because the .navbar-nav 
-    class had a rule of 'flex-direction: row'. Removing the style rule resolved the issue.
-</li>
-<li>
-    The border of the hamburger menu displayed a blue ring when selected. To resolve the issue, I added a rule of 'outline: none' to 
-    the pseudo class .navbar-toggler:focus
-</li>
-<li>
-    In the mailing list section, the input text field misaligned with the submit button at certain screen sizes, meaning they were not 
-    the same width when on different lines or the input field was too narrow when on the same line. This was due to the 'width: auto' 
-    rule in the .form-control class. After many unsuccessful attempts to fix the issue, I finally managed to resolve it by giving the 
-    element a new .email-input class and using the '!important' property to set the width at various screen sizes.
-</li>
-<li>
-    A blue rectangular border surrounded the Shop link when selected in the mobile dropdown menu when using Safari (both on a Mac at a 
-    reduced screen size and on an iPhone). I eventually resolved this by adding an 'outline: none' style rule to the a:focus 
-    pseudoelement (attempts to target by class or other more specific properties were unsuccessful).
-</li>
-</ul>
+
+* Dropdown mobile menu initially opened as row before moving to a vertical layout. I discovered this happened because the .navbar-nav 
+class had a rule of 'flex-direction: row'. Removing the style rule resolved the issue.
+
+* The border of the hamburger menu displayed a blue ring when selected. To resolve the issue, I added a rule of 'outline: none' to the 
+pseudo class .navbar-toggler:focus
+
+* In the mailing list section, the input text field misaligned with the submit button at certain screen sizes, meaning they were not 
+the same width when on different lines or the input field was too narrow when on the same line. This was due to the 'width: auto' rule 
+in the .form-control class. After many unsuccessful attempts to fix the issue, I finally managed to resolve it by giving the element a 
+new .email-input class and using the '!important' property to set the width at various screen sizes.
+
+
+* A blue rectangular border surrounded the Shop link when selected in the mobile dropdown menu when using Safari (both on a Mac at a 
+reduced screen size and on an iPhone). I eventually resolved this by adding an 'outline: none' style rule to the a:focus pseudoelement 
+(attempts to target by class or other more specific properties were unsuccessful).
 
 ## Deployment
 
 My website was deployed using GitHub Pages from the repository's master branch.
 
 The website uses the GitHub domain. The full address is 
-<a href="https://lbacon17.github.io/louis-bacon-portfolio" target="_blank">https://lbacon17.github.io/louis-bacon-portfolio</a>. 
-It is not served from any external domain.
+[https://lbacon17.github.io/louis-bacon-portfolio](https://lbacon17.github.io/louis-bacon-portfolio). It is not served from any 
+external domain.
 
 The live site was tested on the following Browsers:
 
-<ul>
-    <li>Brave Browser</li>
-    <li>Google Chrome</li>
-    <li>Mozilla Firefox</li>
-    <li>Safari</li>
-</ul>
+* Brave Browser
+* Google Chrome
+* Mozilla Firefox
+* Safari
 
 No problems were detected on any of them. Here are two screenshots below - the first is the site in Firefox on my laptop, the second 
 in Safari on my iPhone 7:
 
-<img src="./libraries/testing/live-site-screenshot-firefox.png" alt="A screenshot of the deployed website in Mozilla Firefox" />
+![A screenshot of the deployed website in Mozilla Firefox](./libraries/testing/live-site-screenshot-firefox.png)
 
-<img src="./libraries/testing/live-site-screenshot-iphone7.png" alt="A screenshot of the deployed website in Safari on an iPhone 7" />
+![A screenshot of the deployed website in Safari on an iPhone 7](./libraries/testing/live-site-screenshot-iphone7.png)
 
 ## Credits
 
-<strong>Content</strong>
+**Content**
 
-A number of classes and elements such as the contact forms and buttons are based on 
-<a href="https://getbootstrap.com" target="_blank">Bootstrap</a> documentation and design. For layout simplicity, I have followed the 
-container > row > col formula as much as possible.
+A number of classes and elements such as the contact forms and buttons are based on [Bootstrap](https://getbootstrap.com) documentation 
+and design. For layout simplicity, I have followed the container > row > col formula as much as possible.
 
 All icons used on the site (hamburger menu, quote symbols, payment info and social media links) were taken from 
-<a href="https://fontawesome.com/start/" target="_blank">Font Awesome</a>.
+[Font Awesome](https://fontawesome.com).
 
 The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
-<a href="https://w3schools.com/" target="_blank">W3Schools</a> and <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>. 
-The specific instructions can be found 
-<a href="https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only" target="_blank">here</a>. 
+[W3 Schools](https://w3schools.com) and [Stack Overflow](https://stackoverflow.com). The specific instructions can be found 
+[here](ttps://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only). 
 
-<strong>Media</strong>
+**Media**
 
 Most the images are taken from my own camera roll. The hero image is my clothing brand logo and can be found on my brand 
-<a href="https://lb17tees.com" target="_blank">website</a> along with the t-shirt designs and mockups. I have also had the fitness book 
+[website](https://lb17tees.com) along with the t-shirt designs and mockups. I have also had the fitness book 
 covers professionally designed and these are my own images. They are free to re-use.
-<br>
-<br>
-The images on the <a href="https://lbacon17.github.io/louis-bacon-portfolio/web-services.html" target="_blank">web services</a> page 
-are taken from <a href="https://google.com/images" target="_blank">Google Images</a>. The coming soon image initially had a white 
-background, and I used an <a href="https://onlinepngtools.com/create-transparent-png" target="_blank">online PNG tool</a> to convert 
-this to a transparent background and blend in with the site.
 
-<strong>Acknowledgements</strong>
+The images on the [web services](https://lbacon17.github.io/louis-bacon-portfolio/web-services.html) page are taken from 
+[Google Images](https://google.com/images). The coming soon image initially had a white background, and I used an 
+[online PNG tool](https://onlinepngtools.com/create-transparent-png) to convert this to a transparent background and blend in with 
+the site.
+
+**Acknowledgements**
 
 I took inspiration for layout and styling from the following websites:
 
-<ul>
-    <li>
-        <a href="https://www.awwwards.com/websites/portfolio/" target="_blank">Awwwards.com (examples of memorable portfolio website 
-        designs)</a>
-    <li>
-        <a href="https://www.shopify.com" target="_blank">Shopify (which also hosts my clothing website)</a>
-    </li>
-    <li>
-        <a href="https://teamzuby.com" target="_blank">Team Zuby</a>
-    </li>
-    <li>
-        <a href="https://www.jamessmithacademy.com/" target="_blank">James Smith Academy</a>
-    </li>
-</ul>
+
+* [Awwwards.com](https://www.awwwards.com/websites/portfolio/) (examples of memorable portfolio website 
+designs)
+* [Shopify](https://shopify.com) (which also hosts my clothing website)
+* [Team Zuby](https://teamzuby.com)
+* [James Smith Academy](https://jamessmithacademy.com)
 
 ## Additional resources
 
@@ -1150,29 +1008,17 @@ resemble the finished product. There is however a clear concept that has been fo
 
 In the event that the file does not load, here are some screenshots of the wireframes below:
 
-<img src="./libraries/wireframes/homepage-wireframe-screenshot.png" 
-alt="A screenshot of a wireframe for the site's home page"
-/>
+![A screenshot of a wireframe for the site's home page](./libraries/wireframes/homepage-wireframe-screenshot.png)
 
-<img src="./libraries/wireframes/homepage-mobile-wireframe-screenshot.png" 
-alt="A screenshot of a wireframe for the site's home page on a mobile device"
-/>
+![A screenshot of a wireframe for the site's home page on a mobile device](./libraries/wireframes/homepage-mobile-wireframe-screenshot.png)
 
-<img src="./libraries/wireframes/shop-page-wireframe-screenshot.png" 
-alt="A screenshot of a wireframe for the site's main shop page"
-/>
+![A screenshot of a wireframe for the site's main shop page](./libraries/wireframes/shop-page-wireframe-screenshot.png)
 
-<img src="./libraries/wireframes/shop-page-wireframe-screenshot-2.png" 
-alt="Another screenshot of a wireframe for the site's main shop page"
-/>
+![Another screenshot of a wireframe for the site's home page](./libraries/wireframes/homepage-wireframe-screenshot-2.png)
 
-<img src="./libraries/wireframes/cv-page-wireframe-screenshot.png" 
-alt="A screenshot of a wireframe for the site's CV page"
-/>
+![A screenshot of a wireframe for the site's CV page](./libraries/wireframes/cv-page-wireframe-screenshot.png)
 
-<img src="./libraries/wireframes/cv-page-mobile-wireframe-screenshot.png" 
-alt="A screenshot of a wireframe for the site's CV page on a mobile device"
-/>
+![A screenshot of a wireframe for the site's CV page on a mobile device](./libraries/wireframes/cv-page-mobile-wireframe-screenshot.png)
 
 Thank you for reading.
 
