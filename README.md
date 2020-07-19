@@ -4,7 +4,7 @@
 
 Hello,
 
-Welcome to my self-titled portfolio website.
+Welcome to my self-titled portfolio website. 
 
 This website is a hub for me to promote the various products and services that I offer, both as a business and an individual.
 
