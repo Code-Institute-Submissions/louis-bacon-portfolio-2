@@ -134,6 +134,11 @@ a:focus {
   padding-bottom: 5px;
 }
 
+#checkout {
+    text-align: right;
+    color: #ffffff;
+}
+
 /*--- hero image ---*/
 
 .hero-image-container {
@@ -286,6 +291,15 @@ a:focus {
 .item-price {
   font-weight: 500;
   font-size: 18px;
+}
+
+.add-to-cart {
+    margin-bottom: 0.5rem;
+}
+
+.add-item {
+    border-radius: 50%;
+    font-size: 1.2rem;
 }
 
 /*--- mailing list ---*/
