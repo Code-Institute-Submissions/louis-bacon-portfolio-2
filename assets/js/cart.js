@@ -1,77 +1,162 @@
 var carts = document.querySelectorAll(".add-item");
 
 var products = [
-    {
-        name: "LB17 Black",
-        tag: "lb17black",
-        price: 25,
-        inCart: 0
-    },
-    {
-        name: "LB17 White",
-        tag: "lb17white",
-        price: 25,
-        inCart: 0
-    },
-    {
-        name: "Brick By Brick",
-        tag: "brickbybrick",
-        price: 30,
-        inCart: 0
-    },
-    {
-        name: "Bet On Yourself",
-        tag: "betonyourself",
-        price: 30,
-        inCart: 0
-    },
-    {
-        name: "Born2Excel Black",
-        tag: "born2excelblack",
-        price: 25,
-        inCart: 0
-    },
-    {
-        name: "Born2Excel White",
-        tag: "born2excelwhite",
-        price: 25,
-        inCart: 0
-    },
-    {
-        name: "noMediocre",
-        tag: "nomediocre",
-        price: 25,
-        inCart: 0
-    },
+  {
+    name: "LB17 Black",
+    tag: "lb17black",
+    price: 25,
+    inCart: 0,
+  },
+  {
+    name: "LB17 White",
+    tag: "lb17white",
+    price: 25,
+    inCart: 0,
+  },
+  {
+    name: "Brick By Brick",
+    tag: "brickbybrick",
+    price: 30,
+    inCart: 0,
+  },
+  {
+    name: "Bet On Yourself",
+    tag: "betonyourself",
+    price: 30,
+    inCart: 0,
+  },
+  {
+    name: "Born2Excel Black",
+    tag: "born2excelblack",
+    price: 25,
+    inCart: 0,
+  },
+  {
+    name: "Born2Excel White",
+    tag: "born2excelwhite",
+    price: 25,
+    inCart: 0,
+  },
+  {
+    name: "noMediocre",
+    tag: "nomediocre",
+    price: 25,
+    inCart: 0,
+  },
 ];
 
 for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", function () {
-        cartNumbers();
-    });
+  carts[i].addEventListener("click", function () {
+    cartNumbers(products[i]);
+    totalCost(products[i]);
+  });
 }
 
 function onLoadCartNumbers() {
-    var productNumbers = localStorage.getItem("cartNumbers");
+  var productNumbers = localStorage.getItem("cartNumbers");
 
-    if(productNumbers) {
-        document.querySelector("#counter").textContent = productNumbers;
-    }
+  if (productNumbers) {
+    document.querySelector("#counter").textContent = productNumbers;
+  }
 }
 
-function cartNumbers() {
-    var productNumbers = localStorage.getItem("cartNumbers");
+function cartNumbers(product) {
+  var productNumbers = localStorage.getItem("cartNumbers");
 
+  productNumbers = parseInt(productNumbers);
 
-    productNumbers = parseInt(productNumbers);
+  if (productNumbers) {
+    localStorage.setItem("cartNumbers", productNumbers + 1);
+    document.querySelector("#counter").textContent = productNumbers + 1;
+  } else {
+    localStorage.setItem("cartNumbers", 1);
+    document.querySelector("#counter").textContent = 1;
+  }
 
-    if (productNumbers) {
-        localStorage.setItem("cartNumbers", productNumbers + 1);
-        document.querySelector("#counter").textContent = productNumbers + 1;
+  setItems(product);
+}
+
+function setItems(product) {
+  var cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+
+  if (cartItems != null) {
+    if (cartItems[product.tag] == undefined) {
+      cartItems = {
+        ...cartItems,
+        [product.tag]: product,
+      };
+    }
+    cartItems[product.tag].inCart += 1;
+  } else {
+    product.inCart = 1;
+    cartItems = {
+      [product.tag]: product,
+    };
+  }
+
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
+
+function totalCost(product) {
+    var cartCost = localStorage.getItem("totalCost");
+    console.log("My cart cost is", cartCost);
+    console.log(typeof cartCost);
+
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price);
+        document.getElementById("cartOverview").html(
+            `<h3>${product.name}</h3>
+            <h3>${product.price}</h3>`
+        );
     } else {
-        localStorage.setItem("cartNumbers", 1);
-        document.querySelector("#counter").textContent = 1;
+        localStorage.setItem("totalCost", product.price);
+    }
+
+    localStorage.setItem("totalCost", product.price);
+}
+
+function displayCart() {
+    var cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    var productContainer = document.querySelector("#products");
+    var cartCost = localStorage.getItem("totalCost");
+
+    if (cartItems && productContainer) {
+        productContainer.innerHTML = "";
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+            <div class="product">
+                <i class="fas fa-times-circle"></i>
+                <img src="./assets/images/${item.tag}.png" />
+                <span>${item.name}</span>
+            </div>
+            <div class="price">
+                £${item.price}.00
+            </div>
+            <div class="quantity">
+                <i class="fas fa-plus-square"></i>
+                <span>${item.inCart}</span>
+                <i class="fas fa-minus-square"></i>
+            </div>
+            <div class="total">
+                £${item.inCart} * ${item.price}.00
+            </div>`;
+        });
+
+        productContainer.innerHTML += `
+        <div class="basket-total-container">
+            <h4 class="basket-total-title">
+                Cart Total: 
+            </h4>
+            <h4 class="basket-total">
+                £${cartCost}.00
+            </h4>
+        </div>
+        `;
     }
 }
 
 onLoadCartNumbers();
+displayCart();

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
-    <script type="text/javascript" src="assets/js/cart.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -121,16 +121,46 @@
 			<div class="hero-image">
 				<img src="./assets/images/lb17-shopify-header.png" alt="LB17 Brand Logo" />
             </div>
-            <div class="container shopping-cart-container">
+            <div class="container-fluid shopping-cart-container">
                 <div class="row">
                     <div class="col">
                         <h2 class="cart-main-heading">Your Cart</h2>
                     </div>
                 </div>
+                <div class="row cart-overview">
+                    <div class="col-sm" id="cartOverview">
+                        <h5 class="product-title">Product Name</h5>
+                        <h5 class="product-price">Product Price</h5>
+                        <h5 class="product-quantity">Quantity</h5>
+                        <h5 class="cart-total">Total</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="products">
+                        <div class="product"></div>
+                        <div class="price"></div>
+                        <div class="quantity"></div>
+                        <div class="total"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col checkout-button">
+                        <button class="btn btn-checkout btn-dark">
+                            <a href="#">
+                                <span>Checkout</span>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="col continue-shopping-button">
+                        <button class="btn btn-continue-shopping btn-light">
+                            <a href="shop.html">
+                                <span>Continue Shopping</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
-		</div>
-
-		
+		</div>	
 	</div>
 
 	<div class="returntotop-container">
@@ -210,6 +240,7 @@
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/cart.js" async></script>
 </body>
 
 </html>

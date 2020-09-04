@@ -11,7 +11,7 @@ a:hover {
 }
 
 a:focus {
-    outline: none;
+  outline: none;
 }
 
 .content {
@@ -135,8 +135,17 @@ a:focus {
 }
 
 #checkout {
-    text-align: right;
-    color: #ffffff;
+  text-align: right;
+  color: #ffffff;
+}
+
+#counter {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.6rem;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-weight: 700;
 }
 
 /*--- hero image ---*/
@@ -294,12 +303,12 @@ a:focus {
 }
 
 .add-to-cart {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .add-item {
-    border-radius: 50%;
-    font-size: 1.2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
 }
 
 /*--- mailing list ---*/
@@ -563,8 +572,36 @@ a:focus {
 /*--- CART ---*/
 
 .shopping-cart-container {
-    width: 70%;
-    padding: 30px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.cart-main-heading {
+  padding-bottom: 15px;
+}
+
+.product-name,
+.product-price,
+.product-quantity,
+.cart-total {
+  text-align: left;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+}
+
+.cart-total {
+  text-transform: uppercase;
+}
+
+.checkout-button {
+  text-align: right;
+}
+
+.continue-shopping-button {
+  text-align: left;
+}
+
+.btn-checkout {
 }
 
 /*--- footer ---*/
