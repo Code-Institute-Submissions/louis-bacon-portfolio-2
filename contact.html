@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function(){
+            emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
+        })();
+	</script>
 </head>
 
 <body>
@@ -166,12 +173,13 @@
             </h4>
             <div class="row contact-form">
                 <div class="col">
-                    <form method="post" class="contact">
+                    <form class="contact" action="emails" onsubmit="return sendMail(this);">
                         <div class="form-group row">
                             <label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
                             <div class="col-sm">
                                 <input
                                 type="text"
+                                id="fname"
                                 class="form-control"
                                 placeholder="First name"
                                 required
@@ -183,6 +191,7 @@
                             <div class="col-sm">
                                 <input
                                 type="text"
+                                id="lname"
                                 class="form-control"
                                 placeholder="Last name"
                                 required
@@ -194,6 +203,7 @@
                             <div class="col-sm">
                                 <input
                                 type="text"
+                                id="emailaddress"
                                 name="email"
                                 class="form-control"
                                 placeholder="Your email address"
@@ -217,7 +227,7 @@
                         <div class="submit-button row">
                             <div class="d-none d-sm-inline col-sm-3"></div>
                             <div class="col-sm">
-                                <button type="submit" class="btn btn-success submit-request">
+                                <button type="submit" class="btn btn-success submit-request" onclick="requestConfirmation()">
                                     Submit&#33;
                                 </button>
                             </div>
@@ -305,6 +315,28 @@
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
+    <script>
+			function sendMail(contactRequest) {
+                emailjs.send("gmail", "contactrequest", {
+                    "from_name": contactRequest.fname.value,
+                    "from_email": contactRequest.emailaddress.value,
+                    "message": contactRequest.projectsummary.value
+                })
+                .then(
+                    function(response) {
+                        console.log("SUCCESS", response);
+                    },
+                    function(error) {
+                        console.log("FAILED", error);
+                    }
+                )
+                return false;
+            }
+
+            function requestConfirmation () {
+                alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
+            }
+		</script>
 </body>
 
 </html>
