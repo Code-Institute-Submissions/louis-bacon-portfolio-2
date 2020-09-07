@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title> 
+    <title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function(){
+            emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
+        })();
+	</script>
 </head>
 
 <body>
@@ -166,180 +173,184 @@
             </h6>
             <div class="row contact-form">
 				<div class="col lesson-signup-form">
-					<form method="post" class="signup">
-						<div class="form-group row">
-							<label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
-							<div class="col-sm">
-								<input
-                                type="text"
-                                class="form-control"
-                                placeholder="First name"
-                                required
-                                />
-                            </div>
-						</div>
-						<div class="form-group row">
-							<label for="lname" class="col-sm-3 col-form-label">Last Name&#58;</label>
-							<div class="col-sm">
-								<input
-                                type="text"
-                                class="form-control"
-                                placeholder="Last name"
-                                required
-                                />
-                            </div>
-						</div>
-						<div class="form-group row">
-							<label for="email" class="col-sm-3 col-form-label">E&#45;mail address&#58;</label>
-							<div class="col-sm">
-								<input
-                                type="text"
-                                class="form-control"
-                                name="email"
-                                placeholder="Your email address"
-                                required
-                                />
-                            </div>
-						</div>
-						<div class="form-group row">
-							<label for="phone" class="col-sm-3 col-form-label">Phone number&#58;</label>
-							<div class="col-sm">
-								<input
-                                type="text"
-                                class="form-control"
-                                placeholder="Your telephone number"
-                                required
-                                />                                
-                            </div>
-						</div>
-						<div class="form-group row">
-							<label for="birthday-dd birthday-mm birthday-yyyy" class="col-sm-3 col-form-label">
-                                Date of birth&#42;&#58;
-                            </label>
-                            <div class="dob-dropdown col-sm">
-								<select id="birthday-dd" class="dob-select" required>
-                                    <option selected disabled>DD</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                    <option>05</option>
-                                    <option>&#8230;</option>
-                                </select>
-								<select id="birthday-mm" class="dob-select" required>
-                                    <option selected disabled>MM</option>
-                                    <option>Jan</option>
-                                    <option>Feb</option>
-                                    <option>Mar</option>
-                                    <option>Apr</option>
-                                    <option>May</option>
-                                    <option>&#8230;</option>
-                                </select>
-								<select id="birthday-yyyy" class="dob-select" required>
-                                    <option selected disabled>YYYY</option>
-                                    <option>2020</option>
-                                    <option>2019</option>
-                                    <option>2018</option>
-                                    <option>2017</option>
-                                    <option>2016</option>
-                                    <option>&#8230;</option>
-                                </select>
-								<small class="form-text text-muted dob-small">
-                                    &#42;if a parent seeking lessons for your child, please enter your child&#8217;s DOB
-                                </small>
+					<form class="signup" action="emailjs" onsubmit="return sendMail(this);">
+							<div class="form-group row">
+								<label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
+								<div class="col-sm">
+									<input
+                                    type="text"
+                                    id="fname"
+                                    class="form-control"
+                                    placeholder="First name"
+                                    required
+                                    />
+                                </div>
 							</div>
-						</div>
-                        <div class="form-group row">
-							<label for="subject" class="col-sm-3 col-form-label">
-                                <span class="d-none d-md-inline">I &#47; my child would like lessons in</span>
-                                <span class="d-inline d-md-none">Subject</span>
-                                &#58;
-                            </label>
-							<div class="col-sm tutoring-options">
-								<input
-                                type="checkbox"
-                                id="mathsenglish"
-                                value="mathsenglish"
-                                />
-								<label for="mathsenglish">Maths &#47; English</label>
-								<input type="checkbox" id="german" value="german" />
-								<label for="german">German</label>
+							<div class="form-group row">
+							    <label for="lname" class="col-sm-3 col-form-label">Last Name&#58;</label>
+							    <div class="col-sm">
+									<input
+                                    type="text"
+                                    id="lname"
+                                    class="form-control"
+                                    placeholder="Last name"
+                                    required
+                                    />
+                                </div>
 							</div>
-						</div>
-						<div class="form-group row">
-							<label for="competency" class="col-sm-3 col-form-label">
-                                <span class="d-none d-sm-inline">Competency level</span>
-                                <span class="d-inline d-sm-none">Level</span>
-                                &#58;
-                            </label>
-							<div class="col-sm tutoring-options">
-								<input
-                                type="radio"
-                                id="beginner"
-                                name="competencyOptions"
-                                value="option1"
-                                required
-                                />
-								<label for="beginner" class="competency-level-option">Beginner</label>
-								<br class="d-block d-sm-none" />
-								<input
-                                type="radio"
-                                id="intermediate"
-                                name="competencyOptions"
-                                value="option2"
-                                required
-                                />
-								<label for="intermediate" class="competency-level-option">Intermediate</label>
-								<br class="d-block d-sm-none" />
-								<input
-                                type="radio"
-                                id="advanced"
-                                name="competencyOptions"
-                                value="option3"
-                                required
-                                />
-								<label for="advanced" class="competency-level-option">Advanced</label>
+							<div class="form-group row">
+								<label for="email" class="col-sm-3 col-form-label">E&#45;mail address&#58;</label>
+								<div class="col-sm">
+									<input
+                                    type="text"
+                                    id="emailaddress"
+                                    class="form-control"
+                                    name="email"
+                                    placeholder="Your email address"
+                                    required
+                                    />
+                                </div>
 							</div>
-						</div>
-						<div class="form-group row">
-							<label for="competency" class="col-sm-3 col-form-label">Lesson length&#58;</label>
-							<div class="col-sm tutoring-options">
-								<input
-                                type="radio"
-                                id="1hr"
-                                name="lessonLengthOptions"
-                                value="option1"
-                                required
-                                />
-								<label for="1hr" class="lesson-length-option">1 hour &#40;&#163;25.00&#41;</label>
-								<br class="d-block d-sm-none" />
-								<input
-                                type="radio"
-                                id="1hr30"
-                                name="lessonLengthOptions"
-                                value="option2"
-                                required
-                                />
-								<label for="1hr30" class="lesson-length-option">1.5 hours &#40;&#163;35.00&#41;</label>
+							<div class="form-group row">
+								<label for="phone" class="col-sm-3 col-form-label">Phone number&#58;</label>
+								<div class="col-sm">
+									<input
+                                    type="text"
+                                    id="phone"
+                                    class="form-control"
+                                    placeholder="Your telephone number"
+                                    required
+                                    />
+                                </div>
 							</div>
-						</div>
-						<div class="form-group row">
-							<label for="subject" class="col-sm col-form-label">
-                                I would also like a FREE initial 30&#45;minute assessment&#58;
-                            </label>
-							<div class="col-sm tutoring-options">
-								<input type="checkbox" />
-                            </div>
-						</div>
-						<div class="row submit-button">
-							<div class="d-none d-md-inline col-sm-3"></div>
-							<div class="col-sm">
-								<button type="submit" class="btn btn-success submit-request">
-                                    Book Now&#33;
-                                </button>
+							<div class="form-group row">
+								<label for="birthday-dd birthday-mm birthday-yyyy" class="col-sm-3 col-form-label">
+                                    Date of birth&#42;&#58;
+                                </label>
+                                <div class="dob-dropdown col-sm">
+									<select id="birthday-dd" class="dob-select" required>
+                                        <option selected disabled>DD</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>&#8230;</option>
+                                    </select>
+									<select id="birthday-mm" class="dob-select" required>
+                                        <option selected disabled>MM</option>
+                                        <option>Jan</option>
+                                        <option>Feb</option>
+                                        <option>Mar</option>
+                                        <option>Apr</option>
+                                        <option>May</option>
+                                        <option>&#8230;</option>
+                                    </select>
+									<select id="birthday-yyyy" class="dob-select" required>
+                                        <option selected disabled>YYYY</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                        <option>&#8230;</option>
+                                    </select>
+									<small class="form-text text-muted dob-small">
+                                        &#42;if a parent seeking lessons for your child, please enter your child&#8217;s DOB
+                                    </small>
+								</div>
 							</div>
-						</div>
-					</form>
+                            <div class="form-group row">
+								<label for="subject" class="col-sm-3 col-form-label">
+                                    <span class="d-none d-md-inline">I &#47; my child would like lessons in</span>
+                                    <span class="d-inline d-md-none">Subject</span>
+                                    &#58;
+                                </label>
+								<div class="col-sm tutoring-options">
+									<input
+                                    type="checkbox"
+                                    id="mathsenglish"
+                                    value="mathsenglish"
+                                    />
+									<label for="mathsenglish">Maths &#47; English</label>
+									<input type="checkbox" id="german" value="german" />
+									<label for="german">German</label>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="competency" class="col-sm-3 col-form-label">
+                                    <span class="d-none d-sm-inline">Competency level</span>
+                                    <span class="d-inline d-sm-none">Level</span>
+                                    &#58;
+                                </label>
+								<div class="col-sm tutoring-options">
+									<input
+                                    type="radio"
+                                    id="beginner"
+                                    name="competencyOptions"
+                                    value="option1"
+                                    required
+                                    />
+									<label for="beginner" class="competency-level-option">Beginner</label>
+									<br class="d-block d-sm-none" />
+									<input
+                                    type="radio"
+                                    id="intermediate"
+                                    name="competencyOptions"
+                                    value="option2"
+                                    required
+                                    />
+									<label for="intermediate" class="competency-level-option">Intermediate</label>
+									<br class="d-block d-sm-none" />
+									<input
+                                    type="radio"
+                                    id="advanced"
+                                    name="competencyOptions"
+                                    value="option3"
+                                    required
+                                    />
+									<label for="advanced" class="competency-level-option">Advanced</label>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="competency" class="col-sm-3 col-form-label">Lesson length&#58;</label>
+								<div class="col-sm tutoring-options">
+									<input
+                                    type="radio"
+                                    id="1hr"
+                                    name="lessonLengthOptions"
+                                    value="option1"
+                                    required
+                                    />
+									<label for="1hr" class="lesson-length-option">1 hour &#40;&#163;25.00&#41;</label>
+									<br class="d-block d-sm-none" />
+									<input
+                                    type="radio"
+                                    id="1hr30"
+                                    name="lessonLengthOptions"
+                                    value="option2"
+                                    required
+                                    />
+									<label for="1hr30" class="lesson-length-option">1.5 hours &#40;&#163;35.00&#41;</label>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="subject" class="col-sm col-form-label">
+                                    I would also like a FREE initial 30&#45;minute assessment&#58;
+                                </label>
+								<div class="col-sm tutoring-options">
+								    <input type="checkbox" id="freeassessment" />
+                                </div>
+							</div>
+							<div class="row submit-button">
+								<div class="d-none d-md-inline col-sm-3"></div>
+								<div class="col-sm">
+									<button type="submit" class="btn btn-success submit-request" onclick="requestConfirmation()">
+                                        Book Now&#33;
+                                    </button>
+								</div>
+							</div>
+						</form>
 				</div>
 			</div>
         </div>
@@ -422,6 +433,29 @@
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/cart.js" async></script>
+    <script>
+        function sendMail(contactRequest) {
+                emailjs.send("gmail", "contactrequest", {
+                    "from_name": contactRequest.fname.value,
+                    "from_email": contactRequest.emailaddress.value,
+                    "message": contactRequest.projectsummary.value
+                })
+                .then(
+                    function(response) {
+                        console.log("SUCCESS", response);
+                    },
+                    function(error) {
+                        console.log("FAILED", error);
+                    }
+                )
+                return false;
+            }
+
+            function requestConfirmation () {
+                alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
+            }
+    </script>
 </body>
 
 </html>

@@ -1040,5 +1040,9 @@ I hope you enjoy my browsing portfolio website.
 
 ## JS implementation
 
-* EmailJS - 404 error when submitting tutoring form, working on it
+* EmailJS - 404 error when submitting contact forms, working on it
+* Currently when clicking submit button alert box thanking user pops up, finished version would show alert box below input field saying "thank you for subscribing to mailing list"
+* Would like to add reCAPTCHA functionality to all contact forms 
 * Successfully added EmailJS functionality to mailing list and contact page
+* Problem - alert boxes still pop up when submit button clicked even when required input fields are empty i.e. thank you msg appears before error msg
+* cart.js file linked in all html pages as want number to remain consistent in top-right across all pages for best possible UX
