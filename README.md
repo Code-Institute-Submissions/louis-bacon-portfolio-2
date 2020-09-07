@@ -1037,3 +1037,8 @@ In the event that the file does not load, here are some screenshots of the wiref
 Thank you for reading.
 
 I hope you enjoy my browsing portfolio website.
+
+## JS implementation
+
+* EmailJS - 404 error when submitting tutoring form, working on it
+* Successfully added EmailJS functionality to mailing list and contact page
