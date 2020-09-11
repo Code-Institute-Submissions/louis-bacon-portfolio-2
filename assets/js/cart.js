@@ -3,43 +3,43 @@ var carts = document.querySelectorAll(".add-item");
 var products = [
   {
     name: "LB17 Black",
-    tag: "lb17black",
+    tag: "lb17-white-logo-black-tee",
     price: 25,
     inCart: 0,
   },
   {
     name: "LB17 White",
-    tag: "lb17white",
+    tag: "lb17-for-women",
     price: 25,
     inCart: 0,
   },
   {
     name: "Brick By Brick",
-    tag: "brickbybrick",
+    tag: "brick-by-brick",
     price: 30,
     inCart: 0,
   },
   {
     name: "Bet On Yourself",
-    tag: "betonyourself",
+    tag: "bet-on-yourself",
     price: 30,
     inCart: 0,
   },
   {
     name: "Born2Excel Black",
-    tag: "born2excelblack",
+    tag: "Born2Excel",
     price: 25,
     inCart: 0,
   },
   {
     name: "Born2Excel White",
-    tag: "born2excelwhite",
+    tag: "born2excel-white",
     price: 25,
     inCart: 0,
   },
   {
     name: "noMediocre",
-    tag: "nomediocre",
+    tag: "no-mediocre-hashtag",
     price: 25,
     inCart: 0,
   },
@@ -127,21 +127,25 @@ function displayCart() {
         productContainer.innerHTML = "";
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class="product">
-                <i class="fas fa-times-circle"></i>
-                <img src="./assets/images/${item.tag}.png" />
-                <span>${item.name}</span>
-            </div>
-            <div class="price">
-                £${item.price}.00
-            </div>
-            <div class="quantity">
-                <i class="fas fa-plus-square"></i>
-                <span>${item.inCart}</span>
-                <i class="fas fa-minus-square"></i>
-            </div>
-            <div class="total">
-                £${item.inCart} * ${item.price}.00
+            <div class="cart-item-wrapper">
+                <div class="product">
+                    <a href="#" onclick="removeItem()">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                    <img src="./assets/images/${item.tag}.png" alt="${item.name} class="cart-item-thumbnail" />
+                    <span>${item.name}</span>
+                </div>
+                <div class="price">
+                    £${item.price}.00
+                </div>
+                <div class="quantity">
+                    <i class="fas fa-minus-square"></i>
+                    <span>${item.inCart}</span>
+                    <i class="fas fa-plus-square"></i>
+                </div>
+                <div class="total">
+                    ${item.inCart} * £${item.price}.00
+                </div>
             </div>`;
         });
 
