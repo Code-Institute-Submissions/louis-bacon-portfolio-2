@@ -17,6 +17,34 @@
             emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
         })();
 	</script>
+    <script>
+        function fetchGitHubInformation(event) {
+            $("#gh-repo-data").html("");
+
+            $.when(
+                $.getJSON(`https://api.github.com/users/lbacon17/repos`)
+            ).then(
+                function(firstResponse) {
+                    var repoData = firstResponse[0];
+                    $("#gh-repo-data").html(repoInformationHTML(repoData));
+                },
+                function(errorResponse) {
+                    if (errorResponse.status === 404) {
+                        $("#gh-repo-data").html(
+                            `<h2>No repos found for lbacon17</h2>`
+                        );
+                    } else if (errorResponse.status === 403) {
+                        $("#gh-repo-data").html(`<h4>Too many requests. Please wait until ${resetTime.toLocaleTimeString()}</h4>`);
+                    } else {
+                        console.log (errorResponse);
+                        $("#gh-repo-data").html(
+                            `<h2>Error: ${erroResponse.responseJSON.message}</h2>`
+                        )
+                    }
+                }
+            );
+        }
+    </script>
 </head>
 
 <body>
@@ -621,7 +649,19 @@
 					</p>
 					<br class="d-block d-sm-none" />
 					<p class="mb-0">Keep your eyes open for future announcements&#33;</p>
+                    <br>
+                    <p class="mb-0">In the meantime, check out some of my work on <a href="https://github.com/lbacon17?tab=repositories" target="_blank">GitHub</a> below&#33;</p>
 				</div>
+                <div class="row github-profile">
+                    <div class="col-sm">
+                        <div class="center-form">
+                            <input type="text" id="gh-username" value="lbacon17" oninput="fetchGitHubInformation()">
+                            <div id="gh-repo-data">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -706,25 +746,25 @@
     <script type="text/javascript" src="assets/js/cart.js" async></script>
     <script>
         function sendMail(contactRequest) {
-                emailjs.send("gmail", "contactrequest", {
-                    "from_name": contactRequest.fname.value,
-                    "from_email": contactRequest.emailaddress.value,
-                    "message": contactRequest.projectsummary.value
-                })
-                .then(
-                    function(response) {
-                        console.log("SUCCESS", response);
-                    },
-                    function(error) {
-                        console.log("FAILED", error);
-                    }
-                )
-                return false;
-            }
+            emailjs.send("gmail", "contactrequest", {
+                "from_name": contactRequest.fname.value,
+                "from_email": contactRequest.emailaddress.value,
+                "message": contactRequest.projectsummary.value
+            })
+            .then(
+                function(response) {
+                    console.log("SUCCESS", response);
+                },
+                function(error) {
+                    console.log("FAILED", error);
+                }
+            )
+            return false;
+        }
 
-            function requestConfirmation () {
-                alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
-            }
+        function requestConfirmation () {
+            alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
+        }
     </script>
 </body>
 

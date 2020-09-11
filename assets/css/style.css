@@ -584,9 +584,22 @@ a:focus {
 .product-price,
 .product-quantity,
 .cart-total {
-  text-align: left;
+  text-align: center;
   margin-bottom: 0.6rem;
   display: inline-block;
+  width: 20%;
+}
+
+.product {
+    text-align: left;
+}
+
+.product,
+.price,
+.quantity,
+.total {
+    display: inline-block;
+    width: 20%;
 }
 
 .cart-total {
