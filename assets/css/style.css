@@ -311,6 +311,10 @@ a:focus {
   font-size: 1.2rem;
 }
 
+.add-item:active {
+    outline: none;
+}
+
 /*--- mailing list ---*/
 
 .mailing-list-container {
@@ -607,6 +611,11 @@ a:focus {
 .cart-total {
     text-transform: uppercase;
     width: 20%;
+}
+
+.cart-item-wrapper {
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
 }
 
 .product {

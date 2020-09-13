@@ -132,16 +132,20 @@ function displayCart() {
                     <a href="#" onclick="removeItem()">
                         <i class="fas fa-times-circle"></i>
                     </a>
-                    <img src="./assets/images/${item.tag}.png" alt="${item.name} class="cart-item-thumbnail" />
+                    <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
                     <span>${item.name}</span>
                 </div>
                 <div class="price">
                     £${item.price}.00
                 </div>
                 <div class="quantity">
-                    <i class="fas fa-minus-square"></i>
+                    <a href="#">
+                        <i class="fas fa-minus-square"></i>
+                    </a>
                     <span>${item.inCart}</span>
-                    <i class="fas fa-plus-square"></i>
+                    <a href="#">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
                 </div>
                 <div class="total">
                     ${item.inCart} * £${item.price}.00
