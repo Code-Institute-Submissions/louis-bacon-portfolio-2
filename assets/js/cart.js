@@ -151,11 +151,11 @@ function displayCart() {
                     £${item.price}.00
                 </div>
                 <div class="quantity">
-                    <a href="#">
+                    <a href="#" onclick="increaseQuantity()">
                         <i class="fas fa-minus-square"></i>
                     </a>
                     <span>${item.inCart}</span>
-                    <a href="#">
+                    <a href="#" onclick="decreaseQuantity()">
                         <i class="fas fa-plus-square"></i>
                     </a>
                 </div>
