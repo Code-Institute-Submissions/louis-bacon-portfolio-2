@@ -648,11 +648,35 @@ a:focus {
     width: 50px;
 }
 
+.basket-total-container {
+    width: 80%;
+    padding: 0;
+}
+
+.basket-total-title {
+    text-align: left;
+    padding-top: 15px;
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.basket-total {
+    font-size: 1.2rem;
+    text-align: right;
+    padding-top: 15px;
+    font-weight: 600;
+    margin-right: 3rem;
+}
+
 .vat-info {
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    margin-right: 2.5rem;
+    padding: 5px;
+    font-size: 0.8rem;
     color: #454454;
     font-weight: 200;
+    text-align: right;
 }
 
 .checkout-button {

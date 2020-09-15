@@ -43,6 +43,18 @@ var products = [
     price: 25,
     inCart: 0,
   },
+  {
+    name: "Gym and weight training basics",
+    tag: "gym basics-cover",
+    price: 5.99,
+    inCart: 0,
+  },
+  {
+    name: "Lockdown Fitness",
+    tag: "lockdown-fitness-cover",
+    price: 14.99,
+    inCart: 0,
+  }
 ];
 
 for (let i = 0; i < carts.length; i++) {
@@ -154,13 +166,15 @@ function displayCart() {
         });
 
         productContainer.innerHTML += `
-        <div class="basket-total-container">
-            <h4 class="basket-total-title">
-                Cart Total: 
-            </h4>
-            <h4 class="basket-total">
-                £${cartCost}.00
-            </h4>
+        <div class="basket-total-container container-fluid">
+            <div class="row">
+                <div class="basket-total-title uppercase col-sm">
+                    Cart Total: 
+                </div>
+                <div class="basket-total col-sm">
+                    £${cartCost}.00
+                </div>
+            </div>
         </div>
         `;
     }
