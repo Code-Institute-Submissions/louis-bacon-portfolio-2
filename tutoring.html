@@ -439,7 +439,18 @@
                 emailjs.send("gmail", "contactrequest", {
                     "from_name": contactRequest.fname.value,
                     "from_email": contactRequest.emailaddress.value,
-                    "message": contactRequest.projectsummary.value
+                    "phone_number": contactRequest.phone.value,
+                    "birthday_day": contactRequest.birthday-dd.value,
+                    "birthday_month": contactRequest.birthday-mm.value,
+                    "birthday_year": contactRequest.birthday-yyyy.value,
+                    "subject_mathsenglish": contactRequest.mathsenglish.value,
+                    "subject_german": contactRequest.german.value,
+                    "competency_beginner": contactRequest.beginner.value
+                    "competency_intermediate": contactRequest.intermediate.value
+                    "competency_advanced": contactRequest.advanced.value,
+                    "length_1hr": contactRequest.1hr.value,
+                    "length_1hr30": contactRequest.1hr30.value,
+                    "free_assessment": contactRequest.freeassessment.value
                 })
                 .then(
                     function(response) {
