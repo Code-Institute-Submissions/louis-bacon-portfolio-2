@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	</script>
     <script type="text/javascript">
 		(function(){
             emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
@@ -284,7 +286,8 @@
                                 Date of birth&#58;
                             </label>
                             <div class="dob-dropdown col-sm">
-								<select id="birthday-dd" class="dob-select" required>
+                                <input type="date" id="dob" name="dob" class="form-control" value="DD-MM-YYYY" min="01-01-1900" max="today" required>
+								<!--- <select id="birthday-dd" class="dob-select" required>
                                     <option selected disabled>DD</option>
                                     <option>01</option>
                                     <option>02</option>
@@ -310,7 +313,7 @@
                                     <option>2017</option>
                                     <option>2016</option>
                                     <option>&#8230;</option>
-                                </select>
+                                </select> --->
 							</div>
                         </div>
                         <div class="form-group row">
@@ -424,9 +427,7 @@
                     "from_name": contactRequest.fname.value,
                     "from_email": contactRequest.emailaddress.value,
                     "phone_number": contactRequest.phone.value,
-                    "birthday_day": contactRequest.birthday-dd.value,
-                    "birthday_month": contactRequest.birthday-mm.value,
-                    "birthday_year": contactRequest.birthday-yyyy.value,
+                    "birthday": contactRequest.dob.value,
                     "message": contactRequest.projectsummary.value
                 })
                 .then(

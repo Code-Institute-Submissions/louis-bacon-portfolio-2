@@ -447,7 +447,8 @@
                                     Date of birth&#42;&#58;
                                 </label>
                                 <div class="dob-dropdown col-sm">
-									<select id="birthday-dd" class="dob-select" required>
+                                    <input type="date" id="dob" name="dob" class="form-control" value="DD-MM-YYYY" min="01-01-1900" max="today" required>
+									<!--- <select id="birthday-dd" class="dob-select" required>
                                         <option selected disabled>DD</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -473,7 +474,7 @@
                                         <option>2017</option>
                                         <option>2016</option>
                                         <option>&#8230;</option>
-                                    </select>
+                                    </select> --->
 									<small class="form-text text-muted dob-small">
                                         &#42;if a parent seeking lessons for your child, please enter your child&#8217;s DOB
                                     </small>
