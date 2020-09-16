@@ -1,3 +1,5 @@
+//add items to cart
+
 var carts = document.querySelectorAll(".add-item");
 
 var products = [
@@ -57,6 +59,8 @@ var products = [
   }
 ];
 
+//show numbers in cart
+
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener("click", function () {
     cartNumbers(products[i]);
@@ -71,6 +75,8 @@ function onLoadCartNumbers() {
     document.querySelector("#counter").textContent = productNumbers;
   }
 }
+
+// -----------------------------
 
 function cartNumbers(product) {
   var productNumbers = localStorage.getItem("cartNumbers");
@@ -87,6 +93,8 @@ function cartNumbers(product) {
 
   setItems(product);
 }
+
+// -----------------------------
 
 function setItems(product) {
   var cartItems = localStorage.getItem("productsInCart");
@@ -110,6 +118,8 @@ function setItems(product) {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
+//calculate cost
+
 function totalCost(product) {
     var cartCost = localStorage.getItem("totalCost");
     console.log("My cart cost is", cartCost);
@@ -127,7 +137,11 @@ function totalCost(product) {
     }
 
     localStorage.setItem("totalCost", product.price);
+
+    return cartCost.toFixed[2];
 }
+
+// -----------------------------
 
 function displayCart() {
     var cartItems = localStorage.getItem("productsInCart");
@@ -141,7 +155,7 @@ function displayCart() {
             productContainer.innerHTML += `
             <div class="cart-item-wrapper">
                 <div class="product">
-                    <a href="#" onclick="removeItem()">
+                    <a href="#" onclick="removeFromCart()">
                         <i class="fas fa-times-circle"></i>
                     </a>
                     <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
@@ -151,16 +165,16 @@ function displayCart() {
                     £${item.price}.00
                 </div>
                 <div class="quantity">
-                    <a href="#" onclick="increaseQuantity()">
+                    <a href="#" onclick="decreaseQuantity()">
                         <i class="fas fa-minus-square"></i>
                     </a>
                     <span>${item.inCart}</span>
-                    <a href="#" onclick="decreaseQuantity()">
+                    <a href="#" onclick="increaseQuantity()">
                         <i class="fas fa-plus-square"></i>
                     </a>
                 </div>
                 <div class="total">
-                    ${item.inCart} * £${item.price}.00
+                    £${item.inCart * item.price}.00
                 </div>
             </div>`;
         });
@@ -169,14 +183,25 @@ function displayCart() {
         <div class="basket-total-container container-fluid">
             <div class="row">
                 <div class="basket-total-title uppercase col-sm">
-                    Cart Total: 
+                    <span>Cart Total: </span>
                 </div>
                 <div class="basket-total col-sm">
-                    £${cartCost}.00
+                    <span>£${cartCost}.00</span>
                 </div>
             </div>
         </div>
         `;
+    }
+}
+
+// -----------------------------
+
+function removeFromCart(name) {
+    for(let i = 0; i < carts.length; i += 1) {
+        if (carts.item[i].name === name) {
+            carts.slice(i, 1)
+            return 
+        }
     }
 }
 
