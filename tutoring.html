@@ -181,6 +181,7 @@
                                     type="text"
                                     id="fname"
                                     class="form-control"
+                                    minlength="2"
                                     placeholder="First name"
                                     required
                                     />
@@ -193,6 +194,7 @@
                                     type="text"
                                     id="lname"
                                     class="form-control"
+                                    minlength="2"
                                     placeholder="Last name"
                                     required
                                     />
@@ -218,6 +220,7 @@
                                     type="number"
                                     id="phone"
                                     class="form-control"
+                                    maxlength="10"
                                     placeholder="Your telephone number"
                                     required
                                     />
@@ -228,7 +231,7 @@
                                     Date of birth&#42;&#58;
                                 </label>
                                 <div class="dob-dropdown col-sm">
-                                    <input type="date" id="dob" name="dob" class="form-control" value="DD-MM-YYYY" min="01-01-1900" max="today" required>
+                                    <input type="date" id="dob" name="dob" class="form-control" value="DD-MM-YYYY" min="01-01-1900" max="2020-10-19" required>
 									<!--- <select id="birthday-dd" class="dob-select" required>
                                         <option selected disabled>DD</option>
                                         <option>01</option>

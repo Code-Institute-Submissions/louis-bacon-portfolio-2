@@ -239,6 +239,7 @@
                                 type="text"
                                 id="fname"
                                 class="form-control"
+                                minlength="2"
                                 placeholder="First name"
                                 required
                                 />
@@ -251,6 +252,7 @@
                                 type="text"
                                 id="lname"
                                 class="form-control"
+                                minlength="2"
                                 placeholder="Last name"
                                 required
                                 />
@@ -276,6 +278,7 @@
                                 type="number"
                                 id="phone"
                                 class="form-control"
+                                maxlength="10"
                                 placeholder="Your telephone number"
                                 required
                                 />
@@ -286,7 +289,7 @@
                                 Date of birth&#58;
                             </label>
                             <div class="dob-dropdown col-sm">
-                                <input type="date" id="dob" name="dob" class="form-control" value="DD-MM-YYYY" min="01-01-1900" max="today" required>
+                                <input type="date" id="dob" name="dob" class="form-control" value="yyyy-mm-dd" min="1900-01-01" max="2020-10-19" required>
 								<!--- <select id="birthday-dd" class="dob-select" required>
                                     <option selected disabled>DD</option>
                                     <option>01</option>
@@ -422,6 +425,28 @@
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/cart.js" async></script>
     <script>
+    //    function DOBValidation() {
+    //        var today = new Date();
+    //        var dd = today.getDate();
+    //        var mm = today.getMonth()+1;
+    //        var yyyy = today.getFullYear();
+
+    //        if (dd < 10) {
+    //            dd = "0" + dd;
+    //        }
+
+    //        if (mm < 10) {
+    //            mm = "0" + mm;
+    //        }
+
+    //        today = yyyy + "-" + mm + "-" + dd;
+    //        document.getElementByID("dob").setAttribute("max", today);
+
+    //        if (dd-mm-yyyy > today) {
+    //            return alert "Please enter a valid date of birth."
+    //        }
+    //    }
+        
         function sendMail(contactRequest) {
                 emailjs.send("gmail", "contactrequest", {
                     "from_name": contactRequest.fname.value,
@@ -439,11 +464,11 @@
                     }
                 )
                 return false;
-            }
+        }
 
-            function requestConfirmation () {
-                alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
-            }
+        function requestConfirmation () {
+            alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
+        }
     </script>
 </body>
 

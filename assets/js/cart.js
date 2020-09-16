@@ -45,7 +45,7 @@ var products = [
   },
   {
     name: "Gym and weight training basics",
-    tag: "gym basics-cover",
+    tag: "gym-basics-cover",
     price: 5.99,
     inCart: 0,
   },
