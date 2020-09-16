@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 	</script>
 	<script type="text/javascript">
@@ -18,6 +18,19 @@
             emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
         })();
 	</script>
+    <script type="text/javascript">
+        $(".subscribe").click(function() {
+            var rc = grecaptcha.getResponse;
+
+            if (rc.length == 0) {
+                document.getElementById("gRecaptcha").innerHTML = "You must complete this!" 
+                return false;
+            } else {
+                document.getElementById("gRecaptcha").innerHTML = "Verification complete!"
+                return true;
+            }
+        })
+    </script>
 </head>
 
 <body>
@@ -376,7 +389,7 @@
 				</div>
 				<div class="row email-form">
 					<div class="col form-inline center-form">
-						<form class="email" action="emails" method="post" onsubmit="return sendMail(this);">
+						<form class="email" id="subscribeToMailingList" action="emails" method="post" onsubmit="return sendMail(this);">
 							<input
                         type="email"
                         name="email"
@@ -388,9 +401,10 @@
 							<button type="submit" class="btn subscribe btn-success" onclick="confirmSubscription()">
                             Subscribe&#33;
                         </button>
-                        <div class="g-recaptcha rc-container container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s">
+                        <div class="g-recaptcha rc-container container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s" data-callback="onSubmit" data-action="submit">
                         
                         </div>
+                        <span id="gRecaptcha"></span>
 						</form>
 					</div>
 				</div>
