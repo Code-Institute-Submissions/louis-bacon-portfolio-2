@@ -683,11 +683,19 @@ a:focus {
   text-align: right;
 }
 
+.btn-checkout {
+    padding: 10px 20px;
+    width: 50%;
+}
+
 .continue-shopping-button {
   text-align: left;
 }
 
-.btn-checkout {
+.btn-continue-shopping {
+    padding: 10px 20px;
+    width: 50%;
+    background-color: #fff;
 }
 
 /*--- footer ---*/
