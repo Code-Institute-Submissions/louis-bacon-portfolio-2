@@ -355,6 +355,11 @@ a:focus {
   width: 100%;
 }
 
+.rc-container {
+    width: 50%;
+    padding-top: 20px;
+}
+
 /*--- ABOUT ---*/
 
 .gallery-container {
