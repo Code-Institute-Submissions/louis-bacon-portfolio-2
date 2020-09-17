@@ -360,6 +360,10 @@ a:focus {
     padding-top: 20px;
 }
 
+.rc-container div {
+    width: 100% !important; /* overriding style attribute of width: 304px */
+}
+
 /*--- ABOUT ---*/
 
 .gallery-container {

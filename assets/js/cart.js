@@ -48,13 +48,13 @@ var products = [
   {
     name: "Gym and weight training basics",
     tag: "gym-basics-cover",
-    price: 5.99,
+    price: 6,
     inCart: 0,
   },
   {
     name: "Lockdown Fitness",
     tag: "lockdown-fitness-cover",
-    price: 14.99,
+    price: 15,
     inCart: 0,
   }
 ];
@@ -137,8 +137,6 @@ function totalCost(product) {
     }
 
     localStorage.setItem("totalCost", product.price);
-
-    return cartCost.toFixed[2];
 }
 
 // -----------------------------
@@ -176,7 +174,8 @@ function displayCart() {
                 <div class="total">
                     £${item.inCart * item.price}.00
                 </div>
-            </div>`;
+            </div>
+            `;
         });
 
         productContainer.innerHTML += `
@@ -191,6 +190,12 @@ function displayCart() {
             </div>
         </div>
         `;
+    } else {
+        productContainer.innerHTML += `
+        <div class="cart-item-wrapper">
+            <h2>Your cart is currently empty.</h2>
+        </div>
+        `
     }
 }
 
