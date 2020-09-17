@@ -193,7 +193,10 @@ function displayCart() {
     } else {
         productContainer.innerHTML += `
         <div class="cart-item-wrapper">
-            <h2>Your cart is currently empty.</h2>
+            <h2 class="empty-cart">Your cart is currently empty.</h2>
+            <h6 class="back-to-shop-heading">
+                <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
+            </h6>
         </div>
         `
     }
