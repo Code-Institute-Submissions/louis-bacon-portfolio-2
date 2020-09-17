@@ -34,6 +34,18 @@ a:focus {
   padding: 15px;
 }
 
+#returnToTop {
+    position: fixed;
+    top: 80%;
+    right: 3%;
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+    background: no-repeat;
+    opacity: .8;
+}
+
 /*--- header ---*/
 
 .navbar {

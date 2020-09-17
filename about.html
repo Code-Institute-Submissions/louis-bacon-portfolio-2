@@ -257,6 +257,12 @@
 		</div>
     </div>
 
+    <div id="returnToTop">
+        <a href="#top">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
+    </div>
+
 	<div class="returntotop-container">
 		<a href="#top" class="returntotop">
 			Return to top &#94;
@@ -339,6 +345,19 @@
 	crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script> 
 	<script type="text/javascript" src="assets/js/cart.js"></script>
+    <script>
+        bttt = document.getElementById("returnToTop");
+            
+        window.onscroll = function() {backToTop()};
+
+        function backToTop() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                bttt.style.display = "block";
+            } else {
+                bttt.style.display = "none";
+            }
+        };
+    </script>
     <script>
 			function sendMail(mailingList) {
                 emailjs.send("gmail","mailinglist", {
