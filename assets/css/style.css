@@ -370,8 +370,8 @@ a:focus {
 }
 
 .rc-container {
-    width: 50%;
-    padding-top: 20px;
+    /*--- width: 50%; ---*/
+    padding: 20px 0;
 }
 
 .rc-container div {
@@ -907,4 +907,13 @@ footer {
   .btn-continue-shopping {
       width: 50%;
   }
+}
+
+@media screen and (max-width: 352px) {
+    .rc-container {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
 }
