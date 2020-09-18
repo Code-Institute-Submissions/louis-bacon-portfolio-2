@@ -36,14 +36,15 @@ a:focus {
 
 #returnToTop {
     position: fixed;
-    top: 80%;
-    right: 3%;
+    bottom: 5rem;
+    right: 1.2rem;
     font-size: 3rem;
     text-align: center;
     color: red;
     cursor: pointer;
     background: no-repeat;
     opacity: .8;
+    z-index: 99;
 }
 
 /*--- header ---*/
