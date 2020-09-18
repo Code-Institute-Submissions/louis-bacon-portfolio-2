@@ -1,6 +1,8 @@
-//add items to cart
+// add items to cart
 
 var carts = document.querySelectorAll(".add-item");
+
+// grab product data
 
 var products = [
   {
@@ -58,6 +60,61 @@ var products = [
     inCart: 0,
   }
 ];
+
+// display quantity and calculate cost
+
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener("click", function() {
+        cartQty(products[i]);
+    })
+}
+
+function loadCartQty() {
+    var productQty = localStorage.getItem("cartQty");
+
+    if (productQty) {
+        document.querySelector("#counter").textContent = productQty;
+    }
+}
+
+function cartQty(product) {
+    var productQty = localStorage.getItem("cartQty");
+
+    productQty = parseInt(productQty);
+
+    if (productQty) {
+        localStorage.setItem("cartQty", productQty + 1);
+        document.querySelector("#counter").textContent = productQty + 1
+    } else {
+        localStorage.setItem("cartQty", 1);
+        document.querySelector("#counter").textContent = 1
+    }
+
+    showInCart(product);
+}
+
+function showInCart(product) {
+    var cartContents = localStorage.getItem("itemsInCart");
+    cartContents = JSON.parse(cartContents);
+
+    if (cartContents != null) {
+        if (cartContents[product.tag] == undefined) {
+            cartContents = {
+                ...cartContents,
+                [product.tag]: product
+            }
+        }
+        cartContents[product.tag].inCart += 1;
+    } else {
+        product.inCart = 1;
+        cartContents = {
+            [product.tag]: product
+        };
+    };
+
+    localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
+}
+
 
 //show numbers in cart
 
@@ -153,7 +210,7 @@ function displayCart() {
             productContainer.innerHTML += `
             <div class="cart-item-wrapper">
                 <div class="product">
-                    <a href="#" onclick="removeFromCart()">
+                    <a href="#" class="remove-item">
                         <i class="fas fa-times-circle"></i>
                     </a>
                     <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
@@ -163,11 +220,11 @@ function displayCart() {
                     £${item.price}.00
                 </div>
                 <div class="quantity">
-                    <a href="#" onclick="decreaseQuantity()">
+                    <a href="#" class="decrease" onclick="decreaseQuantity()">
                         <i class="fas fa-minus-square"></i>
                     </a>
                     <span>${item.inCart}</span>
-                    <a href="#" onclick="increaseQuantity()">
+                    <a href="#" class="increase" onclick="increaseQuantity()">
                         <i class="fas fa-plus-square"></i>
                     </a>
                 </div>
@@ -198,20 +255,57 @@ function displayCart() {
                 <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
             </h6>
         </div>
-        `
+        `;
     }
 }
 
 // -----------------------------
 
-function removeFromCart(name) {
-    for(let i = 0; i < carts.length; i += 1) {
-        if (carts.item[i].name === name) {
-            carts.slice(i, 1)
-            return 
+let remove = document.querySelectorAll(".remove-item");
+
+for (let i = 0; i < remove.length; i++) {
+    remove[i].addEventListener("click", function() {
+        console.log("Removed from cart")
+    })
+}
+
+//function removeFromCart(name) {
+  //  cartItems.addEventListener("click", function() {
+    //    for (let i = 0; i < products.length; i+= 1) {
+      //      if (products[i].name === name) {
+        //        products.splice(i, 1);
+          //      return;
+            //}
+        //}
+    //})
+//}
+
+function decreaseQuantity(name) {
+    for (let i = 0; i < products.length; i++) {
+        if (products[i].name === name) {
+            item.inCart -= 1;
+            if (item.inCart < 1) {
+                products.splice(i, 1);
+            }
+            return;
         }
     }
 }
 
+function increaseQuantity(name) {
+    for (let i = 0; i < products.length; i++) {
+        if (products[i].name === name) {
+            if (item.inCart >= 1) {
+                products.push(i, 1);
+            }
+            return;
+        }
+    }
+}
+
+loadCartQty();
 onLoadCartNumbers();
 displayCart();
+//removeFromCart();
+decreaseQuantity();
+increaseQuantity();

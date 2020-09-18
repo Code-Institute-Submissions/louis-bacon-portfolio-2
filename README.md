@@ -1046,3 +1046,4 @@ I hope you enjoy my browsing portfolio website.
 * Successfully added EmailJS functionality to mailing list and contact page
 * Problem - alert boxes still pop up when submit button clicked even when required input fields are empty i.e. thank you msg appears before error msg
 * cart.js file linked in all html pages as want number to remain consistent in top-right across all pages for best possible UX
+* cartQty function attached to for loop, loadCartQty function won't run unless called - when page refreshed number in cart stays the same
