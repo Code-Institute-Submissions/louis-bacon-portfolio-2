@@ -61,11 +61,12 @@ var products = [
   }
 ];
 
-// display quantity and calculate cost
+// display items
 
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", function() {
         cartQty(products[i]);
+        cartTotal(products[i]);
     })
 }
 
@@ -115,159 +116,99 @@ function showInCart(product) {
     localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
 }
 
-
-//show numbers in cart
-
-for (let i = 0; i < carts.length; i++) {
-  carts[i].addEventListener("click", function () {
-    cartNumbers(products[i]);
-    totalCost(products[i]);
-  });
-}
-
-function onLoadCartNumbers() {
-  var productNumbers = localStorage.getItem("cartNumbers");
-
-  if (productNumbers) {
-    document.querySelector("#counter").textContent = productNumbers;
-  }
-}
-
-// -----------------------------
-
-function cartNumbers(product) {
-  var productNumbers = localStorage.getItem("cartNumbers");
-
-  productNumbers = parseInt(productNumbers);
-
-  if (productNumbers) {
-    localStorage.setItem("cartNumbers", productNumbers + 1);
-    document.querySelector("#counter").textContent = productNumbers + 1;
-  } else {
-    localStorage.setItem("cartNumbers", 1);
-    document.querySelector("#counter").textContent = 1;
-  }
-
-  setItems(product);
-}
-
-// -----------------------------
-
-function setItems(product) {
-  var cartItems = localStorage.getItem("productsInCart");
-  cartItems = JSON.parse(cartItems);
-
-  if (cartItems != null) {
-    if (cartItems[product.tag] == undefined) {
-      cartItems = {
-        ...cartItems,
-        [product.tag]: product,
-      };
-    }
-    cartItems[product.tag].inCart += 1;
-  } else {
-    product.inCart = 1;
-    cartItems = {
-      [product.tag]: product,
-    };
-  }
-
-  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-}
-
 //calculate cost
 
-function totalCost(product) {
-    var cartCost = localStorage.getItem("totalCost");
-    console.log("My cart cost is", cartCost);
-    console.log(typeof cartCost);
-
-    if (cartCost != null) {
-        cartCost = parseInt(cartCost);
-        localStorage.setItem("totalCost", cartCost + product.price);
-        document.getElementById("cartOverview").html(
-            `<h3>${product.name}</h3>
-            <h3>${product.price}</h3>`
-        );
+function cartTotal(product) {
+    var cost = localStorage.getItem("cartTotal");
+    
+    if (cost != null) {
+        cost = parseFloat(cost); // try cost.parseFloat(2)
+        localStorage.setItem("cartTotal", cost + product.price);
     } else {
-        localStorage.setItem("totalCost", product.price);
+        localStorage.setItem("cartTotal", product.price);
     }
-
-    localStorage.setItem("totalCost", product.price);
 }
 
-// -----------------------------
+// full cart
 
-function displayCart() {
-    var cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItems);
-    var productContainer = document.querySelector("#products");
-    var cartCost = localStorage.getItem("totalCost");
+function loadCart() {
+    var cartContents = localStorage.getItem("itemsInCart");
+    cartContents = JSON.parse(cartContents);
 
-    if (cartItems && productContainer) {
-        productContainer.innerHTML = "";
-        Object.values(cartItems).map(item => {
-            productContainer.innerHTML += `
-            <div class="cart-item-wrapper">
-                <div class="product">
-                    <a href="#" class="remove-item">
-                        <i class="fas fa-times-circle"></i>
-                    </a>
-                    <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
-                    <span>${item.name}</span>
+    var cartContainer = document.querySelector("#products");
+
+    var cost = localStorage.getItem("cartTotal");
+
+    if (cartContents && cartContainer) {
+        cartContainer.innerHTML = "";
+        Object.values(cartContents).map(item => {
+            cartContainer.innerHTML += `
+                <div class="cart-item-wrapper">
+                    <div class="product">
+                        <a href="#" class="remove-item">
+                            <i class="fas fa-times-circle"></i>
+                        </a>
+                        <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
+                        <span>${item.name}</span>
+                    </div>
+                    <div class="price">
+                        £${item.price}.00
+                    </div>
+                    <div class="quantity">
+                        <a href="#" class="decrease" onclick="decreaseQuantity()">
+                            <i class="fas fa-minus-square"></i>
+                        </a>
+                        <span>${item.inCart}</span>
+                        <a href="#" class="increase" onclick="increaseQuantity()">
+                            <i class="fas fa-plus-square"></i>
+                        </a>
+                    </div>
+                    <div class="total">
+                        £${item.inCart * item.price}.00
+                    </div>
                 </div>
-                <div class="price">
-                    £${item.price}.00
-                </div>
-                <div class="quantity">
-                    <a href="#" class="decrease" onclick="decreaseQuantity()">
-                        <i class="fas fa-minus-square"></i>
-                    </a>
-                    <span>${item.inCart}</span>
-                    <a href="#" class="increase" onclick="increaseQuantity()">
-                        <i class="fas fa-plus-square"></i>
-                    </a>
-                </div>
-                <div class="total">
-                    £${item.inCart * item.price}.00
-                </div>
-            </div>
-            `;
+            `
         });
 
-        productContainer.innerHTML += `
-        <div class="basket-total-container container-fluid">
-            <div class="row">
-                <div class="basket-total-title uppercase col-sm">
-                    <span>Cart Total: </span>
-                </div>
-                <div class="basket-total col-sm">
-                    <span>£${cartCost}.00</span>
+        cartContainer.innerHTML += `
+            <div class="basket-total-container container-fluid">
+                <div class="row">
+                    <div class="basket-total-title uppercase col-sm">
+                        <span>Cart Total: </span>
+                    </div>
+                    <div class="basket-total col-sm">
+                        <span>£${cost}.00</span>
+                    </div>
                 </div>
             </div>
-        </div>
         `;
     } else {
-        productContainer.innerHTML += `
-        <div class="cart-item-wrapper">
-            <h2 class="empty-cart">Your cart is currently empty.</h2>
-            <h6 class="back-to-shop-heading">
-                <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
-            </h6>
-        </div>
+        cartContainer.innerHTML += `
+            <div class="cart-item-wrapper">
+                <h2 class="empty-cart">Your cart is currently empty.</h2>
+                <h6 class="back-to-shop-heading">
+                    <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
+                </h6>
+            </div>
         `;
     }
 }
 
+// remove items
+
+var remove = document.querySelectorAll(".remove-item");
+
+
+
 // -----------------------------
 
-let remove = document.querySelectorAll(".remove-item");
+//let remove = document.querySelectorAll(".remove-item");
 
-for (let i = 0; i < remove.length; i++) {
-    remove[i].addEventListener("click", function() {
-        console.log("Removed from cart")
-    })
-}
+//for (let i = 0; i < remove.length; i++) {
+  //  remove[i].addEventListener("click", function() {
+    //    console.log("Removed from cart")
+    //})
+//}
 
 //function removeFromCart(name) {
   //  cartItems.addEventListener("click", function() {
@@ -280,32 +221,31 @@ for (let i = 0; i < remove.length; i++) {
     //})
 //}
 
-function decreaseQuantity(name) {
-    for (let i = 0; i < products.length; i++) {
-        if (products[i].name === name) {
-            item.inCart -= 1;
-            if (item.inCart < 1) {
-                products.splice(i, 1);
-            }
-            return;
-        }
-    }
-}
+//function decreaseQuantity(name) {
+//    for (let i = 0; i < products.length; i++) {
+  //      if (products[i].name === name) {
+    //        item.inCart -= 1;
+      //      if (item.inCart < 1) {
+        //        products.splice(i, 1);
+          //  }
+            //return;
+        //}
+    //}
+//}
 
-function increaseQuantity(name) {
-    for (let i = 0; i < products.length; i++) {
-        if (products[i].name === name) {
-            if (item.inCart >= 1) {
-                products.push(i, 1);
-            }
-            return;
-        }
-    }
-}
+//function increaseQuantity(name) {
+//    for (let i = 0; i < products.length; i++) {
+//        if (products[i].name === name) {
+//            if (item.inCart >= 1) {
+//                products.push(i, 1);
+//            }
+//            return;
+//        }
+//    }
+//}
 
 loadCartQty();
-onLoadCartNumbers();
-displayCart();
+loadCart();
 //removeFromCart();
-decreaseQuantity();
-increaseQuantity();
+//decreaseQuantity();
+//increaseQuantity();
