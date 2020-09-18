@@ -35,6 +35,7 @@ a:focus {
 }
 
 #returnToTop {
+    display: none;
     position: fixed;
     bottom: 5rem;
     right: 1.2rem;
