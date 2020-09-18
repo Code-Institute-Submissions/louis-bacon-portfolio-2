@@ -53,7 +53,7 @@ var products = [
   },
   {
     name: "Lockdown Fitness",
-    tag: "lockdown-fitness-cover",
+    tag: "lockdown-fitness-cover-large",
     price: 15,
     inCart: 0,
   }
