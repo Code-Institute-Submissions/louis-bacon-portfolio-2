@@ -145,7 +145,7 @@ function loadCart() {
             cartContainer.innerHTML += `
                 <div class="cart-item-wrapper">
                     <div class="product">
-                        <a href="#" class="remove-item">
+                        <a href="#" class="remove-item" onclick="removeFromCart()" data-name="${item.name}">
                             <i class="fas fa-times-circle"></i>
                         </a>
                         <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
@@ -196,9 +196,31 @@ function loadCart() {
 
 // remove items
 
-var remove = document.querySelectorAll(".remove-item");
+var removeItem = document.querySelectorAll(".remove-item");
 
+var remove = [];
 
+for (let i = 0; i < remove.length; i++) {
+    removeItem[i].addEventListener("click", function() {
+        removeFromCart(remove[i]);
+        //updateTotal();
+    })
+}
+
+function removeFromCart(name) {
+    var productQty = localStorage.getItem("cartQty");
+    var itemRemoved = localStorage.getItem("removeFromCart");
+
+    if (itemRemoved) {
+        localStorage.setItem("removeFromCart", productQty > 0);
+        document.querySelector(".product").textContent = "";
+        document.querySelector(".price").textContent = "";
+        document.querySelector(".quantity").textContent = "";
+        document.querySelector(".total").textContent = "";
+        $(".cart-item-wrapper").css("border-bottom", "none");
+        $(".cart-item-wrapper").css("padding", "0");
+    }
+}
 
 // -----------------------------
 
@@ -246,6 +268,3 @@ var remove = document.querySelectorAll(".remove-item");
 
 loadCartQty();
 loadCart();
-//removeFromCart();
-//decreaseQuantity();
-//increaseQuantity();
