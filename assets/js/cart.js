@@ -7,55 +7,55 @@ var carts = document.querySelectorAll(".add-item");
 var products = [
   {
     name: "LB17 Black",
-    tag: "lb17-white-logo-black-tee",
+    tag: "lb17black",
     price: 25,
     inCart: 0,
   },
   {
     name: "LB17 White",
-    tag: "lb17-for-women",
+    tag: "lb17white",
     price: 25,
     inCart: 0,
   },
   {
     name: "Brick By Brick",
-    tag: "brick-by-brick",
+    tag: "brickbybrick",
     price: 30,
     inCart: 0,
   },
   {
     name: "Bet On Yourself",
-    tag: "bet-on-yourself",
+    tag: "betonyourself",
     price: 30,
     inCart: 0,
   },
   {
     name: "Born2Excel Black",
-    tag: "Born2Excel",
+    tag: "born2excelblack",
     price: 25,
     inCart: 0,
   },
   {
     name: "Born2Excel White",
-    tag: "born2excel-white",
+    tag: "born2excelwhite",
     price: 25,
     inCart: 0,
   },
   {
-    name: "noMediocre",
-    tag: "no-mediocre-hashtag",
+    name: "nomediocre",
+    tag: "nomediocre",
     price: 25,
     inCart: 0,
   },
   {
     name: "Gym and weight training basics",
-    tag: "gym-basics-cover",
+    tag: "gymandweighttrainingbasics",
     price: 6,
     inCart: 0,
   },
   {
     name: "Lockdown Fitness",
-    tag: "lockdown-fitness-cover-large",
+    tag: "lockdownfitness",
     price: 15,
     inCart: 0,
   }
@@ -67,7 +67,7 @@ for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", function() {
         cartQty(products[i]);
         cartTotal(products[i]);
-    })
+    });
 }
 
 function loadCartQty() {
@@ -78,19 +78,24 @@ function loadCartQty() {
     }
 }
 
-function cartQty(product) {
+function cartQty(product, action) {
     var productQty = localStorage.getItem("cartQty");
 
     productQty = parseInt(productQty);
 
-    if (productQty) {
+    var cartContents = localStorage.getItem("itemsInCart");
+    cartContents = JSON.parse(cartContents);
+
+    if (action == "decrease") {
+        localStorage.setItem("cartQty", productQty - 1);
+        document.querySelector("#counter").textContent = productQty - 1;
+    } else if (productQty) {
         localStorage.setItem("cartQty", productQty + 1);
-        document.querySelector("#counter").textContent = productQty + 1
+        document.querySelector("#counter").textContent = productQty + 1;
     } else {
         localStorage.setItem("cartQty", 1);
-        document.querySelector("#counter").textContent = 1
+        document.querySelector("#counter").textContent = 1;
     }
-
     showInCart(product);
 }
 
@@ -103,7 +108,7 @@ function showInCart(product) {
             cartContents = {
                 ...cartContents,
                 [product.tag]: product
-            }
+            };
         }
         cartContents[product.tag].inCart += 1;
     } else {
@@ -111,18 +116,20 @@ function showInCart(product) {
         cartContents = {
             [product.tag]: product
         };
-    };
+    }
 
     localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
 }
 
 //calculate cost
 
-function cartTotal(product) {
+function cartTotal(product, action) {
     var cost = localStorage.getItem("cartTotal");
-    
-    if (cost != null) {
-        cost = parseFloat(cost); // try cost.parseFloat(2)
+    if (action == "decrease") {
+        cost = parseFloat(cost);
+        localStorage.setItem("cartTotal", cost - product.price);
+    } else if (cost != null) {
+        cost = parseFloat(cost);
         localStorage.setItem("cartTotal", cost + product.price);
     } else {
         localStorage.setItem("cartTotal", product.price);
@@ -155,11 +162,11 @@ function loadCart() {
                         £${item.price}.00
                     </div>
                     <div class="quantity">
-                        <a href="#" class="decrease" onclick="decreaseQuantity()">
+                        <a href="#" class="decrease-qty">
                             <i class="fas fa-minus-square"></i>
                         </a>
                         <span>${item.inCart}</span>
-                        <a href="#" class="increase" onclick="increaseQuantity()">
+                        <a href="#" class="increase-qty">
                             <i class="fas fa-plus-square"></i>
                         </a>
                     </div>
@@ -167,7 +174,7 @@ function loadCart() {
                         £${item.inCart * item.price}.00
                     </div>
                 </div>
-            `
+            `;
         });
 
         cartContainer.innerHTML += `
@@ -182,6 +189,33 @@ function loadCart() {
                 </div>
             </div>
         `;
+
+        cartContainer.innerHTML += `
+            <div class="row vat-info">
+                <div class="col-sm">
+                    <small>All prices are inclusive of VAT at 20&#37;</small>
+                </div>
+            </div>
+        `;
+
+        cartContainer.innerHTML += `
+            <div class="row">
+                <div class="col-sm checkout-button">
+                    <button class="btn btn-checkout btn-dark">
+                        <a href="#">
+                            <span>Checkout</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="col-sm continue-shopping-button">
+                    <button class="btn btn-continue-shopping btn-light">
+                        <a href="shop.html">
+                            <span>Continue Shopping</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        `;
     } else {
         cartContainer.innerHTML += `
             <div class="cart-item-wrapper">
@@ -193,21 +227,74 @@ function loadCart() {
         `;
     }
     removeFromCart();
+    changeQty();
 }
 
-// remove items
+// remove items from cart
 
 function removeFromCart() {
     var removeItem = document.querySelectorAll(".remove-item");
     var itemName;
-    var totalItems = localStorage.getItem("cartQty");
+    var totalUnits = localStorage.getItem("cartQty");
+    var cartContents = localStorage.getItem("itemsInCart");
+    cartContents = JSON.parse(cartContents);
+    var cost = localStorage.getItem("cartTotal");
 
     for (let i = 0; i < removeItem.length; i++) {
         removeItem[i].addEventListener("click", function() {
             itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
-            console.log(itemName);
-            console.log("We have " + totalItems + " items in cart");
+            localStorage.setItem("cartQty", totalUnits - cartContents[itemName].inCart);
+            localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
+
+            delete cartContents[itemName];
+            localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
+
+            loadCart();
+            loadCartQty();
         });
+    }
+}
+
+//increase and decrease quantities
+
+function changeQty() {
+    var decreaseQty = document.querySelectorAll(".decrease-qty");
+    var increaseQty = document.querySelectorAll(".increase-qty");
+    var cartContents = localStorage.getItem("itemsInCart");
+    var newQty = 0;
+    var selectedItem = "";
+
+    cartContents = JSON.parse(cartContents);
+    console.log(cartContents);
+
+    for (let i = 0; i < decreaseQty.length; i++) {
+        decreaseQty[i].addEventListener("click", function() {
+            newQty = decreaseQty[i].parentElement.querySelector("span").textContent;
+            selectedItem = decreaseQty[i].parentElement.previousElementSibling.previousElementSibling.querySelector("span").textContent.toLocaleLowerCase().replace(/ /g, "").trim();
+
+            if (cartContents[selectedItem].inCart > 1) {
+                cartContents[selectedItem].inCart -= 1;
+                cartQty(cartContents[selectedItem], "decrease");
+                cartTotal(cartContents[selectedItem], "decrease");
+                localStorage.setItem("itemsInCart", JSON.stringify(cartContents))
+                loadCart();
+            }            
+        });
+    }
+
+    for (let i = 0; i < increaseQty.length; i++) {
+        increaseQty[i].addEventListener("click", function() {
+            newQty = increaseQty[i].parentElement.querySelector("span").textContent;
+            selectedItem = increaseQty[i].parentElement.previousElementSibling.previousElementSibling.querySelector("span").textContent.toLocaleLowerCase().replace(/ /g, "").trim();
+
+            if (cartContents[selectedItem].inCart > 0) {
+                cartContents[selectedItem].inCart += 1;
+                cartQty(cartContents[selectedItem], "increase");
+                cartTotal(cartContents[selectedItem], "increase");
+                localStorage.setItem("itemsInCart", JSON.stringify(cartContents))
+                loadCart();
+            }
+        })
     }
 }
 
