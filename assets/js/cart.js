@@ -145,7 +145,7 @@ function loadCart() {
             cartContainer.innerHTML += `
                 <div class="cart-item-wrapper">
                     <div class="product">
-                        <a href="#" class="remove-item" onclick="removeFromCart()" data-name="${item.name}">
+                        <a href="#" class="remove-item">
                             <i class="fas fa-times-circle"></i>
                         </a>
                         <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
@@ -192,79 +192,24 @@ function loadCart() {
             </div>
         `;
     }
+    removeFromCart();
 }
 
 // remove items
 
-var removeItem = document.querySelectorAll(".remove-item");
+function removeFromCart() {
+    var removeItem = document.querySelectorAll(".remove-item");
+    var itemName;
+    var totalItems = localStorage.getItem("cartQty");
 
-var remove = [];
-
-for (let i = 0; i < remove.length; i++) {
-    removeItem[i].addEventListener("click", function() {
-        removeFromCart(remove[i]);
-        //updateTotal();
-    })
-}
-
-function removeFromCart(name) {
-    var productQty = localStorage.getItem("cartQty");
-    var itemRemoved = localStorage.getItem("removeFromCart");
-
-    if (itemRemoved) {
-        localStorage.setItem("removeFromCart", productQty > 0);
-        document.querySelector(".product").textContent = "";
-        document.querySelector(".price").textContent = "";
-        document.querySelector(".quantity").textContent = "";
-        document.querySelector(".total").textContent = "";
-        $(".cart-item-wrapper").css("border-bottom", "none");
-        $(".cart-item-wrapper").css("padding", "0");
+    for (let i = 0; i < removeItem.length; i++) {
+        removeItem[i].addEventListener("click", function() {
+            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
+            console.log(itemName);
+            console.log("We have " + totalItems + " items in cart");
+        });
     }
 }
-
-// -----------------------------
-
-//let remove = document.querySelectorAll(".remove-item");
-
-//for (let i = 0; i < remove.length; i++) {
-  //  remove[i].addEventListener("click", function() {
-    //    console.log("Removed from cart")
-    //})
-//}
-
-//function removeFromCart(name) {
-  //  cartItems.addEventListener("click", function() {
-    //    for (let i = 0; i < products.length; i+= 1) {
-      //      if (products[i].name === name) {
-        //        products.splice(i, 1);
-          //      return;
-            //}
-        //}
-    //})
-//}
-
-//function decreaseQuantity(name) {
-//    for (let i = 0; i < products.length; i++) {
-  //      if (products[i].name === name) {
-    //        item.inCart -= 1;
-      //      if (item.inCart < 1) {
-        //        products.splice(i, 1);
-          //  }
-            //return;
-        //}
-    //}
-//}
-
-//function increaseQuantity(name) {
-//    for (let i = 0; i < products.length; i++) {
-//        if (products[i].name === name) {
-//            if (item.inCart >= 1) {
-//                products.push(i, 1);
-//            }
-//            return;
-//        }
-//    }
-//}
 
 loadCartQty();
 loadCart();
