@@ -232,7 +232,7 @@ function loadCart() {
 
 // remove items from cart
 
-function removeFromCart() {
+function removeFromCart() {   
     var removeItem = document.querySelectorAll(".remove-item");
     var itemName;
     var totalUnits = localStorage.getItem("cartQty");
@@ -265,7 +265,6 @@ function changeQty() {
     var selectedItem = "";
 
     cartContents = JSON.parse(cartContents);
-    console.log(cartContents);
 
     for (let i = 0; i < decreaseQty.length; i++) {
         decreaseQty[i].addEventListener("click", function() {
