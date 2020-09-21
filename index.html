@@ -499,8 +499,25 @@
 		<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="assets/js/cart.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
-		<script>
-			function sendMail(mailingList) {
+        <script>
+           
+        </script>
+        <script>
+            function confirmSubscription() {
+                $("form").submit(function(event) {
+                    var recaptchaValidation = $("#g-recaptcha-response").val();
+                    if (recaptchaValidation === "") {
+                        event.preventDefault();
+                        alert("Please verify yourself first!");
+                        return false;
+                    } else {
+                        alert("Thank you for subscribing to my mailing list!");
+                        sendMail();
+                    }
+                });
+            }
+
+            function sendMail(mailingList) {
                 emailjs.send("gmail","mailinglist", {
                     "from_email": mailingList.emailaddress.value
                 })
@@ -512,11 +529,7 @@
                         console.log("FAILED", error);
                     }
                 )
-                    return false;
-            }
-
-            function confirmSubscription() {
-                alert("Thank you for subscribing to my mailing list!");
+                return false;
             }
 		</script>
 </body>
