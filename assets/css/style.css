@@ -323,9 +323,16 @@ a:focus {
 .add-item {
   border-radius: 50%;
   font-size: 1.2rem;
+  background-color: #000000;
+  border-color: #000000;
 }
 
-.add-item:active {
+.add-item:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.add-item:focus {
     outline: none;
 }
 
