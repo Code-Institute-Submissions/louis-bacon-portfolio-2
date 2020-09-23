@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
-  
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-	</script>
-	<script type="text/javascript">
-		(function(){
-            emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
-        })();
-	</script>
-</head>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
+      })();
+    </script>
+  </head>
 
-<body>
+  <body>
     <a name="top"></a>
     <nav class="navbar navbar-expand-sm d-block d-sm-none">
-        <button
+      <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -31,209 +39,252 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        >
-            <i class="fas fa-bars"></i>
-            <span class="sr-only">Menu toggler</span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item dropdown dropright">
-                    <a
-                    class="nav-link dropdown-toggle"
-                    href="shop.html"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >
-                        Shop
-                    </a>
-                    <div class="dropdown-menu dropright" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="shop.html">All Items</a>
-                        <a class="dropdown-item" href="merch.html">Merchandise</a>
-                        <a class="dropdown-item active" href="tutoring.html">Tutoring</a>
-                        <a class="dropdown-item" href="fitness.html">Fitness</a>
-                        <a class="dropdown-item" href="web-services.html">Web Services</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cv.html">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+      >
+        <i class="fas fa-bars"></i>
+        <span class="sr-only">Menu toggler</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown dropright">
+            <a
+              class="nav-link dropdown-toggle"
+              href="shop.html"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Shop
+            </a>
+            <div
+              class="dropdown-menu dropright"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="shop.html">All Items</a>
+              <a class="dropdown-item" href="merch.html">Merchandise</a>
+              <a class="dropdown-item active" href="tutoring.html">Tutoring</a>
+              <a class="dropdown-item" href="fitness.html">Fitness</a>
+              <a class="dropdown-item" href="web-services.html">Web Services</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="d-none d-sm-block menu-container">
-        <div class="navbar navbar-expand-sm bd-navbar">
-            <div class="col-sm-8 offset-sm-2 navbar-nav-scroll">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button
-                            class="btn btn-secondary dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            >
-                                Shop
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="shop.html">All Items</a>
-                                <a class="dropdown-item" href="merch.html">Merchandise</a>
-                                <a class="dropdown-item active" href="tutoring.html">Tutoring</a>
-                                <a class="dropdown-item" href="fitness.html">Fitness</a>
-                                <a class="dropdown-item" href="web-services.html">Web Services</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cv.html" class="nav-link">
-                            CV
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="checkout" class="col-sm">
-                <a href="cart.html">
-                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                    <span id="counter">0</span>
-                </a>    
-            </div>
+      <div class="navbar navbar-expand-sm bd-navbar">
+        <div class="col-sm-8 offset-sm-2 navbar-nav-scroll">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Shop
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="shop.html">All Items</a>
+                  <a class="dropdown-item" href="merch.html">Merchandise</a>
+                  <a class="dropdown-item active" href="tutoring.html"
+                    >Tutoring</a
+                  >
+                  <a class="dropdown-item" href="fitness.html">Fitness</a>
+                  <a class="dropdown-item" href="web-services.html"
+                    >Web Services</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="cv.html" class="nav-link">
+                CV
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
+        <div id="checkout" class="col-sm">
+          <a href="cart.html">
+            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            <span id="counter">0</span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="content text-center">
-        <div class="container-fluid hero-image-container">
-            <!-- hero image-->
-            <div class="hero-image">
-                <img src="./assets/images/lb17-shopify-header.png" alt="LB17 Brand Logo" />
-            </div>
+      <div class="container-fluid hero-image-container">
+        <!-- hero image-->
+        <div class="hero-image">
+          <img
+            src="./assets/images/lb17-shopify-header.png"
+            alt="LB17 Brand Logo"
+          />
         </div>
+      </div>
 
-        <div class="container-fluid about-me-container">
-            <!-- info about me-->
-            <div class="row">
-                <div class="col">
-                    <h1 class="name uppercase">Louis Bacon</h1>
-                    <h2 class="title uppercase">
-                        <a href="merch.html" class="headline-link" target="_blank">Clothing brand</a>
-                        <span class="d-none d-sm-inline">&#124;</span>
-                        <br class="d-block d-sm-none" />
-                        <a href="tutoring.html" class="headline-link" target="_blank">Tutor</a>
-                        <span class="d-none d-sm-inline">&#124;</span>
-                        <br class="d-block d-sm-none" />
-                        <a href="fitness.html" class="headline-link" target="_blank">Fitness Coach</a>
-                        <span class="d-none d-sm-inline">&#124;</span>
-                        <br class="d-block d-sm-none" />
-                        <a href="web-services.html" class="headline-link" target="_blank">Web Developer</a>
-                    </h2>
+      <div class="container-fluid about-me-container">
+        <!-- info about me-->
+        <div class="row">
+          <div class="col">
+            <h1 class="name uppercase">Louis Bacon</h1>
+            <h2 class="title uppercase">
+              <a href="merch.html" class="headline-link" target="_blank"
+                >Clothing brand</a
+              >
+              <span class="d-none d-sm-inline">&#124;</span>
+              <br class="d-block d-sm-none" />
+              <a href="tutoring.html" class="headline-link" target="_blank"
+                >Tutor</a
+              >
+              <span class="d-none d-sm-inline">&#124;</span>
+              <br class="d-block d-sm-none" />
+              <a href="fitness.html" class="headline-link" target="_blank"
+                >Fitness Coach</a
+              >
+              <span class="d-none d-sm-inline">&#124;</span>
+              <br class="d-block d-sm-none" />
+              <a href="web-services.html" class="headline-link" target="_blank"
+                >Web Developer</a
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider">
+        <hr class="block-divider block-divider-short" />
+      </div>
+
+      <div class="container-fluid tutoring-container">
+        <h2 class="tutoring-heading">Tutoring Services</h2>
+        <h6 class="tutoring-subheading">
+          I provide tuition in Maths and English up to KS3, and in German
+          language for all levels and abilities. A one&#45;hour lesson is
+          &#163;25, a 90&#45;minute lesson is &#163;35. There is also the option
+          of a 30&#45;minute assessment free of charge before starting lessons.
+          <br />
+          <br />
+          Fill out the form below to book your lesson&#33;
+        </h6>
+        <div class="row contact-form">
+          <div class="col lesson-signup-form">
+            <form
+              class="signup"
+              action="emails"
+              onsubmit="return sendMail(this);"
+            >
+              <div class="form-group row">
+                <label for="fname" class="col-sm-3 col-form-label"
+                  >First Name&#58;</label
+                >
+                <div class="col-sm">
+                  <input
+                    type="text"
+                    id="fname"
+                    class="form-control"
+                    minlength="2"
+                    placeholder="First name"
+                    required
+                  />
                 </div>
-            </div>
-        </div>
-      
-        <div class="divider">
-            <hr class="block-divider block-divider-short" />
-        </div>
-
-        <div class="container-fluid tutoring-container">
-            <h2 class="tutoring-heading">Tutoring Services</h2>
-            <h6 class="tutoring-subheading">
-                I provide tuition in Maths and English up to KS3, and in German language for all levels and abilities. 
-                A one&#45;hour lesson is &#163;25, a 90&#45;minute lesson is &#163;35. There is also the option of a 30&#45;minute 
-                assessment free of charge before starting lessons.
-                <br />
-                <br />
-                Fill out the form below to book your lesson&#33;
-            </h6>
-            <div class="row contact-form">
-				<div class="col lesson-signup-form">
-					<form class="signup" action="emails" onsubmit="return sendMail(this);">
-							<div class="form-group row">
-								<label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
-								<div class="col-sm">
-									<input
-                                    type="text"
-                                    id="fname"
-                                    class="form-control"
-                                    minlength="2"
-                                    placeholder="First name"
-                                    required
-                                    />
-                                </div>
-							</div>
-							<div class="form-group row">
-							    <label for="lname" class="col-sm-3 col-form-label">Last Name&#58;</label>
-							    <div class="col-sm">
-									<input
-                                    type="text"
-                                    id="lname"
-                                    class="form-control"
-                                    minlength="2"
-                                    placeholder="Last name"
-                                    required
-                                    />
-                                </div>
-							</div>
-							<div class="form-group row">
-								<label for="email" class="col-sm-3 col-form-label">E&#45;mail address&#58;</label>
-								<div class="col-sm">
-									<input
-                                    type="email"
-                                    id="emailaddress"
-                                    class="form-control"
-                                    name="email"
-                                    placeholder="Your email address"
-                                    required
-                                    />
-                                </div>
-							</div>
-							<div class="form-group row">
-								<label for="phone" class="col-sm-3 col-form-label">Phone number&#58;</label>
-								<div class="col-sm">
-									<input
-                                    type="number"
-                                    id="phone"
-                                    class="form-control"
-                                    maxlength="10"
-                                    placeholder="Your telephone number"
-                                    required
-                                    />
-                                </div>
-							</div>
-							<div class="form-group row">
-								<label for="birthday-dd birthday-mm birthday-yyyy" class="col-sm-3 col-form-label">
-                                    Date of birth&#42;&#58;
-                                </label>
-                                <div class="dob-dropdown col-sm">
-                                    <input type="date" id="dob" name="dob" class="form-control" value="yyyy-MM-dd" min="01-01-1900" max="2020-10-19" required>
-									<!--- <select id="birthday-dd" class="dob-select" required>
+              </div>
+              <div class="form-group row">
+                <label for="lname" class="col-sm-3 col-form-label"
+                  >Last Name&#58;</label
+                >
+                <div class="col-sm">
+                  <input
+                    type="text"
+                    id="lname"
+                    class="form-control"
+                    minlength="2"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label"
+                  >E&#45;mail address&#58;</label
+                >
+                <div class="col-sm">
+                  <input
+                    type="email"
+                    id="emailaddress"
+                    class="form-control"
+                    name="email"
+                    placeholder="Your email address"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="phone" class="col-sm-3 col-form-label"
+                  >Phone number&#58;</label
+                >
+                <div class="col-sm">
+                  <input
+                    type="number"
+                    id="phone"
+                    class="form-control"
+                    maxlength="10"
+                    placeholder="Your telephone number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label
+                  for="birthday-dd birthday-mm birthday-yyyy"
+                  class="col-sm-3 col-form-label"
+                >
+                  Date of birth&#42;&#58;
+                </label>
+                <div class="dob-dropdown col-sm">
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    class="form-control"
+                    value="yyyy-MM-dd"
+                    min="01-01-1900"
+                    max="2020-10-19"
+                    required
+                  />
+                  <!--- <select id="birthday-dd" class="dob-select" required>
                                         <option selected disabled>DD</option>
                                         <option>01</option>
                                         <option>02</option>
@@ -260,118 +311,140 @@
                                         <option>2016</option>
                                         <option>&#8230;</option>
                                     </select> --->
-									<small class="form-text text-muted dob-small">
-                                        &#42;if a parent seeking lessons for your child, please enter your child&#8217;s DOB
-                                    </small>
-								</div>
-							</div>
-                            <div class="form-group row">
-								<label for="subject" class="col-sm-3 col-form-label">
-                                    <span class="d-none d-md-inline">I &#47; my child would like lessons in</span>
-                                    <span class="d-inline d-md-none">Subject</span>
-                                    &#58;
-                                </label>
-								<div class="col-sm tutoring-options">
-									<input
-                                    type="checkbox"
-                                    id="mathsenglish"
-                                    value="mathsenglish"
-                                    />
-									<label for="mathsenglish">Maths &#47; English</label>
-									<input type="checkbox" id="german" value="german" />
-									<label for="german">German</label>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="competency" class="col-sm-3 col-form-label">
-                                    <span class="d-none d-sm-inline">Competency level</span>
-                                    <span class="d-inline d-sm-none">Level</span>
-                                    &#58;
-                                </label>
-								<div class="col-sm tutoring-options">
-									<input
-                                    type="radio"
-                                    id="beginner"
-                                    name="competencyOptions"
-                                    value="option1"
-                                    required
-                                    />
-									<label for="beginner" class="competency-level-option">Beginner</label>
-									<br class="d-block d-sm-none" />
-									<input
-                                    type="radio"
-                                    id="intermediate"
-                                    name="competencyOptions"
-                                    value="option2"
-                                    required
-                                    />
-									<label for="intermediate" class="competency-level-option">Intermediate</label>
-									<br class="d-block d-sm-none" />
-									<input
-                                    type="radio"
-                                    id="advanced"
-                                    name="competencyOptions"
-                                    value="option3"
-                                    required
-                                    />
-									<label for="advanced" class="competency-level-option">Advanced</label>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="competency" class="col-sm-3 col-form-label">Lesson length&#58;</label>
-								<div class="col-sm tutoring-options">
-									<input
-                                    type="radio"
-                                    id="hour"
-                                    name="lessonLengthOptions"
-                                    value="option1"
-                                    required
-                                    />
-									<label for="hour" class="lesson-length-option">1 hour &#40;&#163;25.00&#41;</label>
-									<br class="d-block d-sm-none" />
-									<input
-                                    type="radio"
-                                    id="ninety"
-                                    name="lessonLengthOptions"
-                                    value="option2"
-                                    required
-                                    />
-									<label for="ninety" class="lesson-length-option">1.5 hours &#40;&#163;35.00&#41;</label>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="subject" class="col-sm col-form-label">
-                                    I would also like a FREE initial 30&#45;minute assessment&#58;
-                                </label>
-								<div class="col-sm tutoring-options">
-								    <input type="checkbox" id="freeassessment" />
-                                </div>
-							</div>
-							<div class="row submit-button">
-								<div class="d-none d-md-inline col-sm-3"></div>
-								<div class="col-sm">
-									<button type="submit" class="btn btn-success submit-request">
-                                        Book Now&#33;
-                                    </button>
-								</div>
-							</div>
-                            <div class="g-recaptcha rc-container container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s">
-                        
-                            </div>
-                            <div id="gRecaptcha" class="container-fluid"></div>
-						</form>
-				</div>
-			</div>
+                  <small class="form-text text-muted dob-small">
+                    &#42;if a parent seeking lessons for your child, please
+                    enter your child&#8217;s DOB
+                  </small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="subject" class="col-sm-3 col-form-label">
+                  <span class="d-none d-md-inline"
+                    >I &#47; my child would like lessons in</span
+                  >
+                  <span class="d-inline d-md-none">Subject</span>
+                  &#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input
+                    type="checkbox"
+                    class="subject-option"
+                    id="mathsenglish"
+                    name="option[]"
+                    required />
+                  <label for="mathsenglish">Maths &#47; English</label>
+                  <input
+                    type="checkbox"
+                    class="subject-option"
+                    id="german"
+                    name="option[]"
+                    required />
+                  <label for="german">German</label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="competency" class="col-sm-3 col-form-label">
+                  <span class="d-none d-sm-inline">Competency level</span>
+                  <span class="d-inline d-sm-none">Level</span>
+                  &#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input
+                    type="radio"
+                    id="beginner"
+                    name="competencyOptions"
+                    value="option1"
+                    required
+                  />
+                  <label for="beginner" class="competency-level-option"
+                    >Beginner</label
+                  >
+                  <br class="d-block d-sm-none" />
+                  <input
+                    type="radio"
+                    id="intermediate"
+                    name="competencyOptions"
+                    value="option2"
+                    required
+                  />
+                  <label for="intermediate" class="competency-level-option"
+                    >Intermediate</label
+                  >
+                  <br class="d-block d-sm-none" />
+                  <input
+                    type="radio"
+                    id="advanced"
+                    name="competencyOptions"
+                    value="option3"
+                    required
+                  />
+                  <label for="advanced" class="competency-level-option"
+                    >Advanced</label
+                  >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="competency" class="col-sm-3 col-form-label"
+                  >Lesson length&#58;</label
+                >
+                <div class="col-sm tutoring-options">
+                  <input
+                    type="radio"
+                    id="hour"
+                    name="lessonLengthOptions"
+                    value="option1"
+                    required
+                  />
+                  <label for="hour" class="lesson-length-option"
+                    >1 hour &#40;&#163;25.00&#41;</label
+                  >
+                  <br class="d-block d-sm-none" />
+                  <input
+                    type="radio"
+                    id="ninety"
+                    name="lessonLengthOptions"
+                    value="option2"
+                    required
+                  />
+                  <label for="ninety" class="lesson-length-option"
+                    >1.5 hours &#40;&#163;35.00&#41;</label
+                  >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="subject" class="col-sm col-form-label">
+                  I would also like a FREE initial 30&#45;minute assessment&#58;
+                </label>
+                <div class="col-sm tutoring-options">
+                  <input type="checkbox" id="freeassessment" />
+                </div>
+              </div>
+              <div class="row submit-button">
+                <div class="d-none d-md-inline col-sm-3"></div>
+                <div class="col-sm">
+                  <button type="submit" class="btn btn-success submit-request">
+                    Book Now&#33;
+                  </button>
+                </div>
+              </div>
+              <div
+                class="g-recaptcha rc-container container-fluid"
+                data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s"
+              ></div>
+              <div id="gRecaptcha" class="container-fluid"></div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="returnToTop">
-        <a href="#" onclick="backToTop()">
-            <i class="fas fa-arrow-circle-up"></i>
-        </a>
+      <a href="#" onclick="backToTop()">
+        <i class="fas fa-arrow-circle-up"></i>
+      </a>
     </div>
 
-	<!---
+    <!---
     <div class="returntotop-container">
 		<a href="#top" class="returntotop">
 			Return to top &#94;
@@ -380,102 +453,140 @@
     --->
 
     <footer class="container-fluid">
-		<div class="info-media-wrapper">
-			<div class="row">
-				<div class="payment-info-container col-sm">
-					<!-- payment info-->
-					<ul class="list-inline payment-info">
-						<li class="list-inline-item">
-							<i class="fa fa-cc-visa"></i>
-							<span class="sr-only">Visa</span>
-						</li>
-						<li class="list-inline-item">
-							<i class="fa fa-cc-mastercard"></i>
-							<span class="sr-only">Mastercard</span>
-						</li>
-						<li class="list-inline-item">
-							<i class="fa fa-cc-amex"></i>
-							<span class="sr-only">American Express</span>
-						</li>
-						<li class="list-inline-item">
-							<i class="fa fa-bitcoin"></i>
-							<span class="sr-only">Bitcoin</span>
-						</li>
-					</ul>
-				</div>
-				<div class="social-media-container col-sm">
-					<!-- social media links-->
-					<ul class="list-inline social-media">
-						<li class="list-inline-item">
-							<a href="https://www.facebook.com/louis.bacon.5" target="_blank" class="social-media-link">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="https://www.twitter.com/LouisBacon17" target="_blank" class="social-media-link">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="https://www.instagram.com/lbacon17" target="_blank" class="social-media-link">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="https://www.linkedin.com/in/louis-bacon-1130a87a/" target="_blank" class="social-media-link">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-								<span class="sr-only">Linkedin</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="copyright-notice">
-			<!-- copyright notice -->
-			<span class="copyright">&#169; Louis Bacon 2020</span>
-		</div>
-	</footer>
+      <div class="info-media-wrapper">
+        <div class="row">
+          <div class="payment-info-container col-sm">
+            <!-- payment info-->
+            <ul class="list-inline payment-info">
+              <li class="list-inline-item">
+                <i class="fa fa-cc-visa"></i>
+                <span class="sr-only">Visa</span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fa fa-cc-mastercard"></i>
+                <span class="sr-only">Mastercard</span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fa fa-cc-amex"></i>
+                <span class="sr-only">American Express</span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fa fa-bitcoin"></i>
+                <span class="sr-only">Bitcoin</span>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media-container col-sm">
+            <!-- social media links-->
+            <ul class="list-inline social-media">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/louis.bacon.5"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.twitter.com/LouisBacon17"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/lbacon17"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/louis-bacon-1130a87a/"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-notice">
+        <!-- copyright notice -->
+        <span class="copyright">&#169; Louis Bacon 2020</span>
+      </div>
+    </footer>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
+    <!---<script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script> --->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/3d693d5731.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="assets/js/cart.js" async></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
-        function sendMail(contactRequest) {
-            emailjs.send("gmail", "contactrequest", {
-                "from_name": contactRequest.fname.value,
-                "from_email": contactRequest.emailaddress.value,
-                "phone_number": contactRequest.phone.value,
-                "birthday": contactRequest.dob.value,
-                "subject_mathsenglish": contactRequest.mathsenglish.value,
-                "subject_german": contactRequest.german.value,
-                "competency_beginner": contactRequest.beginner.value,
-                "competency_intermediate": contactRequest.intermediate.value,
-                "competency_advanced": contactRequest.advanced.value,
-                "length_1hr": contactRequest.hour.value,
-                "length_1hr30": contactRequest.ninety.value,
-                "free_assessment": contactRequest.freeassessment.value
-            })
-            .then(
-                function(response) {
-                    console.log("SUCCESS", response);
-                    alert("Thank you for your enquiry! I will be in touch with you as soon as possible.")
-                },
-                function(error) {
-                    console.log("FAILED", error);
-                    document.getElementById("gRecaptcha").innerHTML = `
+        $(".submit-request").on("click", function() {
+            $subjects = $(".subject-option");
+
+            $subjects.prop("required", true);
+            if($subjects.is(":checked")) {
+                $subjects.prop("required", false);
+            }
+        });
+    </script>
+    <script>
+      function sendMail(contactRequest) {
+        emailjs
+          .send("gmail", "contactrequest", {
+            "from_name": contactRequest.fname.value,
+            "from_email": contactRequest.emailaddress.value,
+            "phone_number": contactRequest.phone.value,
+            "birthday": contactRequest.dob.value,
+            "subject_mathsenglish": contactRequest.mathsenglish.value,
+            "subject_german": contactRequest.german.value,
+            "competency_beginner": contactRequest.beginner.value,
+            "competency_intermediate": contactRequest.intermediate.value,
+            "competency_advanced": contactRequest.advanced.value,
+            "length_1hr": contactRequest.hour.value,
+            "length_1hr30": contactRequest.ninety.value,
+            "free_assessment": contactRequest.freeassessment.value,
+          })
+          .then(
+            function (response) {
+              console.log("SUCCESS", response);
+              alert(
+                "Thank you for your enquiry! I will be in touch with you as soon as possible."
+              );
+            },
+            function (error) {
+              console.log("FAILED", error);
+              document.getElementById("gRecaptcha").innerHTML = `
                         <div class="alert alert-danger alert-dismissable fade show">
                             <strong>
                                 <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
@@ -484,12 +595,11 @@
                                 </button>
                             </strong>
                         </div>
-                    `
-                }
-            )
-            return false;
-        }
+                    `;
+            }
+          );
+        return false;
+      }
     </script>
-</body>
-
+  </body>
 </html>
