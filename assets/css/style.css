@@ -48,6 +48,10 @@ a:focus {
     z-index: 99;
 }
 
+#returnToTop:hover {
+    opacity: 1;
+}
+
 /*--- header ---*/
 
 .navbar {
@@ -334,6 +338,7 @@ a:focus {
 
 .add-item:focus {
     outline: none;
+    box-shadow: none;
 }
 
 /*--- mailing list ---*/
