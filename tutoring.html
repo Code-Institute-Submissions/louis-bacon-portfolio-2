@@ -174,7 +174,7 @@
             </h6>
             <div class="row contact-form">
 				<div class="col lesson-signup-form">
-					<form class="signup" action="emailjs" onsubmit="return sendMail(this);">
+					<form class="signup" action="emails" onsubmit="return sendMail(this);">
 							<div class="form-group row">
 								<label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
 								<div class="col-sm">
@@ -232,7 +232,7 @@
                                     Date of birth&#42;&#58;
                                 </label>
                                 <div class="dob-dropdown col-sm">
-                                    <input type="date" id="dob" name="dob" class="form-control" value="DD-MM-YYYY" min="01-01-1900" max="2020-10-19" required>
+                                    <input type="date" id="dob" name="dob" class="form-control" value="yyyy-MM-dd" min="01-01-1900" max="2020-10-19" required>
 									<!--- <select id="birthday-dd" class="dob-select" required>
                                         <option selected disabled>DD</option>
                                         <option>01</option>
@@ -322,21 +322,21 @@
 								<div class="col-sm tutoring-options">
 									<input
                                     type="radio"
-                                    id="1hr"
+                                    id="hour"
                                     name="lessonLengthOptions"
                                     value="option1"
                                     required
                                     />
-									<label for="1hr" class="lesson-length-option">1 hour &#40;&#163;25.00&#41;</label>
+									<label for="hour" class="lesson-length-option">1 hour &#40;&#163;25.00&#41;</label>
 									<br class="d-block d-sm-none" />
 									<input
                                     type="radio"
-                                    id="1hr30"
+                                    id="ninety"
                                     name="lessonLengthOptions"
                                     value="option2"
                                     required
                                     />
-									<label for="1hr30" class="lesson-length-option">1.5 hours &#40;&#163;35.00&#41;</label>
+									<label for="ninety" class="lesson-length-option">1.5 hours &#40;&#163;35.00&#41;</label>
 								</div>
 							</div>
 							<div class="form-group row">
@@ -350,7 +350,7 @@
 							<div class="row submit-button">
 								<div class="d-none d-md-inline col-sm-3"></div>
 								<div class="col-sm">
-									<button type="submit" class="btn btn-success submit-request" onclick="requestConfirmation()">
+									<button type="submit" class="btn btn-success submit-request">
                                         Book Now&#33;
                                     </button>
 								</div>
@@ -358,6 +358,7 @@
                             <div class="g-recaptcha rc-container container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s">
                         
                             </div>
+                            <div id="gRecaptcha" class="container-fluid"></div>
 						</form>
 				</div>
 			</div>
@@ -453,36 +454,43 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
         function sendMail(contactRequest) {
-                emailjs.send("gmail", "contactrequest", {
-                    "from_name": contactRequest.fname.value,
-                    "from_email": contactRequest.emailaddress.value,
-                    "phone_number": contactRequest.phone.value,
-                    "birthday_day": contactRequest.birthday-dd.value,
-                    "birthday_month": contactRequest.birthday-mm.value,
-                    "birthday_year": contactRequest.birthday-yyyy.value,
-                    "subject_mathsenglish": contactRequest.mathsenglish.value,
-                    "subject_german": contactRequest.german.value,
-                    "competency_beginner": contactRequest.beginner.value
-                    "competency_intermediate": contactRequest.intermediate.value
-                    "competency_advanced": contactRequest.advanced.value,
-                    "length_1hr": contactRequest.1hr.value,
-                    "length_1hr30": contactRequest.1hr30.value,
-                    "free_assessment": contactRequest.freeassessment.value
-                })
-                .then(
-                    function(response) {
-                        console.log("SUCCESS", response);
-                    },
-                    function(error) {
-                        console.log("FAILED", error);
-                    }
-                )
-                return false;
-            }
-
-            function requestConfirmation () {
-                alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
-            }
+            emailjs.send("gmail", "contactrequest", {
+                "from_name": contactRequest.fname.value,
+                "from_email": contactRequest.emailaddress.value,
+                "phone_number": contactRequest.phone.value,
+                "birthday_day": contactRequest.birthday-dd.value,
+                "birthday_month": contactRequest.birthday-mm.value,
+                "birthday_year": contactRequest.birthday-yyyy.value,
+                "subject_mathsenglish": contactRequest.mathsenglish.value,
+                "subject_german": contactRequest.german.value,
+                "competency_beginner": contactRequest.beginner.value,
+                "competency_intermediate": contactRequest.intermediate.value,
+                "competency_advanced": contactRequest.advanced.value,
+                "length_1hr": contactRequest.hour.value,
+                "length_1hr30": contactRequest.ninety.value,
+                "free_assessment": contactRequest.freeassessment.value
+            })
+            .then(
+                function(response) {
+                    console.log("SUCCESS", response);
+                    alert("Thank you for your enquiry! I will be in touch with you as soon as possible.")
+                },
+                function(error) {
+                    console.log("FAILED", error);
+                    document.getElementById("gRecaptcha").innerHTML = `
+                        <div class="alert alert-danger alert-dismissable fade show">
+                            <strong>
+                                <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
+                                <button type="button" class="close" data-dismiss="alert" aria-labels="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </strong>
+                        </div>
+                    `
+                }
+            )
+            return false;
+        }
     </script>
 </body>
 
