@@ -399,13 +399,13 @@
                         placeholder="Your e-mail address"
                         required
                         />
-							<button type="submit" class="btn subscribe btn-success" onclick="confirmSubscription()">
+							<button type="submit" class="btn subscribe btn-success">
                             Subscribe&#33;
                         </button>
                         <div class="g-recaptcha rc-container container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s" data-callback="onSubmit" data-action="submit">
                         
                         </div>
-                        <span id="gRecaptcha"></span>
+                        <div id="gRecaptcha" class="container-fluid"></div>
 						</form>
 					</div>
 				</div>
@@ -503,19 +503,19 @@
            
         </script>
         <script>
-            function confirmSubscription() {
-                $("form").submit(function(event) {
-                    var recaptchaValidation = $("#g-recaptcha-response").val();
-                    if (recaptchaValidation === "") {
-                        event.preventDefault();
-                        alert("Please verify yourself first!");
-                        return false;
-                    } else {
-                        alert("Thank you for subscribing to my mailing list!");
-                        sendMail();
-                    }
-                });
-            }
+//            function confirmSubscription() {
+//                $("form").submit(function(event) {
+//                    var recaptchaValidation = $("#g-recaptcha-response").val();
+//                    if (recaptchaValidation === "") {
+//                        event.preventDefault();
+//                        alert("Please verify yourself first!");
+//                        return false;
+//                    } else {
+//                        alert("Thank you for subscribing to my mailing list!");
+//                        sendMail();
+//                    }
+//                });
+//            }
 
             function sendMail(mailingList) {
                 emailjs.send("gmail","mailinglist", {
@@ -524,9 +524,20 @@
                 .then(
                     function(response) {
                         console.log("SUCCESS", response);
+                        alert ("Thank you for subscribing to my mailing list!")
                     },
                     function(error) {
                         console.log("FAILED", error);
+                        document.getElementById("gRecaptcha").innerHTML = `
+                            <div class="alert alert-danger alert-dismissable fade show">
+                                <strong>
+                                    <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
+                                    <button type="button" class="close" data-dismiss="alert" aria-labels="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </strong>
+                            </div>
+                        `
                     }
                 )
                 return false;

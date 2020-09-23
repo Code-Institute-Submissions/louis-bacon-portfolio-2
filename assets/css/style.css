@@ -385,6 +385,11 @@ a:focus {
     width: 100% !important; /* overriding style attribute of width: 304px */
 }
 
+#gRecaptcha {
+    width: 40%;
+    margin-top: -15px;
+}
+
 /*--- ABOUT ---*/
 
 .gallery-container {
