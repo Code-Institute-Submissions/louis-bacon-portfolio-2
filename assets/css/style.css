@@ -787,6 +787,8 @@ a:focus {
 /*--- footer ---*/
 
 footer {
+  position: absolute;
+  bottom: 0px;
   background-color: seagreen;
   padding-top: 5px;
 }
