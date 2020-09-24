@@ -635,6 +635,14 @@ a:focus {
     border-bottom: 1px solid #000;
 }
 
+.cart-headings {
+    padding: 0;
+}
+
+.cart-headings h5 {
+    font-size: 0.8rem;
+}
+
 .product-title,
 .product-price,
 .product-quantity,
@@ -646,44 +654,45 @@ a:focus {
 }
 
 .product-title {
-    width: 35%;
-    padding-left: 20px;
+    width: 25%;
+    /*--- padding-left: 20px; ---*/
     text-align: left;
 }
 
 .product-price {
-    width: 10%;
+    width: 20%;
 }
 
 .product-quantity {
-    width: 15%;
+    width: 20%;
 }
 
 .cart-total {
     text-transform: uppercase;
-    width: 20%;
+    width: 25%;
 }
 
 .cart-item-wrapper {
     padding: 10px 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
+    font-size: 0.8rem;
 }
 
 .product {
     text-align: left;
-    width: 35%;
+    width: 25%;
 }
 
 .price {
-    width: 10%;
+    width: 20%;
 }
 
 .quantity {
-    width: 15%;
+    width: 20%;
 }
 
 .total {
-    width: 20%;
+    width: 25%;
 }
 
 .product,
@@ -695,10 +704,14 @@ a:focus {
 }
 
 .cart-item-thumbnail {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     margin-left: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.item-text {
+    display: none;
 }
 
 .cart-total-wrapper {
@@ -829,6 +842,53 @@ footer {
   }
 }
 
+@media screen and (min-width: 415px) {
+  .cart-headings {
+    padding: 0 15px;
+  }
+
+  .cart-headings h5 {
+    font-size: 1.25rem;
+  }
+
+  .product-title {
+    width: 35%;
+    padding-left: 20px;
+  }
+
+  .item-text {
+      display: inline;
+  }
+
+  .product-price {
+    width: 10%;
+  }
+
+  .product-quantity {
+    width: 15%;
+  }
+
+  .cart-total {
+    width: 20%;
+  }
+
+  .product {
+    width: 35%;
+  }
+
+  .price {
+    width: 10%;
+  }
+
+  .quantity {
+    width: 15%;
+  }
+
+  .total {
+    width: 20%;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .stuff-i-sell-subheading {
     font-size: 1.2rem;
@@ -867,6 +927,10 @@ footer {
 
   .btn-continue-shopping {
       width: 75%;
+  }
+
+  .cart-item-wrapper {
+      font-size: 0.9rem;
   }
 }
 
@@ -915,6 +979,16 @@ footer {
 
   .btn-continue-shopping {
       width: 60%;
+  }
+
+  .cart-item-wrapper {
+      font-size: 1rem;
+  }
+
+  .cart-item-thumbnail {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
   }
 }
 

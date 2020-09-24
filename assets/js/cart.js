@@ -156,7 +156,8 @@ function loadCart() {
                             <i class="fas fa-times-circle"></i>
                         </a>
                         <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
-                        <span>${item.name}</span>
+                        <span class="item-text">${item.name}</span>
+                        <span class="sr-only">${item.name}</span>
                     </div>
                     <div class="price">
                         £${item.price}.00
