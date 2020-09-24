@@ -178,12 +178,12 @@ function loadCart() {
         });
 
         cartContainer.innerHTML += `
-            <div class="basket-total-container container-fluid">
+            <div class="cart-total-wrapper">
                 <div class="row">
-                    <div class="basket-total-title uppercase col-sm">
+                    <div class="cart-total-heading uppercase">
                         <span>Cart Total: </span>
                     </div>
-                    <div class="basket-total col-sm">
+                    <div class="cart-total-price">
                         <span>£${cost}.00</span>
                     </div>
                 </div>
@@ -193,7 +193,9 @@ function loadCart() {
         cartContainer.innerHTML += `
             <div class="row vat-info">
                 <div class="col-sm">
-                    <small>All prices are inclusive of VAT at 20&#37;</small>
+                    <span class="small-print">
+                        <small>All prices are inclusive of VAT at 20&#37;</small>
+                    </span>
                 </div>
             </div>
         `;
