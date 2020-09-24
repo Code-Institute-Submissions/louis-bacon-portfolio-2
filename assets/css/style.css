@@ -14,8 +14,13 @@ a:focus {
   outline: none;
 }
 
+.page-wrap {
+    position: relative;
+    min-height: 100vh;
+}
+
 .content {
-  margin-bottom: 0.8rem;
+  padding-bottom: 5.1rem;
 }
 
 .divider {
@@ -787,6 +792,7 @@ a:focus {
 /*--- footer ---*/
 
 footer {
+  height: 5.1rem;
   position: absolute;
   bottom: 0px;
   background-color: seagreen;
