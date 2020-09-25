@@ -350,33 +350,7 @@
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script> 
 	<script type="text/javascript" src="assets/js/cart.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-		function sendMail(mailingList) {
-            emailjs.send("gmail","mailinglist", {
-                "from_email": mailingList.emailaddress.value
-            })
-            .then(
-                function(response) {
-                    console.log("SUCCESS", response);
-                    alert ("Thank you for subscribing to my mailing list!")
-                },
-                function(error) {
-                    console.log("FAILED", error);
-                    document.getElementById("gRecaptcha").innerHTML = `
-                        <div class="alert alert-danger alert-dismissable fade show">
-                            <strong>
-                                <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
-                                <button type="button" class="close" data-dismiss="alert" aria-labels="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </strong>
-                        </div>
-                    `
-                }
-            )
-            return false;
-        };
-	</script>
+    <script type="text/javascript" src="assets/js/mail.js"></script>
 </body>
 
 </html>

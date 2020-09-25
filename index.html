@@ -50,6 +50,12 @@
             <i class="fas fa-bars"></i>
             <span class="sr-only">Menu toggler</span>
         </button>
+        <div id="checkout">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                <span id="counter">0</span>
+            </a>
+        </div> 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
@@ -500,50 +506,7 @@
 		<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="assets/js/cart.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
-        <script>
-           
-        </script>
-        <script>
-//            function confirmSubscription() {
-//                $("form").submit(function(event) {
-//                    var recaptchaValidation = $("#g-recaptcha-response").val();
-//                    if (recaptchaValidation === "") {
-//                        event.preventDefault();
-//                        alert("Please verify yourself first!");
-//                        return false;
-//                    } else {
-//                        alert("Thank you for subscribing to my mailing list!");
-//                        sendMail();
-//                    }
-//                });
-//            }
-
-            function sendMail(mailingList) {
-                emailjs.send("gmail","mailinglist", {
-                    "from_email": mailingList.emailaddress.value
-                })
-                .then(
-                    function(response) {
-                        console.log("SUCCESS", response);
-                        alert ("Thank you for subscribing to my mailing list!");
-                    },
-                    function(error) {
-                        console.log("FAILED", error);
-                        document.getElementById("gRecaptcha").innerHTML = `
-                            <div class="alert alert-danger alert-dismissable fade show">
-                                <strong>
-                                    <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
-                                    <button type="button" class="close" data-dismiss="alert" aria-labels="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </strong>
-                            </div>
-                        `;
-                    }
-                )
-                return false;
-            }
-		</script>
+        <script type="text/javascript" src="assets/js/mail.js"></script>
 </body>
 
 </html>

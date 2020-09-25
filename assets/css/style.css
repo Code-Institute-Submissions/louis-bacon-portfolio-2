@@ -160,6 +160,9 @@ a:focus {
 #checkout {
   text-align: right;
   color: #ffffff;
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
 }
 
 #counter {
@@ -913,6 +916,11 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+  #checkout {
+    float: none;
+    margin-top: 0;
+  }
+
   .stuff-i-sell-subheading {
     font-size: 1.2rem;
   }

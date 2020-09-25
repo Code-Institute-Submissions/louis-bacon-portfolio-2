@@ -437,52 +437,7 @@
 	<script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/cart.js" async></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-    //    function DOBValidation() {
-    //        var today = new Date();
-    //        var dd = today.getDate();
-    //        var mm = today.getMonth()+1;
-    //        var yyyy = today.getFullYear();
-
-    //        if (dd < 10) {
-    //            dd = "0" + dd;
-    //        }
-
-    //        if (mm < 10) {
-    //            mm = "0" + mm;
-    //        }
-
-    //        today = yyyy + "-" + mm + "-" + dd;
-    //        document.getElementByID("dob").setAttribute("max", today);
-
-    //        if (dd-mm-yyyy > today) {
-    //            return alert "Please enter a valid date of birth."
-    //        }
-    //    }
-        
-        function sendMail(contactRequest) {
-                emailjs.send("gmail", "contactrequest", {
-                    "from_name": contactRequest.fname.value,
-                    "from_email": contactRequest.emailaddress.value,
-                    "phone_number": contactRequest.phone.value,
-                    "birthday": contactRequest.dob.value,
-                    "message": contactRequest.projectsummary.value
-                })
-                .then(
-                    function(response) {
-                        console.log("SUCCESS", response);
-                    },
-                    function(error) {
-                        console.log("FAILED", error);
-                    }
-                )
-                return false;
-        }
-
-        function requestConfirmation () {
-            alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
-        }
-    </script>
+    <script type="text/javascript" src="assets/js/mail.js"></script>
 </body>
 
 </html>
