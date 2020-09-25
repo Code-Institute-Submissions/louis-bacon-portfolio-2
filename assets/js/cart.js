@@ -202,14 +202,14 @@ function loadCart() {
         cartContainer.innerHTML += `
             <div class="row">
                 <div class="col-sm checkout-button">
-                    <button class="btn btn-checkout btn-dark">
+                    <button class="btn btn-checkout btn-success">
                         <a href="#">
                             <span>Checkout</span>
                         </a>
                     </button>
                 </div>
                 <div class="col-sm continue-shopping-button">
-                    <button class="btn btn-continue-shopping btn-light">
+                    <button class="btn btn-continue-shopping btn-dark">
                         <a href="shop.html">
                             <span>Continue Shopping</span>
                         </a>
