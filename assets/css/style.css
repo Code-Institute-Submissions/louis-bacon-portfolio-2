@@ -763,18 +763,18 @@ a:focus {
 
 .vat-info {
     margin-top: 0.5rem;
-    margin-right: 2.5rem;
+    /*--- margin-right: 2.5rem; ---*/
     margin-bottom: 1.6rem;
     padding: 5px;
     font-size: 0.8rem;
     color: #454454;
     font-weight: 200;
-    text-align: right;
+    /*--- text-align: right; ---*/
 }
 
-.small-print {
+/*--- .small-print {
     padding-right: 30px;
-}
+} ---*/
 
 .checkout-button {
     padding-bottom: 5px;
