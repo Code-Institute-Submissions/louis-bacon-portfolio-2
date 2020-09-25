@@ -180,13 +180,11 @@ function loadCart() {
 
         cartContainer.innerHTML += `
             <div class="cart-total-wrapper">
-                <div class="row">
-                    <div class="cart-total-heading uppercase">
-                        <span>Cart Total: </span>
-                    </div>
-                    <div class="cart-total-price">
-                        <span>£${cost}.00</span>
-                    </div>
+                <div class="cart-total-heading uppercase">
+                    <span>Cart Total: </span>
+                </div>
+                <div class="cart-total-price">
+                    <span>£${cost}.00</span>
                 </div>
             </div>
         `;
