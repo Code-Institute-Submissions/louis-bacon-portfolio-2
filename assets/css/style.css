@@ -61,7 +61,8 @@ a:focus {
 
 .navbar {
   background-color: #000000;
-  padding-bottom: 5px;
+  /*--- padding-bottom: 5px; ---*/
+  padding: 5px 10px;
 }
 
 .navbar-toggler {
@@ -81,11 +82,15 @@ a:focus {
 }
 
 .collapse .navbar-nav {
-  display: none;
+  /*--- display: none; ---*/
 }
 
 .show .navbar-nav {
   display: block;
+}
+
+.main-menu {
+    margin-top: 0;
 }
 
 .nav-item {
@@ -154,11 +159,15 @@ a:focus {
 }
 
 .menu-container {
-  padding-bottom: 5px;
+  /*--- padding-bottom: 5px; ---*/
+  padding: 0px 0px 5px 0px;
 }
 
 #checkout {
-  text-align: right;
+  /*--- text-align: right; ---*/
+  position: absolute;
+  top: 5px;
+  right: 10px;
   color: #ffffff;
   display: inline-block;
   float: right;
