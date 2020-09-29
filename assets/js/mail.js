@@ -20,7 +20,7 @@ function sendMail(mailingList) {
                 </div>
             `;
         }
-    )
+    );
     return false;
 }
 
@@ -99,7 +99,7 @@ function sendMail(contactRequest) {
                 </div>
             `;            
         }
-    )
+    );
     return false;
 }
 
@@ -127,6 +127,6 @@ function sendMail(contactRequest) {
                 </div>
             `;
         }
-    )
+    );
     return false;
 }
