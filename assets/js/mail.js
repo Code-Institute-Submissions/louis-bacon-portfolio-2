@@ -58,7 +58,7 @@ function sendMail(contactRequest) {
         function (error) {
             console.log("FAILED", error);
             document.getElementById("gRecaptcha").innerHTML = `
-                <div class="alert alert-danger alert-dismissable fade show">
+                <div class="alert alert-danger alert-dismissible fade show">
                     <strong>
                         <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
                         <button type="button" class="close" data-dismiss="alert" aria-labels="Close">
