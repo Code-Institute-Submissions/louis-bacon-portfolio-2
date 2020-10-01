@@ -926,12 +926,12 @@ footer {
 
 @media screen and (min-width: 576px) {
   .navbar {
-    padding: 0 10px 5px;
+    padding-top: 5px;
   }
   
   #checkout {
     float: none;
-    margin-top: 0;
+    padding-top: 2px;
   }
 
   .stuff-i-sell-subheading {
