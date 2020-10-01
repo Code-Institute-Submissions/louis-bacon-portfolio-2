@@ -22,7 +22,48 @@
 
 <body>
 <div class="page-wrap">
-	<a name="top"></a>
+	<div class="container-fluid menu-container">
+		<nav class="navbar navbar-expand-sm">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Menu toggler</span>
+            </button>
+			<div class="main-menu justify-content-center navbar-collapse collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Shop
+						</a>
+						<div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="shop.html">All Items</a>
+							<a class="dropdown-item" href="merch.html">Merchandise</a>
+							<a class="dropdown-item" href="tutoring.html">Tutoring</a>
+							<a class="dropdown-item" href="fitness.html">Fitness</a>
+							<a class="dropdown-item" href="web-services.html">Web Services</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cv.html">CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div id="checkout">
+				<a href="cart.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+				<span id="counter">0</span>
+			</div>
+		</nav>
+	</div>
+    
+    <!-- <a name="top"></a>
 	<nav class="navbar navbar-expand-sm d-block d-sm-none">
 		<button
         class="navbar-toggler"
@@ -121,7 +162,7 @@
                 </a>    
             </div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="content text-center">
 		<div class="container-fluid hero-image-container">
