@@ -51,6 +51,7 @@ a:focus {
     background: no-repeat;
     opacity: .8;
     z-index: 99;
+    padding-bottom: 20px;
 }
 
 #returnToTop:hover {
@@ -895,6 +896,10 @@ footer {
         -webkit-transform: scale(0.58);
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
+    }
+
+    #returnToTop {
+        padding-bottom: 10px;
     }
 }
 
