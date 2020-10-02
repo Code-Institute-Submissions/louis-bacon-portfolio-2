@@ -1,4 +1,4 @@
-function sendMail(mailingList) {
+function sendMailingListMail(mailingList) {
     emailjs.send("gmail","mailinglist", {
         "from_email": mailingList.emailaddress.value
     })
@@ -33,7 +33,7 @@ $(".submit-request").on("click", function() {
     }
 });
 
-function sendMail(contactRequest) {
+function sendTutoringMail(contactRequest) {
     emailjs.send("gmail", "contactrequest", {
         "from_name": contactRequest.fname.value,
         "from_email": contactRequest.emailaddress.value,
@@ -72,7 +72,7 @@ function sendMail(contactRequest) {
     return false;
 }
 
-function sendMail(contactRequest) {
+function sendFitnessMail(contactRequest) {
     emailjs.send("gmail", "contactrequest", {
         "from_name": contactRequest.fname.value,
         "from_email": contactRequest.emailaddress.value,
@@ -103,7 +103,7 @@ function sendMail(contactRequest) {
     return false;
 }
 
-function sendMail(contactRequest) {
+function sendContactMail(contactRequest) {
     emailjs.send("gmail", "contactrequest", {
         "from_name": contactRequest.fname.value,
         "from_email": contactRequest.emailaddress.value,
