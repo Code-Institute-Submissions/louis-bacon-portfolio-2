@@ -406,14 +406,18 @@ a:focus {
 .rc-container {
     /*--- width: 50%; ---*/
     padding: 20px 0;
-    transform: scale(0.75);
-    -webkit-transform: scale(0.75);
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
     transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
 }
 
 .rc-container div {
     width: 100% !important; /* overriding style attribute of width: 304px */
+}
+
+.rc-mailing-list-offset {
+    margin-left: 16.666667%;
 }
 
 #gRecaptcha {
@@ -880,21 +884,21 @@ footer {
 
 @media screen and (min-width: 320px) {
     .rc-container {
-        transform: scale(0.88);
-        -webkit-transform: scale(0.88);
+        transform: scale(0.58);
+        -webkit-transform: scale(0.58);
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
     }
 }
 
-@media screen and (min-width: 325px) {
+/*--- @media screen and (min-width: 325px) {
     .rc-container {
         transform: scale(1);
         -webkit-transform: scale(1);
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
     }
-}
+} ---*/
 
 @media screen and (min-width: 346px) {
     .cart-overview {
@@ -906,10 +910,41 @@ footer {
     }
 }
 
+@media screen and (min-width: 360px) {
+    .rc-container {
+        transform: scale(0.67);
+        -webkit-transform: scale(0.67);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .rc-container {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
 @media screen and (min-width: 387px) {
   .dob-select {
     display: inline;
   }
+}
+
+@media screen and (min-width: 411px) {
+    .rc-container {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+
+    .rc-mailing-list-offset {
+        margin-left: 10%;
+    }
 }
 
 @media screen and (min-width: 415px) {
@@ -944,6 +979,19 @@ footer {
       width: 55%;
   }
 
+}
+
+@media screen and (min-width: 500px) {
+    .rc-container {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+
+    .rc-mailing-list-offset {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 576px) {
