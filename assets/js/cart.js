@@ -202,7 +202,7 @@ function loadCart() {
         cartContainer.innerHTML += `
             <div class="row">
                 <div class="col-sm checkout-button">
-                    <button class="btn btn-checkout btn-success">
+                    <button class="btn btn-checkout btn-success" onclick="completePurchase()">
                         <a href="#">
                             <span>Checkout</span>
                         </a>
@@ -300,3 +300,22 @@ function changeQty() {
 
 loadCartQty();
 loadCart();
+
+function completePurchase() {
+    console.log("Purchase complete&#33;");
+    alert ("Thank you for your purchase&#33;");
+
+    document.querySelector("#counter").textContent = 0;
+    localStorage.clear();
+
+    var cartContainer = document.querySelector("#products");
+    cartContainer.innerHTML = "";
+    cartContainer.innerHTML = `
+        <div class="cart-item-wrapper">
+            <h2 class="empty-cart">Your cart is currently empty.</h2>
+            <h6 class="back-to-shop-heading">
+                <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
+            </h6>
+        </div>
+    `;
+}
