@@ -1170,9 +1170,14 @@ footer {
     width: 70%;
   }
 
-  .rc-aligner,
-  .alert-offset {
+  .rc-aligner {
     margin-left: 4rem;
+  }
+
+  .alert-offset {
+    width: 75%;
+    margin-right: 0;
+    margin-left: auto;
   }
 
   .submit-request {
@@ -1213,8 +1218,7 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  .rc-aligner,
-  .alert-offset {
+  .rc-aligner {
     margin-left: 4.6rem;
   }
 
@@ -1236,9 +1240,14 @@ footer {
 }
 
 @media screen and (min-width: 1100px) {
-  .rc-aligner,
-  .alert-offset {
+  .rc-aligner {
       margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rc-aligner {
+    margin-left: 7rem;
   }
 }
 

@@ -233,25 +233,35 @@ function loadCart() {
 
 // remove items from cart
 
-function removeFromCart() {   
-    var removeItem = document.querySelectorAll(".remove-item");
-    var itemName;
-    var totalUnits = localStorage.getItem("cartQty");
-    var cartContents = localStorage.getItem("itemsInCart");
-    cartContents = JSON.parse(cartContents);
-    var cost = localStorage.getItem("cartTotal");
+//function removeFromCart() {   
+//    var removeItem = document.querySelectorAll(".remove-item");
+//    var itemName;
+//    var totalUnits = localStorage.getItem("cartQty");
+//    var cartContents = localStorage.getItem("itemsInCart");
+//    cartContents = JSON.parse(cartContents);
+//    var cost = localStorage.getItem("cartTotal");
 
+//    for (let i = 0; i < removeItem.length; i++) {
+//        removeItem[i].addEventListener("click", function() {
+//            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
+//            localStorage.setItem("cartQty", totalUnits - cartContents[itemName].inCart);
+//            localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
+
+//            delete cartContents[itemName];
+//            localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
+
+//            loadCart();
+//            loadCartQty();
+//        });
+//    }
+//}
+
+function removeFromCart() {
+    var removeItem = document.querySelectorAll(".remove-item");
+    
     for (let i = 0; i < removeItem.length; i++) {
         removeItem[i].addEventListener("click", function() {
-            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
-            localStorage.setItem("cartQty", totalUnits - cartContents[itemName].inCart);
-            localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
-
-            delete cartContents[itemName];
-            localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
-
-            loadCart();
-            loadCartQty();
+            console.log("removed!");
         });
     }
 }
