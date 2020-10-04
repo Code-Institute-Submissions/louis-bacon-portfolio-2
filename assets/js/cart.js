@@ -258,10 +258,18 @@ function loadCart() {
 
 function removeFromCart() {
     var removeItem = document.querySelectorAll(".remove-item");
-    
+    var itemName;
+    var totalUnits = localStorage.getItem("cartQty");
+    var cartContents = localStorage.getItem("itemsInCart");
+    cartContents = JSON.parse(cartContents);
+    console.log(cartContents);
+
     for (let i = 0; i < removeItem.length; i++) {
         removeItem[i].addEventListener("click", function() {
-            console.log("removed!");
+            itemName = removeItem[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, "");
+            console.log(itemName);
+            console.log(products[i].price);
+            //localStorage.setItem("cartQty", totalUnits - );
         });
     }
 }
