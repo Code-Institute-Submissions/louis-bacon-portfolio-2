@@ -20,6 +20,7 @@ a:focus {
 }
 
 .content {
+  padding-top: 3rem;
   padding-bottom: 6.2rem;
 }
 
@@ -160,8 +161,10 @@ a:focus {
 }
 
 .menu-container {
-  /*--- padding-bottom: 5px; ---*/
-  padding: 0px 0px 5px 0px;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  z-index: 1;
 }
 
 #checkout {
@@ -229,7 +232,7 @@ a:focus {
 }
 
 .about-me-main {
-  width: 80%;
+  width: 100%;
   padding: 15px;
   display: inline-block;
 }
@@ -461,7 +464,7 @@ a:focus {
 
 .tutoring-container {
   padding: 15px 25px;
-  width: 70%;
+  width: auto;
 }
 
 .tutoring-heading {
@@ -523,7 +526,7 @@ a:focus {
 
 .fitness-container {
   padding: 15px 25px;
-  width: 70%;
+  width: auto;
 }
 
 .books-heading {
@@ -636,7 +639,7 @@ a:focus {
 /*--- CONTACT ---*/
 
 .contact-container {
-  width: 70%;
+  width: auto;
   padding: 15px 25px;
 }
 
@@ -1026,7 +1029,19 @@ footer {
     }
 }
 
+@media screen and (min-width: 540px) {
+  .tutoring-container,
+  .fitness-container,
+  .contact-container {
+    width: 90%;
+  }
+}
+
 @media screen and (min-width: 576px) {
+  .content {
+    padding-top: 3.2rem;
+  }
+  
   .navbar {
     padding-top: 5px;
   }
@@ -1036,8 +1051,16 @@ footer {
     padding-top: 2px;
   }
 
+  .about-me-main {
+    width: 95%;
+  }
+
   .stuff-i-sell-subheading {
     font-size: 1.2rem;
+  }
+
+  .mailing-list-container {
+    width: 90%;
   }
 
   .free-emails {
@@ -1140,13 +1163,25 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .content {
+    padding-top: 3.6rem;
+  }
+  
   .nav-item {
     padding: 0 2em;
+  }
+
+  .about-me-main {
+    width: 70%;
   }
 
   .quote-item {
     padding: 5px 15px 10px;
     margin: 0 0.8rem;
+  }
+
+  .mailing-list-container {
+    width: 85%;
   }
 
   .free-emails {
@@ -1166,10 +1201,6 @@ footer {
     width: auto;
   }
 
-  .about-me-main {
-    width: 70%;
-  }
-
   .rc-aligner {
     margin-left: 4rem;
   }
@@ -1178,6 +1209,12 @@ footer {
     width: 75%;
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .tutoring-container,
+  .fitness-container,
+  .contact-container {
+    width: 80%;
   }
 
   .submit-request {
@@ -1218,6 +1255,14 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  .content {
+    padding-top: 4rem;
+  }   
+
+  .mailing-list-container {
+    width: 80%;
+  }
+
   .rc-aligner {
     margin-left: 4.6rem;
   }
@@ -1240,12 +1285,20 @@ footer {
 }
 
 @media screen and (min-width: 1100px) {
+  .mailing-list-container {
+    width: 75%;
+  }
+  
   .rc-aligner {
       margin-left: 6rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .mailing-list-container {
+    width: 70%;
+  }
+  
   .rc-aligner {
     margin-left: 7rem;
   }
