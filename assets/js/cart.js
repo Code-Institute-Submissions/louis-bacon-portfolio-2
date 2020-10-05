@@ -269,7 +269,7 @@ function removeFromCart() {
             itemName = removeItem[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, "");
             console.log(itemName);
             console.log(cartContents[itemName].name);
-            //localStorage.setItem("cartQty", totalUnits - );
+            //localStorage.setItem("cartQty", totalUnits - cartContents[itemName.inCart]);
         });
     }
 }
