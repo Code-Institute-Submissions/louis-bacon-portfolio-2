@@ -367,6 +367,21 @@ a:focus {
     border-color: #000000;
 }
 
+.alert-container {
+    width: 50%;
+    position: fixed;
+    opacity: 0.95;
+    bottom: 50%;
+    left: 25%;
+    padding-bottom: 15px;
+}
+
+.added-to-cart-alert {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 /*--- mailing list ---*/
 
 .mailing-list-container {

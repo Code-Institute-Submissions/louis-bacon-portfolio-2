@@ -67,6 +67,16 @@ for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", function() {
         cartQty(products[i]);
         cartTotal(products[i]);
+
+        var addedToCartAlert = document.querySelector(".content");
+        addedToCartAlert.innerHTML += `
+            <div class="alert-container container-fluid">    
+                <div class="alert-success added-to-cart-alert">
+                    Item successfully added to cart!
+                </div>
+            </div>
+        `;
+        $(".alert-container").fadeOut(4500);
     });
 }
 
