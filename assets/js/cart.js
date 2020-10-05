@@ -268,7 +268,7 @@ function removeFromCart() {
         removeItem[i].addEventListener("click", function() {
             itemName = removeItem[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, "");
             console.log(itemName);
-            console.log(products[i].price);
+            console.log(cartContents[itemName].name);
             //localStorage.setItem("cartQty", totalUnits - );
         });
     }
