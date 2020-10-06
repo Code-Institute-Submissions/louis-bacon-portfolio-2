@@ -68,9 +68,9 @@ for (let i = 0; i < carts.length; i++) {
         cartQty(products[i]);
         cartTotal(products[i]);
 
-        var addedToCartAlert = document.querySelector(".content");
+        var addedToCartAlert = document.querySelectorAll(".content");
         addedToCartAlert.innerHTML += `
-            <div class="alert-container container-fluid">    
+            <div class="alert-container container-fluid">
                 <div class="alert-success added-to-cart-alert">
                     Item successfully added to cart!
                 </div>
@@ -79,6 +79,18 @@ for (let i = 0; i < carts.length; i++) {
         $(".alert-container").fadeOut(4500);
     });
 }
+
+//function cartAlert() {
+//    var addedToCartAlert = document.querySelectorAll(".content");
+//    addedToCartAlert.innerHTML += `
+//        <div class="alert-container container-fluid">    
+//            <div class="alert-success added-to-cart-alert">
+//                Item successfully added to cart!
+//            </div>
+//        </div>
+//    `;
+//    $(".alert-container").fadeOut();
+//}
 
 function loadCartQty() {
     var productQty = localStorage.getItem("cartQty");
