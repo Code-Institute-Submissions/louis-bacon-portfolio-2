@@ -21,14 +21,29 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+// disables spaces in all input fields in forms
+
 var inputField = document.querySelectorAll("input");
 
-// disables spaces in all input fields in forms
 for (let i = 0; i < inputField.length; i++) {
     inputField[i].addEventListener("keypress", function() {
         var key = event.keyCode;
         if (key === 32) {
             event.preventDefault();
-        }
+        };
     });
 }
+
+// disables non-numeric characters in phone no. input fields
+
+var numbersOnly = document.querySelectorAll("#phone");
+
+for (let i = 0; i < numbersOnly.length; i++) {
+    numbersOnly[i].addEventListener("keypress", function() {
+        var key = event.keyCode;
+        if (key < 48 || key > 57) {
+            event.preventDefault();
+        };
+    });
+}
+
