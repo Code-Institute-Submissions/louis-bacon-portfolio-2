@@ -12,8 +12,7 @@
 	<title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function(){
             emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
@@ -287,13 +286,12 @@
                 <!-- form to join mailing list -->
 				<div class="row email-form">
 					<div class="col form-inline center-form">
-						<form class="email" action="emailjs" onsubmit="return sendMailingListMail(this);">
+						<form class="email" id="emailForm" action="emailjs" onsubmit="return sendMailingListMail(this);">
 							<input type="email" name="email" id="emailaddress" class="form-control email-input" placeholder="Your e-mail address" required />
 							<button type="submit" class="btn subscribe btn-success">
                                 Subscribe&#33;
                             </button>
-							<div class="g-recaptcha rc-container rc-mailing-list-offset container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s" data-callback="onSubmit" data-action="submit">
-							</div>
+							<div class="g-recaptcha rc-container rc-mailing-list-offset container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s" data-callback="onSubmit" data-action="submit"></div>
 							<div id="gRecaptcha" class="container-fluid"></div>
 						</form>
 					</div>

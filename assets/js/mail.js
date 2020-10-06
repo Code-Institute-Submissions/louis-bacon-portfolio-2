@@ -6,6 +6,7 @@ function sendMailingListMail(mailingList) {
         function(response) {
             console.log("SUCCESS", response);
             alert ("Thank you for subscribing to my mailing list!");
+            resetForm();
         },
         function(error) {
             console.log("FAILED", error);
@@ -22,6 +23,13 @@ function sendMailingListMail(mailingList) {
         }
     );
     return false;
+}
+
+function resetForm() {
+    document.getElementById("emailForm").reset();
+    document.getElementById("tutoringForm").reset();
+    document.getElementById("fitnessForm").reset();
+    document.getElementById("contactForm").reset();
 }
 
 $(".submit-request").on("click", function() {
