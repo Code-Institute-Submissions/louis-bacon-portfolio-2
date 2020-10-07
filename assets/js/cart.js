@@ -68,7 +68,7 @@ for (let i = 0; i < carts.length; i++) {
         cartQty(products[i]);
         cartTotal(products[i]);
 
-        var addedToCartAlert = document.querySelectorAll(".content");
+        var addedToCartAlert = document.querySelector(".content");
         addedToCartAlert.innerHTML += `
             <div class="alert-container container-fluid">
                 <div class="alert-success added-to-cart-alert">
