@@ -177,7 +177,8 @@ function loadCart() {
                         <a href="#" class="remove-item">
                             <i class="fas fa-times-circle"></i>
                         </a>
-                        <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" />
+                        <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" onmouseover="displayName()" onmouseOut="hideName()" />
+                        <div id="popup"></div>
                         <span class="item-text">${item.name}</span>
                         <span class="sr-only">${item.name}</span>
                     </div>
@@ -251,6 +252,16 @@ function loadCart() {
     }
     removeFromCart();
     changeQty();
+}
+
+function displayName() {
+    var namePopup = document.getElementById("popup");
+    namePopup.innerHTML = `<span>${item.name}</span>`;
+}
+
+function hideName() {
+    var namePopup = document.getElementById("popup");
+    namePopup.innerHTML = "";
 }
 
 // remove items from cart

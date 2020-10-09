@@ -765,6 +765,11 @@ a:focus {
     margin-right: 5px; ---*/
 }
 
+#popup {
+    display: inline;
+    float: left;
+}
+
 .item-text {
     display: none;
 }
@@ -1112,6 +1117,10 @@ footer {
 
   .cart-headings h5 {
       font-size: 1.1rem;
+  }
+
+  #popup {
+      display: none;
   }
 
   .product-title {
