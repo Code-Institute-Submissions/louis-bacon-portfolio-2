@@ -69,14 +69,17 @@ for (let i = 0; i < carts.length; i++) {
         cartTotal(products[i]);
 
         var addedToCartAlert = document.querySelector(".content");
-        addedToCartAlert.innerHTML += `
-            <div class="alert-container container-fluid">
-                <div class="alert-success added-to-cart-alert">
-                    Item successfully added to cart!
+        
+        if (addedToCartAlert) {
+            addedToCartAlert.innerHTML += `
+                <div class="alert-container container-fluid">
+                    <div class="alert-success added-to-cart-alert">
+                        Item successfully added to cart!
+                    </div>
                 </div>
-            </div>
-        `;
-        $(".alert-container").fadeOut(4500);
+            `;
+            $(".alert-container").fadeOut(4500);
+        }    
     });
 }
 
@@ -199,6 +202,15 @@ function loadCart() {
                     </div>
                 </div>
             `;
+            function displayName() {
+                var namePopup = document.getElementById("popup");
+                namePopup.innerHTML += `<span>${item.name}</span>`;
+            }
+
+            function hideName() {
+                var namePopup = document.getElementById("popup");
+                namePopup.innerHTML = "";
+            }
         });
 
         cartContainer.innerHTML += `
@@ -252,16 +264,6 @@ function loadCart() {
     }
     removeFromCart();
     changeQty();
-}
-
-function displayName() {
-    var namePopup = document.getElementById("popup");
-    namePopup.innerHTML = `<span>${item.name}</span>`;
-}
-
-function hideName() {
-    var namePopup = document.getElementById("popup");
-    namePopup.innerHTML = "";
 }
 
 // remove items from cart
