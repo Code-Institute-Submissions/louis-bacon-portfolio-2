@@ -1,8 +1,6 @@
-// add items to cart
-
 var carts = document.querySelectorAll(".add-item");
 
-// grab product data
+// retrieves data of store items
 
 var products = [
   {
@@ -61,39 +59,32 @@ var products = [
   }
 ];
 
-// display items
+// adds items to cart
 
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", function() {
         cartQty(products[i]);
         cartTotal(products[i]);
-
-        var addedToCartAlert = document.querySelector(".content");
-        
-        if (addedToCartAlert) {
-            addedToCartAlert.innerHTML += `
-                <div class="alert-container container-fluid">
-                    <div class="alert-success added-to-cart-alert">
-                        Item successfully added to cart!
-                    </div>
-                </div>
-            `;
-            $(".alert-container").fadeOut(4500);
-        }    
+        displayAlert();
     });
 }
 
-//function cartAlert() {
-//    var addedToCartAlert = document.querySelectorAll(".content");
-//    addedToCartAlert.innerHTML += `
-//        <div class="alert-container container-fluid">    
-//            <div class="alert-success added-to-cart-alert">
-//                Item successfully added to cart!
-//            </div>
-//        </div>
-//    `;
-//    $(".alert-container").fadeOut();
-//}
+// generates confirmation alert when add to cart button is clicked
+
+function displayAlert() {
+    var addedToCartAlert = document.querySelector(".content");
+        
+    addedToCartAlert.innerHTML += `
+        <div class="alert-container container-fluid">
+            <div class="alert-success added-to-cart-alert">
+                Item successfully added to cart!
+            </div>                
+        </div>
+    `;
+    $(".alert-container").fadeOut(4500);
+}
+
+// displays running counter of items in cart
 
 function loadCartQty() {
     var productQty = localStorage.getItem("cartQty");
@@ -102,6 +93,8 @@ function loadCartQty() {
         document.querySelector("#counter").textContent = productQty;
     }
 }
+
+// increases or decreases counter
 
 function cartQty(product, action) {
     var productQty = localStorage.getItem("cartQty");
@@ -146,7 +139,7 @@ function showInCart(product) {
     localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
 }
 
-//calculate cost
+// adjusts cost of cart when items removed or added
 
 function cartTotal(product, action) {
     var cost = localStorage.getItem("cartTotal");
@@ -161,7 +154,7 @@ function cartTotal(product, action) {
     }
 }
 
-// full cart
+// displays full cart contents and calculates total price
 
 function loadCart() {
     var cartContents = localStorage.getItem("itemsInCart");
@@ -309,7 +302,7 @@ function removeFromCart() {
     }
 }
 
-//increase and decrease quantities
+// increases and decreases quantity of an item already in cart
 
 function changeQty() {
     var decreaseQty = document.querySelectorAll(".decrease-qty");
@@ -354,9 +347,11 @@ function changeQty() {
 loadCartQty();
 loadCart();
 
+// empties and resets cart upon completion of purchase 
+
 function completePurchase() {
     console.log("Purchase complete&#33;");
-    alert ("Thank you for your purchase&#33;");
+    alert ("Thank you for your purchase!");
 
     document.querySelector("#counter").textContent = 0;
     localStorage.clear();
