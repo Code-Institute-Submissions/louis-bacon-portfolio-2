@@ -1,479 +1,294 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Louis Bacon &#124; Portfolio Website &#43; Merchandise</title>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
       (function () {
         emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
       })();
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="page-wrap">
-      <div class="container-fluid menu-container">
-        <nav class="navbar navbar-expand-sm">
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="toggle-navigation"
-          >
-            <i class="fas fa-bars" aria-hidden="true"></i>
-            <span class="sr-only">Menu toggler</span>
-          </button>
-          <div
-            class="main-menu justify-content-center navbar-collapse collapse"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="shop.html"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Shop
-                </a>
-                <div
-                  class="dropdown-menu dropdown"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <a class="dropdown-item" href="shop.html">All Items</a>
-                  <a class="dropdown-item" href="merch.html">Merchandise</a>
-                  <a class="dropdown-item" href="tutoring.html">Tutoring</a>
-                  <a class="dropdown-item" href="fitness.html">Fitness</a>
-                  <a class="dropdown-item" href="web-services.html"
-                    >Web Services</a
-                  >
+        <div class="container-fluid menu-container">
+            <nav class="navbar navbar-expand-sm">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Menu toggler</span>
+                </button>
+                <div class="main-menu justify-content-center navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="shop.html">All Items</a>
+                                <a class="dropdown-item" href="merch.html">Merchandise</a>
+                                <a class="dropdown-item" href="tutoring.html">Tutoring</a>
+                                <a class="dropdown-item" href="fitness.html">Fitness</a>
+                                <a class="dropdown-item" href="web-services.html">Web Services</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cv.html">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div id="checkout">
-			<a href="cart.html">
-                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                <span id="counter">0</span>
+                <div id="checkout">
+			        <a href="cart.html">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="counter">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content text-center">
+			<div class="container-fluid hero-image-container">
+			    <!-- hero image -->
+				<div class="hero-image">
+					<img src="./assets/images/lb17-shopify-header.png" alt="LB17 Brand Logo" />
+                </div>
+			</div>
+
+            <!-- info about me -->
+			<div class="container-fluid about-me-container">
+				<div class="row">
+					<div class="col">
+						<h1 class="name uppercase">Louis Bacon</h1>
+						<h2 class="title uppercase">
+							<a href="merch.html" class="headline-link">Clothing brand</a>
+							<span class="d-none d-sm-inline">&#124;</span>
+							<br class="d-block d-sm-none" />
+							<a href="tutoring.html" class="headline-link">Tutor</a>
+							<span class="d-none d-sm-inline">&#124;</span>
+							<br class="d-block d-sm-none" />
+							<a href="fitness.html" class="headline-link">Fitness Coach</a>
+							<span class="d-none d-sm-inline">&#124;</span>
+							<br class="d-block d-sm-none" />
+							<a href="web-services.html" class="headline-link">Web Developer</a>
+						</h2>
+					</div>
+				</div>
+
+				<div class="divider">
+					<hr class="block-divider block-divider-short" />
+				</div>
+			</div>
+
+            <div class="container-fluid fitness-container">
+                <h2 class="books-heading">Books &#47; Guides</h2>
+                <div class="row">
+                    <div class="col-sm book-item">
+                        <a href="http://gumroad.com/products/mzDyj/" target="_blank">
+                            <img src="./assets/images/gymandweighttrainingbasics.png" alt="Gym and weight training basics A-Z" class="w-100" />
+                        </a>
+                        <div class="item-price-container">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="item-name">Gym and weight training basics A&#45;Z</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="item-price">&#163;6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+				            <button class="btn-dark add-item" onclick="displayAlert()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm book-item">
+                        <a href="https://gumroad.com/products/QXoqQ/" target="_blank">
+                            <img src="./assets/images/lockdownfitness.png" alt="Lockdown Fitness" class="w-100" />
+                        </a>
+                        <div class="item-price-container">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="item-name">Lockdown Fitness</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="item-price">&#163;15.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+				            <button class="btn-dark add-item" onclick="displayAlert()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider">
+                <hr class="block-divider block-divider-short" />
+            </div>
+
+            <div class="fitness-container container-fluid">
+                <h2 class="coaching-heading">Fitness coaching</h2>
+                <h4 class="coaching-subheading">
+                    I also provide coaching sessions &#40;rates negotiable&#41;. Please fill out the form below to enquire and I&#39;ll respond within 24 hours.
+                </h4>
+                <div class="row contact-form">
+                    <div class="col">
+                        <form class="signup" id="fitnessForm" action="emailjs" onsubmit="return sendFitnessMail(this);">
+                            <div class="form-group row">
+                                <label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
+                                <div class="col-sm">
+                                    <input type="text" id="fname" class="form-control" minlength="2" placeholder="First name" required />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lname" class="col-sm-3 col-form-label">Last Name&#58;</label>
+                                <div class="col-sm">
+                                    <input type="text" id="lname" class="form-control" minlength="2" placeholder="Last name" required />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-3 col-form-label">E&#45;mail address&#58;</label>
+                                <div class="col-sm">
+                                    <input type="email" id="emailaddress" name="email" class="form-control" placeholder="Your email address" required />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone" class="col-sm-3 col-form-label">Phone number&#58;</label>
+                                <div class="col-sm">
+                                    <input type="text" id="phone" class="form-control" minlength="8" maxlength="15" placeholder="Your telephone number" required />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="birthday-dd birthday-mm birthday-yyyy" class="col-sm-3 col-form-label">
+                                    Date of birth&#58;
+                                </label>
+                                <div class="dob-dropdown col-sm">
+                                    <input type="date" id="dob" name="dob" class="form-control" value="yyyy-mm-dd" min="1900-01-01" max="2020-10-19" required />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="details" class="col-sm-3 col-form-label">Details&#58;</label>
+                                <div class="col-sm details-box">
+                                    <textarea rows="3" name="details" id="projectsummary" class="form-control" placeholder="Please provide a brief description of your goals in this box..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="submit-button row">
+                                <div class="d-none d-sm-inline col-sm-3"></div>
+                                <div class="col-sm">
+                                    <button type="submit" class="btn btn-success submit-request">
+                                        Book Now&#33;
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="g-recaptcha rc-container rc-aligner container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s"></div>
+                            <div id="gRecaptcha" class="container-fluid"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- return to top button -->
+        <div id="returnToTop">
+            <a href="#" onclick="backToTop()">
+                <i class="fas fa-arrow-circle-up"></i>
             </a>
-          </div>
-        </nav>
-      </div>
-      <div class="content text-center">
-        <div class="container-fluid hero-image-container">
-          <!-- hero image-->
-          <div class="hero-image">
-            <img
-              src="./assets/images/lb17-shopify-header.png"
-              alt="LB17 Brand Logo"
-            />
-          </div>
         </div>
 
-        <div class="container-fluid about-me-container">
-          <!-- info about me-->
-          <div class="row">
-            <div class="col">
-              <h1 class="name uppercase">Louis Bacon</h1>
-              <h2 class="title uppercase">
-                <a href="merch.html" class="headline-link" target="_blank"
-                  >Clothing brand</a
-                >
-                <span class="d-none d-sm-inline">&#124;</span>
-                <br class="d-block d-sm-none" />
-                <a href="tutoring.html" class="headline-link" target="_blank"
-                  >Tutor</a
-                >
-                <span class="d-none d-sm-inline">&#124;</span>
-                <br class="d-block d-sm-none" />
-                <a href="fitness.html" class="headline-link" target="_blank"
-                  >Fitness Coach</a
-                >
-                <span class="d-none d-sm-inline">&#124;</span>
-                <br class="d-block d-sm-none" />
-                <a
-                  href="web-services.html"
-                  class="headline-link"
-                  target="_blank"
-                  >Web Developer</a
-                >
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider">
-          <hr class="block-divider block-divider-short" />
-        </div>
-
-        <div class="container-fluid fitness-container">
-          <h2 class="books-heading">Books &#47; Guides</h2>
-          <div class="row">
-            <div class="col-sm book-item">
-              <a href="http://gumroad.com/products/mzDyj/" target="_blank">
-                <img
-                  src="./assets/images/gymandweighttrainingbasics.png"
-                  alt="Gym and weight training basics A-Z"
-                  class="w-100"
-                />
-              </a>
-              <div class="item-price-container">
-                <div class="row">
-                  <div class="col">
-                    <span class="item-name"
-                      >Gym and weight training basics A&#45;Z</span
-                    >
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <span class="item-price">&#163;6.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="add-to-cart">
-				<button class="btn-dark add-item" onclick="displayAlert()">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="col-sm book-item">
-              <a href="https://gumroad.com/products/QXoqQ/" target="_blank">
-                <img
-                  src="./assets/images/lockdownfitness.png"
-                  alt="Lockdown Fitness"
-                  class="w-100"
-                />
-              </a>
-              <div class="item-price-container">
-                <div class="row">
-                  <div class="col">
-                    <span class="item-name">Lockdown Fitness</span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <span class="item-price">&#163;15.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="add-to-cart">
-				<button class="btn-dark add-item" onclick="displayAlert()">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider">
-          <hr class="block-divider block-divider-short" />
-        </div>
-
-        <div class="fitness-container container-fluid">
-          <h2 class="coaching-heading">Fitness coaching</h2>
-          <h4 class="coaching-subheading">
-            I also provide coaching sessions &#40;rates negotiable&#41;. Please
-            fill out the form below to enquire and I&#39;ll respond within 24
-            hours.
-          </h4>
-          <div class="row contact-form">
-            <div class="col">
-              <form
-                class="signup" id="fitnessForm"
-                action="emailjs"
-                onsubmit="return sendFitnessMail(this);"
-              >
-                <div class="form-group row">
-                  <label for="fname" class="col-sm-3 col-form-label"
-                    >First Name&#58;</label
-                  >
-                  <div class="col-sm">
-                    <input
-                      type="text"
-                      id="fname"
-                      class="form-control"
-                      minlength="2"
-                      placeholder="First name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="lname" class="col-sm-3 col-form-label"
-                    >Last Name&#58;</label
-                  >
-                  <div class="col-sm">
-                    <input
-                      type="text"
-                      id="lname"
-                      class="form-control"
-                      minlength="2"
-                      placeholder="Last name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="email" class="col-sm-3 col-form-label"
-                    >E&#45;mail address&#58;</label
-                  >
-                  <div class="col-sm">
-                    <input
-                      type="email"
-                      id="emailaddress"
-                      name="email"
-                      class="form-control"
-                      placeholder="Your email address"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="phone" class="col-sm-3 col-form-label"
-                    >Phone number&#58;</label
-                  >
-                  <div class="col-sm">
-                    <input
-                      type="text"
-                      id="phone"
-                      class="form-control"
-                      minlength="8"
-                      maxlength="15"
-                      placeholder="Your telephone number"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label
-                    for="birthday-dd birthday-mm birthday-yyyy"
-                    class="col-sm-3 col-form-label"
-                  >
-                    Date of birth&#58;
-                  </label>
-                  <div class="dob-dropdown col-sm">
-                    <input
-                      type="date"
-                      id="dob"
-                      name="dob"
-                      class="form-control"
-                      value="yyyy-mm-dd"
-                      min="1900-01-01"
-                      max="2020-10-19"
-                      required
-                    />
-                    <!--- <select id="birthday-dd" class="dob-select" required>
-                                    <option selected disabled>DD</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                    <option>05</option>
-                                    <option>&#8230;</option>
-                                </select>
-								<select id="birthday-mm" class="dob-select" required>
-                                    <option selected disabled>MM</option>
-                                    <option>Jan</option>
-                                    <option>Feb</option>
-                                    <option>Mar</option>
-                                    <option>Apr</option>
-                                    <option>May</option>
-                                    <option>&#8230;</option>
-                                </select>
-								<select id="birthday-yyyy" class="dob-select" required>
-                                    <option selected disabled>YYYY</option>
-                                    <option>2020</option>
-                                    <option>2019</option>
-                                    <option>2018</option>
-                                    <option>2017</option>
-                                    <option>2016</option>
-                                    <option>&#8230;</option>
-                                </select> --->
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="details" class="col-sm-3 col-form-label"
-                    >Details&#58;</label
-                  >
-                  <div class="col-sm details-box">
-                    <textarea
-                      rows="3"
-                      name="details"
-                      id="projectsummary"
-                      class="form-control"
-                      placeholder="Please provide a brief description of your goals in this box..."
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="submit-button row">
-                  <div class="d-none d-sm-inline col-sm-3"></div>
-                  <div class="col-sm">
-                    <button
-                      type="submit"
-                      class="btn btn-success submit-request"
-                    >
-                      Book Now&#33;
-                    </button>
-                  </div>
-                </div>
-                <div class="g-recaptcha rc-container rc-aligner container-fluid" data-sitekey="6LeIBM0ZAAAAAFKf9qlAO1ZfaWNb6yD1kZSDAc3s"></div>
-                <div id="gRecaptcha" class="container-fluid"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="returnToTop">
-        <a href="#" onclick="backToTop()">
-          <i class="fas fa-arrow-circle-up"></i>
-        </a>
-      </div>
-
-      <!---
-    <div class="returntotop-container">
-		<a href="#top" class="returntotop">
-			Return to top &#94;
-		</a>
-	</div>
-    --->
-
-      <footer class="container-fluid">
-        <div class="info-media-wrapper">
-          <div class="row">
-            <div class="payment-info-container col-sm">
-              <!-- payment info-->
-              <ul class="list-inline payment-info">
-                <li class="list-inline-item">
-                  <i class="fa fa-cc-visa"></i>
-                  <span class="sr-only">Visa</span>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fa fa-cc-mastercard"></i>
-                  <span class="sr-only">Mastercard</span>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fa fa-cc-amex"></i>
-                  <span class="sr-only">American Express</span>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fa fa-bitcoin"></i>
-                  <span class="sr-only">Bitcoin</span>
-                </li>
-              </ul>
-            </div>
-            <div class="social-media-container col-sm">
-              <!-- social media links-->
-              <ul class="list-inline social-media">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.facebook.com/louis.bacon.5"
-                    target="_blank"
-                    class="social-media-link"
-                  >
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.twitter.com/LouisBacon17"
-                    target="_blank"
-                    class="social-media-link"
-                  >
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.instagram.com/lbacon17"
-                    target="_blank"
-                    class="social-media-link"
-                  >
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.linkedin.com/in/louis-bacon-1130a87a/"
-                    target="_blank"
-                    class="social-media-link"
-                  >
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <span class="sr-only">Linkedin</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="copyright-notice">
-          <!-- copyright notice -->
-          <span class="copyright">&#169; Louis Bacon 2020</span>
-        </div>
-      </footer>
+        <!-- footer with accepted payment methods and social media links -->
+		<footer class="container-fluid">
+			<div class="info-media-wrapper">
+				<div class="row">
+					<div class="payment-info-container col-sm">
+						<!-- payment info-->
+						<ul class="list-inline payment-info">
+							<li class="list-inline-item">
+								<i class="fa fa-cc-visa"></i>
+								<span class="sr-only">Visa</span>
+							</li>
+							<li class="list-inline-item">
+								<i class="fa fa-cc-mastercard"></i>
+								<span class="sr-only">Mastercard</span>
+							</li>
+							<li class="list-inline-item">
+								<i class="fa fa-cc-amex"></i>
+								<span class="sr-only">American Express</span>
+							</li>
+							<li class="list-inline-item">
+								<i class="fa fa-bitcoin"></i>
+								<span class="sr-only">Bitcoin</span>
+							</li>
+						</ul>
+					</div>
+					<div class="social-media-container col-sm">
+						<!-- social media links-->
+						<ul class="list-inline social-media">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/louis.bacon.5" target="_blank" class="social-media-link">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<span class="sr-only">Facebook</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.twitter.com/LouisBacon17" target="_blank" class="social-media-link">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<span class="sr-only">Twitter</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/lbacon17" target="_blank" class="social-media-link">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<span class="sr-only">Instagram</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.linkedin.com/in/louis-bacon-1130a87a/" target="_blank" class="social-media-link">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+									<span class="sr-only">Linkedin</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- copyright notice -->
+			<div class="copyright-notice">
+				<span class="copyright">&#169; Louis Bacon 2020</span>
+			</div>
+		</footer>    
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/3d693d5731.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3d693d5731.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/cart.js" async></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/mail.js"></script>
-  </body>
+</body>
+
 </html>

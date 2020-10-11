@@ -322,7 +322,7 @@ function changeQty() {
                 cartContents[selectedItem].inCart -= 1;
                 cartQty(cartContents[selectedItem], "decrease");
                 cartTotal(cartContents[selectedItem], "decrease");
-                localStorage.setItem("itemsInCart", JSON.stringify(cartContents))
+                localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
                 loadCart();
             }            
         });
@@ -337,10 +337,10 @@ function changeQty() {
                 cartContents[selectedItem].inCart += 1;
                 cartQty(cartContents[selectedItem], "increase");
                 cartTotal(cartContents[selectedItem], "increase");
-                localStorage.setItem("itemsInCart", JSON.stringify(cartContents))
+                localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
                 loadCart();
             }
-        })
+        });
     }
 }
 
