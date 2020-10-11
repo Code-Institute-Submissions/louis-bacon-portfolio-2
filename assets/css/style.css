@@ -374,6 +374,7 @@ a:focus {
     bottom: 50%;
     left: 25%;
     padding-bottom: 15px;
+    z-index: 99;
 }
 
 .added-to-cart-alert {

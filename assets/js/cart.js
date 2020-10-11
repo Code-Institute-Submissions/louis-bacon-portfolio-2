@@ -72,7 +72,7 @@ for (let i = 0; i < carts.length; i++) {
 // generates confirmation alert when add to cart button is clicked
 
 function displayAlert() {
-    var addedToCartAlert = document.querySelector(".content");
+    var addedToCartAlert = document.querySelector(".add-to-cart");
         
     addedToCartAlert.innerHTML += `
         <div class="alert-container container-fluid">
@@ -195,15 +195,6 @@ function loadCart() {
                     </div>
                 </div>
             `;
-            function displayName() {
-                var namePopup = document.getElementById("popup");
-                namePopup.innerHTML += `<span>${item.name}</span>`;
-            }
-
-            function hideName() {
-                var namePopup = document.getElementById("popup");
-                namePopup.innerHTML = "";
-            }
         });
 
         cartContainer.innerHTML += `
@@ -258,6 +249,28 @@ function loadCart() {
     removeFromCart();
     changeQty();
 }
+
+var namePopup = document.querySelectorAll("#popup");
+
+for (let i = 0; i < namePopup.length; i++) {
+    namePopup[i].addEventListener("mouseenter", function() {
+        var cartContents = localStorage.getItem("itemsInCart");
+        cartContents = JSON.parse(cartContents);
+
+        if (cartContents) {
+            namePopup[i].innerHTML = "";
+            Object.values(cartContents).map(item => {
+                namePopup[i].innerHTML += `<span>${item.name}</span>`;
+            });
+        };
+    });
+}
+
+function hideName() {
+    var namePopup = document.getElementById("popup");
+    namePopup.innerHTML = "";
+}
+
 
 // remove items from cart
 
