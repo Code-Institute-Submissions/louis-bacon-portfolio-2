@@ -257,7 +257,7 @@ for (let i = 0; i < namePopup.length; i++) {
         var cartContents = localStorage.getItem("itemsInCart");
         cartContents = JSON.parse(cartContents);
 
-        if (cartContents) {
+        if (cartContents && namePopup) {
             namePopup[i].innerHTML = "";
             Object.values(cartContents).map(item => {
                 namePopup[i].innerHTML += `<span>${item.name}</span>`;

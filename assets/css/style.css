@@ -108,6 +108,10 @@ a:focus {
   color: #ffffff;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #000000;
