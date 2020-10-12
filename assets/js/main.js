@@ -3,7 +3,9 @@
 $(document).ready(function() {
     bttt = document.getElementById("returnToTop");
             
-    window.onscroll = function() {showButton()};
+    window.onscroll = function() {
+        showButton();
+    };
 
     function showButton() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -11,7 +13,7 @@ $(document).ready(function() {
         } else {
             bttt.style.display = "none";
         }
-    };
+    }
 });
 
 // takes user back to top of page when clicking on button
@@ -30,11 +32,11 @@ for (let i = 0; i < inputField.length; i++) {
         var key = event.keyCode;
         if (key === 32) {
             event.preventDefault();
-        };
+        }
     });
 }
 
-// disables non-numeric characters in phone no. input fields
+// disables non-numeric characters in phone number input fields
 
 var numbersOnly = document.querySelectorAll("#phone");
 
@@ -43,7 +45,6 @@ for (let i = 0; i < numbersOnly.length; i++) {
         var key = event.keyCode;
         if (key < 48 || key > 57) {
             event.preventDefault();
-        };
+        }
     });
 }
-

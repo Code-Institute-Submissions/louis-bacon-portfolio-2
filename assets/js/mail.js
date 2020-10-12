@@ -1,3 +1,5 @@
+// generates automated e-mail when mailing list form is submitted
+
 function sendMailingListMail(mailingList) {
     emailjs.send("gmail","mailinglist", {
         "from_email": mailingList.emailaddress.value
@@ -25,12 +27,16 @@ function sendMailingListMail(mailingList) {
     return false;
 }
 
+// empties form contents upon successful submission
+
 function resetForm() {
     document.getElementById("emailForm").reset();
     document.getElementById("tutoringForm").reset();
     document.getElementById("fitnessForm").reset();
     document.getElementById("contactForm").reset();
 }
+
+// enables form submission when at least 1 of 2 checkbox options is checked
 
 $(".submit-request").on("click", function() {
     $subjects = $(".subject-option");
@@ -40,6 +46,8 @@ $(".submit-request").on("click", function() {
         $subjects.prop("required", false);
     }
 });
+
+// generates automated e-mail when tuition form is submitted
 
 function sendTutoringMail(contactRequest) {
     emailjs.send("gmail", "contactrequest", {
@@ -80,6 +88,8 @@ function sendTutoringMail(contactRequest) {
     return false;
 }
 
+// generates automated e-mail when fitness coaching form is submitted
+
 function sendFitnessMail(contactRequest) {
     emailjs.send("gmail", "contactrequest", {
         "from_name": contactRequest.fname.value,
@@ -110,6 +120,8 @@ function sendFitnessMail(contactRequest) {
     );
     return false;
 }
+
+// generates automated e-mail when contact form is submitted
 
 function sendContactMail(contactRequest) {
     emailjs.send("gmail", "contactrequest", {

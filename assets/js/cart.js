@@ -250,6 +250,8 @@ function loadCart() {
     changeQty();
 }
 
+// displays name of item in cart on extra small screens
+
 var namePopup = document.querySelectorAll("#popup");
 
 for (let i = 0; i < namePopup.length; i++) {
@@ -265,6 +267,8 @@ for (let i = 0; i < namePopup.length; i++) {
         };
     });
 }
+
+// hides name of item when mouse leaves the image thumbnail
 
 function hideName() {
     var namePopup = document.getElementById("popup");
