@@ -1158,6 +1158,7 @@ footer {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      margin-bottom: -0.25rem;
   }
 
   .cart-total-wrapper {
@@ -1276,6 +1277,10 @@ footer {
 
   .cart-item-thumbnail {
     margin-right: 10px;
+  }
+
+  .item-text {
+    margin-bottom: -0.4rem;
   }
 
   .cart-total-heading {

@@ -252,20 +252,22 @@ function loadCart() {
 
 // displays name of item in cart on extra small screens
 
-var namePopup = document.querySelectorAll("#popup");
+function displayName() {
+    var namePopup = document.querySelectorAll("#popup");
 
-for (let i = 0; i < namePopup.length; i++) {
-    namePopup[i].addEventListener("mouseenter", function() {
-        var cartContents = localStorage.getItem("itemsInCart");
-        cartContents = JSON.parse(cartContents);
+    for (let i = 0; i < namePopup.length; i++) {
+        namePopup[i].addEventListener("mouseenter", function() {
+            var cartContents = localStorage.getItem("itemsInCart");
+            cartContents = JSON.parse(cartContents);
 
-        if (cartContents && namePopup) {
-            namePopup[i].innerHTML = "";
-            Object.values(cartContents).map(item => {
-                namePopup[i].innerHTML += `<span>${item.name}</span>`;
-            });
-        };
-    });
+            if (cartContents && namePopup) {
+                namePopup[i].innerHTML = "";
+                Object.values(cartContents).map(item => {
+                    namePopup[i].innerHTML += `<span>${item.name}</span>`;
+                });
+            };
+        });
+    }
 }
 
 // hides name of item when mouse leaves the image thumbnail
