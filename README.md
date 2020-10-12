@@ -846,6 +846,8 @@ The following frameworks/libraries were also used:
 
 ## Testing
 
+The testing process can be seen [here](testing.md).
+
 The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. I took screenshots of each 
 page using the Full Page Screen Capture extension.
 
