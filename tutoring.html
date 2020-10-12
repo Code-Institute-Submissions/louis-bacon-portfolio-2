@@ -22,6 +22,7 @@
 
 <body>
     <div class="page-wrap">
+        <!-- navbar -->
         <div class="container-fluid menu-container">
 			<nav class="navbar navbar-expand-sm">
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
@@ -65,6 +66,7 @@
 			</nav>
 	    </div>
 
+        <!-- main body -->
         <div class="content text-center">
             <div class="container-fluid hero-image-container">
                 <!-- hero image-->
@@ -98,6 +100,7 @@
                 <hr class="block-divider block-divider-short" />
             </div>
 
+            <!-- tutoring information -->
             <div class="container-fluid tutoring-container">
                 <h2 class="tutoring-heading">Tutoring Services</h2>
                 <h6 class="tutoring-subheading">
@@ -108,6 +111,7 @@
                 </h6>
                 <div class="row contact-form">
                     <div class="col lesson-signup-form">
+                        <!-- form to sign up for tuition lessons -->
                         <form class="signup" id="tutoringForm" action="emailjs" onsubmit="return sendTutoringMail(this);">
                             <div class="form-group row">
                                 <label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
@@ -202,6 +206,7 @@
             </div>
         </div>
 
+        <!-- return to top button -->
         <div id="returnToTop">
             <a href="#" onclick="backToTop()">
                 <i class="fas fa-arrow-circle-up"></i>

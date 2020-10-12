@@ -48,6 +48,7 @@
 
 <body>
     <div class="page-wrap">
+        <!-- navbar -->
         <div class="container-fluid menu-container">
             <nav class="navbar navbar-expand-sm">
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
@@ -91,9 +92,10 @@
             </nav>
         </div>
 
+        <!-- main body -->
         <div class="content text-center">
             <div class="container-fluid hero-image-container">
-            <!-- hero image-->
+                <!-- hero image-->            
                 <div class="hero-image">
                     <img src="./assets/images/lb17-shopify-header.png" alt="LB17 Brand Logo" />
                 </div>
@@ -124,7 +126,9 @@
                 <hr class="block-divider block-divider-short" />
             </div>
 
+            <!-- all store content -->
             <div class="store-container">
+                <!-- t-shirts -->
                 <div class="container-fluid merch-container">
                     <h2 class="tshirts-heading">T&#45;Shirts</h2>
                     <div class="row">
@@ -291,11 +295,13 @@
                     <hr class="block-divider block-divider-short" />
                 </div>
 
+                <!-- tutoring information -->
                 <div class="container-fluid tutoring-container">
                     <h2 class="tutoring-heading">Tutoring Services</h2>
                     <h6 class="tutoring-subheading">Fill out the form below to book your lesson&#33;</h6>
                     <div class="row contact-form">
                         <div class="col lesson-signup-form">
+                            <!-- form to sign up for tuition lessons -->
                             <form class="signup" id="tutoringForm" action="emailjs" onsubmit="return sendTutoringMail(this);">
                                 <div class="form-group row">
                                     <label for="fname" class="col-sm-3 col-form-label">First Name&#58;</label>
@@ -395,6 +401,7 @@
                     <hr class="block-divider block-divider-short" />
                 </div>
 
+                <!-- fitness books -->
                 <div class="container-fluid fitness-container">
                     <h2 class="books-heading">Books &#47; Guides</h2>
                     <div class="row">
@@ -449,6 +456,7 @@
                     <hr class="block-divider block-divider-short" />
                 </div>
 
+                <!-- web services content -->
                 <div class="container-fluid web-services-container">
                     <h2 class="web-services-heading">Web Services</h2>
                     <!--- brief info about FSD qualification --->
@@ -473,6 +481,7 @@
             </div>
         </div>
 
+        <!-- return to top button -->
         <div id="returnToTop">
             <a href="#" onclick="backToTop()">
                 <i class="fas fa-arrow-circle-up"></i>
