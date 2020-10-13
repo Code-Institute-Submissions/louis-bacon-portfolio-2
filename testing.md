@@ -70,10 +70,10 @@ The JavaScript code was passed through the [JSHint](https://jshint.com) validato
 
 * Main
 
-![Screenshot of validator results for main.js file](.libraries/testing/js-validator-main.png)
+![Screenshot of validator results for main.js file](./libraries/testing/js-validator-main.png)
 
 * Mail
 
-![Screenshot of validator results for mail.js file](.libraries/testing/js-validator-mail.png)
+![Screenshot of validator results for mail.js file](./libraries/testing/js-validator-mail.png)
 
 The warnings were ignored as these are design choices and do not affect the performance of the live site.
