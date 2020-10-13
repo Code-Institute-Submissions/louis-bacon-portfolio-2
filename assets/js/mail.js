@@ -77,7 +77,7 @@ function sendTutoringMail(contactRequest) {
                 <div class="alert alert-danger alert-dismissible alert-offset fade show">
                     <strong>
                         <i class="fas fa-exclamation-triangle"></i> Please verify yourself first! 
-                        <button type="button" class="close" data-dismiss="alert" aria-labels="Close">
+                        <button type="button" class="close" data-dismiss="alert">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </strong>

@@ -222,17 +222,13 @@ function loadCart() {
             <div class="row">
                 <div class="col-sm checkout-button">
                     <button class="btn btn-checkout btn-success" onclick="completePurchase()">
-                        <a href="#">
-                            <span>Checkout</span>
-                        </a>
+                        <span>Checkout</span>
                     </button>
                 </div>
                 <div class="col-sm continue-shopping-button">
-                    <button class="btn btn-continue-shopping btn-dark">
-                        <a href="shop.html">
-                            <span>Continue Shopping</span>
-                        </a>
-                    </button>
+                    <a href="shop.html" class="btn btn-continue-shopping btn-dark" role="button">
+                        <span>Continue Shopping</span>
+                    </a>
                 </div>
             </div>
         `;
