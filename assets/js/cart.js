@@ -261,7 +261,7 @@ function displayName() {
                 Object.values(cartContents).map(item => {
                     namePopup[i].innerHTML += `<span>${item.name}</span>`;
                 });
-            };
+            }
         });
     }
 }
