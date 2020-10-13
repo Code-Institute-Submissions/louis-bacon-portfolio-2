@@ -1,7 +1,5 @@
 ![Screenshot of the top of my portfolio website](./libraries/testing/project-screenshot.png)
 
-[My Interactive Portfolio Website](https://lbacon17.github.io/louis-bacon-portfolio-2/)
-
 ## Louis Bacon Portfolio
 
 Hello,
@@ -10,38 +8,27 @@ Welcome to my self-titled portfolio website.
 
 This website is a hub for me to promote the various products and services that I offer, both as a business and an individual.
 
-I own a clothing brand, provide tuition, write books and guides on fitness and will soon design websites.
+My website provides an insight into my business and skills, and ensures the user can quickly and painlessly obtain what they need from me.
 
-The user is immediately aware of this and can intuitively click through the different services to find out more about them.
-
-My website gives an insight into my business and skills, and ensures the user can quickly and painlessly obtain what they need from me.
-
-I have a varied and complex skillset, so a great deal of effort has been made to simplify this.
-
-This website constitutes my First Milestone Project for the Full Stack Developer Course delivered by the 
+This website constitutes my Second Milestone Project for the Full Stack Developer Course delivered by the 
 [Code Institute](https://codeinstitute.net).
+
+The deployed website can be found [here](https://lbacon17.github.io/louis-bacon-portfolio-2/).
 
 ## UX / design
 
 Simple layout and colour scheme. Dark text on a lighter background, contrasted by a navbar with a dark background and light text. The 
 sea green footer adds some subtle and muted colour to the page without being a shock to the user's eyes.
 
-The outermost div wrapping the main body content together outside of the header and footer uses the .text-center class as all body 
-text is centred throughout the website. This saves time and effort creating an individual text-align rule for each new section.
+Text is centred throughout the website, and width limited on larger screens so that the user does not have to read all the way across. NO paragraph is more than a few lines long and there is adequate spacing between lines so that information is easily digestible to the reader. The outermost div between the header and footer uses the .text-center class to ensure consistent centre alignment of text and provides the most efficient solution.
 
-The menu clearly sets out the different areas of the website making them easy to find.
+The website is designed for both current and perspective customers who may be interested in my products or services. I have a varied and complex skillset, and a great deal of effort has gone into simplifying the website and making it as intuitive as possible for the user. I want the user to immediately see the different services that I offer and be able to explore my website as freely as possible, hence the ease of finding and clicking on a link that takes them to the respective page where they can potentially make a purchase or enquiry.
+
+The menu bar clearly lays out the different pages of the website and stays fixed to the top of the page as content on some pages occupies a lot of screen real estate. This saves the user time having to scroll back to the top to access the main menu.
 
 The footer contains forms of payment on the left side and social media links on the right side. Both are made clear with large enough 
 icons in white (which is very readable against the background colour) and adequate spacing. A copyright notice is placed at the bottom 
 in the centre.
-
-Immediately below my name are clickable links to the different services I offer, taking the user directly to the respective page.
-
-In text areas, the width is limited on larger screens so that the user does not have to read all the way across. No paragraph is more 
-than a few lines long and there is adequate spacing between lines so that information is easily digestible to the reader.
-
-Additionally, font sizes have been carefully chosen to reflect the importance of the text. A larger font with heavier lettering 
-immediately strikes the user so that they know where to read first and immediately understand what a page or section is about.
 
 **Pages**
 
@@ -186,6 +173,8 @@ breakpoints and are subject to the same media queries.
 
 The aim of the website is to let existing and prospective clients and business partners see what I offer and encourage them to work 
 with me or buy my services.
+
+* As a business, I want to market myself as effectively as possible to internet users and generate more clients and product sales. I therefore advertise my products, services and their pricing as transparently as possible, and present the opportunity to purchase or sign up to a service via my website.
 
 * As a student or a parent of a student needing tuition, I want to find out what subjects Louis teaches and his rates. I do this 
 by clicking on the 'tutor' link under his name or opening the [shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html) 
