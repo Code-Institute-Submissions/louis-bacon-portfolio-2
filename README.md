@@ -298,6 +298,7 @@ The following frameworks/libraries were also used:
 * [GitHub](https://github.com/) &#8212; to host the project
 * [Gitpod](https://gitpod.io/) &#8212; to build and develop the website
 * [Online PNG Tools](https://onlinepngtools.com) &#8212; to give images a transparent background
+* [Am I Responsive](https://ami.responsivedesign.is/) &#8212; for screenshots of the website's responsive design
 
 ## Testing
 

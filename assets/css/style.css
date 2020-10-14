@@ -82,9 +82,9 @@ a:focus {
   margin-top: 0.5rem;
 }
 
-.collapse .navbar-nav {
+/*-- .collapse .navbar-nav {
   display: none;
-}
+} --*/
 
 .show .navbar-nav {
   display: block;
