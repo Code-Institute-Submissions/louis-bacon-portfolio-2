@@ -172,45 +172,47 @@ breakpoints and are subject to the same media queries.
 **User Stories**
 
 The aim of the website is to let existing and prospective clients and business partners see what I offer and encourage them to work 
-with me or buy my services.
+with me or buy my services. I want them to be able to interact with my web page and receive as much information as possible without the added effort of back and forth contact.
 
 * As a business, I want to market myself as effectively as possible to internet users and generate more clients and product sales. I therefore advertise my products, services and their pricing as transparently as possible, and present the opportunity to purchase or sign up to a service via my website.
 
-* As a student or a parent of a student needing tuition, I want to find out what subjects Louis teaches and his rates. I do this 
-by clicking on the 'tutor' link under his name or opening the [shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html) 
-dropdown menu and selecting [tutoring](https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html). I can then see what subjects he 
-teaches and what his rates are, and book lessons by filling out a simple form.
+* As someone needing a website designed, I want to quickly be able to see what Louis can offer and access his GitHub profile to check out examples of his work.
 
-* As somebody looking to buy clothes, I click on the 'clothing brand' link or open 
-[merchandise](https://lbacon17.github.io/louis-bacon-portfolio/merch.html) under the 'shop' dropdown menu. I can see what products 
-Louis designs and sells, how much they cost and be taken through to his t-shirts website. I would also like to be able to buy directly 
-from this site, which is a planned feature.
+* As a student or a parent of a student needing tuition, I want to book lessons by filling out a simple form and receive confirmation once I have done so. This is more reliable than trying to reach him at a contact number or e-mail address when he may be busy and take a while to reply.
 
-* As somebody looking for advice on fitness, I click on 'fitness coach' or 
-[fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html) under the 'shop' dropdown menu. I can see the books that Louis 
-has written on the subject. I want to buy one, so I click on the image that takes me through to an external site hosting the product 
-where I can make my purchase. I would also like to be able to buy one directly through Louis' own website, which is another planned 
-feature.
+* As a person looking to buy clothes I want to see what products Louis designs and sells, how much they cost and make a purchase in just a few clicks. I also want the opportunity to buy more than one of a certain item or remove an item from my basket after changing my mind.
 
-* I can also book a coaching session if I wish. I am informed that rates are negotiable and know from the information given that Louis 
-will get back to me. I also have the opportunity to explain my goals and my situation in a bit more detail so that Louis has as much 
-information as he needs before working with me.
+* As a fitness enthusiast looking for some advice or to learn more, I want to see what sort of content Louis has written and purchase some of his work from his website.
 
-* I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I head to the 
-[contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html) page by clicking on the 'contact' link on the main menu. 
-I simply fill out the contact form with my details and some information about the project and await Louis' response.
+* I can also book a coaching session if I wish. I am informed that rates are negotiable and can book sessions by submitting a form in which I can provide information about my goals and situation in more detail so that Louis has what he needs to start working with me.
 
-* I think I'd like to work with Louis on something, but I want to read about his prior experience to check that it's something he's 
-done before. I head to his [CV](https://lbacon17.github.io/louis-bacon-portfolio/cv.html) page via the main menu and I can see his work 
-experience. It looks good, but I want to look into it in a bit more detail. I can see there's a download button at the bottom for his 
-full CV, so I click it and a PDF opens. Sure enough, Louis has exactly what I'm looking for, so I'll contact him. Thankfully the CV 
-opened in a new tab, so I don't have to hit the back button and wait for the page to re-load. I go back to Louis' site and navigate 
-from the CV page to the [contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html) page, fill out the contact form in a 
-few easy steps and await Louis' response.
+* I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I simply fill out the contact form with my details and some information about the project and await Louis' response.
 
-* I like Louis' introduction on his homepage, but I want to find out a bit more about him. I click the 
-[about](https://lbacon17.github.io/louis-bacon-portfolio/about.html) link and can read his story in more detail. If I want to hire him 
-for something or just get in touch, the main menu bar will tell me where to go next.        
+* As a potential client of Louis', I'm considering working with him on something but can read about his prior experience on his CV page and compare it to other prospective contractors. If I want to look into things in a bit more detail, I have the opportunity to download a PDF version of his CV and can then fill out the contact form in a few easy steps should I wish to proceed.
+
+* As someone who wants to find out a bit more about Louis himself, I can read his story in more detail on the About page.
+
+* As someone who's interested in learning more from Louis and wants to hear from him regularly, I can join his mailing list by simply submitting my e-mail address.
+
+**Wireframes**
+
+I created a number of wireframes using [Wireframe.cc](https://wireframe.cc). They can be found as follows:
+
+| Desktop | Mobile | 
+| ------- | ------ |
+| [Home](./libraries/wireframes/wireframe-home.png) | [Home](./libraries/wireframes/wireframe-mobile-home.png) |
+| [About](./libraries/wireframes/wireframe-about.png) | [About](./libraries/wireframes/wireframe-mobile-about.png) |
+| [Shop](./libraries/wireframes/wireframe-shop.png) | [Shop](./libraries/wireframes/wireframe-mobile-shop.png) |
+| [Merch](./libraries/wireframes/wireframe-merch.png) | [Merch](./libraries/wireframes/wireframe-mobile-merch.png) |
+| [Tutoring](./libraries/wireframes/wireframe-tutoring.png) | [Tutoring](./libraries/wireframes/wireframe-mobile-tutoring.png) |
+| [Fitness](./libraries/wireframes/wireframe-fitness.png) | [Fitness](./libraries/wireframes/wireframe-mobile-fitness.png) |
+| [Web Services](./libraries/wireframes/wireframe-webservices.png) | [Web Services](./libraries/wireframes/wireframe-mobile-webservices.png) |
+| [CV](./libraries/wireframes/wireframe-cv.png) | [CV](./libraries/wireframes/wireframe-mobile-cv.png) |
+| [Contact](./libraries/wireframes/wireframe-contact.png) | [Contact](./libraries/wireframes/wireframe-mobile-contact.png) |
+| [Cart](./libraries/wireframes/wireframe-cart.png) | [Cart](./libraries/wireframes/wireframe-mobile-cart.png) |
+
+
+Note that these wireframes were designed prior to commencement of the project. During the project some design decisions were changed, therefore some wireframe designs may look slightly different to the finished product.
         
 ## Features
 
