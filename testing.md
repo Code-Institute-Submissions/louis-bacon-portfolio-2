@@ -173,3 +173,31 @@ new .email-input class and using the '!important' property to set the width at v
 * A blue rectangular border surrounded the Shop link when selected in the mobile dropdown menu when using Safari (both on a Mac at a 
 reduced screen size and on an iPhone). I eventually resolved this by adding an 'outline: none' style rule to the a:focus pseudoelement 
 (attempts to target by class or other more specific properties were unsuccessful).
+
+The live site was tested on the following Browsers:
+
+* Brave Browser
+* Google Chrome
+* Mozilla Firefox
+* Safari
+
+No major problems were detected on any of them. Here are two screenshots below - the first is the site in Firefox on my laptop, the second 
+in Safari on my iPhone 7:
+
+![A screenshot of the deployed website in Mozilla Firefox](./libraries/testing/live-site-screenshot-firefox.png)
+
+![A screenshot of the deployed website in Safari on an iPhone 7](./libraries/testing/live-site-screenshot-iphone7.png)
+
+There was one minor issue when using Safari, either on a mobile device or on a laptop with the browser window reduced to an xs screen 
+size. When selecting 'shop' in the dropdown menu, the element was surrounded by a blue border. I attempted to target the .navbar-toggler 
+class and adding the :focus pseudo-class, but this was unsuccessful. I had to target all anchor elements so I added the following rule:
+
+```
+a:focus {
+    outline: none;
+}
+```
+
+This successfully prevented the blue border from appearing around the shop link, and did not affect any other elements on the site.
+
+This is the only difference in code between the final developed version and the deployed version.

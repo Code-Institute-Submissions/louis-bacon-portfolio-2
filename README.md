@@ -297,6 +297,7 @@ The following frameworks/libraries were also used:
 * [Google reCAPTCHA](https://google.com/recaptcha/about/) &#8212; for secure form submission and user verification
 * [GitHub](https://github.com/) &#8212; to host the project
 * [Gitpod](https://gitpod.io/) &#8212; to build and develop the website
+* [Online PNG Tools](https://onlinepngtools.com) &#8212; to give images a transparent background
 
 ## Testing
 
@@ -307,36 +308,26 @@ The testing process can be seen [here](testing.md).
 My website was deployed using GitHub Pages from the repository's master branch.
 
 The website uses the GitHub domain. The full address is 
-[https://lbacon17.github.io/louis-bacon-portfolio](https://lbacon17.github.io/louis-bacon-portfolio). It is not served from any 
+[https://lbacon17.github.io/louis-bacon-portfolio](https://lbacon17.github.io/louis-bacon-portfolio-2). It is not served from any 
 external domain.
 
-The live site was tested on the following Browsers:
+To deploy a website using GitHub pages, carry out the following steps:
 
-* Brave Browser
-* Google Chrome
-* Mozilla Firefox
-* Safari
+1. Select 'Settings' from the menu at the top of the project's repository
+2. Scroll down to the section titled 'GitHub Pages'
+3. In the 'Source' section, click on the left-hand dropdown menu titled 'Select branch' and choose 'master'
+4. The page should refresh itself - if this doesn't happen, simply refresh the page manually
+5. There should now be an alert with a green background stating "Your site is published at *link*" - this means the website is now deployed
 
-No major problems were detected on any of them. Here are two screenshots below - the first is the site in Firefox on my laptop, the second 
-in Safari on my iPhone 7:
+To clone the project from GitHub and run it locally, follow the steps below:
 
-![A screenshot of the deployed website in Mozilla Firefox](./libraries/testing/live-site-screenshot-firefox.png)
-
-![A screenshot of the deployed website in Safari on an iPhone 7](./libraries/testing/live-site-screenshot-iphone7.png)
-
-There was one minor issue when using Safari, either on a mobile device or on a laptop with the browser window reduced to an xs screen 
-size. When selecting 'shop' in the dropdown menu, the element was surrounded by a blue border. I attempted to target the .navbar-toggler 
-class and adding the :focus pseudo-class, but this was unsuccessful. I had to target all anchor elements so I added the following rule:
-
-```
-a:focus {
-    outline: none;
-}
-```
-
-This successfully prevented the blue border from appearing around the shop link, and did not affect any other elements on the site.
-
-This is the only difference in code between the final developed version and the deployed version.
+1. At the top of the project's repository just below the menu, click on the 'Code' dropdown button.
+2. In the 'Clone' section, make sure that the 'HTTPS' heading is underlined and copy the URL inside the box.
+3. Open the Terminal on your device
+4. Inside the Terminal, type 'pwd' to display the device's current working directory
+5. Type 'git clone' and paste the URL copied from GitHub (note there must be a space between 'clone' and the URL).
+6. Press enter
+7. The project folder will be inside the directory printed in step 4
 
 ## Credits
 
@@ -348,9 +339,7 @@ and design. For layout simplicity, I have followed the container > row > col for
 All icons used on the site (hamburger menu, quote symbols, payment info and social media links) were taken from 
 [Font Awesome](https://fontawesome.com).
 
-The 'return to top' button feature at the bottom right of the page uses code based on recommendations from
-[W3 Schools](https://w3schools.com) and [Stack Overflow](https://stackoverflow.com). The specific instructions can be found 
-[here](ttps://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only). 
+The JavaScript used for the cart's functionality is designed based on recommendations from a shopping cart tutorial on [YouTube](https://www.youtube.com/watch?v=B20Getj_Zk4).
 
 **Media**
 
@@ -367,15 +356,11 @@ the site.
 
 I took inspiration for layout and styling from the following websites:
 
-
 * [Awwwards.com](https://www.awwwards.com/websites/portfolio/) (examples of memorable portfolio website 
 designs)
 * [Shopify](https://shopify.com) (which also hosts my clothing website)
 * [Team Zuby](https://teamzuby.com)
 * [James Smith Academy](https://jamessmithacademy.com)
-
-## Additional resources
-
 
 Thank you for reading.
 
