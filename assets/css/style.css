@@ -762,6 +762,13 @@ a:focus {
 #popup {
     display: inline;
     float: left;
+    background-color: red;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: -20px;
+    padding: 2px;
+    white-space: nowrap;
+    z-index: 99;
 }
 
 .item-text {

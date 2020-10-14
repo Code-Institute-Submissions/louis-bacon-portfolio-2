@@ -249,18 +249,26 @@ function loadCart() {
 // displays name of item in cart on extra small screens
 
 function displayName() {
-    var namePopup = document.querySelectorAll("#popup");
+    var thumbnail = document.querySelectorAll(".cart-item-thumbnail");
 
-    for (let i = 0; i < namePopup.length; i++) {
-        namePopup[i].addEventListener("mouseenter", function() {
+    for (let i = 0; i < thumbnail.length; i++) {
+        thumbnail[i].addEventListener("mouseenter", function() {
             var cartContents = localStorage.getItem("itemsInCart");
             cartContents = JSON.parse(cartContents);
+            var namePopup = document.querySelectorAll("#popup");
 
             if (cartContents && namePopup) {
-                namePopup[i].innerHTML = "";
-                Object.values(cartContents).map(item => {
-                    namePopup[i].innerHTML += `<span>${item.name}</span>`;
-                });
+                var popupText = document.querySelectorAll(".item-text");
+                for (let i = 0; i < popupText.length; i++) {
+                    namePopup[i].innerHTML = "";
+                    namePopup[i].innerHTML = popupText[i].textContent;
+                };
+            }
+        });
+        thumbnail[i].addEventListener("mouseleave", function() {
+            var namePopup = document.querySelectorAll("#popup");
+            for (let i = 0; i < namePopup.length; i++) {
+                   namePopup[i].innerHTML = "";
             }
         });
     }
