@@ -169,6 +169,22 @@ to take the user directly to this section and save time having to scroll all the
 * A simple contact form using the same layout and rules as the other contact forms. The input fields and button adjust at the same 
 breakpoints and are subject to the same media queries.
 
+[Cart](https://lbacon17.github.io/louis-bacon-portfolio-2/cart.html)
+
+* Clear headings so that the user can easily follow what items and how many of them are in their cart, and keep track of the total price.
+
+* A thumbnail of the item in cart followed by its name in text, then its individual unit price, quantity and total price (if the quantity is 1, the total price matches the individual unit price). The font size of the headings and inner text decreases at various breakpoints for responsive design, allowing all item information to fit on one line. On extra small screen sizes, the item name text disappears and only the image thumbnail remains due to more limited space. To eliminate doubt on the user’s part, the item name will appear if the user hovers over the thumbnail.  
+
+* The total price of the cart at the bottom, which updates immediately when items are added or removed, or increased or decreased.
+
+* The cart is fully interactive as the information/numbers on the page update in real time with each click by the user. The ‘x’ on the left of the page is the remove button, meaning the item disappears from the cart altogether if clicked (even if the quantity is more than 1), and the cart total updates accordingly. The counter in the navbar also updates. The quantity entry has buttons left and right to decrease and increase the quantity respectively. The quantity cannot be decreased below 1 in order to maintain the cart’s logical integrity. On each click to increase and decrease the quantity, the following data change: the quantity value itself, the price column on the right, the cart’s total price at the bottom of the page. The code implemented allows the user to fully interact with the page by adding and removing with a single click, rather than having to go back to original pages and add items again. The user performs an action and receives an immediate response.
+
+* Buttons to check out and continue shopping. Currently the checkout button renders an alert saying “thank you for your purchase” and the cart resets to being empty. The “continue shopping” button takes the user back to the shop page.
+
+* If there are no items in the cart, all the above data is replaced with a simple “Your cart is currently empty” message with a “back to shop” link to continue shopping (again taking the user back to the shop page) immediately below. The checkout button does not appear in this scenario so as not to confuse the user.
+
+* Items in cart are stored in the browser’s local storage so that the cart total is maintained and does not reset to zero when the page is refreshed or left.
+
 **User Stories**
 
 The aim of the website is to let existing and prospective clients and business partners see what I offer and encourage them to work 
@@ -216,607 +232,51 @@ Note that these wireframes were designed prior to commencement of the project. D
         
 ## Features
 
-**Existing features**
+**New and existing features**
 
-1. A return to the top button at the bottom of each page using only HTML and CSS. At the very top of each page, just after the opening 
-body tag, I have included the following code:
+1. A checkout icon and a number showing the total quantity of items in the user's cart on the right of the navigation bar. This updates immediately each time an item is added or removed.
 
-            ``` 
-            <a name="top"> </a>
-            ```
+2. A cart page that calculates the total price of each product and its respective quantity, as well as the total price of the cart itself and empties itself (resets to zero) after a purchase has been completed.
 
-The return to top text is wrapped in another anchor element with the code looking like this:
+3. An add to cart button underneath each item for sale, that generates an alert that an item was added to the user's cart whenever it is clicked. The alert then disappears after a few seconds.
 
-            ```
-            <a href="#top" class="returntotop"> Return to top &#94; </a>
-            ```
-  
-The href attribute value takes the user back directly to the top of the page due to the matching name attribute of the first anchor tag. 
-It is then styled to sit in the bottom right corner of the page using the following CSS:
-  
-            ```
-            .returntotop-container {
-            padding-bottom: 10px;
-            text-align: right;
-            font-size: 0.8rem;
-            color: #444444;
-            }
+4. A return to top button in the form of a transparent upward facing arrow enclosed in a red circle that appears in the bottom right of the user's screen when they scroll down from the top. This feature replaces the return to top button from the previous version of this website that was made using only HTML and CSS, and was only available if the user scrolled all the way to the bottom of the page.
 
-            .returntotop {
-                padding: 15px;
-            }
-            ```
+5. A reCAPTCHA validation tool that uses Google's API and forces the user to verify themselves as a genuine human being before they can successfully submit any form on the website.
 
+6. An automated confirmation e-mail from EmailJS sent to the user and a separate notification e-mail sent to myself as the website owner whenever the user successfully submits a form.
 
-2.  The ability to subscribe to a mailing list by simply entering an e-mail address and hitting a subscribe button. The code looks 
-like this:
+7. A feature that prevents users including white space in any input fields, e-mail addresses in invalid formats and invalid characters in phone number fields. This makes the forms much more secure.
 
-            ```
-            <div class="row email-form">
-                <div class="col form-inline center-form">
-                    <form class="email" action="emails" method="post">
-                        <input
-                        type="text"
-                        name="email"
-                        id="emailaddress"
-                        class="form-control email-input"
-                        placeholder="Your e-mail address"
-                        required
-                        />
-                        <button type="submit" class="btn subscribe btn-success">
-                            Subscribe&#33;
-                        </button>
-                    </form>
-                </div>
-            </div>
-            ```
+8. The ability to subscribe to my mailing list by simply entering an e-mail address and hitting the subscribe button.
 
-Its width adjusts at various breakpoints so that the input field and subscribe button either stay on one line or exist on separate 
-lines at equal width. The following CSS rules are used:
+9. Quote boxes displaying testimonies from clients or other contacts that remain easily readable in all screen sizes.
 
-            ```
-            .form-control {
-                padding-left: 2px;
-                padding-right: 2px;
-                height: 3em;
-            }
+10. An images gallery that brings to life my story and puts a face to my name, giving the user comfort to know who they are dealing with.
 
-            .email-input {
-                width: 100%;
-            }
+11. Contact forms on multiple pages which differ slightly in content but are consistent in layout and behaviour across the site.
 
-            @media screen and (min-width: 576px) {
-                .email-input {
-                    width: 100%!important;
-                }
-            }
+12. A downloadable CV in PDF format to view my work experience in more detail. As the call to action, the download button has a dark background to differentiate it from green submit buttons on contact forms and uses the target="_blank" attribute so that the CV opens in a new tab.
 
-            @media screen and (min-width: 768px) {
-                .email-input {
-                    width: 70%!important;
-                }
-            }
-            ```
+13. A fixed navigation bar that allows the user to easily an intuitively click through the website. An expandable hamburger menu also appears on xs screens so that nav links are too closely bunched together. The fixed position of the navbar saves the user time when they are on a page with large volumes of content and want to exit it without having to scroll back to the top.  They will also see the number in the cart counter increase when adding an item to their cart, meaning they get an immediate response to their action.
 
-The !important property is used in these media queries to override the auto width set by the .form-control class, which does not allow 
-for consistency between the input and button elements.
+14. Services underneath my name as links that navigate to the relevant page, so that the user can jump to these areas quickly should they wish.
 
-3. Services underneath my name as links that navigate to the relevant page. These are separated by '|' characters that disappear on xs 
-screens and are replaced by line breaks, so that each link appears on a different line. The code looks as follows:
+15. My brand logo as the website's hero image, so that the user is always aware whose website they are on.
 
-            ```
-            <h2 class="title uppercase">
-                <a href="merch.html" class="headline-link">Clothing brand</a>
-                <span class="d-none d-sm-inline">&#124;</span>
-                <br class="d-block d-sm-none /" />
-                <a href="tutoring.html" class="headline-link">Tutor</a>
-                <span class="d-none d-sm-inline">&#124;</span>
-                <br class="d-block d-sm-none" />
-                <a href="fitness.html" class="headline-link">Fitness Coach</a>
-                <span class="d-none d-sm-inline">&#124;</span>
-                <br class="d-block d-sm-none" />
-                <a href="web-services.html" class="headline-link">Web Developer</a>
-            </h2>
-            ```
-
-The vertical lines are wrapped in a `<span>` element using the .d-none and .d-sm-inline classes so that they only appear on small 
-screens and above. Conversely, the `<br>` element uses the .d-block and .d-sm-none classes, meaning it serves as a line break on xs 
-screens but is inactive once the screen is of sm size or above.
-
-The anchors themselves use a class named .headline-link to make it clear to the user that they are clickable links. They are underlined 
-using the following CSS rule:
-
-            ```
-            .headline-link {
-                text-decoration: underline;
-            }
-            ```
-
-To give the user a more elegant feel, the underline decoration disappeared when the cursor is hovered over these links. This is a 
-simple override that fits in with all links on the site behaving this way, for which the following CSS rules are used:
-
-            ```
-            a,
-            a:hover {
-                color: inherit;
-                text-decoration: none;
-            }
-            ```
-
-All links inherit the font colour of their parent element, this being black for the main body, and white for the header, footer and 
-buttons.
-
-4. Quote boxes displaying testimonies from clients or other contacts. These are in a borderless box with a white background to create a 
-subtle contrast from the rest of the page. All text is centered, with the quote itself italicised and sandwiched between larger quote 
-icons taken from [Font Awesome](https://fontawesome.com).
-
-To optimise UX, the last quote only appears on xs and lg (and above) screens. This necessitates the use of the classes .d-inline 
-.d-sm-none and .d-lg-inline-flex. The inline-flex class is used for large screens rather than just inline as this vertically centres 
-the text, a display that makes reading a more natural experience for the user where the quote boxes are all of equal height. The col-md 
-class is used for the boxes so that they are aligned vertically on small and xs screens. This ensures the quotes remain easily readable.
-
-Here is the code in full:
-
-            ```
-            <div class="row quotes">
-                <div class="col-md quote-item">
-                    <blockquote>
-                        <i class="fa fa-quote-left"></i>
-                        <p class="mb-0 quote-text">
-                            I can say that without a shadow of a doubt Louis is one of the
-                            most knowledgeable and intellectual people I have had the pleasure
-                            to meet and he has an excellent way with people.
-                        </p>
-                        <i class="fa fa-quote-right"></i>
-                        <p>&#8212; Francis M.</p>
-                    </blockquote>
-                </div>
-                <div class="col-md quote-item">
-                    <blockquote>
-                        <i class="fa fa-quote-left"></i>
-                        <p class="mb-0 quote-text">
-                            It's been great having Louis around these last few months. My son
-                            really enjoys his Zoom session with him and I hope he can continue
-                            as long as he is able.
-                        </p>
-                        <i class="fa fa-quote-right"></i>
-                        <p>&#8212; Jane S.</p>
-                    </blockquote>
-                </div>
-                <div class="col-md quote-item d-inline d-sm-none d-lg-inline-flex">
-                    <blockquote>
-                        <i class="fa fa-quote-left"></i>
-                        <p class="mb-0 quote-text">
-                            Louis&#8217; T&#45;shirts look absolutely fire&#33; I&#39;d recommend them
-                            to anyone.
-                        </p>
-                        <i class="fa fa-quote-right"></i>
-                        <p>&#8212; Ben H.</p>
-                    </blockquote>
-                </div>
-            </div>
-            ```
-
-The following CSS rules were also used for styling:
-
-            ```
-            .quote-item {
-                padding: 0;
-                margin-bottom: 0.8rem;
-                background-color: #fff;
-                color: #000;
-                text-align: center;
-                display: flex;
-                align-items: center;
-            }
-
-            .quote-item blockquote {
-                margin: 0.8rem;
-            }
-
-            .quote-item blockquote i {
-                font-size: 1.5rem;
-                display: block;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            .quote-text {
-                font-style: italic;
-                margin-left: 0.2rem;
-                margin-right: 0.2rem;
-            }
-            ```
-
-5. Galleries on the [About](https://lbacon17.github.io/louis-bacon-portfolio/about.html), 
-[Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html), [Merch](https://lbacon17.github.io/louis-bacon-portfolio/merch.html) 
-and [Fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html) pages. The gallery on the About page brings life to my 
-story and puts a face to my name. This gives the user comfort to know that they are dealing with a real person, and breaks up the page 
-so that the user is not presented with so many blocks of text in one go. The images on this page display vertically on xs screens as 
-they would otherwise be too small to see clearly. On sm and above sizes they are horizontally laid out using the .col-sm class. 
-Displaying them vertically on any larger screen size than xs would take up excessive screen real estate.
-
-Here is the code used for the gallery on the About page:
-
-            ```
-            <div class="gallery-container">
-                <div class="row images-wrapper no-gutters">
-                    <div class="col-sm img-item">
-                        <img
-                        src="./assets/images/lb17-black-tee-woman-cropped.png"
-                        alt="A woman modelling the LB17 black tee, one of my signature designs"
-                        class="w-100"
-                    />
-                    </div>
-                    <div class="col-sm img-item">
-                        <img
-                        src="./assets/images/club-photo-cropped.png"
-                        alt="Me posing for a club photo at an old team"
-                        class="w-100"
-                        />
-                    </div>
-                    <div class="col-sm img-item">
-                        <img
-                        src="./assets/images/48.png"
-                        alt="A man modelling the LB17 white tee, one of my signature designs"
-                        class="w-100"
-                        />
-                    </div>
-                </div>
-            </div>
-            ```
-
-The .no-gutters class gives a greater gallery feel by removing any spacing between the images on all screen layouts. The images 
-themselves use the .w-100 class to automatically resize and fit the width of their parent column div.
-
-The same code is used for the galleries on other pages, except that the no-gutters class is not applied, as I want space to appear 
-between images when advertising products.
-
-6. Contact forms are consistent with their layout across the site and exist on the 
-[Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html), 
-[Tutoring](https://lbacon17.github.io/louis-bacon-portfolio/tutoring.html), 
-[Fitness](https://lbacon17.github.io/louis-bacon-portfolio/fitness.html) and 
-[Contact](https://lbacon17.github.io/louis-bacon-portfolio/contact.html) pages. Certain elements are introduced or removed to fit the 
-user's needs. Each contact form is in a parent container of a fixed width of 70% so that it does not occupy too much of the screen 
-and increase the difficulty of reading it. All input elements have required attributes so an incomplete form cannot be submitted. All 
-forms contain fname, lname and email fields, and are housed by a `<div>` element using the .contact-form class. Here is an example:
-
-            ```
-            <form method="post" class="contact">
-                <div class="form-group row">
-                    <label for="fname" class="col-sm-3 col-form-label">
-                        First Name&#58;
-                    </label>
-                    <div class="col-sm">
-                        <input
-                        type="text"
-                        class="form-control"
-                        placeholder="First name"
-                        required
-                        />
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="lname" class="col-sm-3 col-form-label">
-                        Last Name&#58;
-                    </label>
-                    <div class="col-sm">
-                        <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Last name"
-                        required
-                        />
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="email" class="col-sm-3 col-form-label">
-                        E-mail address&#58;
-                    </label>
-                    <div class="col-sm">
-                        <input
-                        type="text"
-                        name="email"
-                        class="form-control"
-                        placeholder="Your email address"
-                        required
-                        />
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="message" class="col-sm-3 col-form-label">
-                        Message&#58;
-                    </label>
-                    <div class="col-sm">
-                        <textarea
-                        rows="5"
-                        name="projectsummary"
-                        id="projectsummary"
-                        class="form-control"
-                        placeholder="Type your message here"
-                        required
-                        >
-                        </textarea>
-                    </div>
-                </div>
-                <div class="submit-button row">
-                    <div class="d-none d-sm-inline col-sm-3"></div>
-                    <div class="col-sm">
-                        <button type="submit" class="btn btn-success submit-request">
-                            Submit&#33;
-                        </button>
-                    </div>
-                </div>
-            </form>
-            ```
-
-When it comes to the submit button, an empty `<div>` acts as a separate column on sm and above screens so that the button is not 
-misaligned with the form. The button should be centred in relation to the input fields above rather than the entire form, which looks 
-uncomfortable for the user. On xs screens, the button is on a separate line taking up the full width, so there is no need for an empty 
-element, hence the .d-none class.
-
-The tutoring form also incorporates a dropdown menu to enable to user to select their date of birth, and radio and checkbox buttons to 
-select various criteria to fit their needs.
-
-            ```
-            <div class="form-group row">
-                <label
-                  for="birthday-dd birthday-mm birthday-yyyy"
-                  class="col-sm-3 col-form-label"
-                  >
-                    Date of birth&#42;&#58;
-                </label>
-                <div class="dob-dropdown col-sm">
-                  <select id="birthday-dd" class="dob-select" required>
-                    <option selected disabled>DD</option>
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>04</option>
-                    <option>05</option>
-                    <option>&#8230;</option>
-                  </select>
-                  <select id="birthday-mm" class="dob-select" required>
-                    <option selected disabled>MM</option>
-                    <option>Jan</option>
-                    <option>Feb</option>
-                    <option>Mar</option>
-                    <option>Apr</option>
-                    <option>May</option>
-                  </select>
-                  <select id="birthday-yyyy" class="dob-select" required>
-                    <option selected disabled>YYYY</option>
-                    <option>2020</option>
-                    <option>2019</option>
-                    <option>2018</option>
-                    <option>2017</option>
-                    <option>2016</option>
-                  </select>
-                  <small class="form-text text-muted dob-small">
-                    &#42;if a parent seeking lessons for your child, please
-                    enter your child&#8217;s DOB
-                  </small>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="subject" class="col-sm-3 col-form-label">
-                    <span class="d-none d-md-inline">
-                        I &#47; my child would like lessons in
-                    </span>
-                    <span class="d-inline d-md-none">
-                        Subject
-                    </span>
-                    &#58;
-                </label>
-                <div class="col-sm tutoring-options">
-                  <input
-                    type="checkbox"
-                    id="mathsenglish"
-                    value="mathsenglish"
-                  />
-                  <label for="mathsenglish">Maths &#47; English</label>
-                  <input type="checkbox" id="german" value="german" />
-                  <label for="german">German</label>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="competency" class="col-sm-3 col-form-label">
-                    <span class="d-none d-sm-inline">
-                        Competency level
-                    </span>
-                    <span class="d-inline d-sm-none">
-                        Level
-                    </span>
-                    &#58;
-                </label>
-                <div class="col-sm tutoring-options">
-                  <input
-                    type="radio"
-                    id="beginner"
-                    name="competencyOptions"
-                    value="option1"
-                    required
-                  />
-                  <label for="beginner" class="competency-level-option">
-                    Beginner
-                  </label>
-                  <br class="d-block d-sm-none" />
-                  <input
-                    type="radio"
-                    id="intermediate"
-                    name="competencyOptions"
-                    value="option2"
-                    required
-                  />
-                  <label for="intermediate" class="competency-level-option">
-                    Intermediate
-                  </label>
-                  <br class="d-block d-sm-none" />
-                  <input
-                    type="radio"
-                    id="advanced"
-                    name="competencyOptions"
-                    value="option3"
-                    required
-                  />
-                  <label for="advanced" class="competency-level-option">
-                    Advanced
-                  </label>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="competency" class="col-sm-3 col-form-label">
-                    Lesson length&#58;
-                </label>
-                <div class="col-sm tutoring-options">
-                  <input
-                    type="radio"
-                    id="1hr"
-                    name="lessonLengthOptions"
-                    value="option1"
-                    required
-                  />
-                  <label for="1hr" class="lesson-length-option">
-                    1 hour &#40;&#163;25.00&#41;
-                  </label>
-                  <br class="d-block d-sm-none" />
-                  <input
-                    type="radio"
-                    id="1hr30"
-                    name="lessonLengthOptions"
-                    value="option2"
-                    required
-                  />
-                  <label for="1hr30" class="lesson-length-option">
-                    1.5 hours &#40;&#163;35.00&#41;
-                  </label>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="subject" class="col-sm col-form-label">
-                    I would also like a FREE initial 30&#45;minute
-                    assessment&#58;
-                </label>
-                <div class="col-sm tutoring-options">
-                  <input type="checkbox" />
-                </div>
-            </div>
-            ```
-
-In some of the `<label>` elements, there were issuses with the text spilling over onto additional lines and breaking the alignment with 
-the input fields. To get around this, there is alternative shorter text for smaller screen sizes, with each version wrapped in a 
-`<span>` element using either the .d-none .d-sm-inline classes or the .d-inline .d-sm-none classes.
-
-Here are the style rules in full for the contact forms:
-
-            ```
-            .contact-form {
-                padding: 25px 0;
-            }
-
-            .form-group {
-                margin-bottom: 1rem;
-                text-align: left;
-            }
-
-            .form-control {
-                padding-left: 2px;
-                padding-right: 2px;
-                height: 3em;
-            }
-
-            .dob-select {
-                background-color: silver;
-                padding: 5px;
-                display: block;
-            }
-
-            .dob-small {
-                padding-left: 15px;
-                padding-top: 5px;
-            }
-
-            .tutoring-options {
-                padding-top: 7px;
-                padding-bottom: 7px;
-            }
-
-            .competency-level-option,
-            .lesson-length-option {
-                padding-right: 7px;
-            }
-
-            .submit-button {
-                text-align: center;
-                padding-top: 15px;
-            }
-
-            .submit-request {
-                width: 100%;
-                font-size: 1.2rem;
-            }
-            ```
-
-7. Downloadable CV to view my work experience in more detail. The download button has a dark background to differentiate it from submit 
-buttons on contact forms, and sits in the centre of the screen directly below my CV on the 
-[CV](https://lbacon17.github.io/louis-bacon-portfolio/cv.html) page. There is a child anchor element using the target="_blank" 
-attribute so that the CV opens in a new tab.
-
-            ```
-            <div class="cv-download">
-                <button class="btn btn-dark btn-lg">
-                    <a href="./assets/images/louis-cv.pdf" target="_blank">
-                        Download Print Version
-                    </a>
-                </button>
-            </div>
-            ```
-
-/
-
-            ```
-            .cv-download {
-                text-align: center;
-                margin-top: 1.2rem;
-                margin-bottom: 1.2rem;
-            }
-
-            .cv-download button a {
-                color: #ffffff;
-            }
-            ```
-
-8. Hamburger menu on xs screens giving a collapsible and expandable navbar. This ensures that the nav links are not squashed together 
-on xs screens and hard for the user to separate. A click of the hamburger button will expand the main menu with each link on a separate 
-line. The arrow on the shop option now points to the right, with the dropdown expanding at an indent so that it is clear the menu items 
-under 'Shop' are not part of the main menu. One issue encountered in previewing the website was that the hamburger menu had a blue ring 
-just inside its white border after being clicked. To stop this from happening I used the following CSS:
-
-            ```
-            .navbar-toggler:focus {
-                outline: none;
-            }
-            ```
-
-The hamburger icon itself was taken from [Font Awesome](https://fontawesome.com).
+16. A footer containing accepted payment methods and links to my social media, so that the user can visit these if they wish.
 
 **Features left to implement**
 
-I plan to implement the following features at a later stage of the project using 
-[JavaScript](https://en.wikipedia.org/wiki/JavaScript):
+I plan to implement the following features at a later stage of the project. 
 
+* A separate checkout page for the user to enter their payment information and finalise their purchase.
 
-* An add-to-cart button below the items in the shop. This would be combined with a checkout page and a cart icon in the top right 
-corner. A '1' would appear when an item was added to a cart as on most online retail websites.
+* A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom.
 
-* A more elegant return to top button in the form of an upward-facing arrow that would appear whenver the user scrolled away from the 
-top of the page, and would simply scroll back up
+* Automated e-mails for mailing list subscribers notifying them of new content, promotions and special offers.
 
-* The addition of more items to the [Shop](https://lbacon17.github.io/louis-bacon-portfolio/shop.html) page that can be browsed 
-using a carousel feature with left and right arrows. There is a framework in [Bootstrap](https://getbootstrap.com) to help implement 
-this
-
-* A pop-up box to join my mailing list when users load the home page rather than existing as a separate section at the bottom
+* The ability to pull up the cart as a dropdown from the top of the page and edit its content without having to leave the active page.
 
 ## Technologies Used
 
@@ -828,112 +288,19 @@ The project uses the follwing coding languages:
 
 The following frameworks/libraries were also used:
 
-* [Bootstrap](https://getbootstrap.com) &#8212; for simple layout frameworks and built-in classes such as 
-    .container-fluid
+* [Bootstrap](https://getbootstrap.com) &#8212; for simple layout frameworks and built-in CSS classes
 * [jQuery](https://jquery.com) &#8212; to simplify DOM manipulation and traversal
 * [Font Awesome](https://fontawesome.com) &#8212; to enable the display of icons for quotes, payment info 
     and social media links 
 * [jsDelivr](https://jsdelivr.com) &#8212; for easy open-sourcing
+* [EmailJS](https://emailjs.com) &#8212; for e-mail templates and automated e-mails to be sent upon form submission, as well as enabling Google reCAPTCHA validation
+* [Google reCAPTCHA](https://google.com/recaptcha/about/) &#8212; for secure form submission and user verification
+* [GitHub](https://github.com/) &#8212; to host the project
+* [Gitpod](https://gitpod.io/) &#8212; to build and develop the website
 
 ## Testing
 
 The testing process can be seen [here](testing.md).
-
-The website was tested in Brave Browser using the both Developer Tools and the Viewport Resizer extension. I took screenshots of each 
-page using the Full Page Screen Capture extension.
-
-See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
-
-![A screen capture of the home page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-homepage-galaxy-s5.png)
-
-![A screen capture of the about page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-about-galaxy-s5.png)
-
-![A screen capture of the shop (all items) page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-shop-galaxy-s5.png)
-
-![A screen capture of the merchandise page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-merch-galaxy-s5.png)
-
-![A screen capture of the tutoring page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-tutoring-galaxy-s5.png)
-
-![A screen capture of the fitness page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-fitness-galaxy-s5.png)
-
-![A screen capture of the web services page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-web-services-galaxy-s5.png)
-
-![A screen capture of the CV page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-cv-galaxy-s5.png)
-
-![A screen capture of the contact page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-contact-galaxy-s5.png)
-
-Here are a couple of screenshots of the layout on an iPad (768px width):
-
-![A screen capture of the home page on an iPad using Developer Tools](./libraries/testing/screen-capture-home-ipad.png)
-
-![A screen capture of the shop page on an iPad using Developer Tools](./libraries/testing/screen-capture-shop-ipad.png)
-
-
-Brave Browser is based entirely on Google Chrome and uses the Chrome webstore, so the functionality is exactly as it would be in Chrome. 
-
-I used Developer Tools to test the website layout pixel by pixel as well as on all popular mobile and tablet devices, and the design 
-was consistently responsive. The main difference is that the main menu collapses into a hamburger menu on xs sizes with the menu then 
-opening downwards rather than across. This pushes down the hero image so that there is no overlay. See the screenshots below.
-
-![A screenshot of the main menu as it would appear on a mobile device](./libraries/testing/screenshot-mobile-navbar-1.png)
-
-![A screenshot of the main menu with the dropdown open as it would appear on a mobile device](./libraries/testing/screenshot-mobile-navbar-2.png)
-
-
-The dropdown menu also works well on tablet and desktop devices, opening just below the main navbar with a deliberate but small amount 
-of margin between the edges of each element. This gives a slightly more elegant feel. The dropdown hangs down over the hero image but 
-does not obscure any text. See the screenshot below.
-
-![A screenshot of the dropdown menu as it appears on tablet and desktop devices](./libraries/testing/screenshot-dropdown-menu.png)
-
-Using the Viewport Resizer, I clicked the animate button to test the screen at different sizes on each page, and no layout issues were 
-detected.
-
-The width of the input text fields throughout the site adjusts at different screen sizes, but maintains an optimised position in 
-relation to any adjacent label text or submit button.
-
-All form elements were tested to ensure that submission is not possible without filling out all the required fields due to the 'required' 
-attribute. Here is a screenshot of me attempting to susbcribe to my mailing list without an e-mail address:
-
-![A screenshot of me trying to subscribe to my mailing list without an e-mail address](./libraries/testing/email-empty-input-screenshot.png)
-
-Here are some screenshots of me attempting to submit incomplete contact forms, either with an empty input field or unselected option. 
-The code is duplicated for each contact form on the website, so the result would be the same on any page.
-
-![A screenshot of me being prompted to fill in the first name field](./libraries/testing/contact-form-empty-fname.png)
-
-![A screenshot of me being prompted to fill in the last name field](./libraries/testing/contact-form-empty-lname.png)
-
-![A screenshot of me being prompted to fill in the e-mail address field](./libraries/testing/contact-form-empty-email.png)
-
-![A screenshot of me being prompted to fill in the phone number field](./libraries/testing/contact-form-empty-phone.png)
-
-![A screenshot of me being prompted to select an option from three choices](./libraries/testing/contact-form-unselected-option.png)
-
-![A screenshot of me being prompted to select an option from two choices](./libraries/testing/contact-form-unselected-option-2.png)
-
-All external links navigate to their intended destination and open in a new browser tab.
-
-**Issues**
-
-The following issues were encountered during the testing phase:
-
-
-* Dropdown mobile menu initially opened as row before moving to a vertical layout. I discovered this happened because the .navbar-nav 
-class had a rule of 'flex-direction: row'. Removing the style rule resolved the issue.
-
-* The border of the hamburger menu displayed a blue ring when selected. To resolve the issue, I added a rule of 'outline: none' to the 
-pseudo class .navbar-toggler:focus
-
-* In the mailing list section, the input text field misaligned with the submit button at certain screen sizes, meaning they were not 
-the same width when on different lines or the input field was too narrow when on the same line. This was due to the 'width: auto' rule 
-in the .form-control class. After many unsuccessful attempts to fix the issue, I finally managed to resolve it by giving the element a 
-new .email-input class and using the '!important' property to set the width at various screen sizes.
-
-
-* A blue rectangular border surrounded the Shop link when selected in the mobile dropdown menu when using Safari (both on a Mac at a 
-reduced screen size and on an iPhone). I eventually resolved this by adding an 'outline: none' style rule to the a:focus pseudoelement 
-(attempts to target by class or other more specific properties were unsuccessful).
 
 ## Deployment
 
@@ -1009,36 +376,7 @@ designs)
 
 ## Additional resources
 
-I designed a number of wireframes using Balsamiq. These can be seen in the louis-bacon-portfolio-website.bmpr file in the libraries
-directory.
-
-These wireframes were designed either before the project or in the project's early building stages, hence the designs do not entirely 
-resemble the finished product. There is however a clear concept that has been followed and subsequently optimised.
-
-In the event that the file does not load, here are some screenshots of the wireframes below:
-
-![A screenshot of a wireframe for the site's home page](./libraries/wireframes/homepage-wireframe-screenshot.png)
-
-![A screenshot of a wireframe for the site's home page on a mobile device](./libraries/wireframes/homepage-mobile-wireframe-screenshot.png)
-
-![A screenshot of a wireframe for the site's main shop page](./libraries/wireframes/shop-page-wireframe-screenshot.png)
-
-![Another screenshot of a wireframe for the site's home page](./libraries/wireframes/homepage-wireframe-screenshot-2.png)
-
-![A screenshot of a wireframe for the site's CV page](./libraries/wireframes/cv-page-wireframe-screenshot.png)
-
-![A screenshot of a wireframe for the site's CV page on a mobile device](./libraries/wireframes/cv-page-mobile-wireframe-screenshot.png)
 
 Thank you for reading.
 
 I hope you enjoy my browsing portfolio website.
-
-## JS implementation
-
-* EmailJS - 404 error when submitting contact forms, working on it
-* Currently when clicking submit button alert box thanking user pops up, finished version would show alert box below input field saying "thank you for subscribing to mailing list"
-* Would like to add reCAPTCHA functionality to all contact forms 
-* Successfully added EmailJS functionality to mailing list and contact page
-* Problem - alert boxes still pop up when submit button clicked even when required input fields are empty i.e. thank you msg appears before error msg
-* cart.js file linked in all html pages as want number to remain consistent in top-right across all pages for best possible UX
-* cartQty function attached to for loop, loadCartQty function won't run unless called - when page refreshed number in cart stays the same
