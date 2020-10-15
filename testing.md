@@ -98,6 +98,10 @@ The website was tested in the following Browsers:
 * Safari
 * Opera
 
+The website proved good compatibility with all browsers as the functionality and performance was consistent across the board. I observed the following minor issues: 
+
+* the add to cart buttons are surrounded by a thin grey shadow in Mozilla Firefox as if the rest of the page were slightly set back. Nonetheless their position on the page and the clarity of the add to cart icon makes the button functionality clear.
+
 See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
 
 ![A screen capture of the home page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-homepage-galaxy-s5.png)
