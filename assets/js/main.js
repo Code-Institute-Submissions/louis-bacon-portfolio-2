@@ -48,3 +48,14 @@ for (let i = 0; i < numbersOnly.length; i++) {
         }
     });
 }
+
+var dateOfBirth = document.querySelectorAll("#dob");
+
+for (let i = 0; i < dateOfBirth.length; i++) {
+    dateOfBirth[i].addEventListener("keypress", function() {
+        var key = event.keyCode;
+        if (key < 47 || key > 57) {
+            event.preventDefault();
+        }
+    });
+}

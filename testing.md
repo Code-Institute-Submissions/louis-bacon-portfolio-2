@@ -102,6 +102,14 @@ The website proved good compatibility with all browsers as the functionality and
 
 * the add to cart buttons are surrounded by a thin grey shadow in Mozilla Firefox as if the rest of the page were slightly set back. Nonetheless their position on the page and the clarity of the add to cart icon makes the button functionality clear.
 
+* the date of birth input field in contact forms accepts non-numeric characters in Safari as the browser does not recognise the input type="date" attribute. To address the issue I took the following steps:
+
+1. Added a placeholder attribute with a value of "dd/mm/yyyy" which clearly indicates to the user that they must input a date of birth. This also replicates the appearance in other browsers.
+
+2. Setting a minlength and attribute with a value of 10 characters (including '/'). These attributes will not affect the output in browsers that support the date input type attribute.
+
+3. Added JavaScript to loop through DOB input fields (all of which have an id of "dob") and prevent input of non-numeric keys or forward slashes using the ASCII codes for these characters.
+
 See the screenshots below for the website layout on a Samsung Galaxy S5 (screen width of 360px) as an example:
 
 ![A screen capture of the home page on a Galaxy S5 using Developer Tools](./libraries/testing/screen-capture-homepage-galaxy-s5.png)
