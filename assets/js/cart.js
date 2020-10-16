@@ -170,7 +170,7 @@ function loadCart() {
             cartContainer.innerHTML += `
                 <div class="cart-item-wrapper">
                     <div class="product">
-                        <a href="#" class="remove-item">
+                        <a class="remove-item">
                             <i class="fas fa-times-circle"></i>
                         </a>
                         <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" onmouseover="displayName()" onmouseOut="hideName()" />
@@ -182,11 +182,11 @@ function loadCart() {
                         £${item.price}.00
                     </div>
                     <div class="quantity">
-                        <a href="#" class="decrease-qty">
+                        <a class="decrease-qty">
                             <i class="fas fa-minus-square"></i>
                         </a>
                         <span>${item.inCart}</span>
-                        <a href="#" class="increase-qty">
+                        <a class="increase-qty">
                             <i class="fas fa-plus-square"></i>
                         </a>
                     </div>

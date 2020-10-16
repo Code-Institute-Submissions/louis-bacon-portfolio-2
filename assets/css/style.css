@@ -1126,6 +1126,12 @@ footer {
       margin-bottom: -0.25rem;
   }
 
+  .remove-item,
+  .decrease-qty,
+  .increase-qty {
+      cursor: pointer;
+  }
+
   .cart-total-wrapper {
       font-size: 1.2rem;
   }
