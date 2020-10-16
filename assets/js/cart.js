@@ -66,14 +66,15 @@ for (let i = 0; i < carts.length; i++) {
         cartQty(products[i]);
         cartTotal(products[i]);
         displayAlert();
+        console.log(products[0].name);
     });
 }
 
 // generates confirmation alert when add to cart button is clicked
 
 function displayAlert() {
-    var addedToCartAlert = document.querySelector(".add-to-cart");
-        
+    var addedToCartAlert = document.querySelector(".add-item");
+    
     addedToCartAlert.innerHTML += `
         <div class="alert-container container-fluid">
             <div class="alert-success added-to-cart-alert">
@@ -284,46 +285,46 @@ function hideName() {
 
 // remove items from cart
 
-//function removeFromCart() {   
-//    var removeItem = document.querySelectorAll(".remove-item");
-//    var itemName;
-//    var totalUnits = localStorage.getItem("cartQty");
-//    var cartContents = localStorage.getItem("itemsInCart");
-//    cartContents = JSON.parse(cartContents);
-//    var cost = localStorage.getItem("cartTotal");
-
-//    for (let i = 0; i < removeItem.length; i++) {
-//        removeItem[i].addEventListener("click", function() {
-//            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
-//            localStorage.setItem("cartQty", totalUnits - cartContents[itemName].inCart);
-//            localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
-
-//            delete cartContents[itemName];
-//            localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
-
-//            loadCart();
-//            loadCartQty();
-//        });
-//    }
-//}
-
-function removeFromCart() {
+function removeFromCart() {   
     var removeItem = document.querySelectorAll(".remove-item");
     var itemName;
     var totalUnits = localStorage.getItem("cartQty");
     var cartContents = localStorage.getItem("itemsInCart");
     cartContents = JSON.parse(cartContents);
-    console.log(cartContents);
+    var cost = localStorage.getItem("cartTotal");
 
     for (let i = 0; i < removeItem.length; i++) {
         removeItem[i].addEventListener("click", function() {
-            itemName = removeItem[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, "");
-            console.log(itemName);
-            console.log(cartContents[itemName].name);
-            //localStorage.setItem("cartQty", totalUnits - cartContents[itemName.inCart]);
+            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
+            localStorage.setItem("cartQty", totalUnits - cartContents[itemName].inCart);
+            localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
+
+            delete cartContents[itemName];
+            localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
+
+            loadCart();
+            loadCartQty();
         });
     }
 }
+
+//function removeFromCart() {
+//    var removeItem = document.querySelectorAll(".remove-item");
+//    var itemName;
+//    var totalUnits = localStorage.getItem("cartQty");
+//    var cartContents = localStorage.getItem("itemsInCart");
+//    cartContents = JSON.parse(cartContents);
+//    console.log(cartContents);
+
+//    for (let i = 0; i < removeItem.length; i++) {
+//        removeItem[i].addEventListener("click", function() {
+//            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
+//            console.log(itemName);
+ //           console.log(cartContents[itemName]);
+ //           //localStorage.setItem("cartQty", totalUnits - cartContents[itemName.inCart]);
+ //       });
+//    }
+//}
 
 // increases and decreases quantity of an item already in cart
 
