@@ -150,5 +150,3 @@ function sendContactMail(contactRequest) {
     );
     return false;
 }
-
-sendMailingListMail(mailingList);

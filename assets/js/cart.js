@@ -81,7 +81,7 @@ function displayAlert() {
             </div>                
         </div>
     `;
-    $(".alert-container").fadeOut(4500);
+    $(".alert-container").fadeOut(2500);
 }
 
 // displays running counter of items in cart
