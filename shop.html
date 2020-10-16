@@ -18,32 +18,6 @@
         emailjs.init("user_LT4Dr9c2ovMbpVZA61XZE");
       })();
     </script>
-    <script>
-      function fetchGitHubInformation(event) {
-        $("#gh-repo-data").html("");
-
-        $.when($.getJSON(`https://api.github.com/users/lbacon17/repos`)).then(
-          function (firstResponse) {
-            var repoData = firstResponse[0];
-            $("#gh-repo-data").html(repoInformationHTML(repoData));
-          },
-          function (errorResponse) {
-            if (errorResponse.status === 404) {
-              $("#gh-repo-data").html(`<h2>No repos found for lbacon17</h2>`);
-            } else if (errorResponse.status === 403) {
-              $("#gh-repo-data").html(
-                `<h4>Too many requests. Please wait until ${resetTime.toLocaleTimeString()}</h4>`
-              );
-            } else {
-              console.log(errorResponse);
-              $("#gh-repo-data").html(
-                `<h2>Error: ${erroResponse.responseJSON.message}</h2>`
-              );
-            }
-          }
-        );
-      }
-    </script>
 </head>
 
 <body>
@@ -64,7 +38,7 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Shop
                             </a>
                             <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
@@ -464,18 +438,11 @@
                         <p class="mb-0">I will soon be qualifying as a Full Stack Web Developer and offering a range of services.</p>
                         <br class="d-block d-sm-none" />
                         <p class="mb-0">Keep your eyes open for future announcements&#33;</p>
-                        <br />
-                        <p class="mb-0">
-                            In the meantime, check out some of my work on <a href="https://github.com/lbacon17?tab=repositories" target="_blank">GitHub</a> below&#33;
-                        </p>
                     </div>
-                    <div class="row github-profile">
-                        <div class="col-sm">
-                            <div class="center-form">
-                                <input type="text" id="gh-username" value="lbacon17" oninput="fetchGitHubInformation()" />
-                                <div id="gh-repo-data"></div>
-                            </div>
-                        </div>
+                    <div class="github">
+                        <p>
+                            In the meantime, please check out my <a href="https://github.com/lbacon17?tab=repositories" target="_blank" class="github-link">GitHub</a> profile to see some examples of my work!
+                        </p>
                     </div>
                 </div>
             </div>
