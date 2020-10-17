@@ -1,4 +1,5 @@
-var carts = document.querySelectorAll(".add-item");
+var carts = document.querySelectorAll(".add-merch");
+var basket = document.querySelectorAll(".add-book");
 
 // retrieves data of store items
 
@@ -45,6 +46,9 @@ var products = [
     price: 25,
     inCart: 0,
   },
+];
+
+var books = [
   {
     name: "Gym and weight training basics",
     tag: "gymandweighttrainingbasics",
@@ -57,7 +61,7 @@ var products = [
     price: 15,
     inCart: 0,
   }
-];
+]
 
 // adds items to cart
 
@@ -66,8 +70,15 @@ for (let i = 0; i < carts.length; i++) {
         cartQty(products[i]);
         cartTotal(products[i]);
         displayAlert();
-        console.log(products[0].name);
     });
+}
+
+for (let i = 0; i < basket.length; i++) {
+    basket[i].addEventListener("click", function() {
+        cartQty(books[i]);
+        cartTotal(books[i]);
+        displayAlert();
+    })
 }
 
 // generates confirmation alert when add to cart button is clicked
