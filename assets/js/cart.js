@@ -188,7 +188,6 @@ function loadCart() {
                         <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" onmouseover="displayName()" onmouseOut="hideName()" />
                         <div id="popup"></div>
                         <span class="item-text">${item.name}</span>
-                        <span class="sr-only">${item.name}</span>
                     </div>
                     <div class="price">
                         £${item.price}.00
@@ -244,15 +243,6 @@ function loadCart() {
                 </div>
             </div>
         `;
-    } else {
-        cartContainer.innerHTML += `
-            <div class="cart-item-wrapper">
-                <h2 class="empty-cart">Your cart is currently empty.</h2>
-                <h6 class="back-to-shop-heading">
-                    <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
-                </h6>
-            </div>
-        `;
     }
     removeFromCart();
     changeQty();
@@ -296,7 +286,7 @@ function hideName() {
 
 // remove items from cart
 
-function removeFromCart() {   
+function removeFromCart() {
     var removeItem = document.querySelectorAll(".remove-item");
     var itemName;
     var totalUnits = localStorage.getItem("cartQty");
@@ -311,6 +301,7 @@ function removeFromCart() {
             localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
 
             delete cartContents[itemName];
+
             localStorage.setItem("itemsInCart", JSON.stringify(cartContents));
 
             loadCart();
@@ -318,24 +309,6 @@ function removeFromCart() {
         });
     }
 }
-
-//function removeFromCart() {
-//    var removeItem = document.querySelectorAll(".remove-item");
-//    var itemName;
-//    var totalUnits = localStorage.getItem("cartQty");
-//    var cartContents = localStorage.getItem("itemsInCart");
-//    cartContents = JSON.parse(cartContents);
-//    console.log(cartContents);
-
-//    for (let i = 0; i < removeItem.length; i++) {
-//        removeItem[i].addEventListener("click", function() {
-//            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
-//            console.log(itemName);
- //           console.log(cartContents[itemName]);
- //           //localStorage.setItem("cartQty", totalUnits - cartContents[itemName.inCart]);
- //       });
-//    }
-//}
 
 // increases and decreases quantity of an item already in cart
 
@@ -385,20 +358,24 @@ loadCart();
 // empties and resets cart upon completion of purchase 
 
 function completePurchase() {
-    console.log("Purchase complete&#33;");
-    alert ("Thank you for your purchase!");
-
-    document.querySelector("#counter").textContent = 0;
-    localStorage.clear();
-
+    var cartContents = localStorage.getItem("itemsInCart");
     var cartContainer = document.querySelector("#products");
-    cartContainer.innerHTML = "";
-    cartContainer.innerHTML = `
-        <div class="cart-item-wrapper">
-            <h2 class="empty-cart">Your cart is currently empty.</h2>
-            <h6 class="back-to-shop-heading">
-                <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
-            </h6>
-        </div>
-    `;
+    if (cartContents > 0) {
+        alert ("Thank you for your purchase!");
+        document.querySelector("#counter").textContent = 0;
+        localStorage.clear();
+
+        cartContainer.innerHTML = "";
+        cartContainer.innerHTML = `
+            <div class="cart-item-wrapper">
+                <h2 class="empty-cart">Your cart is currently empty.</h2>
+                <h6 class="back-to-shop-heading">
+                    <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
+                </h6>
+            </div>
+        `;
+    } else {
+        alert ("There are no items in your cart. Please add at least one item to your cart in order to complete your purchase!");
+        return false;
+    }
 }
