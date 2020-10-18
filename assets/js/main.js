@@ -1,7 +1,7 @@
 // back to top button appears when scrolling from top of page
 
 $(document).ready(function() {
-    bttt = document.getElementById("returnToTop");
+    var bttt = document.getElementById("returnToTop");
             
     window.onscroll = function() {
         showButton();

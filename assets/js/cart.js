@@ -61,7 +61,7 @@ var books = [
     price: 15,
     inCart: 0,
   }
-]
+];
 
 // adds items to cart
 
@@ -78,7 +78,7 @@ for (let i = 0; i < basket.length; i++) {
         cartQty(books[i]);
         cartTotal(books[i]);
         displayAlert();
-    })
+    });
 }
 
 // generates confirmation alert when add to cart button is clicked
@@ -166,7 +166,7 @@ function cartTotal(product, action) {
     }
 }
 
-// displays full cart contents and calculates total price
+// displays full cart contents and calculates total price, code partially taken from YouTube tutorial referenced in README
 
 function loadCart() {
     var cartContents = localStorage.getItem("itemsInCart");
@@ -274,7 +274,7 @@ function displayName() {
                 for (let i = 0; i < popupText.length; i++) {
                     namePopup[i].innerHTML = "";
                     namePopup[i].innerHTML = popupText[i].textContent;
-                };
+                }
             }
         });
         thumbnail[i].addEventListener("mouseleave", function() {
