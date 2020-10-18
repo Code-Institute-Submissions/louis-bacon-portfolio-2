@@ -243,6 +243,15 @@ function loadCart() {
                 </div>
             </div>
         `;
+    } else {
+        cartContainer.innerHTML = `
+            <div class="cart-item-wrapper">
+                <h2 class="empty-cart">Your cart is currently empty.</h2>
+                <h6 class="back-to-shop-heading">
+                    <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
+                </h6>
+            </div>
+        `;
     }
     removeFromCart();
     changeQty();
@@ -358,9 +367,9 @@ loadCart();
 // empties and resets cart upon completion of purchase 
 
 function completePurchase() {
-    var cartContents = localStorage.getItem("itemsInCart");
+    var productQty = localStorage.getItem("cartQty");
     var cartContainer = document.querySelector("#products");
-    if (cartContents > 0) {
+    if (productQty > 0) {
         alert ("Thank you for your purchase!");
         document.querySelector("#counter").textContent = 0;
         localStorage.clear();
