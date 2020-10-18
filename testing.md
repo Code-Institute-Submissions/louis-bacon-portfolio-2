@@ -182,6 +182,69 @@ The website proved good compatibility with all browsers as the functionality and
 
 The following issues were encountered during the testing phase:
 
+* Trying to remove an item from the cart returned an error of "cannot read property type of undefined" when trying to access an item's name. I discovered that in accessing the text content of the button's parent div, the browser was also inadvertendly accessing the text content of the screen reader span, meaning the item name was returned twice and therefore not recognised as a product in the cart. I resolved the bug by amending the method to traversing through the sibling elements:
+
+``` 
+itemName = removeItem[i].nextElementSibling.nextElementSibling.nextElementSibling.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
+```
+
+* The fitness books would appear as the wrong items in the cart if added via the fitness page. This was because they were the only items on this page, meaning the for loop was reading them as the first two items in the products array. The solution to this was twofold:
+
+1. I split the books into a separate array called 'books' which stored their properties.
+2. I added further classes to the add to cart buttons, .add-merch for the t-shirts and .add-book for the array, and accessed the buttons via these classes instead of the shared .add-item class when adding to cart. The functions displaying the cart data would then be called with the respective arguments parsed in.
+
+```
+var carts = document.querySelectorAll(".add-merch");
+var basket = document.querySelectorAll(".add-book");
+
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener("click", function() {
+        cartQty(products[i]);
+        cartTotal(products[i]);
+        displayAlert();
+    })
+}
+
+for (let i = 0; i < basket.length; i++) {
+    basket[i].addEventListener("click", function() {
+        cartQty(books[i]);
+        cartTotal(books[i]);
+        displayAlert();
+    })
+}
+```
+
+* The first item on any page could not be added to the cart more than once - the alert would appear when the button was clicked but the counter would not increase by more than one. This was solved by accessing the data via the button's .add-item class rather than its parent .add-to-cart div.
+
+* If all items were removed from the cart it was still possible for the user to receive an alert thanking them for their purchase if they clicked the checkout button. This was solved by incorporating an if/else statement into the completePurchase() function that would return an error if there were no items in the cart:
+
+```
+function completePurchase() {
+    var productQty = localStorage.getItem("cartQty");
+    var cartContainer = document.querySelector("#products");
+    if (productQty > 0) {
+        alert ("Thank you for your purchase!");
+        document.querySelector("#counter").textContent = 0;
+        localStorage.clear();
+
+        cartContainer.innerHTML = "";
+        cartContainer.innerHTML = `
+            <div class="cart-item-wrapper">
+                <h2 class="empty-cart">Your cart is currently empty.</h2>
+                <h6 class="back-to-shop-heading">
+                    <a href="shop.html" class="back-to-shop-link">Back to shop.</a>
+                </h6>
+            </div>
+        `;
+    } else {
+        alert ("There are no items in your cart. Please add at least one item to your cart in order to complete your purchase!");
+        return false;
+    }
+}
+```
+
+* On the deployed version of the website, the console returns an uncaught typeError: Cannot set property 'innerHTML' of null at loadCart (cart.js:248) at (cart.js:366). This refers to the else part of the if/else statement that sets the inner HTML of the cart - if the local storage is empty, the message appears that the cart is empty. I have decided to leave this bug unfixed for the time being as it does not affect the site performance or user experience, while any attempted workarounds caused glitches in the cart page updating, which would have worsened the UX. In future versions of the site, I will seek a solution that resets the cart page's HTML to the same text if the last item is removed from the cart.
+
 * On the cart page, if there was not enough content the footer was being pushed up from the bottom of page leaving white space at the bottom. This was resolved by taking the following steps:
 
 1. Set the footer's position to absolute and give it a height property with the appropriate value
