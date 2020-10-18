@@ -366,11 +366,11 @@ a:focus {
 }
 
 .alert-container {
-    width: 50%;
+    width: 100%;
     position: fixed;
     opacity: 0.95;
     bottom: 50%;
-    left: 25%;
+    left: 0%;
     padding-bottom: 15px;
     z-index: 99;
 }
@@ -940,6 +940,7 @@ footer {
     #gRecaptcha {
         margin-top: -25px;
         font-size: 0.9rem;
+        text-align: center;
     }
 
     #gRecaptcha .close {
@@ -976,6 +977,11 @@ footer {
 }
 
 @media screen and (min-width: 414px) {
+    .alert-container {
+        width: 90%;
+        left: 5%;
+    }
+    
     #gRecaptcha {
         width: 95%;
     }
@@ -1012,6 +1018,11 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
+    .alert-container {
+        width: 80%;
+        left: 10%;
+    }
+    
     .rc-container {
         transform: scale(1);
         -webkit-transform: scale(1);
@@ -1030,6 +1041,11 @@ footer {
 }
 
 @media screen and (min-width: 540px) {
+  .alert-container {
+      width: 70%;
+      left: 15%;
+  }
+  
   .tutoring-container,
   .fitness-container,
   .contact-container {
@@ -1057,6 +1073,11 @@ footer {
 
   .stuff-i-sell-subheading {
     font-size: 1.2rem;
+  }
+
+  .alert-container {
+      width: 60%;
+      left: 20%;
   }
 
   .mailing-list-container {
@@ -1278,17 +1299,34 @@ footer {
   }
 }
 
+@media screen and (min-width: 800px) {
+    .rc-aligner {
+        margin-left: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .rc-aligner {
+        margin-left: 5.2rem;
+    }
+}
+
 @media screen and (min-width: 992px) {
   .content {
     padding-top: 4rem;
-  }   
+  }
+
+  .alert-container {
+      width: 40%;
+      left: 30%;
+  }
 
   .mailing-list-container {
     width: 80%;
   }
 
   .rc-aligner {
-    margin-left: 4.6rem;
+    margin-left: 5.6rem;
   }
 
   .submit-request {
@@ -1324,6 +1362,11 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  .alert-container {
+      width: 30%;
+      left: 35%;
+  }
+  
   .mailing-list-container {
     width: 70%;
   }
@@ -1331,4 +1374,17 @@ footer {
   .rc-aligner {
     margin-left: 7rem;
   }
+}
+
+@media screen and (min-width: 1300px) {
+    .rc-container {
+       transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0; 
+    }
+    
+    .rc-aligner {
+        margin-left: 7.6rem;
+    }
 }

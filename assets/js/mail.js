@@ -8,7 +8,7 @@ function sendMailingListMail(mailingList) {
         function(response) {
             console.log("SUCCESS", response);
             alert ("Thank you for subscribing to my mailing list!");
-            resetForm();
+            resetEmailForm();
         },
         function(error) {
             console.log("FAILED", error);
@@ -29,11 +29,8 @@ function sendMailingListMail(mailingList) {
 
 // empties form contents upon successful submission
 
-function resetForm() {
+function resetEmailForm() {
     document.getElementById("emailForm").reset();
-    document.getElementById("tutoringForm").reset();
-    document.getElementById("fitnessForm").reset();
-    document.getElementById("contactForm").reset();
 }
 
 // enables form submission when at least 1 of 2 checkbox options is checked
@@ -67,9 +64,8 @@ function sendTutoringMail(contactRequest) {
     .then(
         function (response) {
             console.log("SUCCESS", response);
-            alert(
-                "Thank you for your enquiry! I will be in touch with you as soon as possible."
-            );
+            alert("Thank you for your enquiry! I will be in touch with you as soon as possible.");
+            resetTutoringForm();
         },
         function (error) {
             console.log("FAILED", error);
@@ -88,6 +84,12 @@ function sendTutoringMail(contactRequest) {
     return false;
 }
 
+// empties form contents upon successful submission
+
+function resetTutoringForm() {
+    document.getElementById("tutoringForm").reset();
+}
+
 // generates automated e-mail when fitness coaching form is submitted
 
 function sendFitnessMail(contactRequest) {
@@ -102,7 +104,7 @@ function sendFitnessMail(contactRequest) {
         function(response) {
             console.log("SUCCESS", response);
             alert ("Thank you for your enquiry! I will be in touch with you as soon as possible.");
-
+            resetFitnessForm();
         },
         function(error) {
             console.log("FAILED", error);
@@ -121,6 +123,12 @@ function sendFitnessMail(contactRequest) {
     return false;
 }
 
+// empties form contents upon successful submission
+
+function resetFitnessForm() {
+    document.getElementById("fitnessForm").reset();
+}
+
 // generates automated e-mail when contact form is submitted
 
 function sendContactMail(contactRequest) {
@@ -133,6 +141,7 @@ function sendContactMail(contactRequest) {
         function(response) {
             console.log("SUCCESS", response);
             alert ("Thank you for your enquiry! I will be in touch with you as soon as possible.");
+            resetContactForm();
         },
         function(error) {
             console.log("FAILED", error);
@@ -149,4 +158,10 @@ function sendContactMail(contactRequest) {
         }
     );
     return false;
+}
+
+// empties form contents upon successful submission
+
+function resetContactForm() {
+    document.getElementById("contactForm").reset();
 }
