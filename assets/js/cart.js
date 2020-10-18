@@ -188,6 +188,7 @@ function loadCart() {
                         <img src="./assets/images/${item.tag}.png" alt="${item.name}" class="cart-item-thumbnail" onmouseover="displayName()" onmouseOut="hideName()" />
                         <div id="popup"></div>
                         <span class="item-text">${item.name}</span>
+                        <span class="sr-only">${item.name}</span>
                     </div>
                     <div class="price">
                         £${item.price}.00
@@ -305,7 +306,7 @@ function removeFromCart() {
 
     for (let i = 0; i < removeItem.length; i++) {
         removeItem[i].addEventListener("click", function() {
-            itemName = removeItem[i].parentElement.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
+            itemName = removeItem[i].nextElementSibling.nextElementSibling.nextElementSibling.textContent.trim().toLocaleLowerCase().replace(/ /g, "");
             localStorage.setItem("cartQty", totalUnits - cartContents[itemName].inCart);
             localStorage.setItem("cartTotal", cost - (cartContents[itemName].price * cartContents[itemName].inCart));
 
