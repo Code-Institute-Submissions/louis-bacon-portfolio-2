@@ -1,4 +1,4 @@
-*Testing* 
+# Testing 
 
 ## Validators
 
@@ -118,69 +118,85 @@ The website proved good compatibility with all browsers as the functionality and
 
 ## Testing of User Stories
 
-1. As a business, I want to market myself as effectively as possible to internet users and generate more clients and product sales. I therefore advertise my products, services and their pricing as transparently as possible, and present the opportunity to purchase or sign up to a service via my website.
+1. As a business, I want to market myself as effectively as possible to internet users and generate more clients and product sales. I want users to have the opportunity to purchase a product or sign up to a service via my website.
 
-* When the user navigates the website, they will see my brand logo on top of my name and my services in large text at the top of every page in the navigation bar. The services are also all clickable links that will take the user to the relevant page where they can make use of a service.
+* The user sees the navbar, my brand logo, my name and services as the first things on each page and can intuitively navigate through these.
 
-* If the user wants to buy one of my t-shirts or books, they can add the item to their cart with a single click, and the quantity of items inside the cart will update for the user in real time. The price is calculated automatically on the cart page so that the user knows how much they are paying.
+* When viewing my products, the user sees high-quality thumbnail images, transparent pricing information and a clear add to cart button which triggers a response when clicked. Pricing is calculated automatically for the user once they navigate to the cart page.
 
-* The user can see clear, high-quality thumbnail images of all of my t-shirts and books with clear pricing information. They are also informed of my rates for tutoring and fitness coaching in advance of submitting the form.
+* The user encounters several invitations to join my mailing list throughout the website, so I have the chance to sell to them in the future if they provide their e-mail address, even if they choose not to buy immediately.
 
-* The user will encounter several invitations to join my mailing list throughout the website, meaning I have the opportunity to sell to them in the future if they submit their e-mail address, even if they choose not to buy from me immediately.
-
-2. As someone needing a website designed, I want to quickly be able to see what Louis can offer and access his GitHub profile to check out examples of his work.
+2. As someone needing a website designed, I want to access Louis' GitHub profile to check out examples of his work.
 
 * The user can click the 'Web Developer' heading under my name or select 'Web Services' from the 'Shop' dropdown menu. They can then read information about my experience and click on the link to my GitHub profile.
 
 * They can also select 'All Items' from the dropdown menu and scroll to the bottom where they will find the same content in the Web Services section.
 
-3. As a student or a parent of a student needing tuition, I want to book lessons by filling out a simple form and receive confirmation once I have done so. This is more reliable than trying to reach him at a contact number or e-mail address when he may be busy and take a while to reply.
+3. As a student or a parent of a student needing tuition, I want to book lessons via Louis' website rather than try to call him or write to him when he may be busy.
 
-* The user can click the 'Tutor' heading under my name or select 'Tutoring' from the 'Shop' dropdown menu. They can then provide their details in the contact form, verify themselves as a human being and submit the form. I will receive a notification that somebody has filled out the contact form and see the form's input data, while the user will receive a confirmation e-mail that their form has been submitted.
+* The user can access the 'Tutoring' page via the dropdown menu or one of the links below my name and fill out their details in the contact form. Once the form is successfully submitted, I will receive a notification that the form has been filled out, while the user receives a confirmation e-mail that their form has been submitted.
 
-* Alternatively, they can scroll down to the 'Tutoring' section on the main shop page, or navigate to the 'Contact' page and make an enquiry by filling out the form, where they will again receive a confirmation e-mail. All submitted forms reach me at the same e-mail address so I am able to respond to any enquiry as soon as possible.
+* If the user misses the 'Tutoring' section, they can navigate to the 'Contact' page via the main menu and enquire by filling out a similar contact form, where they will also receive a confirmation e-mail. All submitted forms will reach me so I am able to respond to any enquiry as it comes in. 
 
-4. As a person looking to buy clothes I want to see what products Louis designs and sells, how much they cost and make a purchase in just a few clicks. I also want the opportunity to buy more than one of a certain item or remove an item from my basket after changing my mind.
+4. As a person looking to buy clothes I want to see what products Louis designs and sells and purchase them from his website.
 
-* The user can click the 'Clothing Brand' heading under my name or select 'Merchandise' or 'All Items' from the 'Shop' dropdown menu. Here they will see all of my clothing products, what they look like and how much they cost. They then click the add to cart button and get an instant notification that the product was successfully added to the cart, and the checkout counter instantly increases. This gives the user a clear response to their action. Due to the fixed nature of the navigation bar, the user will always be able to see how many items are in their cart.
+* The user can access the 'Merchandise' page via the navbar or the 'Clothing Brand' link. They can see pictures of my products and how much they cost. Clicking the add to cart button gives an instant notification that their item was added and the number in the checkout increases, making the user aware of the response to their action. Due to the fixed navbar, the user will always be able to see how many items are in their cart whilst scrolling.
 
-* Once on the cart page, the user can click the + and - icons next to the item name to increase and decrease the quantity to their desired amount. If they change their mind on ordering an item, they can click on the 'x' on the left of the image thumbnail to remove it from the cart. Should they wish to go back and add another item to their basket, they can click the 'Continue Shopping' button at the bottom of the cart. Items will remain stored in the user's cart even if they navigate to another page or leave the website entirely.
+5. As a potential buyer, I want to be able to buy Louis' products in bulk. If I change my mind on a product, I'd also like to remove it from my shopping list.
+
+* The user can click the add to cart button below an item as many times as they like. Each click adds another unit to the user's cart.
+
+* Once on the cart page, the user can click the + and - icons next to the item to increase or decrease the quantity. They will see the price adjust with each click.
+
+* If the user changes their mind on ordering something, they can click the 'x' on the left of the image thumbnail to remove it from the cart and the cart price adjusts accordingly.
+
+* If the user is not done shopping yet, they can click the 'Continue Shopping' button at the bottom of the cart. Items remain stored in the users cart even if they navigate to another page or leave the website altogether.
 
 * Once the user is happy with their order, they click the 'Checkout' button at the bottom of the cart. Its appearance makes it clearly stand out as the call to action button on the page.
 
-5. As a fitness enthusiast looking for some advice or to learn more, I want to see what sort of content Louis has written and purchase some of his work from his website.
+6. As a fitness enthusiast looking for some advice or to learn more, I want to see what sort of content Louis has written and purchase some of his work from his website.
 
-* The user can click the 'Fitness Coach' heading under my name or select 'Fitness' from the 'Shop' dropdown menu. Here they can see the books I've written on the subject so far. The image thumbnail of each book shows a clear picture of the cover to give the user a preview and the title is informative enough so that the user knows what type of content is within. Again there is clear pricing information for each book.
+* The user can access the 'Fitness' page via the main menu or the 'Fitness Coach' link. They can see the books I've written on the subject so far with a clear picture of the cover to get a preview of what sort of content to expect.
 
-* If the user wishes to make a purchase, they can click on the add to cart button, where they receive an instant alert that the item was added to their cart and the number in the cart increases by one. They can then navigate to the cart page by clicking on the shopping cart icon in the navigation bar and complete their purchase.
+* Each book has the same add to cart button and pricing information as other products, with the button generating the same alerts and responses.
 
-6. I can also book a coaching session if I wish. I am informed that rates are negotiable and can book sessions by submitting a form in which I can provide information about my goals and situation in more detail so that Louis has what he needs to start working with me.
+* Once the user has added these items to their cart, they can navigate to the cart page by clicking the shopping cart icon in the top right corner to complete their purchase.
 
-* The user can click the 'Fitness Coach' heading under my name or select 'Fitness' from the 'Shop' dropdown menu. They can scroll down to the fitness coach section where they can see information about my coaching and rates. They can fill out the form to enquire or book an initial consultation with me where they must give a brief description of their goals. They are encouraged to give just a brief description as asking for too much detail increases the risk of the user being distracted and not completing the form. We can go into more detail once I've responded to the user's enquiry and set up an appointment.
+7. As a person wishing to get in shape, I want to book a coaching session with Louis via his website quickly.
 
-* Once the user has verified themselves as a real person and submitted the form with their details, they will receive a confirmation e-mail that I have received their request and will be in touch as soon as possible. The text above the form sets their expectations by noting that I'll respond within 24 hours, so the user has a rough timeframe of how long they'll have to wait before hearing from me.
+* The user can access the 'Fitness' page via the main menu or the 'Fitness Coach' link and find out information about my coaching and rates before filling out their details in the contact form.
 
-7. I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I'd like to find the best way to contact Louis and send him an enquiry about it.
+* The user is encouraged to give just a brief description of their goals as asking for too much detail increases the risk of user distraction and an abandoned form. We can go into more detail once I've responded to the user's enquiry and set up an appointment.
 
-* The user can click on 'Contact' in the navigation bar and be taken to the contact page. They can easily locate the contact form and fill it out with their details and some information about the project and await my response. They can again expect a response within 24 hours, as the form states, and will receive a confirmation e-mail once their form has been successfully submitted.
+* The user receives a confirmation e-mail that their request has been submitted and that I will be in touch as soon as possible, setting the expectation of 24 hours. I am also notified that a request has been submitted.
 
-8. As a potential client of Louis', I'm considering working with him on something but can read about his prior experience on his CV page and compare it to other prospective contractors. I'd also like the option of downloading his CV in case I want to look into his experience in a bit more detail and take some time to decide.
+8. I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first by contacting him with information about the project and my details.
+
+* The user can click on 'Contact' in the navigation bar and be taken to the contact page to fill out the contact form with their details and some information about the project before awaiting my response.
+
+* Expectations of a response within 24 hours are clearly set, and the user receives an automated confirmation e-mail upon successful submission of their form. I will be alerted to respond to the user as a separate confirmation e-mail is sent to me that a request has come in.
+
+9. As a potential client of Louis', I'm considering working with him on something but want to read about his prior experience and compare it to other prospective contractors. 
 
 * The user can click 'CV' in the navigation bar and be taken to the CV page. They can scroll down to find a timeline of my professional history.
 
-* Should the user need more detail, they can easily locate the button to download a PDF of my CV immediately below the timeline. This opens in a new tab so the user can continue browsing my website at the same time if need me. The user can also print my full CV or save it to their device so that they can look at it in future without even being on my website. This gives them all the time and resources they need to decide whether to work with me.
+* If they need more detail, they can easily locate the button to download a PDF version below the timeline. The link opens in a new tab so the user can continue to browse my website at the same time, whiel printing or saving my full CV to their device. This enables them to look at my work history without even being on my website, and ensures they have all the time and resources they need to work with me.
 
 * If the user wishes to proceed with a project, they can navigate to the 'Contact' page from the main menu and fill out the contact form.
 
-9. As someone who wants to find out a bit more about Louis himself, I can read his story in more detail on the About page.
+10. As someone looking to hire Louis, I want to look deeper into his professional history by downloading a full version of his CV.
+
+* as above
+
+11. As someone who wants to find out a bit more about Louis himself, I want to read his story in more detail.
 
 * The user can click on 'About' in the navigation bar to be taken to my About page. They can then read a more detailed biography of my story and find some images of me and my work to put a face to the name. 
 
-* If the user is still curious, there is an invitation to join my mailing list immediately below the images so that the user can hear more from me. All they need to do is input their e-mail address and verify themselves as a human being. The form will not submit with an invalid e-mail address or without the reCAPTCHA box being checked. If they try to submit the form without verifying themselves, they will receive a dismissible alert indicating that they must pass verification.
+* If the user is still curious, there is an invitation to join my mailing list below the images. All they need to do to subscribe is input their valid e-mail address. They will then receive an e-mail thanking them for joining my mailing list, whilst I receive confirmation of a new joiner.
 
-10. As someone who's interested in learning more from Louis and wants to hear from him regularly, I can join his mailing list by simply submitting my e-mail address.
+12. As someone who's interested in learning more from Louis and wants to hear from him regularly, I want to subscribe to regular updates and communications from him.
 
-* The user can click the last paragraph of my introduction on the homepage to be taken directly to the mailing list section. They then just need to enter their e-mail address, click subscribe and check the Google reCAPTCHA validation box to join my mailing list. They will then receive a confirmation e-mail that they are now subscribed, and they can look forward to plenty of exciting content. I will also receive an automated e-mail notifying me of a new mailing list subscriber, so that I know to include the user in future e-mails.
+* The user can click the last paragraph of my introduction on the homepage to be taken directly to the mailing list section. They then just need to enter their e-mail address, check the reCAPTCHA box and click subscribe to join. They will then receive a confirmation e-mail that they are now subscribed, and they can look forward to plenty of exciting content. I will also receive an automated e-mail notifying me of a new mailing list subscriber, so that I know to include the user in future e-mails.
 
 ## Issues/Bugs
 
@@ -265,3 +281,5 @@ function completePurchase() {
 * There was a similar problem with the reCAPTCHA box below contact forms at larger screen sizes. The box would align centrally to the form itself rather than the submit button immediately above, creating an unnatural staggered appearance. I therefore used the rc-aligner class for the parent div below the various contact forms (not mailing list sign-ups) on the website and added a margin-left property with a different value to that of the mailing-list-offset class.
 
 * The Google reCAPTCHA alert that appears when the user attempts to submit a form without verifying themselves overflowed into the footer at certain screen sizes. This was resolved by giving it a padding-bottom property.
+
+[Back to main README file](README.md).

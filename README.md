@@ -1,6 +1,6 @@
 ![Screenshot of the top of my portfolio website](./libraries/testing/project-screenshot.png)
 
-## Louis Bacon Portfolio
+# Louis Bacon Portfolio
 
 Hello,
 
@@ -159,27 +159,29 @@ to take the user directly to this section and save time having to scroll all the
 The aim of the website is to let existing and prospective clients and business partners see what I offer and encourage them to work 
 with me or buy my services. I want them to be able to interact with my web page and receive as much information as possible without the added effort of back and forth contact.
 
-* As a business, I want to market myself as effectively as possible to internet users and generate more clients and product sales. I therefore advertise my products, services and their pricing as transparently as possible, and present the opportunity to purchase or sign up to a service via my website.
+* As a business, I want to market myself as effectively as possible to internet users and generate more clients and product sales. I want users to have the opportunity to purchase a product or sign up to a service via my website.
 
-* As someone needing a website designed, I want to quickly be able to see what Louis can offer and access his GitHub profile to check out examples of his work.
+* As someone needing a website designed, I want to access Louis' GitHub profile to check out examples of his work.
 
-* As a student or a parent of a student needing tuition, I want to book lessons by filling out a simple form and receive confirmation once I have done so. This is more reliable than trying to reach him at a contact number or e-mail address when he may be busy and take a while to reply.
+* As a student or a parent of a student needing tuition, I want to book lessons via Louis' website rather than try to call him or write to him when he may be busy.
 
-* As a person looking to buy clothes I want to see what products Louis designs and sells, how much they cost and make a purchase in just a few clicks. I also want the opportunity to buy more than one of a certain item or remove an item from my basket after changing my mind.
+* As a person looking to buy clothes I want to see what products Louis designs and sells and purchase them from his website.
+
+* As a potential buyer, I want to be able to buy Louis' products in bulk. If I change my mind on a product, I'd also like to remove it from my shopping list.
 
 * As a fitness enthusiast looking for some advice or to learn more, I want to see what sort of content Louis has written and purchase some of his work from his website.
 
-* I can also book a coaching session if I wish. I am informed that rates are negotiable and can book sessions by submitting a form in which I can provide information about my goals and situation in more detail so that Louis has what he needs to start working with me.
+* As a person wishing to get in shape, I want to book a coaching session with Louis via his website quickly.
 
-* I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I simply fill out the contact form with my details and some information about the project and await Louis' response.
+* I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first by contacting him with information about the project and my details.
 
-* As a potential client of Louis', I'm considering working with him on something but can read about his prior experience on his CV page and compare it to other prospective contractors. 
+* As a potential client of Louis', I'm considering working with him on something but want to read about his prior experience and compare it to other prospective contractors. 
 
 * As someone looking to hire Louis, I want to look deeper into his professional history by downloading a full version of his CV.
 
-* As someone who wants to find out a bit more about Louis himself, I can read his story in more detail on the About page.
+* As someone who wants to find out a bit more about Louis himself, I want to read his story in more detail.
 
-* As someone who's interested in learning more from Louis and wants to hear from him regularly, I can join his mailing list by simply submitting my e-mail address.
+* As someone who's interested in learning more from Louis and wants to hear from him regularly, I want to subscribe to regular updates and communications from him.
 
 **Wireframes**
 
