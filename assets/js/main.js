@@ -49,6 +49,8 @@ for (let i = 0; i < numbersOnly.length; i++) {
     });
 }
 
+// disables invalid character input in DOB fields
+
 var dateOfBirth = document.querySelectorAll("#dob");
 
 for (let i = 0; i < dateOfBirth.length; i++) {

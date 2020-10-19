@@ -52,7 +52,11 @@ The HTML code was passed through the [W3](https://validator.w3.org/) validator. 
 
 The warnings were ignored as these are design choices and do not affect the performance of the live site.
 
-The error was resolved by changing the value attribute on all forms' DOB input fields to null.
+The error was initially resolved by changing the value attribute on all forms' DOB input fields to null. However during testing it was discovered that Safari does not support the date input type as a browser, meaning the field just appears empty and accepts any input. 
+
+To counteract this, I added a placeholder of 'DD/MM/YYYY' and min/maxlength attributes. This causes another error on the fitness, shop and tutoring pages as the validator states these are not allowed under a date input type. However, as these attributes do not run when the date input type is running on a supported browser, I have decided to leave this error in. This has no effect on the performance of the site.
+
+![Screenshot of HTML validator errors for final submitted code](./libraries/testing/html-validator-errors.png)
 
 **CSS**
 
