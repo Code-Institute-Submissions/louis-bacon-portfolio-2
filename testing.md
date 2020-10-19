@@ -263,7 +263,9 @@ function completePurchase() {
 }
 ```
 
-* On the deployed version of the website, the console returns an uncaught typeError: Cannot set property 'innerHTML' of null at loadCart (cart.js:248) at (cart.js:366). This refers to the else part of the if/else statement that sets the inner HTML of the cart - if the local storage is empty, the message appears that the cart is empty. I have decided to leave this bug unfixed for the time being as it does not affect the site performance or user experience, while any attempted workarounds caused glitches in the cart page updating, which would have worsened the UX. In future versions of the site, I will seek a solution that resets the cart page's HTML to the same text if the last item is removed from the cart.
+* On the deployed version of the website, the console returns an uncaught typeError (see screenshot below). This refers to the else part of the if/else statement that sets the inner HTML of the cart - if the local storage is empty, the message appears that the cart is empty. I have decided to leave this bug unfixed for the time being as it does not affect the site performance or user experience, while any attempted workarounds caused glitches in the cart page updating, which would have worsened the UX. In future versions of the site, I will seek a solution that resets the cart page's HTML to the same text if the last item is removed from the cart.
+
+![Uncaught type error](./libraries/testing/js-uncaught-type-error.png)
 
 * On the cart page, if there was not enough content the footer was being pushed up from the bottom of page leaving white space at the bottom. This was resolved by taking the following steps:
 
