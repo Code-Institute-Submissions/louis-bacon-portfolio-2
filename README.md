@@ -204,7 +204,9 @@ with me or buy my services. I want them to be able to interact with my web page 
 
 * I have a brilliant project idea that I think Louis would be great for, but I want to get his view on it first. I simply fill out the contact form with my details and some information about the project and await Louis' response.
 
-* As a potential client of Louis', I'm considering working with him on something but can read about his prior experience on his CV page and compare it to other prospective contractors. If I want to look into things in a bit more detail, I have the opportunity to download a PDF version of his CV and can then fill out the contact form in a few easy steps should I wish to proceed.
+* As a potential client of Louis', I'm considering working with him on something but can read about his prior experience on his CV page and compare it to other prospective contractors. 
+
+* As someone looking to hire Louis, I want to look deeper into his professional history by downloading a full version of his CV.
 
 * As someone who wants to find out a bit more about Louis himself, I can read his story in more detail on the About page.
 
